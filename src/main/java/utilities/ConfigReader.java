@@ -13,6 +13,7 @@ public class ConfigReader {
 	
 	static FileInputStream fileInput = null;
 	static Properties prop = new Properties();
+	 static File file;
 	/**
 	 * will read the properties file with this function
 	 * @param filePath
@@ -21,7 +22,7 @@ public class ConfigReader {
 	
 	public static Properties loadPropertyFile(String filePath) {
 		// Read from properties file
-		File file = new File(filePath);
+		 file = new File(filePath);
 		
 		
 	
@@ -44,7 +45,7 @@ public class ConfigReader {
 	 */
 	public static String getValue(String key) {
 
-		Properties prop = loadPropertyFile("src\\main\\resources\\ConfigFiles\\config.properties");
+	 prop = loadPropertyFile("src\\main\\resources\\ConfigFiles\\config.properties");
 		// Open the URL in firefox browser
 		 return prop.getProperty(key);
 	}
@@ -54,7 +55,7 @@ public class ConfigReader {
 	 * @return
 	 */
 	public static int getIntValue(String key) {
-		Properties prop = loadPropertyFile("src\\main\\resources\\ConfigFiles\\config.properties");
+		 prop = loadPropertyFile("src\\main\\resources\\ConfigFiles\\config.properties");
 
 		// Open the URL in firefox browser
 		String strKey = prop.getProperty(key);
