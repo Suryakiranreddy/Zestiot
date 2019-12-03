@@ -214,7 +214,7 @@ public class COBT_For_GMR_HYD_SG_User {
 							+ "<td><b style=\"color:red;\">"+str_cobt+"</b></td><td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td></tr>");
 					}
 	 }else {
-			email_COBT_For_DIALCelebi_User6.append("<tr><td colspan=\"5\">No values found</td></tr>");
+			email_COBT_For_DIALCelebi_User6.append("<tr><td colspan=\"5\"><b style=\"color:red;\" >No values found</b></td></tr>");
 
 	 }
 				email_COBT_For_DIALCelebi_User6.append("</table>");
@@ -237,7 +237,7 @@ public class COBT_For_GMR_HYD_SG_User {
 								+ "<td><b style=\"color:red;\">"+str_cobt+"</b></td><td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td></tr>");
 					}
 				 }else {
-						email_COBT_For_DIALCelebi_User7.append("<tr><td colspan=\"5\">No values found</td></tr>");	
+						email_COBT_For_DIALCelebi_User7.append("<tr><td colspan=\"5\"><b style=\"color:red;\" >No values found</b></td></tr>");	
 				 }
 					email_COBT_For_DIALCelebi_User7.append("</table>");
 					 //email_COBT_For_DIALCelebi_User7.append("</body></html>");
