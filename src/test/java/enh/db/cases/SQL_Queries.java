@@ -135,17 +135,6 @@ import java.util.Date;
 									" and operationunit = 4 and flightnumber_arrival like 'SG%' and (TIME_TO_SEC(TIMEDIFF(Off_Block_Time, cobt))>300 or TIME_TO_SEC(TIMEDIFF(cobt, Off_Block_Time))>300)";
 
 
-	//Total flights scheduled arrival for GMR-Hyd
-	public static String strQuery_017="SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= 4";
-	
-	//Total flights count for GMR-Hyd for which sensor_ata has been captured
-	public static String strQuery_018="SELECT count(*) FROM `DailyFlightSchedule_Merged` where flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit=4) and sensor_ata is not null";
-	
-	//Total flights count for GMR-Hyd for which sensor_ata has not been captured
-	public static String strQuery_019="SELECT count(*) FROM `DailyFlightSchedule_Merged` where flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit=4) and sensor_ata is null";
-	
-	//Total flights for GMR-Hyd for which sensor_ata has not been captured
-	public static String strQuery_020="SELECT logid, flightnumber_arrival, flightnumber_departure, sensor_ata FROM `DailyFlightSchedule_Merged` where flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit=4) and sensor_ata is null";
 	
 	//Total flights scheduled departure for GMR-Hyd
 	public static String strQuery_021="SELECT count(*) FROM `DailyFlightScheduleDeparture_GMR` where (date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= 4";
@@ -185,7 +174,38 @@ import java.util.Date;
 		public static String strQuery_032="SELECT logid, flightnumber_arrival, flightnumber_departure, sensor_atd FROM `DailyFlightSchedule_Merged` where flightdepartureId in (SELECT logid FROM `DailyFlightScheduleDeparture_GMR` where (date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= 22) and sensor_atd is null";
 	
 	
-	
+	    //Total flights for HYD for which On-block captured from Sensor (type= aircraft)   
+	    public static String strQuery_033= "SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n"
+	    + "where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') and operationunit = 4 and on_block_time is not null ) \r\n "
+	    + "and operationname = 'onb' and type = 'aircraft' order by flightno";
+	   
+	    //Total flights for HYD for which On-block captured from Computer Vision (type= cv)   
+	    public static String strQuery_034= "SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n"
+	            + "where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') and operationunit = 4 and on_block_time is not null ) \r\n "
+	            + "and operationname = 'onb' and type = 'cv' order by flightno";
+	   
+	    //Total flights list for HYD for which Sensor_ATA > On-block (negative scenario)
+	    public static String strQuery_035= "SELECT logid, flightnumber_arrival, sensor_ATA, On_block_time, (case when (sensor_ATA < On_Block_Time) then 1 else 0 end) as Status, \r\n"
+	    + "CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') and operationunit = 4 and (sensor_ata is not null and On_block_time is not null) order by flightnumber_arrival";   
+
+	   
+	    //Total flights scheduled arrival for GMR-Hyd
+	    public static String strQuery_017="SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where \r\n"
+	    + "(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= 4";
+	                           
+	    //Total flights count for GMR-Hyd for which sensor_ata has been captured
+	    public static String strQuery_018="SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n" +
+	    "flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit=4) \r\n" +
+	    "and sensor_ata is not null";
+	                               
+	    //Total flights count for GMR-Hyd for which sensor_ata has not been captured
+	    public static String strQuery_019= "SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`\r\n " +
+	    "where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit=4 and sensor_ata is null";
+	                               
+	    //Total flights list for GMR-Hyd for which sensor_ata has not been captured
+	    public static String strQuery_020= "SELECT logid, flightnumber, sta, eta, ata FROM `DailyFlightScheduleArrival_GMR`where \r\n" +
+	    "(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit=4 and sensor_ata is null";
+
 	
 	
 	
