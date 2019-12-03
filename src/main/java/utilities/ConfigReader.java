@@ -11,21 +11,20 @@ import java.util.Properties;
 
 public class ConfigReader {
 	
-
+	static FileInputStream fileInput = null;
+	static Properties prop = new Properties();
 	/**
 	 * will read the properties file with this function
 	 * @param filePath
 	 * @return
 	 */
-	private ConfigReader(){
-		
-	}
+	
 	public static Properties loadPropertyFile(String filePath) {
 		// Read from properties file
 		File file = new File(filePath);
-		Properties prop = new Properties();
-
-		FileInputStream fileInput = null;
+		
+		
+	
 		try {
 			fileInput = new FileInputStream(file);
 			prop.load(fileInput);
