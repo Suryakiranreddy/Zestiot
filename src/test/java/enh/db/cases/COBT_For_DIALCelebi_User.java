@@ -12,7 +12,6 @@ import com.relevantcodes.extentreports.LogStatus;
 import utilities.HtmlReportUtil;
 
 
-
 public class COBT_For_DIALCelebi_User {
 	 public static ArrayList<String> cobtIsNotNull= new ArrayList<String>();
 	 public static ArrayList<String> ofBlockIsNotNull= new ArrayList<String>();

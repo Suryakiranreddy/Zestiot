@@ -29,7 +29,7 @@ public class LogUtil {
 	static RollingFileAppender normalRap;
 	static RollingFileAppender errorRap;
 	private static boolean isInit = false;
-	private LogUtil(){}
+	//private LogUtil(){}
 
 	static PatternLayout patternLayout = new PatternLayout("%d{yyyy-MM-dd HH:mm:ss} %-5p - %m%n");
 	static PatternLayout consolePatternLayout = new PatternLayout("\tLOG-: [%m -  %d{yyyy-MM-dd HH:mm:ss a}] %n");
