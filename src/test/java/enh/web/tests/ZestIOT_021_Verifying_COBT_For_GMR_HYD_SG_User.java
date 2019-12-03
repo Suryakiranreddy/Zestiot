@@ -37,7 +37,7 @@ public class ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User extends KeywordUtil 
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			COBT_For_GMR_HYD_SG_User.cOBT_For_GMR_HYD_SG_User();
+			COBT_For_GMR_HYD_SG_User.cOBT_For_GMR_HYD_SG_User2();
 			/*COBT_For_GMR_HYD_SG_User.totalFlights();
 			COBT_For_GMR_HYD_SG_User.cobtIsNotNull();
 			COBT_For_GMR_HYD_SG_User.ofBlockTimeIsNotNull();
