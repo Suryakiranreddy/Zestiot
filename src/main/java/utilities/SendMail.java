@@ -22,6 +22,8 @@ import javax.mail.internet.MimeMultipart;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 
+import enh.db.cases.SQL_Queries;
+
 
 /**
  * @author EN
@@ -31,6 +33,7 @@ public class SendMail extends Utility {
 	private static String mailPropertiesFile = System.getProperty("user.dir")
 			+ "/src/main/resources/ConfigFiles/mail.properties";
 	private static Properties PROP = loadPropertyFile(mailPropertiesFile);
+	
 	// PROP.load(new FileInputStream(mailPropertiesFile));
 	public static final String USERNAME = PROP.getProperty("userName");
 	public static final String PASSWORD = PROP.getProperty("passWord");
@@ -64,7 +67,8 @@ public class SendMail extends Utility {
 	 */
 	@Test
 	public static void sendEmailToClient() throws IOException, MessagingException {
-		final String subject = PROP.getProperty("subject");
+		String subject1 = PROP.getProperty("subject");
+		String subject2 = SQL_Queries.todayDayDateTime();
 		Properties PROPS = System.getProperties();
 		PROPS.put("mail.smtp.host", HOST);
 		PROPS.put("mail.smtp.user", USERNAME);
@@ -89,7 +93,7 @@ public class SendMail extends Utility {
 
 		Message msg = new MimeMessage(session);
 		msg.setFrom(new InternetAddress(USERNAME, PROP.getProperty("userFullName")));
-		msg.setSubject(subject);
+		msg.setSubject(subject1+" - "+subject2);
 
 		if (!"".equals(EMAILTO)) {
 			if (EMAILTO.contains(",")) {
