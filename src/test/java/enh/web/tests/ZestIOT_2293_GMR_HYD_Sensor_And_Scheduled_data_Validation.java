@@ -1,31 +1,23 @@
 package enh.web.tests;
 
-import org.testng.annotations.AfterTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.COBT_For_DIALCelebi_User;
-import enh.db.cases.COBT_For_GMR_HYD_AISATS_User;
-import enh.db.cases.COBT_For_GMR_HYD_SG_User;
-import enh.web.pages.BflActivities;
-import enh.web.pages.DepartedFlights;
-import enh.web.pages.HomePage;
+import enh.db.cases.Scheduled_And_Sensor_ATA_Hyd;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
-import utilities.ConfigReader;
 import utilities.GlobalUtil;
 import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User extends KeywordUtil {
+public class ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-
-	@Test(testName = "ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User", groups = {
-			"Regression" }, description = "Verifying cobt  Activity")
+	@Test(testName = "ZestIOT_018_GMR_HYD_Sensor_And_Scheduled_data_Validation", groups = {
+			"Regression" }, description = "To validate Scheduled and Sensor data for GMR-Hyderabad")
 	public void test()
 			throws Throwable {
 		try {
@@ -37,12 +29,14 @@ public class ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User extends KeywordUtil 
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			COBT_For_GMR_HYD_SG_User.cOBT_For_GMR_HYD_SG_User2();
-			/*COBT_For_GMR_HYD_SG_User.totalFlights();
-			COBT_For_GMR_HYD_SG_User.cobtIsNotNull();
-			COBT_For_GMR_HYD_SG_User.ofBlockTimeIsNotNull();
-			COBT_For_GMR_HYD_SG_User.cobtGreaterThan5Min();
-*/			// .........Script Start...........................
+
+			//Scheduled_And_Sensor_ATA_Hyd.scheduledAndSensorATAForHyderabad();
+			//Scheduled_And_Sensor_ATD_Hyd.scheduledAndSensorATDForHyderabad();
+			
+			Scheduled_And_Sensor_ATA_Hyd.scheduledAndSensorATAForHyderabadReport();
+
+			
+			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {
 				String imagePath = takeScreenshot(getDriver(), getTestCaseID() + "_" + retryingNumber);
@@ -72,11 +66,5 @@ public class ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User extends KeywordUtil 
 			}
 		}
 	}// End Test
-	
 
-	@AfterTest
-	public void afterTest() {
-		
-	}
-	
 }

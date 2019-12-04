@@ -2,27 +2,23 @@ package enh.web.tests;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import enh.db.cases.COBT_For_DIALCelebi_User;
-import enh.db.cases.COBT_For_GMR_HYD_AISATS_User;
-import enh.web.pages.BflActivities;
-import enh.web.pages.DepartedFlights;
-import enh.web.pages.HomePage;
+
+import enh.db.cases.Scheduled_And_Sensor_ATA_Hyd;
+import enh.db.cases.Scheduled_And_Sensor_ATD_Hyd;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
-import utilities.ConfigReader;
 import utilities.GlobalUtil;
 import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User extends KeywordUtil {
+public class ZestIOT_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-
-	@Test(testName = "ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User", groups = {
-			"Regression" }, description = "Verifying cobt  Activity")
+	@Test(testName = "ZestIOT_019_SensorAnd_Scheduled_data_Validation", groups = {
+			"Regression" }, description = "To validate Scheduled and Sensor data for GMR-Hyderabad")
 	public void test()
 			throws Throwable {
 		try {
@@ -34,12 +30,12 @@ public class ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User extends KeywordU
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			//COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User();
-			COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User2();
-			/*COBT_For_GMR_HYD_AISATS_User.totalFlights();
-			COBT_For_GMR_HYD_AISATS_User.cobtIsNotNull();
-			COBT_For_GMR_HYD_AISATS_User.ofBlockTimeIsNotNull();
-			COBT_For_GMR_HYD_AISATS_User.cobtGreaterThan5Min();*/
+
+			
+			//Scheduled_And_Sensor_ATD_Hyd.scheduledAndSensorATDForHyderabad();
+			
+			Scheduled_And_Sensor_ATD_Hyd.scheduledAndSensorATDForHyderabad_Report();
+			
 			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {
