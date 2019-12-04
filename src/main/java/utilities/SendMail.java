@@ -22,7 +22,7 @@ import javax.mail.internet.MimeMultipart;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 
-import enh.db.cases.SQL_Queries;
+
 
 
 
@@ -69,7 +69,7 @@ public class SendMail extends Utility {
 	@Test
 	public static void sendEmailToClient() throws IOException, MessagingException {
 		String subject1 = PROP.getProperty("subject");
-		String subject2 = SQL_Queries.todayDayDateTime();
+		//String subject2 = SQL_Queries.todayDayDateTime();
 		Properties PROPS = System.getProperties();
 		PROPS.put("mail.smtp.host", HOST);
 		PROPS.put("mail.smtp.user", USERNAME);
@@ -94,7 +94,7 @@ public class SendMail extends Utility {
 
 		Message msg = new MimeMessage(session);
 		msg.setFrom(new InternetAddress(USERNAME, PROP.getProperty("userFullName")));
-		msg.setSubject(subject2 +" - "+subject1);
+		msg.setSubject(subject1);
 
 		if (!"".equals(EMAILTO)) {
 			if (EMAILTO.contains(",")) {
