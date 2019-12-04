@@ -68,7 +68,7 @@ public class SendMail extends Utility {
 	@Test
 	public static void sendEmailToClient() throws IOException, MessagingException {
 		String subject1 = PROP.getProperty("subject");
-		String subject2 = SQL_Queries.todayDayDateTime();
+		//String subject2 = SQL_Queries.todayDayDateTime();
 		Properties PROPS = System.getProperties();
 		PROPS.put("mail.smtp.host", HOST);
 		PROPS.put("mail.smtp.user", USERNAME);
