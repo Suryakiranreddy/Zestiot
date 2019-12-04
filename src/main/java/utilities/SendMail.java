@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Properties;
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
@@ -94,7 +96,10 @@ public class SendMail extends Utility {
 
 		Message msg = new MimeMessage(session);
 		msg.setFrom(new InternetAddress(USERNAME, PROP.getProperty("userFullName")));
-		msg.setSubject(subject1);
+		Date date = new Date();
+		 SimpleDateFormat formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");  
+		 String strDate = formatter.format(date);
+		msg.setSubject(strDate +" - "+subject1);
 
 		if (!"".equals(EMAILTO)) {
 			if (EMAILTO.contains(",")) {
@@ -119,7 +124,7 @@ public class SendMail extends Utility {
 		 */
 
 		BodyPart messageBodyPart = new MimeBodyPart();
-		messageBodyPart.setText("Hi, \n\n\nPlease find attached the Automated Test Execution Report.  "
+		messageBodyPart.setText("Hi, \nPlease find current sprint Automation Test Results attachment.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
