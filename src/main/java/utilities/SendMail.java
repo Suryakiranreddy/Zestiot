@@ -124,7 +124,7 @@ public class SendMail extends Utility {
 		 */
 
 		BodyPart messageBodyPart = new MimeBodyPart();
-		messageBodyPart.setText("Hi, \nPlease find current sprint Automation Test Results attachment.  "
+		messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
