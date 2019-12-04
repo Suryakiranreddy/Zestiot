@@ -93,7 +93,7 @@ public class SendMail extends Utility {
 
 		Message msg = new MimeMessage(session);
 		msg.setFrom(new InternetAddress(USERNAME, PROP.getProperty("userFullName")));
-		msg.setSubject(subject1+" - "+subject2);
+		msg.setSubject(subject1);
 
 		if (!"".equals(EMAILTO)) {
 			if (EMAILTO.contains(",")) {
