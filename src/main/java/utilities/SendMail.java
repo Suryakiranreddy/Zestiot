@@ -22,7 +22,6 @@ import javax.mail.internet.MimeMultipart;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 
-import enh.db.cases.SQL_Queries;
 
 /**
  * @author EN
@@ -90,7 +89,7 @@ public class SendMail extends Utility {
 
 		Message msg = new MimeMessage(session);
 		msg.setFrom(new InternetAddress(USERNAME, PROP.getProperty("userFullName")));
-		msg.setSubject(SQL_Queries.todayDayDateTime()+" - "+subject);
+		msg.setSubject(subject);
 
 		if (!"".equals(EMAILTO)) {
 			if (EMAILTO.contains(",")) {
