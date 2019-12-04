@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="smoke" duration-ms="17698" started-at="2019-12-02T06:04:24Z" finished-at="2019-12-02T06:04:42Z">
+  <suite name="smoke" duration-ms="51019" started-at="2019-12-04T05:41:33Z" finished-at="2019-12-04T05:42:24Z">
     <groups>
       <group name="Regression">
-        <method signature="ZestIOT_019_Verifying_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User@5876a9af]" name="test" class="enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User"/>
+        <method signature="ZestIOT_018_GMR_HYD_Sensor_And_Scheduled_data_Validation.test()[pri:0, instance:enh.web.tests.ZestIOT_018_GMR_HYD_Sensor_And_Scheduled_data_Validation@564fabc8]" name="test" class="enh.web.tests.ZestIOT_018_GMR_HYD_Sensor_And_Scheduled_data_Validation"/>
+        <method signature="ZestIOT_019_Verifying_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User@16d04d3d]" name="test" class="enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User"/>
+        <method signature="ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User.test()[pri:0, instance:enh.web.tests.ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User@49ec71f8]" name="test" class="enh.web.tests.ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User"/>
+        <method signature="ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User.test()[pri:0, instance:enh.web.tests.ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User@1d2adfbe]" name="test" class="enh.web.tests.ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="smoke-Tests" duration-ms="17698" started-at="2019-12-02T06:04:24Z" finished-at="2019-12-02T06:04:42Z">
+    <test name="smoke-Tests" duration-ms="51019" started-at="2019-12-04T05:41:33Z" finished-at="2019-12-04T05:42:24Z">
+      <class name="enh.web.tests.ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User@1d2adfbe]" name="test" duration-ms="4431" started-at="2019-12-04T11:12:19Z" description="Verifying cobt  Activity" finished-at="2019-12-04T11:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:enh.web.tests.ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User@1d2adfbe]" name="afterTest" is-config="true" duration-ms="546" started-at="2019-12-04T11:12:24Z" finished-at="2019-12-04T11:12:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- enh.web.tests.ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User -->
       <class name="enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User@5876a9af]" name="test" duration-ms="5898" started-at="2019-12-02T11:34:35Z" description="Verifying cobt  Activity" finished-at="2019-12-02T11:34:41Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User@16d04d3d]" name="test" duration-ms="4385" started-at="2019-12-04T11:12:09Z" description="Verifying cobt  Activity" finished-at="2019-12-04T11:12:13Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
       </class> <!-- enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User -->
+      <class name="enh.web.tests.ZestIOT_018_GMR_HYD_Sensor_And_Scheduled_data_Validation">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_018_GMR_HYD_Sensor_And_Scheduled_data_Validation@564fabc8]" name="test" duration-ms="22806" started-at="2019-12-04T11:11:45Z" description="To validate Scheduled and Sensor data for GMR-Hyderabad" finished-at="2019-12-04T11:12:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_018_GMR_HYD_Sensor_And_Scheduled_data_Validation -->
+      <class name="enh.web.tests.ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User@49ec71f8]" name="test" duration-ms="4761" started-at="2019-12-04T11:12:13Z" description="Verifying cobt  Activity" finished-at="2019-12-04T11:12:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User -->
     </test> <!-- smoke-Tests -->
   </suite> <!-- smoke -->
 </testng-results>
