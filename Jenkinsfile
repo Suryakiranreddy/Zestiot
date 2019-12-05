@@ -12,7 +12,7 @@ doGenerateSubmoduleConfigurations: false,
 extensions: [],
  submoduleCfg: [],
   userRemoteConfigs: [[credentialsId: 'baa4c5c3-ffe4-4edb-aa94-1e37dadb520f', 
-  url: 'https://rchiluka@bitbucket.org/rchiluka/zestiot-test-enhops.git']]])
+  url: 'https://github.com/RadhikaChiluka/ZestIOTAutomation.git']]])
 }
 }
 stage('Test') 
