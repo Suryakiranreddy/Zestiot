@@ -1,4 +1,5 @@
 pipeline{
+
 agent any
 stages 
 {
@@ -33,6 +34,7 @@ publishHTML([allowMissing: false,
    reportFiles: 'ExecutionReports/HtmlReport/TestReport.html',
     reportName: 'Extent HTML Report', reportTitles: ''])
  mail bcc: '', body: 'pipeline test', cc: 'stiyyagura@enhops.com, pdwadasi@enhops.com', from: 'AutomationTeam@Enhops', replyTo: '', subject: 'pipeline test', to: 'stiyyagura@enhops.com, pdwadasi@enhops.com'   
+
 }
 }
 }
