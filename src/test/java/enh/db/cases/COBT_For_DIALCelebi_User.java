@@ -249,7 +249,7 @@ public class COBT_For_DIALCelebi_User {
 					 email_COBT_For_DIALCelebi_User8.append("<table style=\"width:100%\" id=\"t01\"><h4><caption> OFFBLOCK & COBT DIFF > 5MINS</caption></h4>"
 						 		+ "<tr><th style=\"width:10%\">LogID</th> <th style=\"width:25%\">FlightNumber_Arrival</th>"
 							 		+ "<th style=\"width:25%\">COBT</th><th style=\"width:25%\">Off_Block_Time</th><th style=\"width:15%\">COBT Diff</th></tr>");
-					 if(str_cobtDiff.isEmpty()) {
+					
 					 ResultSet result8 =stmt.executeQuery(SQL_Queries.strQuery_8);
 						while (result8.next()){
 							String str_LogID = result8.getString("Logid");	
@@ -265,9 +265,6 @@ public class COBT_For_DIALCelebi_User {
 							}else {
 							}
 							
-						}}else {
-							email_COBT_For_DIALCelebi_User8.append("<tr><td colspan=\"5\"><b style=\"color:red;\" >No values found</b></td></tr>");	
-								
 						}
 			email_COBT_For_DIALCelebi_User8.append("</table>");
 			// email_COBT_For_DIALCelebi_User8.append("</body></html>");

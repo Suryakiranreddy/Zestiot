@@ -20252,3 +20252,165 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2019-12-05 12:36:49 INFO  - Comparison sheet written successfully
 2019-12-05 12:36:49 INFO  - Data to excel written successfully
 2019-12-05 12:36:49 INFO  - History File created successfully
+2019-12-05 14:39:51 INFO  - 
+============================================================================================================================
+2019-12-05 14:39:51 INFO  - smoke suite started at Thu Dec 05 14:39:51 IST 2019
+2019-12-05 14:39:51 INFO  - Suite Browser: Chrome
+2019-12-05 14:39:51 INFO  - +=============Database started=============+
+2019-12-05 14:39:51 INFO  - Database driver name: SQLiteJDBC
+2019-12-05 14:39:51 INFO  - Product name SQLite, Version 3.8.11
+2019-12-05 14:39:51 INFO  - +==========================================+
+
+2019-12-05 14:39:51 INFO  - Test is started with browser: Chrome
+2019-12-05 14:40:04 INFO  - No data found with given key-> ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User
+2019-12-05 14:40:04 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:40:04 INFO  - Test Started: ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User
+2019-12-05 14:40:04 INFO  - Test description: 
+2019-12-05 14:40:11 INFO  - Total Time taken in(seconds):6
+2019-12-05 14:40:11 INFO  - TestResults
+2019-12-05 14:40:12 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:40:12 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:40:12 INFO  - Closing Browsers
+2019-12-05 14:40:12 INFO  - Test is started with browser: Chrome
+2019-12-05 14:40:12 INFO  - No data found with given key-> ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User
+2019-12-05 14:40:12 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:40:12 INFO  - Test Started: ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User
+2019-12-05 14:40:12 INFO  - Test description: 
+2019-12-05 14:40:17 INFO  - Total Time taken in(seconds):4
+2019-12-05 14:40:17 INFO  - TestResults
+2019-12-05 14:40:17 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:40:17 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:40:17 INFO  - Closing Browsers
+2019-12-05 14:40:17 INFO  - Test is started with browser: Chrome
+2019-12-05 14:40:17 INFO  - No data found with given key-> ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User
+2019-12-05 14:40:17 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:40:17 INFO  - Test Started: ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User
+2019-12-05 14:40:17 INFO  - Test description: 
+2019-12-05 14:40:22 INFO  - Total Time taken in(seconds):4
+2019-12-05 14:40:22 INFO  - TestResults
+2019-12-05 14:40:22 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:40:22 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:40:22 INFO  - Closing Browsers
+2019-12-05 14:40:22 INFO  - Test is started with browser: Chrome
+2019-12-05 14:40:23 INFO  - No data found with given key-> ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation
+2019-12-05 14:40:23 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:40:23 INFO  - Test Started: ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation
+2019-12-05 14:40:23 INFO  - Test description: 
+2019-12-05 14:40:45 INFO  - Total Time taken in(seconds):22
+2019-12-05 14:40:45 INFO  - TestResults
+2019-12-05 14:40:45 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:40:45 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:40:45 INFO  - Closing Browsers
+2019-12-05 14:40:45 INFO  - Test is started with browser: Chrome
+2019-12-05 14:40:45 INFO  - No data found with given key-> ZestIOT_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation
+2019-12-05 14:40:45 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:40:45 INFO  - Test Started: ZestIOT_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation
+2019-12-05 14:40:45 INFO  - Test description: 
+2019-12-05 14:41:05 INFO  - Total Time taken in(seconds):19
+2019-12-05 14:41:05 INFO  - TestResults
+2019-12-05 14:41:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:41:06 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:41:06 INFO  - Closing Browsers
+2019-12-05 14:41:06 INFO  - No data found with given key-> ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User
+2019-12-05 14:41:06 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:41:06 INFO  - Test Started: ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User
+2019-12-05 14:41:06 INFO  - Test description: 
+2019-12-05 14:41:07 INFO  - smoke suite finished at Thu Dec 05 14:41:07 IST 2019
+2019-12-05 14:41:09 INFO  - Comparison sheet written successfully
+2019-12-05 14:41:09 INFO  - Data to excel written successfully
+2019-12-05 14:41:10 INFO  - Test process has ended
+2019-12-05 14:41:16 INFO  - +=============Database started=============+
+2019-12-05 14:41:16 INFO  - Database driver name: SQLiteJDBC
+2019-12-05 14:41:16 INFO  - Product name SQLite, Version 3.8.11
+2019-12-05 14:41:16 INFO  - +==========================================+
+
+2019-12-05 14:41:16 INFO  - Comparison sheet written successfully
+2019-12-05 14:41:16 INFO  - Data to excel written successfully
+2019-12-05 14:41:16 INFO  - History File created successfully
+2019-12-05 14:43:38 INFO  - 
+============================================================================================================================
+2019-12-05 14:43:38 INFO  - smoke suite started at Thu Dec 05 14:43:38 IST 2019
+2019-12-05 14:43:38 INFO  - Suite Browser: Chrome
+2019-12-05 14:43:38 INFO  - +=============Database started=============+
+2019-12-05 14:43:38 INFO  - Database driver name: SQLiteJDBC
+2019-12-05 14:43:38 INFO  - Product name SQLite, Version 3.8.11
+2019-12-05 14:43:38 INFO  - +==========================================+
+
+2019-12-05 14:43:38 INFO  - Test is started with browser: Chrome
+2019-12-05 14:43:49 INFO  - No data found with given key-> ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User
+2019-12-05 14:43:49 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:43:49 INFO  - Test Started: ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User
+2019-12-05 14:43:49 INFO  - Test description: 
+2019-12-05 14:43:54 INFO  - Total Time taken in(seconds):5
+2019-12-05 14:43:55 INFO  - TestResults
+2019-12-05 14:43:56 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:43:56 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:43:56 INFO  - Closing Browsers
+2019-12-05 14:43:56 INFO  - Test is started with browser: Chrome
+2019-12-05 14:43:56 INFO  - No data found with given key-> ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User
+2019-12-05 14:43:56 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:43:56 INFO  - Test Started: ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User
+2019-12-05 14:43:56 INFO  - Test description: 
+2019-12-05 14:44:01 INFO  - Total Time taken in(seconds):4
+2019-12-05 14:44:01 INFO  - TestResults
+2019-12-05 14:44:01 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:44:01 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:44:01 INFO  - Closing Browsers
+2019-12-05 14:44:01 INFO  - Test is started with browser: Chrome
+2019-12-05 14:44:01 INFO  - No data found with given key-> ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User
+2019-12-05 14:44:01 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:44:01 INFO  - Test Started: ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User
+2019-12-05 14:44:01 INFO  - Test description: 
+2019-12-05 14:44:06 INFO  - Total Time taken in(seconds):4
+2019-12-05 14:44:06 INFO  - TestResults
+2019-12-05 14:44:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:44:06 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:44:06 INFO  - Closing Browsers
+2019-12-05 14:44:06 INFO  - Test is started with browser: Chrome
+2019-12-05 14:44:07 INFO  - No data found with given key-> ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation
+2019-12-05 14:44:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:44:07 INFO  - Test Started: ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation
+2019-12-05 14:44:07 INFO  - Test description: 
+2019-12-05 14:44:29 INFO  - Total Time taken in(seconds):22
+2019-12-05 14:44:29 INFO  - TestResults
+2019-12-05 14:44:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:44:29 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:44:29 INFO  - Closing Browsers
+2019-12-05 14:44:29 INFO  - Test is started with browser: Chrome
+2019-12-05 14:44:30 INFO  - No data found with given key-> ZestIOT_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation
+2019-12-05 14:44:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:44:30 INFO  - Test Started: ZestIOT_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation
+2019-12-05 14:44:30 INFO  - Test description: 
+2019-12-05 14:44:49 INFO  - Total Time taken in(seconds):19
+2019-12-05 14:44:49 INFO  - TestResults
+2019-12-05 14:44:50 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-05 14:44:50 INFO  - Test has ended - closing browser: Chrome
+2019-12-05 14:44:50 INFO  - Closing Browsers
+2019-12-05 14:44:50 INFO  - No data found with given key-> ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User
+2019-12-05 14:44:50 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-05 14:44:50 INFO  - Test Started: ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User
+2019-12-05 14:44:50 INFO  - Test description: 
+2019-12-05 14:44:51 INFO  - smoke suite finished at Thu Dec 05 14:44:51 IST 2019
+2019-12-05 14:44:53 INFO  - Comparison sheet written successfully
+2019-12-05 14:44:53 INFO  - Data to excel written successfully
+2019-12-05 14:44:55 INFO  - Test process has ended
+2019-12-05 14:45:00 INFO  - +=============Database started=============+
+2019-12-05 14:45:00 INFO  - Database driver name: SQLiteJDBC
+2019-12-05 14:45:00 INFO  - Product name SQLite, Version 3.8.11
+2019-12-05 14:45:00 INFO  - +==========================================+
+
+2019-12-05 14:45:01 INFO  - Comparison sheet written successfully
+2019-12-05 14:45:01 INFO  - Data to excel written successfully
+2019-12-05 14:45:01 INFO  - History File created successfully

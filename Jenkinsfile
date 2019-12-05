@@ -6,7 +6,13 @@ stage('Clone')
 {
 steps{
 echo "Clone the Code from bit bucket.........."
-checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'baa4c5c3-ffe4-4edb-aa94-1e37dadb520f', url: 'https://rchiluka@bitbucket.org/rchiluka/zestiot-test-enhops.git']]])
+checkout([$class: 'GitSCM', 
+branches: [[name: '*/master']], 
+doGenerateSubmoduleConfigurations: false, 
+extensions: [],
+ submoduleCfg: [],
+  userRemoteConfigs: [[credentialsId: 'baa4c5c3-ffe4-4edb-aa94-1e37dadb520f', 
+  url: 'https://rchiluka@bitbucket.org/rchiluka/zestiot-test-enhops.git']]])
 }
 }
 stage('Test') 
@@ -21,7 +27,11 @@ stage('Report')
 {
 steps{
 echo " woooooooooooooooow Deploying the Project.........."
-publishHTML([allowMissing: false, alwaysLinkToLastBuild: false, keepAll: false, reportDir: '', reportFiles: 'ExecutionReports/HtmlReport/TestReport.html', reportName: 'Extent HTML Report', reportTitles: ''])
+publishHTML([allowMissing: false,
+ alwaysLinkToLastBuild: false,
+  keepAll: false, reportDir: '',
+   reportFiles: 'ExecutionReports/HtmlReport/TestReport.html',
+    reportName: 'Extent HTML Report', reportTitles: ''])
  mail bcc: '', body: 'pipeline test', cc: 'stiyyagura@enhops.com, pdwadasi@enhops.com', from: 'AutomationTeam@Enhops', replyTo: '', subject: 'pipeline test', to: 'stiyyagura@enhops.com, pdwadasi@enhops.com'   
 }
 }
