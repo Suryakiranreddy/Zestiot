@@ -1,6 +1,5 @@
 listeners\CustomListeners_RestTest.class
 enh\web\pages\DB.class
-enh\web\tests\ZestIOT_020_Verifying_COBT_For_GMR_HYD_AISATS_User.class
 enh\db\cases\COBT_For_GMR_HYD_AISATS_User.class
 enh\db\cases\MailTest$HTMLDataSource.class
 enh\web\pages\DepartedFlights.class
@@ -36,10 +35,8 @@ enh\web\tests\ZestIOT_008_Verifying_BFL_Activity.class
 enh\web\tests\ZestIOT_017_Verifying_ONBL_OFBL_Activity.class
 enh\web\tests\ZestIOT_013_Fueling_Catering_Celebi_Validation.class
 enh\web\pages\DynamicTestNG.class
-enh\web\tests\ZestIOT_021_Verifying_COBT_For_GMR_HYD_SG_User.class
 enh\db\cases\DBWrapper.class
 enh\db\cases\OnBlock_OffBlock.class
-enh\web\tests\ZestIOT_019_Verifying_COBT_For_DIALCelebi_User.class
 enh\db\cases\COBT_For_DIALCelebi_User.class
 enh\web\tests\ZestIOT_015_Celebi_User_Pushback_group_Activity_Validation.class
 enh\db\cases\SQL_Queries.class

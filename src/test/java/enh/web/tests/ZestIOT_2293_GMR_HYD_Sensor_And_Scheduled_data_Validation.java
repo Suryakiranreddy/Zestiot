@@ -33,7 +33,7 @@ public class ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation extends K
 			//Scheduled_And_Sensor_ATA_Hyd.scheduledAndSensorATAForHyderabad();
 			//Scheduled_And_Sensor_ATD_Hyd.scheduledAndSensorATDForHyderabad();
 			
-			Scheduled_And_Sensor_ATA_Hyd.scheduledAndSensorATAForHyderabadReport();
+			Scheduled_And_Sensor_ATA_Hyd.scheduledAndSensorATAForHyderabad_Report();
 
 			
 			// .........Script Start...........................

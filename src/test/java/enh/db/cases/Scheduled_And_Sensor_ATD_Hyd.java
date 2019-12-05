@@ -14,11 +14,8 @@ public class Scheduled_And_Sensor_ATD_Hyd {
 	public static int totalScheduledDeparture=0;
 	public static int notNullSensorATD =0;
 	
-	public static int totalSensorATD= 0;
-	public static int totalDepartedWithSensorATD = 0;
 	public static int offBlockFromSensor=0;
-	public static int offBlockFromCV =0;
-		
+			
 	public static ArrayList<String> sensorATD_NullList = new ArrayList<String>();
 	public static ArrayList<String> offBlockFromCV_List = new ArrayList<String>();
 	
@@ -258,9 +255,12 @@ public class Scheduled_And_Sensor_ATD_Hyd {
 		
 		email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append("<br><br>");
 		email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style>");
-		email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append("<table style=\"width:100%\" id=\"t01\"><caption> Total Flights - OFFBLOCK (Not Detected by Flight Sensor but detected from other data source)</caption><tr>"
-				+ "<th style=\"width:10%\"><b>Flight_PK</b></th>"
+		email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append("<table style=\"width:100%\" id=\"t01\"><caption> OFFBLOCK time detected by Flight Sensor less than AIRBORNE time detected by Flight Sensor</caption><tr>"
+				+ "<th style=\"width:10%\"><b>LogID</b></th>"
 				+ "<th style=\"width:15%\"><b>Departure Flight No.</b></th> "
+				+ "<th style=\"width:15%\"><b>Sensor_ATD</b></th> "
+				+ "<th style=\"width:15%\"><b>Off Block time</b></th> "
+				+ "<th style=\"width:15%\"><b>Difference between Off block time and Sensor ATD</b></th> "
 				+ " </tr>");
 		
 		if (status0List.size()>0) {
@@ -273,11 +273,13 @@ public class Scheduled_And_Sensor_ATD_Hyd {
 			String str_flight_OffBlock= result61.getString("off_block_time");
 			String str_status= result61.getString("status");
 			String str_difference_between_OffBlockAndSensorATD= result61.getString("difference");
+			if(str_status.contains("0")) {
 				email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td>"
 						+ " <td><b style=\"color:red;\">"+str_flight_NumberDeparture+"</b></td>"
 						+ " <td> <b style=\"color:red;\">"+str_flight_SensorATD+"</b></td>"
 						+ " <td><b style=\"color:red;\">"+str_flight_OffBlock+"</b></td> "
 						+ "<td><b style=\"color:red;\">"+str_difference_between_OffBlockAndSensorATD+"</b></td></tr>");
+			}
 			}
 		}
 			else {				

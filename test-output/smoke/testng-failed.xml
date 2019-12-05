@@ -4,11 +4,11 @@
   <parameter name="Browser" value="Chrome"/>
   <test name="smoke-Tests(failed)">
     <classes>
-      <class name="enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User">
+      <class name="enh.web.tests.ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- enh.web.tests.ZestIOT_019_Verifying_COBT_For_DIALCelebi_User -->
+      </class> <!-- enh.web.tests.ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation -->
     </classes>
   </test> <!-- smoke-Tests(failed) -->
 </suite> <!-- Failed suite [smoke] -->
