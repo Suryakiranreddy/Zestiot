@@ -12,34 +12,43 @@ import utilities.HtmlReportUtil;
 public class Scheduled_And_Sensor_ATA_Hyd {
 	
 	public static int totalScheduledArrival=0;
-	public static int notNullSensorATA =0;	
-	public static int onBlockFromSensor=0;			
+	public static int notNullSensorATA =0;
+	
+	public static int onBlockFromSensor=0;	
+		
 	public static ArrayList<String> sensorATA_NullList = new ArrayList<String>();
-	public static ArrayList<String> onBlockFromCV_List = new ArrayList<String>();	
+	public static ArrayList<String> onBlockFromCV_List = new ArrayList<String>();
+	
 	public static ArrayList<String> status0List = new ArrayList<String>();
-	public static ArrayList<String> status1List = new ArrayList<String>();	
+	public static ArrayList<String> status1List = new ArrayList<String>();
+	
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATA_For_Hyd1 = new StringBuilder();
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATA_For_Hyd2 = new StringBuilder();
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATA_For_Hyd3 = new StringBuilder();
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATA_For_Hyd4 = new StringBuilder();
 	
-	public static void scheduledAndSensorATAForHyderabad() throws Exception{
+	public static void scheduledAndSensorATAForHyderabad(int operationunit) throws Exception{
 		
-		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_017);
+		ResultSet result = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where \r\n" 
+				+ "(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+"");
 		while (result.next())
 		{				
 			totalScheduledArrival = result.getInt("count(*)");
 			System.out.println(totalScheduledArrival);
 			HtmlReportUtil.stepInfo("<b style=\"color:purple;\"> Airport : GMR_HYD :</b> <b style=\"color:green;\">Total No. of flights Scheduled Arrival (based on STA or Mediator-STA) = "+ totalScheduledArrival +"</b>");
 		}
-		ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_018);
+			
+		ResultSet result2 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n" + 
+		"flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") \r\n" + 
+		"and sensor_ata is not null");
 		while (result2.next())
 		{				
 			notNullSensorATA = result2.getInt("count(*)");
 			System.out.println(notNullSensorATA);
 			HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights detected by Sensor(Merged table) = "+ notNullSensorATA +"</b>");
 		}
-		ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_019);
+		ResultSet result3 = DBWrapper.Connect("SELECT logid, flightnumber, sta, eta, ata FROM `DailyFlightScheduleArrival_GMR`where \r\n" +
+		"(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+" and sensor_ata is null");
 		while (result3.next())
 		{
 			String str_LogID = result3.getString("logid");
@@ -59,14 +68,18 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 		}
 		HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights NOT detected by Sensor(Merged table) = "+ sensorATA_NullList.size() +"</b>");
 		
-		ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_033);
+		ResultSet result4 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n"
+				+ "where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') and operationunit = "+operationunit+" and on_block_time is not null ) \r\n "
+				+ "and operationname = 'onb' and type = 'aircraft' order by flightno");
 		while (result4.next())
 		{				
 			onBlockFromSensor = result4.getInt("count(*)");
 			System.out.println(onBlockFromSensor);
 			HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights for which OnBlock is detected by Sensor (EquipActivity table) = "+ onBlockFromSensor +"</b>");
 		}
-		ResultSet result5 = DBWrapper.Connect(SQL_Queries.strQuery_034);
+		ResultSet result5 = DBWrapper.Connect("SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n"
+		+ "where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') and operationunit = "+operationunit+" and on_block_time is not null ) \r\n "
+		+ "and operationname = 'onb' and type = 'cv' order by flightno");
 		while (result5.next())
 		{				
 			String str_Flight_PK = result5.getString("flight_pk");
@@ -82,7 +95,9 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 		}
 		HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights detected by CV (EquipActivity table) = "+ onBlockFromCV_List.size() +"</b>");
 		
-		ResultSet result6 = DBWrapper.Connect(SQL_Queries.strQuery_035);
+		ResultSet result6 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ATA, On_block_time, (case when (sensor_ATA < On_Block_Time) then 1 else 0 end) as Status, \r\n"
+				+ "CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"')\r\n "
+				+ "and operationunit = "+operationunit+" and (sensor_ata is not null and On_block_time is not null) order by flightnumber_arrival");
 		while (result6.next())
 		{				
 			String str_LogID = result6.getString("logid");
@@ -109,23 +124,27 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 		}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-	public static void scheduledAndSensorATAForHyderabad_Report() throws Exception {
+	public static void scheduledAndSensorATAForHyderabad_Report(int operationunit) throws Exception {
 		
-		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_017);
+		ResultSet result = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where \r\n" 
+		+ "(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+"");
 		while (result.next())
 		{				
 			totalScheduledArrival = result.getInt("count(*)");
 			System.out.println(totalScheduledArrival);
 			//HtmlReportUtil.stepInfo("<b style=\"color:purple;\"> Airport : GMR_HYD :</b> <b style=\"color:green;\">Total No. of flights Scheduled Departure (based on STD or Mediator-STD) = "+ totalScheduledArrival +"</b>");
 		}
-		ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_018);
+		ResultSet result2 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n" +
+		"flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit="+operationunit+") \r\n" + 
+		"and sensor_ata is not null");
 		while (result2.next())
 		{				
 			notNullSensorATA = result2.getInt("count(*)");
 			System.out.println(notNullSensorATA);
 			//HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights detected by Sensor(Merged table) = "+ notNullSensorATA +"</b>");
 		}
-		ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_019);
+		ResultSet result3 = DBWrapper.Connect("SELECT logid, flightnumber, sta, eta, ata FROM `DailyFlightScheduleArrival_GMR`where \r\n" +
+				"(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+" and sensor_ata is null");
 		while (result3.next())
 		{
 			String str_LogID = result3.getString("logid");
@@ -145,14 +164,19 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 		}
 		//HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights NOT detected by Sensor(Merged table) = "+ sensorATA_NullList.size() +"</b>");
 		
-		ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_033);
+		ResultSet result4 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n" + 
+		"where (date(sta)= '\"+SQL_Queries.yesterDate()+\"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') and operationunit = "+operationunit+" and on_block_time is not null )\r\n" + 
+		"and operationname = 'onb' and type = 'aircraft' order by flightno");
 		while (result4.next())
 		{				
 			onBlockFromSensor = result4.getInt("count(*)");
 			System.out.println(onBlockFromSensor);
 			//HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights for which OffBlock is detected by Sensor (EquipActivity table) = "+ onBlockFromSensor +"</b>");
 		}
-		ResultSet result5 = DBWrapper.Connect(SQL_Queries.strQuery_034);
+		ResultSet result5 = DBWrapper.Connect("SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n"
+		+ "where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') and operationunit = "+operationunit+" and on_block_time is not null ) \r\n "
+		+ "and operationname = 'onb' and type = 'cv' order by flightno");
+		
 		while (result5.next())
 		{				
 			String str_Flight_PK = result5.getString("flight_pk");
@@ -168,7 +192,9 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 		}
 		//HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights detected by CV (EquipActivity table) = "+ onBlockFromCV_List.size() +"</b>");
 		
-		ResultSet result6 = DBWrapper.Connect(SQL_Queries.strQuery_035);
+		ResultSet result6 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ATA, On_block_time, (case when (sensor_ATA < On_Block_Time) then 1 else 0 end) as Status, \r\n"
+		+ "CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') "
+		+ "and operationunit = "+operationunit+" and (sensor_ata is not null and On_block_time is not null) order by flightnumber_arrival");
 		while (result6.next())
 		{				
 			String str_LogID = result6.getString("logid");
@@ -209,7 +235,8 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 		 		+ "<th style=\"width:15%\"><b>ETA</b></th>"
 		 		+ "<th style=\"width:20%\"><b>ATA</b></th>"
 		 		+ " </tr>");
-		ResultSet result31 = DBWrapper.Connect(SQL_Queries.strQuery_019);
+		ResultSet result31 = DBWrapper.Connect("SELECT logid, flightnumber, sta, eta, ata FROM `DailyFlightScheduleArrival_GMR`where \r\n" +
+		"(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit="+operationunit+" and sensor_ata is null");
 		while (result31.next())
 		{
 			String str_LogID = result31.getString("logid");
@@ -235,7 +262,9 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 				+ "<th style=\"width:10%\"><b>Flight_PK</b></th>"
 				+ "<th style=\"width:15%\"><b>Departure Flight No.</b></th> "
 				+ " </tr>");
-		ResultSet result51 = DBWrapper.Connect(SQL_Queries.strQuery_034);
+		ResultSet result51 = DBWrapper.Connect("SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n" + 
+		"where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') and operationunit = "+operationunit+" and on_block_time is not null ) \r\n" + 
+		"and operationname = 'onb' and type = 'cv' order by flightno");
 		while (result51.next())
 		{				
 			String str_Flight_PK = result51.getString("flight_pk");
@@ -263,7 +292,9 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 		System.out.println(status0List.size()+"hfkugfewiuhfdiuewgdiuewhbdwegduewhdbbd");
 		
 		if (status0List.size()>0) {
-		ResultSet result61 = DBWrapper.Connect(SQL_Queries.strQuery_035);
+		ResultSet result61 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ATA, On_block_time, (case when (sensor_ATA < On_Block_Time) then 1 else 0 end) as Status, \r\n"
+				+ "CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') "
+						+ "and operationunit = "+operationunit+" and (sensor_ata is not null and On_block_time is not null) order by flightnumber_arrival");
 		while (result61.next())
 		{	
 			String str_LogID = result61.getString("logid");
