@@ -124,7 +124,7 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 		}
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-	public static void scheduledAndSensorATAForHyderabad_Report(int operationunit) throws Exception {
+	public static void scheduledAndSensorATAForHyderabad_Report(String operationunit) throws Exception {
 		
 		ResultSet result = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where \r\n" 
 		+ "(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+"");
