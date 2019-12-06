@@ -33,7 +33,7 @@ publishHTML([allowMissing: false,
   keepAll: false, reportDir: '',
    reportFiles: 'ExecutionReports/HtmlReport/TestReport.html',
     reportName: 'Extent HTML Report', reportTitles: ''])
- mail bcc: '', body: 'This is a confirmation mail that all the automation scripts are successfully executed through Jenkins Pipeline', cc: 'stiyyagura@enhops.com, pdwadasi@enhops.com', from: 'AutomationTeam@Enhops', replyTo: '', subject: 'Notification from jenkins Pipeline', to: 'stiyyagura@enhops.com, pdwadasi@enhops.com'   
+ mail bcc: '', body: 'This is a confirmation mail that all the automation scripts are successfully executed through Jenkins Pipeline', cc: 'nishanth@zestiot.io, pdwadasi@enhops.com', from: 'AutomationTeam@Enhops', replyTo: '', subject: 'Notification from jenkins Pipeline', to: 'stiyyagura@enhops.com'   
 
 }
 }
