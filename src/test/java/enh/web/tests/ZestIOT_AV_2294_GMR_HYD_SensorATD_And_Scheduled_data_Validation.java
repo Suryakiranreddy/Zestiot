@@ -33,11 +33,8 @@ public class ZestIOT_AV_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation ext
 
 			
 		
-			try {
+			
 			Scheduled_And_Sensor_ATD_Hyd.scheduled_And_Sensor_ATD_For_Hyderabad_Report(4);
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
 			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {
