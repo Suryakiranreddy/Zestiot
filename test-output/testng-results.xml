@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="smoke" duration-ms="32712" started-at="2019-12-06T06:27:24Z" finished-at="2019-12-06T06:27:57Z">
+  <suite name="smoke" duration-ms="33908" started-at="2019-12-06T07:11:46Z" finished-at="2019-12-06T07:12:19Z">
     <groups>
       <group name="Regression">
         <method signature="ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation@5b239d7d]" name="test" class="enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="smoke-Tests" duration-ms="32712" started-at="2019-12-06T06:27:24Z" finished-at="2019-12-06T06:27:57Z">
+    <test name="smoke-Tests" duration-ms="33908" started-at="2019-12-06T07:11:46Z" finished-at="2019-12-06T07:12:19Z">
       <class name="enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation@5b239d7d]" name="test" duration-ms="20227" started-at="2019-12-06T11:57:35Z" description="To validate Scheduled and Sensor ATA for GMR-Hyderabad" finished-at="2019-12-06T11:57:55Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation@5b239d7d]" name="test" duration-ms="20887" started-at="2019-12-06T12:41:57Z" description="To validate Scheduled and Sensor ATA for GMR-Hyderabad" finished-at="2019-12-06T12:42:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->

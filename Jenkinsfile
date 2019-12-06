@@ -6,7 +6,7 @@ stages
 stage('Clone') 
 {
 steps{
-echo "Clone the Code from bit bucket.........."
+echo "Clone the Code from git hub.........."
 checkout([$class: 'GitSCM', 
 branches: [[name: '*/master']], 
 doGenerateSubmoduleConfigurations: false, 
