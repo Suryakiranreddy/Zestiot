@@ -28,7 +28,7 @@ public class Scheduled_And_Sensor_ATD_Hyd {
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATD_For_Hyd3 = new StringBuilder();
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATD_For_Hyd4 = new StringBuilder();
 	
-	public static void scheduledAndSensorATDForHyderabad(int operationunit) throws Exception{
+	/*public static void scheduledAndSensorATDForHyderabad(int operationunit) throws Exception{
 		
 		ResultSet result = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleDeparture_GMR` where \r\n" +
 				"(date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+"");
@@ -133,10 +133,10 @@ public class Scheduled_And_Sensor_ATD_Hyd {
 		HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights for which off-block is less than Sensor-ATD = "+ status1List.size() +"</b>");
 		HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights for which off-block is greater than Sensor-ATD = "+ status0List.size() +"</b>");
 		DBWrapper.dbConnectionClose();
-		}
+		}*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-	public static void scheduledAndSensorATDForHyderabad_Report(String operationunit) throws Exception {
+	public static void scheduled_And_Sensor_ATD_For_Hyderabad_Report(int operationunit) throws Exception {
 		ResultSet result = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleDeparture_GMR` where \r\n" +
 		"(date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+"");
 		while (result.next())
