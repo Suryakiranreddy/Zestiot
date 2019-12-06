@@ -20981,3 +20981,99 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2019-12-06 11:24:23 INFO  - Comparison sheet written successfully
 2019-12-06 11:24:23 INFO  - Data to excel written successfully
 2019-12-06 11:24:24 INFO  - History File created successfully
+2019-12-06 11:41:19 INFO  - 
+============================================================================================================================
+2019-12-06 11:41:19 INFO  - smoke suite started at Fri Dec 06 11:41:19 IST 2019
+2019-12-06 11:41:19 INFO  - Suite Browser: Chrome
+2019-12-06 11:41:19 INFO  - +=============Database started=============+
+2019-12-06 11:41:19 INFO  - Database driver name: SQLiteJDBC
+2019-12-06 11:41:19 INFO  - Product name SQLite, Version 3.8.11
+2019-12-06 11:41:19 INFO  - +==========================================+
+
+2019-12-06 11:41:19 INFO  - Test is started with browser: Chrome
+2019-12-06 11:41:31 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation
+2019-12-06 11:41:31 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-06 11:41:31 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation
+2019-12-06 11:41:31 INFO  - Test description: 
+2019-12-06 11:41:51 INFO  - Total Time taken in(seconds):20
+2019-12-06 11:41:52 INFO  - TestResults
+2019-12-06 11:41:53 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-06 11:41:53 INFO  - Test has ended - closing browser: Chrome
+2019-12-06 11:41:53 INFO  - Closing Browsers
+2019-12-06 11:41:53 INFO  - smoke suite finished at Fri Dec 06 11:41:53 IST 2019
+2019-12-06 11:41:54 INFO  - Comparison sheet written successfully
+2019-12-06 11:41:54 INFO  - Data to excel written successfully
+2019-12-06 11:41:54 INFO  - Test process has ended
+2019-12-06 11:41:56 INFO  - +=============Database started=============+
+2019-12-06 11:41:56 INFO  - Database driver name: SQLiteJDBC
+2019-12-06 11:41:56 INFO  - Product name SQLite, Version 3.8.11
+2019-12-06 11:41:56 INFO  - +==========================================+
+
+2019-12-06 11:41:56 INFO  - Comparison sheet written successfully
+2019-12-06 11:41:56 INFO  - Data to excel written successfully
+2019-12-06 11:41:56 INFO  - History File created successfully
+2019-12-06 11:42:49 INFO  - 
+============================================================================================================================
+2019-12-06 11:42:49 INFO  - smoke suite started at Fri Dec 06 11:42:49 IST 2019
+2019-12-06 11:42:49 INFO  - Suite Browser: Chrome
+2019-12-06 11:42:49 INFO  - +=============Database started=============+
+2019-12-06 11:42:49 INFO  - Database driver name: SQLiteJDBC
+2019-12-06 11:42:49 INFO  - Product name SQLite, Version 3.8.11
+2019-12-06 11:42:49 INFO  - +==========================================+
+
+2019-12-06 11:42:49 INFO  - Test is started with browser: Chrome
+2019-12-06 11:43:01 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation
+2019-12-06 11:43:01 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-06 11:43:01 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation
+2019-12-06 11:43:01 INFO  - Test description: 
+2019-12-06 11:43:22 INFO  - Total Time taken in(seconds):21
+2019-12-06 11:43:23 INFO  - TestResults
+2019-12-06 11:43:24 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-06 11:43:24 INFO  - Test has ended - closing browser: Chrome
+2019-12-06 11:43:24 INFO  - Closing Browsers
+2019-12-06 11:43:25 INFO  - smoke suite finished at Fri Dec 06 11:43:25 IST 2019
+2019-12-06 11:43:26 INFO  - Comparison sheet written successfully
+2019-12-06 11:43:26 INFO  - Data to excel written successfully
+2019-12-06 11:43:26 INFO  - Test process has ended
+2019-12-06 11:43:28 INFO  - +=============Database started=============+
+2019-12-06 11:43:28 INFO  - Database driver name: SQLiteJDBC
+2019-12-06 11:43:28 INFO  - Product name SQLite, Version 3.8.11
+2019-12-06 11:43:28 INFO  - +==========================================+
+
+2019-12-06 11:43:28 INFO  - Comparison sheet written successfully
+2019-12-06 11:43:28 INFO  - Data to excel written successfully
+2019-12-06 11:43:28 INFO  - History File created successfully
+2019-12-06 11:57:24 INFO  - 
+============================================================================================================================
+2019-12-06 11:57:24 INFO  - smoke suite started at Fri Dec 06 11:57:24 IST 2019
+2019-12-06 11:57:24 INFO  - Suite Browser: Chrome
+2019-12-06 11:57:24 INFO  - +=============Database started=============+
+2019-12-06 11:57:24 INFO  - Database driver name: SQLiteJDBC
+2019-12-06 11:57:24 INFO  - Product name SQLite, Version 3.8.11
+2019-12-06 11:57:24 INFO  - +==========================================+
+
+2019-12-06 11:57:24 INFO  - Test is started with browser: Chrome
+2019-12-06 11:57:35 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation
+2019-12-06 11:57:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-06 11:57:35 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation
+2019-12-06 11:57:35 INFO  - Test description: 
+2019-12-06 11:57:55 INFO  - Total Time taken in(seconds):20
+2019-12-06 11:57:56 INFO  - TestResults
+2019-12-06 11:57:57 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-06 11:57:57 INFO  - Test has ended - closing browser: Chrome
+2019-12-06 11:57:57 INFO  - Closing Browsers
+2019-12-06 11:57:57 INFO  - smoke suite finished at Fri Dec 06 11:57:57 IST 2019
+2019-12-06 11:57:57 INFO  - Comparison sheet written successfully
+2019-12-06 11:57:57 INFO  - Data to excel written successfully
+2019-12-06 11:57:58 INFO  - Test process has ended
+2019-12-06 11:57:59 INFO  - +=============Database started=============+
+2019-12-06 11:57:59 INFO  - Database driver name: SQLiteJDBC
+2019-12-06 11:57:59 INFO  - Product name SQLite, Version 3.8.11
+2019-12-06 11:57:59 INFO  - +==========================================+
+
+2019-12-06 11:57:59 INFO  - Comparison sheet written successfully
+2019-12-06 11:57:59 INFO  - Data to excel written successfully
+2019-12-06 11:57:59 INFO  - History File created successfully
