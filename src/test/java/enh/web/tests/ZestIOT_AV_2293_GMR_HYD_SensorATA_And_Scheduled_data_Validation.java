@@ -32,7 +32,7 @@ public class ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation ext
 			// .........Script Start...........................
 
 			//Scheduled_And_Sensor_ATA_Hyd.scheduledAndSensorATAForHyderabad(4);
-			Scheduled_And_Sensor_ATA_Hyd.scheduledAndSensorATAForHyderabad_Report();
+			Scheduled_And_Sensor_ATA_Hyd.scheduledAndSensorATAForHyderabad_Report(4);
 			
 			
 			// .........Script Start...........................
