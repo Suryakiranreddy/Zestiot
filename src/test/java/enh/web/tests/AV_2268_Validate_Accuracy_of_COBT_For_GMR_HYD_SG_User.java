@@ -1,9 +1,12 @@
 package enh.web.tests;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import enh.db.cases.COBT_For_DIALCelebi_User;
+import enh.db.cases.COBT_For_GMR_HYD_AISATS_User;
+import enh.db.cases.COBT_For_GMR_HYD_SG_User;
 import enh.web.pages.BflActivities;
 import enh.web.pages.DepartedFlights;
 import enh.web.pages.HomePage;
@@ -15,14 +18,14 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User extends KeywordUtil {
+public class AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
 
-	@Test(testName = "ZestIOT_019_Verifying_COBT_Activities", groups = {
-			"Regression" }, description = "Verifying cobt  Activity")
+	@Test(testName = "AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User", groups = {
+			"Regression" }, description = "AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User")
 	public void test()
 			throws Throwable {
 		try {
@@ -34,13 +37,12 @@ public class ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User extends KeywordUtil
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			//HtmlReportUtil.parentTest= HtmlReportUtil.extentNoHistory.startTest("Verifying cobt  Activity");
-			COBT_For_DIALCelebi_User.cOBT_For_DIALCelebi_User2();
-			/*COBT_For_DIALCelebi_User.totalFlights();
-			COBT_For_DIALCelebi_User.cobtIsNotNull();
-			COBT_For_DIALCelebi_User.ofBlockTimeIsNotNull();
-			COBT_For_DIALCelebi_User.cobtGreaterThan5Min();*/
-			// .........Script Start...........................
+			COBT_For_GMR_HYD_SG_User.cOBT_For_GMR_HYD_SG_User2();
+			/*COBT_For_GMR_HYD_SG_User.totalFlights();
+			COBT_For_GMR_HYD_SG_User.cobtIsNotNull();
+			COBT_For_GMR_HYD_SG_User.ofBlockTimeIsNotNull();
+			COBT_For_GMR_HYD_SG_User.cobtGreaterThan5Min();
+*/			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {
 				String imagePath = takeScreenshot(getDriver(), getTestCaseID() + "_" + retryingNumber);
@@ -70,5 +72,11 @@ public class ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User extends KeywordUtil
 			}
 		}
 	}// End Test
+	
 
+	@AfterTest
+	public void afterTest() {
+		
+	}
+	
 }
