@@ -5,7 +5,6 @@ import org.testng.annotations.Test;
 
 import enh.db.cases.Scheduled_And_Sensor_ATA_Hyd;
 import enh.db.cases.Scheduled_And_Sensor_ATD_Hyd;
-import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_Validation;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
@@ -13,13 +12,13 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source extends KeywordUtil {
+public class ZestIOT_AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-	@Test(testName = "AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source", groups = {
-			"Regression" }, description = "AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source")
+	@Test(testName = "AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts", groups = {
+			"Regression" }, description = "AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts")
 	public void test()
 			throws Throwable {
 		try {
@@ -32,10 +31,10 @@ public class AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Ar
 			// ============================================================
 			// .........Script Start...........................
 
-			SensorATA_OnBlock_OffBlock_SensorATD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_Report(4);
 			
-
+		
 			
+			Scheduled_And_Sensor_ATD_Hyd.scheduled_And_Sensor_ATD_For_Hyderabad_Report(4);
 			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {

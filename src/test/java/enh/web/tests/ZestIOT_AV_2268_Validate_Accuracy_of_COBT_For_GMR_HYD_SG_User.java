@@ -18,7 +18,7 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User extends KeywordUtil {
+public class ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;

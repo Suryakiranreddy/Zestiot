@@ -3,26 +3,23 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.COBT_For_DIALCelebi_User;
-import enh.web.pages.BflActivities;
-import enh.web.pages.DepartedFlights;
-import enh.web.pages.HomePage;
+import enh.db.cases.Scheduled_And_Sensor_ATA_Hyd;
+import enh.db.cases.Scheduled_And_Sensor_ATD_Hyd;
+import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_Validation;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
-import utilities.ConfigReader;
 import utilities.GlobalUtil;
 import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User extends KeywordUtil {
+public class ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-
-	@Test(testName = "AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User", groups = {
-			"Regression" }, description = "AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User")
+	@Test(testName = "AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source", groups = {
+			"Regression" }, description = "AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source")
 	public void test()
 			throws Throwable {
 		try {
@@ -34,12 +31,11 @@ public class AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User extends Keywo
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			//HtmlReportUtil.parentTest= HtmlReportUtil.extentNoHistory.startTest("Verifying cobt  Activity");
-			COBT_For_DIALCelebi_User.cOBT_For_DIALCelebi_User2();
-			/*COBT_For_DIALCelebi_User.totalFlights();
-			COBT_For_DIALCelebi_User.cobtIsNotNull();
-			COBT_For_DIALCelebi_User.ofBlockTimeIsNotNull();
-			COBT_For_DIALCelebi_User.cobtGreaterThan5Min();*/
+
+			SensorATA_OnBlock_OffBlock_SensorATD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_Report(4);
+			
+
+			
 			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {

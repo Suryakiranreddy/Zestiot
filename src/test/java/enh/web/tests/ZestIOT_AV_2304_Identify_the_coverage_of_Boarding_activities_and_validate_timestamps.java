@@ -12,7 +12,7 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class AV_2304_Identify_the_coverage_of_Boarding_activities_and_validate_timestamps extends KeywordUtil {
+public class ZestIOT_AV_2304_Identify_the_coverage_of_Boarding_activities_and_validate_timestamps extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;

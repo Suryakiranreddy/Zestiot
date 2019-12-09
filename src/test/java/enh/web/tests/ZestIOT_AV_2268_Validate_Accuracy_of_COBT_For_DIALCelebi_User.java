@@ -2,8 +2,8 @@ package enh.web.tests;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
 import enh.db.cases.COBT_For_DIALCelebi_User;
-import enh.db.cases.COBT_For_GMR_HYD_AISATS_User;
 import enh.web.pages.BflActivities;
 import enh.web.pages.DepartedFlights;
 import enh.web.pages.HomePage;
@@ -15,14 +15,14 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User extends KeywordUtil {
+public class ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
 
-	@Test(testName = "AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User", groups = {
-			"Regression" }, description = "AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User")
+	@Test(testName = "AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User", groups = {
+			"Regression" }, description = "AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User")
 	public void test()
 			throws Throwable {
 		try {
@@ -34,12 +34,12 @@ public class AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User extends K
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			//COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User();
-			COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User2();
-			/*COBT_For_GMR_HYD_AISATS_User.totalFlights();
-			COBT_For_GMR_HYD_AISATS_User.cobtIsNotNull();
-			COBT_For_GMR_HYD_AISATS_User.ofBlockTimeIsNotNull();
-			COBT_For_GMR_HYD_AISATS_User.cobtGreaterThan5Min();*/
+			//HtmlReportUtil.parentTest= HtmlReportUtil.extentNoHistory.startTest("Verifying cobt  Activity");
+			COBT_For_DIALCelebi_User.cOBT_For_DIALCelebi_User2();
+			/*COBT_For_DIALCelebi_User.totalFlights();
+			COBT_For_DIALCelebi_User.cobtIsNotNull();
+			COBT_For_DIALCelebi_User.ofBlockTimeIsNotNull();
+			COBT_For_DIALCelebi_User.cobtGreaterThan5Min();*/
 			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {
