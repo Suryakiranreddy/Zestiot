@@ -151,7 +151,7 @@ public class Scheduled_And_Sensor_ATD_Hyd {
 		{				
 			totalActualDeparture = result1.getInt("count(*)");
 			System.out.println(totalActualDeparture);
-			HtmlReportUtil.stepInfo("<b style=\"color:green;\"> Total No. of flights Actually Departed = "+ totalActualDeparture +"</b>");
+			//HtmlReportUtil.stepInfo("<b style=\"color:green;\"> Total No. of flights Actually Departed = "+ totalActualDeparture +"</b>");
 		}
 		ResultSet result2 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n " +
 				"flightdepartureId in (SELECT logid FROM `DailyFlightScheduleDeparture_GMR` where (date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") \r\n" + 

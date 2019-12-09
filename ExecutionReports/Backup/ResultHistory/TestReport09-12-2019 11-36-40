@@ -1,0 +1,1561 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--
+			ExtentReports Library 2.41.1 | http://relevantcodes.com/extentreports-for-selenium/ | https://github.com/anshooarora/
+			Copyright (c) 2015, Anshoo Arora (Relevant Codes) | Copyrights licensed under the New BSD License | http://opensource.org/licenses/BSD-3-Clause
+			Documentation: http://extentreports.relevantcodes.com 
+		-->
+
+		<meta charset='UTF-8' /> 
+		<meta name='description' content='ExtentReports (by Anshoo Arora) is a reporting library for automation testing for .NET and Java. It creates detailed and beautiful HTML reports for modern browsers. ExtentReports shows test and step summary along with dashboards, system and environment details for quick analysis of your tests.' />
+		<meta name='robots' content='noodp, noydir' />
+		<meta name='viewport' content='width=device-width, initial-scale=1' />
+		<meta name='extentx' id='extentx' content='' />
+		
+		<title>
+				Enhops | Test Automation Report
+		</title>
+		
+		
+		<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css'>
+		<link href='https://cdn.rawgit.com/anshooarora/extentreports/6032d73243ba4fe4fb8769eb9c315d4fdf16fe68/cdn/extent.css' type='text/css' rel='stylesheet' />
+		
+		<style>
+				
+      
+      	nav{background:#1976D2;}
+        .logo-content{color:#0078d8;}
+      
+    
+		</style>
+	</head>
+	
+	
+	<body class='extent default standard hide-overflow'>
+		<!-- nav -->
+		<nav>
+			<div class='logo-container blue darken-2'>
+				<a class='logo-content' href='http://extentreports.relevantcodes.com'>
+					<span>ExtentReports</span>
+				</a>
+				<a href='#' data-activates='slide-out' class='button-collapse hide-on-large-only'><i class='mdi-navigation-apps'></i></a>
+			</div>
+			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
+					<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
+				<li class='analysis waves-effect'>
+					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
+				</li>
+			</ul>
+			<span class='report-name'>Test Automation Report</span> <span class='report-headline'>-- prepared by Enhops </span>
+			<ul class='right hide-on-med-and-down nav-right'>
+				<li class='theme-selector' alt='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");' title='Click to toggle dark theme. To enable by default, use js configuration $("body").addClass("dark");'>
+					<i class='mdi-hardware-desktop-windows'></i>
+				</li>
+				<li>
+					<span class='suite-started-time'>2019-12-09 11:36:40</span>
+				</li>
+				<li>
+					<span>v2.41.1</span>
+				</li>
+			</ul>
+		</nav>
+		<!-- /nav -->
+		
+		<!-- container -->
+		<div class='container'>
+			
+			<!-- dashboard -->
+			<div id='dashboard-view' class='row'>
+				<div class='time-totals'>
+					<div class='col l2 m4 s6'>
+						<div class='card suite-total-tests'> 
+							<span class='panel-name'>Total Tests</span> 
+							<span class='total-tests'> <span class='panel-lead'></span> </span> 
+						</div> 
+					</div>
+					<div class='col l2 m4 s6'>
+						<div class='card suite-total-steps'> 
+							<span class='panel-name'>Total Steps</span> 
+							<span class='total-steps'> <span class='panel-lead'></span> </span> 
+						</div> 
+					</div>
+					<div class='col l2 m4 s12'>
+						<div class='card suite-total-time-current'> 
+							<span class='panel-name'>Total Time Taken (Current Run)</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 1m 14s+494ms</span> 
+						</div> 
+					</div>
+					<div class='col l2 m4 s12'>
+						<div class='card suite-total-time-overall'> 
+							<span class='panel-name'>Total Time Taken (Overall)</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 1m 14s+494ms</span> 
+						</div> 
+					</div>
+					<div class='col l2 m4 s6 suite-start-time'>
+						<div class='card accent green-accent'> 
+							<span class='panel-name'>Start</span> 
+							<span class='panel-lead suite-started-time'>2019-12-09 11:35:26</span> 
+						</div> 
+					</div>
+					<div class='col l2 m4 s6 suite-end-time'>
+						<div class='card accent pink-accent'> 
+							<span class='panel-name'>End</span> 
+							<span class='panel-lead suite-ended-time'>2019-12-09 11:36:40</span> 
+						</div> 
+					</div>
+				</div>
+				<div class='charts'>
+					<div class='col s12 m6 l4 fh'> 
+						<div class='card-panel'> 
+							<div>
+								<span class='panel-name'>Tests View</span>
+							</div> 
+							<div class='panel-setting modal-trigger test-count-setting right'>
+								<a href='#test-count-setting'><i class='mdi-navigation-more-vert text-md'></i></a>
+							</div> 
+							<div class='chart-box'>
+								<canvas class='text-centered' id='test-analysis'></canvas>
+							</div> 
+							<div>
+								<span class='weight-light'><span class='t-pass-count weight-normal'></span> test(s) passed</span>
+							</div> 
+							<div>
+								<span class='weight-light'><span class='t-fail-count weight-normal'></span> test(s) failed, <span class='t-others-count weight-normal'></span> others</span>
+							</div> 
+						</div> 
+					</div> 
+					<div class='col s12 m6 l4 fh'> 
+						<div class='card-panel'> 
+							<div>
+								<span class='panel-name'>Steps View</span>
+							</div> 
+							<div class='panel-setting modal-trigger step-status-filter right'>
+								<a href='#step-status-filter'><i class='mdi-navigation-more-vert text-md'></i></a>
+							</div> 
+							<div class='chart-box'>
+								<canvas class='text-centered' id='step-analysis'></canvas>
+							</div> 
+							<div>
+								<span class='weight-light'><span class='s-pass-count weight-normal'></span> step(s) passed </span>
+							</div> 
+							<div>
+								<span class='weight-light'><span class='s-fail-count weight-normal'></span> step(s) failed, <span class='s-others-count weight-normal'></span> others</span>
+							</div> 
+						</div> 
+					</div>
+					<div class='col s12 m12 l4 fh'> 
+						<div class='card-panel'> 
+							<span class='panel-name'>Pass Percentage</span> 
+							<span class='pass-percentage panel-lead'></span> 
+							<div class='progress light-blue lighten-3'> 
+								<div class='determinate light-blue'></div> 
+							</div> 
+						</div> 
+					</div>
+				</div>
+				<div class='system-view'>
+					<div class='col l4 m12 s12'>
+						<div class='card-panel'>
+							<span class='label info outline right'>Environment</span>
+							<table>
+								<thead>
+									<tr>
+										<th>Param</th>
+										<th>Value</th>
+									</tr>
+								</thead>
+								<tbody>
+										<tr>
+											<td>User Name</td>
+											<td>Administrator</td>
+										</tr>
+										<tr>
+											<td>OS</td>
+											<td>Windows 10</td>
+										</tr>
+										<tr>
+											<td>Java Version</td>
+											<td>1.8.0_201</td>
+										</tr>
+										<tr>
+											<td>Host Name</td>
+											<td>DESKTOP-4FTJ60U</td>
+										</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+					<div class='category-summary-view'>
+						<div class='col l4 m6 s12'>
+							<div class='card-panel'>
+								<span class='label info outline right'>Categories</span>
+								<table>
+									<thead>
+										<tr>
+											<th>Name</th>
+										</tr>
+									</thead>
+									<tbody>
+											<tr>
+												<td>
+													smoke
+												</td>
+											</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+			</div>
+			<!-- /dashboard -->
+			
+			<!-- tests -->
+			<div id='test-view' class='row _addedTable'>
+				<div class='col _addedCell1'>
+					<div class='contents'>
+						<div class='card-panel heading'>
+							<h5>Tests</h5>
+						</div>
+						<div class='card-panel filters'>
+							<div>
+								<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+									<i class='mdi-action-reorder'></i>
+								</a>
+								<ul id='tests-toggle' class='dropdown-content'>
+									<li class='pass'><a href='#!'>Pass</a></li>
+									<li class='fail'><a href='#!'>Fail</a></li>
+									<li class='skip'><a href='#!'>Skip</a></li>
+									<li class='divider'></li>
+									<li class='clear'><a href='#!'>Clear Filters</a></li>
+								</ul>
+							</div>
+								<div>
+									<a class='dropdown-button btn-floating btn-small waves-effect waves-light grey category-toggle' data-activates='category-toggle' data-constrainwidth='false' data-beloworigin='true' data-hover='true' href='#'>
+										<i class='mdi-maps-local-offer'></i>
+									</a>
+									<ul id='category-toggle' class='dropdown-content'>
+											<li class='smoke'><a href='#!'>smoke</a></li>
+										<li class='divider'></li>
+										<li class='clear'><a href='#!'>Clear Filters</a></li>
+									</ul>
+								</div>
+							<div>
+								<a class='btn-floating btn-small waves-effect waves-light grey' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+									<i class='mdi-navigation-close'></i>
+								</a>
+							</div>
+							<div>
+								<a class='btn-floating btn-small waves-effect waves-light grey' id='enableDashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+									<i class='mdi-action-track-changes'></i>
+								</a>
+							</div>
+							<div>
+								<a class='btn-floating btn-small waves-effect waves-light blue enabled' id='refreshCharts' alt='Refresh Charts on Filters' title='Refresh Charts on Filters'>
+									<i class='mdi-navigation-refresh'></i>
+								</a>
+							</div>
+							<div class='search' alt='Search Tests' title='Search Tests'>
+								<div class='input-field left'>
+									<input id='searchTests' type='text' class='validate' placeholder='Search Tests...'>
+								</div>
+								<a href="#" class='btn-floating btn-small waves-effect waves-light grey'>
+									<i class='mdi-action-search'></i>
+								</a>
+							</div>
+						</div>
+						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
+							<div class='wrapper'>
+								<ul id='test-collection' class='test-collection'>
+										<li class='collection-item test displayed active pass hasChildren' extentid='48df8c39-d2f0-49d0-b90e-9d0720eced8b'>
+											<div class='test-head'>
+												<span class='test-name'>smoke-ZestIOT_AV_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation-Chrome </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  smoke'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-09 11:36:13</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-09 11:36:37</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 23s+769ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>smoke</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>11:36:18</td>
+																	<td class='step-details'><b style="color:green;"> Total No. of flights Actually Departed = 224</b></td>
+																</tr>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>11:36:37</td>
+																	<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><h4 align="center" style="color:#336600;">Airport Name : GMR-Hyderabad</h4><h4 align="center" style="color:#336600;">Executed For :Scheduled and Sensor-ATD</h4><h5 align="center" style="color:#336600;" >Execution Time: Mon, 09 Dec 2019 11:36:30 IST </h5><table style="width:100%" id="t01"><tr><th style="width:10%"><b>Date</b></th><th style="width:15%"><b>Total No. of Flights Scheduled Departure</b></th> <th style="width:15%"><b>No. of flights detected by Sensor</b></th><th style="width:15%"><b>No. of flights NOT detected by Sensor</b></th><th style="width:20%"><b>No. of flights Off-Block time is detected by Sensor</b></th><th style="width:15%"><b>No. of flights Off-Block time is detected by CV</b></th> </tr> <tr> <td><b>2019-12-08</b></td> <td><b>270</b></td> <td> <b style="color:green;">217</b></td> <td><b style="color:red;">7</b></td> <td><b style="color:green;">106</b></td> <td><b style="color:red;">2</b></td></tr></table></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>11:36:37</td>
+																	<td class='step-details'><span class='success label'>PASS</span> <span style='color:green;margin-left: 10px'></span></td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center">Total Flights Scheduled for Departure (2019-12-08): 270</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:37</td>
+																								<td class='step-details'><b style="color:green;" align="center">Total Flights Scheduled for arrival (2019-12-08): 270</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center">Total No. of flights Actually Departed (2019-12-08) : 224</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:37</td>
+																								<td class='step-details'><b style="color:green;" align="center">Total No. of flights Actually Departed (2019-12-08) : 224</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center"> Total Flights AIRBORNE (Detected by Flight Sensor): 217</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:37</td>
+																								<td class='step-details'><b style="color:green;" align="center"> Total Flights AIRBORNE (Detected by Flight Sensor): 217</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center"> Total Flights AIRBORNE (Not Detected by Flight Sensor but detected from other data source): 7</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:37</td>
+																								<td class='step-details'><br><br><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><caption> Total Flights AIRBORNE (Not Detected by Flight Sensor but detected from other data source) </caption><tr><th style="width:10%"><b>LogID</b></th><th style="width:15%"><b>Departure Flight No.</b></th> <th style="width:15%"><b>STD</b></th><th style="width:15%"><b>ETD</b></th><th style="width:20%"><b>ATD</b></th> </tr> <tr> <td><b style="color:red;">202516</b></td> <td><b style="color:red;">6E 7118</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">202689</b></td> <td><b style="color:red;">6E 353</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">202790</b></td> <td><b style="color:red;">SG 704</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">202919</b></td> <td><b style="color:red;">6E 6211</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">203416</b></td> <td><b style="color:red;">AI 541</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">203518</b></td> <td><b style="color:red;">6E 595</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">203524</b></td> <td><b style="color:red;">2T 107</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center"> Total Flights - OFFBLOCK (Detected by Flight Sensor): 106</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:37</td>
+																								<td class='step-details'><b style="color:green;" align="center"> Total Flights - OFFBLOCK (Detected by Flight Sensor): 106</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center"> Total Flights - OFFBLOCK (Not Detected by Flight Sensor but detected from other data source): 2</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:37</td>
+																								<td class='step-details'><br><br><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><caption> Total Flights - OFFBLOCK (Not Detected by Flight Sensor but detected from other data source)</caption><tr><th style="width:10%"><b>Flight_PK</b></th><th style="width:15%"><b>Departure Flight No.</b></th>  </tr> <tr> <td><b style="color:red;">203168</b></td> <td><b style="color:red;">6E 827</b></td></tr> <tr> <td><b style="color:red;">203063</b></td> <td><b style="color:red;">6E 844</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center">Total Flights OFFBLOCK time detected by Flight Sensor less than AIRBORNE: 93</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:37</td>
+																								<td class='step-details'><b style="color:green;" align="center">Total Flights OFFBLOCK time detected by Flight Sensor less than AIRBORNE: 93</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:37</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center"> Total Flights OFFBLOCK time detected by Flight Sensor greater than AIRBORNE: 14</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:37</td>
+																								<td class='step-details'><br><br><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><caption> OFFBLOCK time detected by Flight Sensor less than AIRBORNE time detected by Flight Sensor</caption><tr><th style="width:10%"><b>LogID</b></th><th style="width:15%"><b>Departure Flight No.</b></th> <th style="width:15%"><b>Sensor_ATD</b></th> <th style="width:15%"><b>Off Block time</b></th> <th style="width:15%"><b>Difference between Off block time and Sensor ATD</b></th>  </tr> <tr> <td><b style="color:red;">203327</b></td> <td><b style="color:red;">6E 6417</b></td> <td> <b style="color:red;">2019-12-08 14:03:48.0</b></td> <td><b style="color:red;">2019-12-08 14:54:29.0</b></td> <td><b style="color:red;">00:50:41</b></td></tr> <tr> <td><b style="color:red;">203450</b></td> <td><b style="color:red;">6E 392</b></td> <td> <b style="color:red;">2019-12-08 17:35:12.0</b></td> <td><b style="color:red;">2019-12-09 02:52:05.0</b></td> <td><b style="color:red;">09:16:53</b></td></tr> <tr> <td><b style="color:red;">203595</b></td> <td><b style="color:red;">6E 1727</b></td> <td> <b style="color:red;">2019-12-08 22:31:19.0</b></td> <td><b style="color:red;">2019-12-09 09:57:00.0</b></td> <td><b style="color:red;">11:25:41</b></td></tr> <tr> <td><b style="color:red;">203172</b></td> <td><b style="color:red;">6E 913</b></td> <td> <b style="color:red;">2019-12-08 11:16:12.0</b></td> <td><b style="color:red;">2019-12-08 19:31:25.0</b></td> <td><b style="color:red;">08:15:13</b></td></tr> <tr> <td><b style="color:red;">203362</b></td> <td><b style="color:red;">6E 739</b></td> <td> <b style="color:red;">2019-12-08 15:21:12.0</b></td> <td><b style="color:red;">2019-12-08 17:08:12.0</b></td> <td><b style="color:red;">01:47:00</b></td></tr> <tr> <td><b style="color:red;">203168</b></td> <td><b style="color:red;">6E 827</b></td> <td> <b style="color:red;">2019-12-08 11:09:48.0</b></td> <td><b style="color:red;">2019-12-08 12:03:49.0</b></td> <td><b style="color:red;">00:54:01</b></td></tr> <tr> <td><b style="color:red;">202811</b></td> <td><b style="color:red;">9I 891</b></td> <td> <b style="color:red;">2019-12-08 10:38:26.0</b></td> <td><b style="color:red;">2019-12-08 13:10:34.0</b></td> <td><b style="color:red;">02:32:08</b></td></tr> <tr> <td><b style="color:red;">203290</b></td> <td><b style="color:red;">AI 542</b></td> <td> <b style="color:red;">2019-12-08 13:15:14.0</b></td> <td><b style="color:red;">2019-12-08 15:52:42.0</b></td> <td><b style="color:red;">02:37:28</b></td></tr> <tr> <td><b style="color:red;">203557</b></td> <td><b style="color:red;">AI 951</b></td> <td> <b style="color:red;">2019-12-08 20:26:44.0</b></td> <td><b style="color:red;">2019-12-09 05:21:46.0</b></td> <td><b style="color:red;">08:55:02</b></td></tr> <tr> <td><b style="color:red;">203051</b></td> <td><b style="color:red;">G8 291</b></td> <td> <b style="color:red;">2019-12-08 09:33:23.0</b></td> <td><b style="color:red;">2019-12-08 12:39:03.0</b></td> <td><b style="color:red;">03:05:40</b></td></tr> <tr> <td><b style="color:red;">203625</b></td> <td><b style="color:red;">G8 517</b></td> <td> <b style="color:red;">2019-12-08 21:15:45.0</b></td> <td><b style="color:red;">2019-12-08 22:57:25.0</b></td> <td><b style="color:red;">01:41:40</b></td></tr> <tr> <td><b style="color:red;">202729</b></td> <td><b style="color:red;">SG 1035</b></td> <td> <b style="color:red;">2019-12-08 06:18:13.0</b></td> <td><b style="color:red;">2019-12-08 07:45:52.0</b></td> <td><b style="color:red;">01:27:39</b></td></tr> <tr> <td><b style="color:red;">202717</b></td> <td><b style="color:red;">SG 6363</b></td> <td> <b style="color:red;">2019-12-08 10:18:07.0</b></td> <td><b style="color:red;">2019-12-09 01:20:19.0</b></td> <td><b style="color:red;">15:02:12</b></td></tr> <tr> <td><b style="color:red;">203102</b></td> <td><b style="color:red;">UK 830</b></td> <td> <b style="color:red;">2019-12-08 10:20:00.0</b></td> <td><b style="color:red;">2019-12-08 13:47:17.0</b></td> <td><b style="color:red;">03:27:17</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass hasChildren' extentid='d45fc3a6-657a-4f39-89f7-2f52558cf5dd'>
+											<div class='test-head'>
+												<span class='test-name'>smoke-ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation-Chrome </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  smoke'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-09 11:35:53</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-09 11:36:13</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 19s+148ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>smoke</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>11:36:12</td>
+																	<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><h4 align="center" style="color:#336600;">Airport Name : GMR-Hyderabad</h4><h4 align="center" style="color:#336600;">Executed For :Scheduled and Sensor-ATA</h4><h5 align="center" style="color:#336600;" >Execution Time: Mon, 09 Dec 2019 11:36:08 IST </h5><table style="width:100%" id="t01"><tr><th style="width:10%"><b>Date</b></th><th style="width:15%"><b>Total No. of Flights Scheduled Arrival</b></th> <th style="width:15%"><b>No. of flights detected by Sensor</b></th><th style="width:15%"><b>No. of flights NOT detected by Sensor</b></th><th style="width:20%"><b>No. of flights On-Block time is detected by Sensor</b></th><th style="width:15%"><b>No. of flights On-Block time is detected by CV</b></th> </tr> <tr> <td><b>2019-12-08</b></td> <td><b>270</b></td> <td> <b style="color:green;">232</b></td> <td><b style="color:red;">38</b></td> <td><b style="color:green;">153</b></td> <td><b style="color:red;">2</b></td></tr></table></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>11:36:13</td>
+																	<td class='step-details'><span class='success label'>PASS</span> <span style='color:green;margin-left: 10px'></span></td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center">Total Flights Scheduled for Arrival (2019-12-08): 270</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:12</td>
+																								<td class='step-details'><b style="color:green;" align="center">Total Flights Scheduled for Arrival (2019-12-08): 270</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center"> Total Flights LANDING (Detected by Flight Sensor): 232</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:12</td>
+																								<td class='step-details'><b style="color:green;" align="center"> Total Flights LANDING (Detected by Flight Sensor): 232</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center"> Total Flights LANDING (Not Detected by Flight Sensor but detected from other data source): 38</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:12</td>
+																								<td class='step-details'><br><br><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><caption> Total Flights LANDING (Not Detected by Flight Sensor but detected from other data source) </caption><tr><th style="width:10%"><b>LogID</b></th><th style="width:15%"><b>ArrivalFlight No.</b></th> <th style="width:15%"><b>STA</b></th><th style="width:15%"><b>ETA</b></th><th style="width:20%"><b>ATA</b></th> </tr> <tr> <td><b style="color:red;">203730</b></td> <td><b style="color:red;">6E 107</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">203976</b></td> <td><b style="color:red;">TR 574</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">203995</b></td> <td><b style="color:red;">AI 615</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">203996</b></td> <td><b style="color:red;">SG 1267</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204010</b></td> <td><b style="color:red;">2T 132</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204013</b></td> <td><b style="color:red;">6E 608</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204019</b></td> <td><b style="color:red;">SG 1042</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204026</b></td> <td><b style="color:red;">SG 1063</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204033</b></td> <td><b style="color:red;">2T 142</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204037</b></td> <td><b style="color:red;">6E 296</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204047</b></td> <td><b style="color:red;">6E 905</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204052</b></td> <td><b style="color:red;">2T 178</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204060</b></td> <td><b style="color:red;">6E 591</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204061</b></td> <td><b style="color:red;">SG 1602</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204062</b></td> <td><b style="color:red;">6E 7108</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204070</b></td> <td><b style="color:red;">6E 821</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204074</b></td> <td><b style="color:red;">6E 7154</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204083</b></td> <td><b style="color:red;">2T 122</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204089</b></td> <td><b style="color:red;">6E 025</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204094</b></td> <td><b style="color:red;">SG 3736</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204099</b></td> <td><b style="color:red;">2T 516</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204118</b></td> <td><b style="color:red;">2T 512</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204122</b></td> <td><b style="color:red;">9I 876</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204133</b></td> <td><b style="color:red;">SG 1314</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204145</b></td> <td><b style="color:red;">SG 3734</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204148</b></td> <td><b style="color:red;">2T 212</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204162</b></td> <td><b style="color:red;">SG 3463</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204173</b></td> <td><b style="color:red;">AI 619</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204180</b></td> <td><b style="color:red;">SG 2672</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204191</b></td> <td><b style="color:red;">2T 108</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204194</b></td> <td><b style="color:red;">SG 2942</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204197</b></td> <td><b style="color:red;">6E 156</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204202</b></td> <td><b style="color:red;">6E 7126</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204211</b></td> <td><b style="color:red;">2T 144</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204216</b></td> <td><b style="color:red;">6E 278</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204224</b></td> <td><b style="color:red;">SG 1060</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204225</b></td> <td><b style="color:red;">2T 180</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr> <tr> <td><b style="color:red;">204229</b></td> <td><b style="color:red;">MI 472</b></td> <td> <b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td> <td><b style="color:red;">null</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center"> Total Flights - ONBLOCK (Detected by Flight Sensor): 153</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:12</td>
+																								<td class='step-details'><b style="color:green;" align="center"> Total Flights - ONBLOCK (Detected by Flight Sensor): 153</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center"> Total Flights - ONBLOCK (Not Detected by Flight Sensor but detected from other data source): 2</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:12</td>
+																								<td class='step-details'><br><br><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><caption> Total Flights - ONBLOCK (Not Detected by Flight Sensor but detected from other data source)</caption><tr><th style="width:10%"><b>Flight_PK</b></th><th style="width:15%"><b>Departure Flight No.</b></th>  </tr> <tr> <td><b style="color:red;">203168</b></td> <td><b style="color:red;">6E 827</b></td></tr> <tr> <td><b style="color:red;">203063</b></td> <td><b style="color:red;">6E 844</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center">Total Flights- LANDING time detected by Flight Sensor less than ONBLOCK: 153</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:12</td>
+																								<td class='step-details'><b style="color:green;" align="center">Total Flights- LANDING time detected by Flight Sensor less than ONBLOCK: 153</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:36:12</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center"> Total Flights- LANDING time detected by Flight Sensor is greater than ONBLOCK: 0</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:36:12</td>
+																								<td class='step-details'><br><br><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><caption> Total Flights - LANDING time detected by flight Sensor is less than On-Block</caption><tr><th style="width:10%"><b>LogID</b></th><th style="width:15%"><b>Arrival Flight No.</b></th> <th style="width:15%"><b>Sensor_ATA</b></th> <th style="width:15%"><b>On_Block_time</b></th> <th style="width:15%"><b>Difference between On_Block_time and Sensor_ATA</b></th>  </tr><tr><td colspan="5"><b style="color:red;">No values found </b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass hasChildren' extentid='8b683658-2124-47df-9bee-d8577417330d'>
+											<div class='test-head'>
+												<span class='test-name'>smoke-ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User-Chrome </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  smoke'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-09 11:35:48</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-09 11:35:53</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+523ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>smoke</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>11:35:53</td>
+																	<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><h4 align="center" style="color:#336600;">Executed For :COBT For GMR HYD SG</h4><h5 align="center" style="color:#336600;" >Execution Time: Mon, 09 Dec 2019 11:35:52 IST </h5><table style="width:100%" id="t01"><tr><th style="width:15%"><b>Date</b></th><th style="width:20%"><b>Total No. of Flights</b></th> <th style="width:20%"><b>COBT  Not detected</b></th><th style="width:25%"><b>OFFBLOCK not detected</b></th><th style="width:20%"><b>Actual OFFBLOCK & COBT diff  > 5mins</b></th> </tr> <tr> <td><b>2019-12-08</b></td> <td><b>25</b></td> <td> <b style="color:red;">17</b></td> <td><b style="color:red;">14</b></td> <td><b style="color:red;">1</b></td>  </tr></table></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>11:35:53</td>
+																	<td class='step-details'><span class='success label'>PASS</span> <span style='color:green;margin-left: 10px'></span></td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:53</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:53</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center">Total Flights of Entity: 25</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:53</td>
+																								<td class='step-details'><b style="color:green;" >Total Flights of Entity: 25</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:53</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:53</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center">Total Flights For which COBT is NOT detected: 17</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:53</td>
+																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> COBT not detected flights</caption></h4><tr><th style="width:25%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th></tr><tr><td><b style="color:red;">202072</b></td><td><b style="color:red;">SG 1007</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202717</b></td><td><b style="color:red;">SG 472</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-09 01:20:19.0</b></td></tr><tr><td><b style="color:red;">202765</b></td><td><b style="color:red;">SG 342</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 05:40:27.0</b></td></tr><tr><td><b style="color:red;">202784</b></td><td><b style="color:red;">SG 6364</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202895</b></td><td><b style="color:red;">SG 748</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 06:00:42.0</b></td></tr><tr><td><b style="color:red;">202988</b></td><td><b style="color:red;">SG 421</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203036</b></td><td><b style="color:red;">SG 6431</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203039</b></td><td><b style="color:red;">SG 3604</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203084</b></td><td><b style="color:red;">SG 1004</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203179</b></td><td><b style="color:red;">SG 422</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 11:06:27.0</b></td></tr><tr><td><b style="color:red;">203259</b></td><td><b style="color:red;">SG 1007</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203377</b></td><td><b style="color:red;">SG 1093</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 15:26:12.0</b></td></tr><tr><td><b style="color:red;">203388</b></td><td><b style="color:red;">SG 467</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203403</b></td><td><b style="color:red;">SG 635</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203431</b></td><td><b style="color:red;">SG 3579</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 16:59:14.0</b></td></tr><tr><td><b style="color:red;">203536</b></td><td><b style="color:red;">SG 1057</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203650</b></td><td><b style="color:red;">SG 125</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 21:26:30.0</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:53</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:53</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center">Total Flights For which OFF BLOCK is NOT detected: 14</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:53</td>
+																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> OFFBLOCK not detected flights</caption></h4><tr><th style="width:25%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th></tr><tr><td><b style="color:red;">202072</b></td><td><b style="color:red;">SG 1007</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202784</b></td><td><b style="color:red;">SG 6364</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202988</b></td><td><b style="color:red;">SG 421</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203036</b></td><td><b style="color:red;">SG 6431</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203039</b></td><td><b style="color:red;">SG 3604</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203084</b></td><td><b style="color:red;">SG 1004</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203259</b></td><td><b style="color:red;">SG 1007</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203292</b></td><td><b style="color:red;">SG 705</b></td><td><b style="color:red;">2019-12-08 12:38:30.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203388</b></td><td><b style="color:red;">SG 467</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203403</b></td><td><b style="color:red;">SG 635</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203510</b></td><td><b style="color:red;">SG 1092</b></td><td><b style="color:red;">2019-12-09 11:35:26.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203536</b></td><td><b style="color:red;">SG 1057</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203538</b></td><td><b style="color:red;">SG 468</b></td><td><b style="color:red;">2019-12-09 00:22:19.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203575</b></td><td><b style="color:red;">SG 732</b></td><td><b style="color:red;">2019-12-09 04:01:08.0</b></td><td><b style="color:red;">null</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:53</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:53</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center">Total No of flights for which difference of Actual OffBlock and final COBT diff is > 5 Minutes: 1</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:53</td>
+																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> OFFBLOCK & COBT DIFF > 5MINS</caption></h4><tr><th style="width:10%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th><th style="width:15%">COBT Diff</th></tr><tr><td><b style="color:red;">202729</b></td><td><b style="color:red;">SG 1239</b></td><td><b style="color:red;">2019-12-08 06:04:37.0</b></td><td><b style="color:red;">2019-12-08 07:45:52.0</b></td><td><b style="color:red;">01:41:15</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass hasChildren' extentid='18b01d1b-61b3-4494-bc2d-0bec1c4a4a30'>
+											<div class='test-head'>
+												<span class='test-name'>smoke-ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User-Chrome </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  smoke'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-09 11:35:43</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-09 11:35:48</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+883ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>smoke</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>11:35:48</td>
+																	<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><h4 align="center" style="color:#336600;">Executed For :COBT For GMR HYD AISATS</h4><h5 align="center" style="color:#336600;" >Execution Time: Mon, 09 Dec 2019 11:35:47 IST </h5><table style="width:100%" id="t01"><tr><th style="width:15%"><b>Date</b></th><th style="width:20%"><b>Total No. of Flights</b></th> <th style="width:20%"><b>COBT  Not detected</b></th><th style="width:25%"><b>OFFBLOCK not detected</b></th><th style="width:20%"><b>Actual OFFBLOCK & COBT diff  > 5mins</b></th> </tr> <tr> <td><b>2019-12-08</b></td> <td><b>57</b></td> <td> <b style="color:red;">13</b></td> <td><b style="color:red;">30</b></td> <td><b style="color:red;">5</b></td>  </tr></table></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>11:35:48</td>
+																	<td class='step-details'><span class='success label'>PASS</span> <span style='color:green;margin-left: 10px'></span></td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:48</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:48</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center">Total Flights of Entity: 57</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:48</td>
+																								<td class='step-details'><b style="color:green;" >Total Flights of Entity: 57</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:48</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:48</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center">Total Flights For which COBT is NOT detected: 13</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:48</td>
+																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> COBT not detected flights</caption></h4><tr><th style="width:25%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th></tr><tr><td><b style="color:red;">202686</b></td><td><b style="color:red;">9I 868</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 06:27:28.0</b></td></tr><tr><td><b style="color:red;">202720</b></td><td><b style="color:red;">UK 871</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202787</b></td><td><b style="color:red;">TG 329</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202795</b></td><td><b style="color:red;">MI 472</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202877</b></td><td><b style="color:red;">EY 274</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 04:19:25.0</b></td></tr><tr><td><b style="color:red;">203013</b></td><td><b style="color:red;">UK 873</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203102</b></td><td><b style="color:red;">UK 829</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 13:47:17.0</b></td></tr><tr><td><b style="color:red;">203290</b></td><td><b style="color:red;">AI 542</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 15:52:42.0</b></td></tr><tr><td><b style="color:red;">203454</b></td><td><b style="color:red;">UK 899</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 17:45:57.0</b></td></tr><tr><td><b style="color:red;">203578</b></td><td><b style="color:red;">9I 884</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 20:00:57.0</b></td></tr><tr><td><b style="color:red;">203642</b></td><td><b style="color:red;">UK 875</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203659</b></td><td><b style="color:red;">AI 526</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203759</b></td><td><b style="color:red;">MI 474</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:48</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:48</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center">Total Flights For which OFF BLOCK is NOT detected: 30</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:48</td>
+																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> OFFBLOCK not detected flights</caption></h4><tr><th style="width:25%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th></tr><tr><td><b style="color:red;">202720</b></td><td><b style="color:red;">UK 871</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202773</b></td><td><b style="color:red;">G8 508</b></td><td><b style="color:red;">2019-12-09 04:01:10.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202777</b></td><td><b style="color:red;">AI 050</b></td><td><b style="color:red;">2019-12-08 05:24:05.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202787</b></td><td><b style="color:red;">TG 329</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202795</b></td><td><b style="color:red;">MI 472</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202806</b></td><td><b style="color:red;">CX 649</b></td><td><b style="color:red;">2019-12-08 11:14:39.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202809</b></td><td><b style="color:red;">G8 518</b></td><td><b style="color:red;">2019-12-08 06:43:52.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202839</b></td><td><b style="color:red;">J9 403</b></td><td><b style="color:red;">2019-12-08 12:38:22.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202855</b></td><td><b style="color:red;">FZ 435</b></td><td><b style="color:red;">2019-12-08 20:59:39.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202893</b></td><td><b style="color:red;">G9 458</b></td><td><b style="color:red;">2019-12-08 05:17:00.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203003</b></td><td><b style="color:red;">AI 988</b></td><td><b style="color:red;">2019-12-08 07:52:48.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203013</b></td><td><b style="color:red;">UK 873</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203035</b></td><td><b style="color:red;">G8 513</b></td><td><b style="color:red;">2019-12-09 11:35:27.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203097</b></td><td><b style="color:red;">AI 560</b></td><td><b style="color:red;">2019-12-08 09:57:51.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203137</b></td><td><b style="color:red;">UL 177</b></td><td><b style="color:red;">2019-12-08 10:39:14.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203189</b></td><td><b style="color:red;">G8 701</b></td><td><b style="color:red;">2019-12-09 11:37:28.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203219</b></td><td><b style="color:red;">SV 754</b></td><td><b style="color:red;">2019-12-08 20:31:26.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203298</b></td><td><b style="color:red;">AI 776</b></td><td><b style="color:red;">2019-12-08 13:37:36.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203342</b></td><td><b style="color:red;">G8 504</b></td><td><b style="color:red;">2019-12-08 13:51:41.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203415</b></td><td><b style="color:red;">AI 617</b></td><td><b style="color:red;">2019-12-08 15:24:08.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203439</b></td><td><b style="color:red;">AI 965</b></td><td><b style="color:red;">2019-12-09 00:44:52.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203488</b></td><td><b style="color:red;">G8 559</b></td><td><b style="color:red;">2019-12-08 18:11:02.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203572</b></td><td><b style="color:red;">G8 506</b></td><td><b style="color:red;">2019-12-09 00:05:58.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203573</b></td><td><b style="color:red;">G8 125</b></td><td><b style="color:red;">2019-12-08 20:04:51.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203601</b></td><td><b style="color:red;">UK 879</b></td><td><b style="color:red;">2019-12-08 23:53:31.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203642</b></td><td><b style="color:red;">UK 875</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203659</b></td><td><b style="color:red;">AI 526</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203742</b></td><td><b style="color:red;">AI 545</b></td><td><b style="color:red;">2019-12-08 22:40:11.0</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203759</b></td><td><b style="color:red;">MI 474</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203770</b></td><td><b style="color:red;">G8 552</b></td><td><b style="color:red;">2019-12-09 04:01:08.0</b></td><td><b style="color:red;">null</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:48</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:48</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center">Total No of flights for which difference of Actual OffBlock and final COBT diff is > 5 Minutes: 5</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:48</td>
+																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> OFFBLOCK & COBT DIFF > 5MINS</caption></h4><tr><th style="width:10%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th><th style="width:15%">COBT Diff</th></tr><tr><td><b style="color:red;">203051</b></td><td><b style="color:red;">G8 121</b></td><td><b style="color:red;">2019-12-08 08:29:00.0</b></td><td><b style="color:red;">2019-12-08 12:39:03.0</b></td><td><b style="color:red;">04:10:03</b></td></tr><tr><td><b style="color:red;">203339</b></td><td><b style="color:red;">G8 894</b></td><td><b style="color:red;">2019-12-08 13:56:04.0</b></td><td><b style="color:red;">2019-12-08 15:23:57.0</b></td><td><b style="color:red;">01:27:53</b></td></tr><tr><td><b style="color:red;">203557</b></td><td><b style="color:red;">AI 951</b></td><td><b style="color:red;">2019-12-09 05:29:02.0</b></td><td><b style="color:red;">2019-12-09 05:21:46.0</b></td><td><b style="color:red;">-00:07:16</b></td></tr><tr><td><b style="color:red;">203607</b></td><td><b style="color:red;">G8 294</b></td><td><b style="color:red;">2019-12-08 19:51:55.0</b></td><td><b style="color:red;">2019-12-08 20:32:44.0</b></td><td><b style="color:red;">00:40:49</b></td></tr><tr><td><b style="color:red;">203625</b></td><td><b style="color:red;">G8 516</b></td><td><b style="color:red;">2019-12-08 20:59:32.0</b></td><td><b style="color:red;">2019-12-08 22:57:25.0</b></td><td><b style="color:red;">01:57:53</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+										<li class='collection-item test displayed active pass hasChildren' extentid='61811658-6c35-4518-bf64-72850db79dd7'>
+											<div class='test-head'>
+												<span class='test-name'>smoke-ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User-Chrome </span>
+												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='category-assigned hide  smoke'></span>
+											</div>
+											<div class='test-body'>
+												<div class='test-info'>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-09 11:35:37</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-09 11:35:42</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 4s+789ms</span>
+												</div>
+												<div class='test-desc'></div>
+												<div class='test-attributes'>
+														<div class='categories'>
+																<span class='category text-white'>smoke</span>
+														</div>
+												</div>
+												<div class='test-steps'>
+													<table class='bordered table-results'>
+														<thead>
+															<tr>
+																<th>Status</th>
+																<th>Timestamp</th>
+																<th>Details</th>
+															</tr>
+														</thead>
+														<tbody>
+																<tr>
+																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																	<td class='timestamp'>11:35:42</td>
+																	<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><h4 align="center" style="color:#336600;">Executed For :COBT For DIALCelebi</h4><h5 align="center" style="color:#336600;" >Execution Time: Mon, 09 Dec 2019 11:35:41 IST </h5><table style="width:100%" id="t01"><tr><th style="width:15%"><b>Date</b></th><th style="width:20%"><b>Total No. of Flights</b></th> <th style="width:20%"><b>COBT  Not detected</b></th><th style="width:25%"><b>OFFBLOCK not detected</b></th><th style="width:20%"><b>Actual OFFBLOCK & COBT diff  > 5mins</b></th> </tr> <tr> <td><b>2019-12-08</b></td> <td><b>61</b></td> <td> <b style="color:red;">61</b></td> <td><b style="color:red;">18</b></td> <td><b style="color:red;">0</b></td>  </tr></table></td>
+																</tr>
+																<tr>
+																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
+																	<td class='timestamp'>11:35:42</td>
+																	<td class='step-details'><span class='success label'>PASS</span> <span style='color:green;margin-left: 10px'></span></td>
+																</tr>
+														</tbody>
+													</table>
+													<ul class='collapsible node-list' data-collapsible='accordion'>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:42</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:42</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:green;" align="center">Total Flights of Entity: 61</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:42</td>
+																								<td class='step-details'><b style="color:green;" >Total Flights of Entity: 61</b></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:42</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:42</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center">Total Flights For which COBT is NOT detected: 61</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:42</td>
+																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> COBT not detected flights</caption></h4><tr><th style="width:25%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th></tr><tr><td><b style="color:red;">202654</b></td><td><b style="color:red;">I5 749</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202705</b></td><td><b style="color:red;">AC 042</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 01:05:49.0</b></td></tr><tr><td><b style="color:red;">202731</b></td><td><b style="color:red;">UL 197</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 00:23:18.0</b></td></tr><tr><td><b style="color:red;">202738</b></td><td><b style="color:red;">AF 226</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 01:17:20.0</b></td></tr><tr><td><b style="color:red;">202788</b></td><td><b style="color:red;">I5 786</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202796</b></td><td><b style="color:red;">I5 547</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202804</b></td><td><b style="color:red;">CX 679</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 02:28:57.0</b></td></tr><tr><td><b style="color:red;">202807</b></td><td><b style="color:red;">ET 688</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 02:50:24.0</b></td></tr><tr><td><b style="color:red;">202808</b></td><td><b style="color:red;">I5 766</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 07:00:45.0</b></td></tr><tr><td><b style="color:red;">202827</b></td><td><b style="color:red;">KC 963</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 02:39:38.0</b></td></tr><tr><td><b style="color:red;">202836</b></td><td><b style="color:red;">BA 143</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 03:27:40.0</b></td></tr><tr><td><b style="color:red;">202837</b></td><td><b style="color:red;">I5 774</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 05:07:32.0</b></td></tr><tr><td><b style="color:red;">202843</b></td><td><b style="color:red;">QR 2</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 03:48:11.0</b></td></tr><tr><td><b style="color:red;">202845</b></td><td><b style="color:red;">I5 755</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 04:50:13.0</b></td></tr><tr><td><b style="color:red;">202859</b></td><td><b style="color:red;">I5 330</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202860</b></td><td><b style="color:red;">AZ 770</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 04:20:27.0</b></td></tr><tr><td><b style="color:red;">202865</b></td><td><b style="color:red;">SU 234</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 04:20:27.0</b></td></tr><tr><td><b style="color:red;">202866</b></td><td><b style="color:red;">I5 722</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202889</b></td><td><b style="color:red;">EY 021</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 04:48:28.0</b></td></tr><tr><td><b style="color:red;">202897</b></td><td><b style="color:red;">AC 044</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 06:00:18.0</b></td></tr><tr><td><b style="color:red;">202900</b></td><td><b style="color:red;">I5 736</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 06:02:34.0</b></td></tr><tr><td><b style="color:red;">202904</b></td><td><b style="color:red;">UL 191</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 05:08:32.0</b></td></tr><tr><td><b style="color:red;">202910</b></td><td><b style="color:red;">SU 232</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 06:14:49.0</b></td></tr><tr><td><b style="color:red;">202918</b></td><td><b style="color:red;">AF 166</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 06:52:52.0</b></td></tr><tr><td><b style="color:red;">202934</b></td><td><b style="color:red;">TK 716</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 08:40:45.0</b></td></tr><tr><td><b style="color:red;">202997</b></td><td><b style="color:red;">I5 729</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203001</b></td><td><b style="color:red;">ET 686</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 08:53:00.0</b></td></tr><tr><td><b style="color:red;">203017</b></td><td><b style="color:red;">EY 062</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 09:08:16.0</b></td></tr><tr><td><b style="color:red;">203043</b></td><td><b style="color:red;">I5 2878</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203055</b></td><td><b style="color:red;">I5 753</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 09:31:02.0</b></td></tr><tr><td><b style="color:red;">203074</b></td><td><b style="color:red;">BA 257</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 10:52:06.0</b></td></tr><tr><td><b style="color:red;">203091</b></td><td><b style="color:red;">FZ 431</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 10:32:46.0</b></td></tr><tr><td><b style="color:red;">203111</b></td><td><b style="color:red;">UPS27</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 11:01:31.0</b></td></tr><tr><td><b style="color:red;">203161</b></td><td><b style="color:red;">I5 552</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 11:02:21.0</b></td></tr><tr><td><b style="color:red;">203197</b></td><td><b style="color:red;">I5 778</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203214</b></td><td><b style="color:red;">I5 737</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 11:57:54.0</b></td></tr><tr><td><b style="color:red;">203257</b></td><td><b style="color:red;">I5 762</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 12:36:56.0</b></td></tr><tr><td><b style="color:red;">203263</b></td><td><b style="color:red;">UPS15</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203270</b></td><td><b style="color:red;">T5 537</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 13:23:07.0</b></td></tr><tr><td><b style="color:red;">203318</b></td><td><b style="color:red;">I5 602</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 13:58:32.0</b></td></tr><tr><td><b style="color:red;">203330</b></td><td><b style="color:red;">I5 745</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 19:51:36.0</b></td></tr><tr><td><b style="color:red;">203343</b></td><td><b style="color:red;">I5 741</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203460</b></td><td><b style="color:red;">I5 768</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 17:32:22.0</b></td></tr><tr><td><b style="color:red;">203477</b></td><td><b style="color:red;">I5 784</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 17:51:13.0</b></td></tr><tr><td><b style="color:red;">203491</b></td><td><b style="color:red;">I5 780</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 18:03:27.0</b></td></tr><tr><td><b style="color:red;">203497</b></td><td><b style="color:red;">JL 749</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 20:31:01.0</b></td></tr><tr><td><b style="color:red;">203504</b></td><td><b style="color:red;">UL 195</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 18:32:27.0</b></td></tr><tr><td><b style="color:red;">203511</b></td><td><b style="color:red;">SV 760</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 18:45:28.0</b></td></tr><tr><td><b style="color:red;">203558</b></td><td><b style="color:red;">I5 579</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 18:58:54.0</b></td></tr><tr><td><b style="color:red;">203563</b></td><td><b style="color:red;">KE 481</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 19:54:56.0</b></td></tr><tr><td><b style="color:red;">203598</b></td><td><b style="color:red;">SV 758</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 20:20:53.0</b></td></tr><tr><td><b style="color:red;">203603</b></td><td><b style="color:red;">I5 549</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203606</b></td><td><b style="color:red;">EY 097</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 21:02:32.0</b></td></tr><tr><td><b style="color:red;">203628</b></td><td><b style="color:red;">I5 751</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203631</b></td><td><b style="color:red;">I5 799</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203704</b></td><td><b style="color:red;">CX 695</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-08 22:44:02.0</b></td></tr><tr><td><b style="color:red;">203751</b></td><td><b style="color:red;">I5 732</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203952</b></td><td><b style="color:red;">I5 482</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203964</b></td><td><b style="color:red;">I5 732</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203981</b></td><td><b style="color:red;">I5 782</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">204049</b></td><td><b style="color:red;">CX 695</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:42</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:42</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center">Total Flights For which OFF BLOCK is NOT detected: 18</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:42</td>
+																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> OFFBLOCK not detected flights</caption></h4><tr><th style="width:25%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th></tr><tr><td><b style="color:red;">202654</b></td><td><b style="color:red;">I5 749</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202788</b></td><td><b style="color:red;">I5 786</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202796</b></td><td><b style="color:red;">I5 547</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202859</b></td><td><b style="color:red;">I5 330</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202866</b></td><td><b style="color:red;">I5 722</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">202997</b></td><td><b style="color:red;">I5 729</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203043</b></td><td><b style="color:red;">I5 2878</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203197</b></td><td><b style="color:red;">I5 778</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203263</b></td><td><b style="color:red;">UPS15</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203343</b></td><td><b style="color:red;">I5 741</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203603</b></td><td><b style="color:red;">I5 549</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203628</b></td><td><b style="color:red;">I5 751</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203631</b></td><td><b style="color:red;">I5 799</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203751</b></td><td><b style="color:red;">I5 732</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203952</b></td><td><b style="color:red;">I5 482</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203964</b></td><td><b style="color:red;">I5 732</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">203981</b></td><td><b style="color:red;">I5 782</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr><tr><td><b style="color:red;">204049</b></td><td><b style="color:red;">CX 695</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">null</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+																	<li class='displayed pass node-1x'>
+																		<div class='collapsible-header test-node pass'>
+																			<div class='right test-info'>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-09 11:35:42</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-09 11:35:42</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span class='test-status label outline capitalize pass'>pass</span>
+																			</div>
+																			<div class='test-node-name'><b style="color:red;" align="center">Total No of flights for which difference of Actual OffBlock and final COBT diff is > 5 Minutes: 0</b></div>
+																				<div class='test-node-desc'></div>
+																		</div>
+																		<div class='collapsible-body'>
+																			<div class='test-steps'>
+																				<table class='bordered table-results'>
+																					<thead>
+																						<tr>
+																							<th>Status</th>
+																							<th>Timestamp</th>
+																							<th>Details</th>
+																						</tr>
+																					</thead>
+																					<tbody>
+																							<tr>
+																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
+																								<td class='timestamp'>11:35:42</td>
+																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> OFFBLOCK & COBT DIFF > 5MINS</caption></h4><tr><th style="width:10%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th><th style="width:15%">COBT Diff</th></tr><tr><td colspan="5"><b style="color:red;" >No values found</b></td></tr></table></td>
+																							</tr>
+																					</tbody>
+																				</table>
+																			</div>
+																		</div>
+																	</li>
+													</ul>
+												</div>
+											</div>
+										</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id='test-details-wrapper' class='col _addedCell2'>
+					<div class='contents'>
+						<div class='card-panel details-view'>
+							<h5 class='details-name'></h5>
+							<div class='step-filters right'>
+								<span class='btn-floating btn-small waves-effect waves-light blue' status='info' alt='info' title='info'><i class='mdi-action-info-outline'></i></span>
+								<span class='btn-floating btn-small waves-effect waves-light green' status='pass' alt='pass' title='pass'><i class='mdi-action-check-circle'></i></span>
+								<span class='btn-floating btn-small waves-effect waves-light red' status='fail' alt='fail' title='fail'><i class='mdi-navigation-cancel'></i></span>
+								<span class='btn-floating btn-small waves-effect waves-light red darken-4' status='fatal' alt='fatal' title='fatal'><i class='mdi-navigation-cancel'></i></span>
+								<span class='btn-floating btn-small waves-effect waves-light red lighten-2' status='error' alt='error' title='error'><i class='mdi-alert-error'></i></span>
+								<span class='btn-floating btn-small waves-effect waves-light orange' alt='warning' status='warning' title='warning'><i class='mdi-alert-warning'></i></span>
+								<span class='btn-floating btn-small waves-effect waves-light cyan' status='skip' alt='skip' title='skip'><i class='mdi-content-redo'></i></span>
+								<span class='btn-floating btn-small waves-effect waves-light grey darken-2' status='clear-step-filter' alt='Clear filters' title='Clear filters'><i class='mdi-content-clear'></i></span>
+							</div>
+							<div class='details-container'>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /tests -->
+			
+			<!-- categories -->
+				<div id='categories-view' class='row _addedTable hide'>
+					<div class='col _addedCell1'>
+						<div class='contents'>
+							<div class='card-panel heading'>
+								<h5>Categories</h5>
+							</div>
+							<div class='card-panel filters'>
+								<div class='search' alt='Search tests' title='Search tests'>
+									<div class='input-field left'>
+										<input id='searchTests' type='text' class='validate' placeholder='Search...'>
+									</div>
+									<a href="#" class='btn-floating btn-small waves-effect waves-light blue lighten-1'>
+										<i class='mdi-action-search'></i>
+									</a>
+								</div>
+							</div>
+							<div class='card-panel no-padding-h no-padding-v'>
+								<div class='wrapper'>
+									<ul id='cat-collection' class='cat-collection'>
+											<li class='category-item displayed'>
+												<div class='cat-head'>
+													<span class='category-name'>smoke</span>
+												</div>
+												<div class='category-status-counts'>
+														<span class='pass label dot'>Pass: 5</span>
+												</div>
+												<div class='cat-body'>
+													<div class='category-status-counts'>
+														<div class='button-group'>
+															<a href='#!' class='pass label filter'>Pass <span class='icon'>5</span></a>
+															<a href='#!' class='fail label filter'>Fail <span class='icon'>0</span></a>
+															<a href='#!' class='other label filter'>Others <span class='icon'>0</span></a>
+														</div>
+													</div>
+													<div class='cat-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Status</th>
+																</tr>
+															</thead>
+															<tbody>
+																	<tr class='pass'>
+																		<td>2019-12-09 11:35:37</td>
+																		<td><span class='category-link linked' extentid='61811658-6c35-4518-bf64-72850db79dd7'>smoke-ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User-Chrome</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-12-09 11:35:43</td>
+																		<td><span class='category-link linked' extentid='18b01d1b-61b3-4494-bc2d-0bec1c4a4a30'>smoke-ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User-Chrome</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-12-09 11:35:48</td>
+																		<td><span class='category-link linked' extentid='8b683658-2124-47df-9bee-d8577417330d'>smoke-ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User-Chrome</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-12-09 11:35:53</td>
+																		<td><span class='category-link linked' extentid='d45fc3a6-657a-4f39-89f7-2f52558cf5dd'>smoke-ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation-Chrome</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+																	<tr class='pass'>
+																		<td>2019-12-09 11:36:13</td>
+																		<td><span class='category-link linked' extentid='48df8c39-d2f0-49d0-b90e-9d0720eced8b'>smoke-ZestIOT_AV_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation-Chrome</span></td>
+																		<td><div class='status label capitalize pass'>pass</div></td>
+																	</tr>
+															<tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='cat-details-wrapper' class='col _addedCell2'>
+						<div class='contents'>
+							<div class='card-panel details-view'>
+								<h5 class='cat-name'></h5>
+								<div class='cat-container'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			<!-- /categories -->
+			
+			<!-- exceptions -->
+			<!-- /exceptions -->
+			
+			<!-- testrunner logs -->
+			<!-- /testrunner logs -->
+			
+		</div>
+		<!-- /container -->
+		
+		<!-- test dashboard counts setting -->
+		<div id='test-count-setting' class='modal bottom-sheet'> 
+			<div class='modal-content'> 
+				<h5>Configure Tests Count Setting</h5> 
+				<input name='test-count-setting' type='radio' id='parentWithoutNodes' class='with-gap'> 
+				<label for='parentWithoutNodes'>Parent Tests Only (Does not include child nodes in counts)</label> 
+				<br> 
+				<input name='test-count-setting' type='radio' id='parentWithoutNodesAndNodes' class='with-gap'> 
+				<label for='parentWithoutNodesAndNodes'>Parent Tests Without Child Tests + Child Tests</label> 
+				<br> 
+				<input name='test-count-setting' type='radio' id='childNodes' class='with-gap'> 
+				<label for='childNodes'>Child Tests Only</label> 
+			</div> 
+			<div class='modal-footer'> 
+				<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+			</div> 
+		</div>
+		<!-- /test dashboard counts setting -->
+		
+		<!-- filter for step status -->
+		<div id='step-status-filter' class='modal bottom-sheet'> 
+			<div class='modal-content'> 
+				<h5>Select status</h5> 
+				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-pass'> 
+				<label for='step-dashboard-filter-pass'>Pass</label> 
+				<br> 
+				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fail'> 
+				<label for='step-dashboard-filter-fail'>Fail</label> 
+				<br> 
+				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-fatal'> 
+				<label for='step-dashboard-filter-fatal'>Fatal</label> 
+				<br> 
+				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-error'> 
+				<label for='step-dashboard-filter-error'>Error</label> 
+				<br> 
+				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-warning'> 
+				<label for='step-dashboard-filter-warning'>Warning</label> 
+				<br> 
+				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-skip'> 
+				<label for='step-dashboard-filter-skip'>Skipped</label> 
+				<br> 
+				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-info'> 
+				<label for='step-dashboard-filter-info'>Info</label> 
+				<br> 
+				<input checked class='filled-in' type='checkbox' id='step-dashboard-filter-unknown'> 
+				<label for='step-dashboard-filter-unknown'>Unknown</label> 
+			</div>
+			<div class='modal-footer'> 
+				<a href='#!' class='modal-action modal-close waves-effect waves-green btn'>Save</a> 
+			</div> 
+		</div>
+		<!-- /filter for step status -->
+		
+		<script src='https://cdn.rawgit.com/anshooarora/extentreports/6032d73243ba4fe4fb8769eb9c315d4fdf16fe68/cdn/extent.js' type='text/javascript'></script>
+
+		<script>$(document).ready(function() { $('.logo span').html('ExtentReports'); });</script>
+		<script>
+				
+      
+        $(document).ready(function() {
+          
+        });
+      
+    
+		</script>
+	</body>
+</html>
