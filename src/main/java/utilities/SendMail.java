@@ -141,7 +141,13 @@ public class SendMail extends Utility {
     			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
     			+ "<html>";
     	
-		messageBodyPart.setContent(mailBody, "text/html");
+		messageBodyPart.setContent("<html>"
+    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins.<br> "	
+    			+COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString()
+    			+COBT_For_GMR_HYD_AISATS_User.email_COBT_For_DIALCelebi_User5.toString()
+    			+COBT_For_GMR_HYD_SG_User.email_COBT_For_DIALCelebi_User5.toString()
+    			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
+    			+ "<html>", "text/html");
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
