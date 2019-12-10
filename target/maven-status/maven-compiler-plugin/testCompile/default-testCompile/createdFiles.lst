@@ -6,10 +6,8 @@ enh\db\cases\MailTest$HTMLDataSource.class
 enh\web\pages\DepartedFlights.class
 enh\web\tests\ZestIOT_023_FlightNumber_Arrival_FlightNumber_DepartureProdComparison.class
 enh\web\tests\ZestIOT_019_GMR_HYD_Sensor_And_Scheduled_data_Validation.class
-enh\db\cases\Scheduled_And_Sensor_ATD_Hyd.class
 enh\db\cases\SampleDBTest.class
 enh\web\tests\ZestIOT_016_Celebi_User_BFL_group_Activity_Validation.class
-enh\web\tests\ZestIOT_022_DIAL_Sensor_And_Scheduled_data_Validation.class
 enh\db\cases\DBTesting.class
 enh\web\pages\FuelingAndCateringForCelebi.class
 enh\web\tests\ZestIOT_003_ATASensor_ATA_differences_1_minute.class

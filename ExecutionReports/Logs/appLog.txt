@@ -23046,3 +23046,345 @@ The last packet sent successfully to the server was 0 milliseconds ago. The driv
 2019-12-10 17:23:12 INFO  - Comparison sheet written successfully
 2019-12-10 17:23:12 INFO  - Data to excel written successfully
 2019-12-10 17:23:12 INFO  - History File created successfully
+2019-12-10 17:51:36 INFO  - 
+============================================================================================================================
+2019-12-10 17:51:36 INFO  - smoke suite started at Tue Dec 10 17:51:36 IST 2019
+2019-12-10 17:51:36 INFO  - Suite Browser: Chrome
+2019-12-10 17:51:37 INFO  - +=============Database started=============+
+2019-12-10 17:51:37 INFO  - Database driver name: SQLiteJDBC
+2019-12-10 17:51:37 INFO  - Product name SQLite, Version 3.8.11
+2019-12-10 17:51:37 INFO  - +==========================================+
+
+2019-12-10 17:51:37 INFO  - Test is started with browser: Chrome
+2019-12-10 17:51:50 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-10 17:51:50 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:51:50 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-10 17:51:50 INFO  - Test description: 
+2019-12-10 17:51:56 INFO  - Total Time taken in(seconds):6
+2019-12-10 17:51:56 INFO  - TestResults
+2019-12-10 17:51:58 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:51:58 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:51:58 INFO  - Closing Browsers
+2019-12-10 17:51:58 INFO  - Test is started with browser: Chrome
+2019-12-10 17:51:58 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-10 17:51:58 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:51:58 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-10 17:51:58 INFO  - Test description: 
+2019-12-10 17:52:03 INFO  - Total Time taken in(seconds):5
+2019-12-10 17:52:03 INFO  - TestResults
+2019-12-10 17:52:04 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:52:04 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:52:04 INFO  - Closing Browsers
+2019-12-10 17:52:04 INFO  - Test is started with browser: Chrome
+2019-12-10 17:52:04 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 17:52:04 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:52:04 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 17:52:04 INFO  - Test description: 
+2019-12-10 17:52:08 INFO  - Total Time taken in(seconds):4
+2019-12-10 17:52:08 INFO  - TestResults
+2019-12-10 17:52:09 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:52:09 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:52:09 INFO  - Closing Browsers
+2019-12-10 17:52:09 INFO  - Test is started with browser: Chrome
+2019-12-10 17:52:09 INFO  - No data found with given key-> ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 17:52:09 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:52:09 INFO  - Test Started: ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 17:52:09 INFO  - Test description: 
+2019-12-10 17:52:28 INFO  - Total Time taken in(seconds):18
+2019-12-10 17:52:28 INFO  - TestResults
+2019-12-10 17:52:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:52:29 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:52:29 INFO  - Closing Browsers
+2019-12-10 17:52:29 INFO  - Test is started with browser: Chrome
+2019-12-10 17:52:29 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 17:52:29 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:52:29 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 17:52:29 INFO  - Test description: 
+2019-12-10 17:52:48 INFO  - Total Time taken in(seconds):18
+2019-12-10 17:52:48 INFO  - TestResults
+2019-12-10 17:52:48 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:52:48 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:52:48 INFO  - Closing Browsers
+2019-12-10 17:52:48 INFO  - Test is started with browser: Chrome
+2019-12-10 17:52:49 INFO  - No data found with given key-> ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 17:52:49 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:52:49 INFO  - Test Started: ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 17:52:49 INFO  - Test description: 
+2019-12-10 17:53:09 INFO  - Total Time taken in(seconds):20
+2019-12-10 17:53:09 INFO  - TestResults
+2019-12-10 17:53:10 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:53:10 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:53:10 INFO  - Closing Browsers
+2019-12-10 17:53:10 INFO  - Test is started with browser: Chrome
+2019-12-10 17:53:10 INFO  - No data found with given key-> ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 17:53:10 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:53:10 INFO  - Test Started: ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 17:53:10 INFO  - Test description: 
+2019-12-10 17:53:33 INFO  - Total Time taken in(seconds):22
+2019-12-10 17:53:33 INFO  - TestResults
+2019-12-10 17:53:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:53:33 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:53:33 INFO  - Closing Browsers
+2019-12-10 17:53:33 INFO  - Test is started with browser: Chrome
+2019-12-10 17:53:34 INFO  - No data found with given key-> ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-10 17:53:34 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:53:34 INFO  - Test Started: ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-10 17:53:34 INFO  - Test description: 
+2019-12-10 17:54:12 INFO  - Total Time taken in(seconds):38
+2019-12-10 17:54:13 INFO  - TestResults
+2019-12-10 17:54:15 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:54:15 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:54:15 INFO  - Closing Browsers
+2019-12-10 17:54:16 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 17:54:16 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:54:16 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 17:54:16 INFO  - Test description: 
+2019-12-10 17:54:20 INFO  - smoke suite finished at Tue Dec 10 17:54:20 IST 2019
+2019-12-10 17:54:23 INFO  - Comparison sheet written successfully
+2019-12-10 17:54:23 INFO  - Data to excel written successfully
+2019-12-10 17:54:26 INFO  - Test process has ended
+2019-12-10 17:54:37 INFO  - +=============Database started=============+
+2019-12-10 17:54:37 INFO  - Database driver name: SQLiteJDBC
+2019-12-10 17:54:37 INFO  - Product name SQLite, Version 3.8.11
+2019-12-10 17:54:37 INFO  - +==========================================+
+
+2019-12-10 17:54:40 INFO  - Comparison sheet written successfully
+2019-12-10 17:54:40 INFO  - Data to excel written successfully
+2019-12-10 17:54:40 INFO  - History File created successfully
+2019-12-10 17:56:48 INFO  - 
+============================================================================================================================
+2019-12-10 17:56:48 INFO  - smoke suite started at Tue Dec 10 17:56:48 IST 2019
+2019-12-10 17:56:48 INFO  - Suite Browser: Chrome
+2019-12-10 17:56:48 INFO  - +=============Database started=============+
+2019-12-10 17:56:48 INFO  - Database driver name: SQLiteJDBC
+2019-12-10 17:56:48 INFO  - Product name SQLite, Version 3.8.11
+2019-12-10 17:56:48 INFO  - +==========================================+
+
+2019-12-10 17:56:48 INFO  - Test is started with browser: Chrome
+2019-12-10 17:57:01 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-10 17:57:01 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:57:01 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-10 17:57:01 INFO  - Test description: 
+2019-12-10 17:57:07 INFO  - Total Time taken in(seconds):5
+2019-12-10 17:57:07 INFO  - TestResults
+2019-12-10 17:57:08 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:57:08 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:57:08 INFO  - Closing Browsers
+2019-12-10 17:57:08 INFO  - Test is started with browser: Chrome
+2019-12-10 17:57:09 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-10 17:57:09 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:57:09 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-10 17:57:09 INFO  - Test description: 
+2019-12-10 17:57:13 INFO  - Total Time taken in(seconds):4
+2019-12-10 17:57:13 INFO  - TestResults
+2019-12-10 17:57:14 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:57:14 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:57:14 INFO  - Closing Browsers
+2019-12-10 17:57:14 INFO  - Test is started with browser: Chrome
+2019-12-10 17:57:14 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 17:57:14 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:57:14 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 17:57:14 INFO  - Test description: 
+2019-12-10 17:57:19 INFO  - Total Time taken in(seconds):4
+2019-12-10 17:57:19 INFO  - TestResults
+2019-12-10 17:57:20 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:57:20 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:57:20 INFO  - Closing Browsers
+2019-12-10 17:57:20 INFO  - Test is started with browser: Chrome
+2019-12-10 17:57:20 INFO  - No data found with given key-> ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 17:57:20 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:57:20 INFO  - Test Started: ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 17:57:20 INFO  - Test description: 
+2019-12-10 17:57:37 INFO  - Total Time taken in(seconds):17
+2019-12-10 17:57:37 INFO  - TestResults
+2019-12-10 17:57:38 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:57:38 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:57:38 INFO  - Closing Browsers
+2019-12-10 17:57:38 INFO  - Test is started with browser: Chrome
+2019-12-10 17:57:38 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 17:57:38 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:57:38 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 17:57:38 INFO  - Test description: 
+2019-12-10 17:57:56 INFO  - Total Time taken in(seconds):17
+2019-12-10 17:57:56 INFO  - TestResults
+2019-12-10 17:57:56 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:57:56 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:57:56 INFO  - Closing Browsers
+2019-12-10 17:57:56 INFO  - Test is started with browser: Chrome
+2019-12-10 17:57:57 INFO  - No data found with given key-> ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 17:57:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:57:57 INFO  - Test Started: ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 17:57:57 INFO  - Test description: 
+2019-12-10 17:58:17 INFO  - Total Time taken in(seconds):20
+2019-12-10 17:58:17 INFO  - TestResults
+2019-12-10 17:58:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:58:19 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:58:19 INFO  - Closing Browsers
+2019-12-10 17:58:19 INFO  - Test is started with browser: Chrome
+2019-12-10 17:58:19 INFO  - No data found with given key-> ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 17:58:19 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:58:19 INFO  - Test Started: ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 17:58:19 INFO  - Test description: 
+2019-12-10 17:58:42 INFO  - Total Time taken in(seconds):22
+2019-12-10 17:58:42 INFO  - TestResults
+2019-12-10 17:58:43 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:58:43 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:58:43 INFO  - Closing Browsers
+2019-12-10 17:58:43 INFO  - Test is started with browser: Chrome
+2019-12-10 17:58:43 INFO  - No data found with given key-> ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-10 17:58:43 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:58:43 INFO  - Test Started: ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-10 17:58:43 INFO  - Test description: 
+2019-12-10 17:59:20 INFO  - Total Time taken in(seconds):37
+2019-12-10 17:59:20 INFO  - TestResults
+2019-12-10 17:59:22 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 17:59:22 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 17:59:22 INFO  - Closing Browsers
+2019-12-10 17:59:22 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 17:59:22 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 17:59:22 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 17:59:22 INFO  - Test description: 
+2019-12-10 17:59:23 INFO  - smoke suite finished at Tue Dec 10 17:59:23 IST 2019
+2019-12-10 17:59:27 INFO  - Comparison sheet written successfully
+2019-12-10 17:59:27 INFO  - Data to excel written successfully
+2019-12-10 17:59:28 INFO  - Test process has ended
+2019-12-10 17:59:35 INFO  - +=============Database started=============+
+2019-12-10 17:59:35 INFO  - Database driver name: SQLiteJDBC
+2019-12-10 17:59:35 INFO  - Product name SQLite, Version 3.8.11
+2019-12-10 17:59:35 INFO  - +==========================================+
+
+2019-12-10 17:59:35 INFO  - Comparison sheet written successfully
+2019-12-10 17:59:35 INFO  - Data to excel written successfully
+2019-12-10 17:59:35 INFO  - History File created successfully
+2019-12-10 18:05:39 INFO  - 
+============================================================================================================================
+2019-12-10 18:05:39 INFO  - smoke suite started at Tue Dec 10 18:05:39 IST 2019
+2019-12-10 18:05:39 INFO  - Suite Browser: Chrome
+2019-12-10 18:05:39 INFO  - +=============Database started=============+
+2019-12-10 18:05:39 INFO  - Database driver name: SQLiteJDBC
+2019-12-10 18:05:40 INFO  - Product name SQLite, Version 3.8.11
+2019-12-10 18:05:40 INFO  - +==========================================+
+
+2019-12-10 18:05:40 INFO  - Test is started with browser: Chrome
+2019-12-10 18:05:51 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-10 18:05:51 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 18:05:51 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-10 18:05:51 INFO  - Test description: 
+2019-12-10 18:05:56 INFO  - Total Time taken in(seconds):5
+2019-12-10 18:05:57 INFO  - TestResults
+2019-12-10 18:05:58 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 18:05:58 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 18:05:58 INFO  - Closing Browsers
+2019-12-10 18:05:58 INFO  - Test is started with browser: Chrome
+2019-12-10 18:05:58 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-10 18:05:58 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 18:05:58 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-10 18:05:58 INFO  - Test description: 
+2019-12-10 18:06:02 INFO  - Total Time taken in(seconds):4
+2019-12-10 18:06:02 INFO  - TestResults
+2019-12-10 18:06:03 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 18:06:03 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 18:06:03 INFO  - Closing Browsers
+2019-12-10 18:06:03 INFO  - Test is started with browser: Chrome
+2019-12-10 18:06:03 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 18:06:03 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 18:06:03 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 18:06:03 INFO  - Test description: 
+2019-12-10 18:06:07 INFO  - Total Time taken in(seconds):4
+2019-12-10 18:06:07 INFO  - TestResults
+2019-12-10 18:06:08 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 18:06:08 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 18:06:08 INFO  - Closing Browsers
+2019-12-10 18:06:08 INFO  - Test is started with browser: Chrome
+2019-12-10 18:06:08 INFO  - No data found with given key-> ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 18:06:08 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 18:06:08 INFO  - Test Started: ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 18:06:08 INFO  - Test description: 
+2019-12-10 18:06:26 INFO  - Total Time taken in(seconds):17
+2019-12-10 18:06:26 INFO  - TestResults
+2019-12-10 18:06:26 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 18:06:26 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 18:06:26 INFO  - Closing Browsers
+2019-12-10 18:06:26 INFO  - Test is started with browser: Chrome
+2019-12-10 18:06:27 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 18:06:27 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 18:06:27 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-10 18:06:27 INFO  - Test description: 
+2019-12-10 18:06:44 INFO  - Total Time taken in(seconds):17
+2019-12-10 18:06:44 INFO  - TestResults
+2019-12-10 18:06:44 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 18:06:44 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 18:06:44 INFO  - Closing Browsers
+2019-12-10 18:06:44 INFO  - Test is started with browser: Chrome
+2019-12-10 18:06:44 INFO  - No data found with given key-> ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 18:06:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 18:06:44 INFO  - Test Started: ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 18:06:44 INFO  - Test description: 
+2019-12-10 18:07:05 INFO  - Total Time taken in(seconds):21
+2019-12-10 18:07:05 INFO  - TestResults
+2019-12-10 18:07:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 18:07:06 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 18:07:06 INFO  - Closing Browsers
+2019-12-10 18:07:06 INFO  - Test is started with browser: Chrome
+2019-12-10 18:07:07 INFO  - No data found with given key-> ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 18:07:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 18:07:07 INFO  - Test Started: ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-10 18:07:07 INFO  - Test description: 
+2019-12-10 18:07:29 INFO  - Total Time taken in(seconds):22
+2019-12-10 18:07:29 INFO  - TestResults
+2019-12-10 18:07:30 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 18:07:30 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 18:07:30 INFO  - Closing Browsers
+2019-12-10 18:07:30 INFO  - Test is started with browser: Chrome
+2019-12-10 18:07:30 INFO  - No data found with given key-> ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-10 18:07:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 18:07:30 INFO  - Test Started: ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-10 18:07:30 INFO  - Test description: 
+2019-12-10 18:08:08 INFO  - Total Time taken in(seconds):38
+2019-12-10 18:08:09 INFO  - TestResults
+2019-12-10 18:08:09 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-10 18:08:09 INFO  - Test has ended - closing browser: Chrome
+2019-12-10 18:08:09 INFO  - Closing Browsers
+2019-12-10 18:08:09 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 18:08:10 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-10 18:08:10 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-10 18:08:10 INFO  - Test description: 
+2019-12-10 18:08:11 INFO  - smoke suite finished at Tue Dec 10 18:08:11 IST 2019
+2019-12-10 18:08:14 INFO  - Comparison sheet written successfully
+2019-12-10 18:08:14 INFO  - Data to excel written successfully
+2019-12-10 18:08:16 INFO  - Test process has ended
+2019-12-10 18:08:23 INFO  - +=============Database started=============+
+2019-12-10 18:08:23 INFO  - Database driver name: SQLiteJDBC
+2019-12-10 18:08:23 INFO  - Product name SQLite, Version 3.8.11
+2019-12-10 18:08:23 INFO  - +==========================================+
+
+2019-12-10 18:08:25 INFO  - Comparison sheet written successfully
+2019-12-10 18:08:25 INFO  - Data to excel written successfully
+2019-12-10 18:08:25 INFO  - History File created successfully
