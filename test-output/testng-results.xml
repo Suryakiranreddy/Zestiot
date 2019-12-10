@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="50153" started-at="2019-12-10T10:56:09Z" finished-at="2019-12-10T10:56:59Z">
+  <suite name="Default suite" duration-ms="34129" started-at="2019-12-10T11:52:33Z" finished-at="2019-12-10T11:53:07Z">
     <groups>
       <group name="Regression">
-        <method signature="ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@370736d9]" name="test" class="enh.web.tests.ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source"/>
+        <method signature="ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@370736d9]" name="test" class="enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="Default test" duration-ms="50153" started-at="2019-12-10T10:56:09Z" finished-at="2019-12-10T10:56:59Z">
-      <class name="enh.web.tests.ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@370736d9]" name="test" duration-ms="37892" started-at="2019-12-10T16:26:20Z" description="AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source" finished-at="2019-12-10T16:26:58Z">
+    <test name="Default test" duration-ms="34129" started-at="2019-12-10T11:52:33Z" finished-at="2019-12-10T11:53:07Z">
+      <class name="enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@370736d9]" name="test" duration-ms="21627" started-at="2019-12-10T17:22:44Z" description="AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts" finished-at="2019-12-10T17:23:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
