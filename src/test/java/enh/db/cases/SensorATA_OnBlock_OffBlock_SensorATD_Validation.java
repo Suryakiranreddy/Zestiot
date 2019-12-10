@@ -35,7 +35,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 	
 		
 		ResultSet result = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where \r\n" + 
-				"(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+"");
+				"date(IFNULL(sta, mediator_sta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+"");
 		while (result.next())
 		{				
 			totalScheduledArrival = result.getInt("count(*)");
@@ -43,7 +43,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 		}	
 		
 		ResultSet result1 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleDeparture_GMR` where \r\n" +
-				"(date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+"");
+				"date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+"");
 		while (result1.next())
 		{				
 			totalScheduledDeparture = result1.getInt("count(*)");
@@ -51,7 +51,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 		}
 		
 		ResultSet result2 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n" + 
-		"flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") \r\n" + 
+		"gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta, mediator_sta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
 		"and sensor_ata is not null");
 				while (result2.next())
 				{				
@@ -60,7 +60,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 				}
 				
 		ResultSet result3 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, on_block_time, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where\r\n" + 
-		"flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") \r\n" + 
+		"gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta, mediator_sta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
 		"and (sensor_ata is null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
 				while (result3.next())
 				{				
@@ -73,7 +73,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 				}
 		
 		ResultSet result4 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n" + 
-		"where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)= '"+SQL_Queries.yesterDate()+"') and operationunit = "+operationunit+" and on_block_time is not null )\r\n" + 
+		"where date(IFNULL(sta, mediator_sta))='"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and on_block_time is not null )\r\n" + 
 		"and operationname = 'onb' order by flightno");
 		while (result4.next())
 		{				
@@ -81,8 +81,8 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 			System.out.println(notNullOnBlockTime);
 		}
 		
-		ResultSet result5 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ata, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where flightarrivalid in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`\r\n "
-		+ "where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") and on_block_time is null \r\n"
+		ResultSet result5 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ata, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`\r\n "
+		+ "where date(IFNULL(sta, mediator_sta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and on_block_time is null \r\n"
 				+ "and (sensor_ata is not null and off_block_time is not null and sensor_atd is not null)");
 		while (result5.next())
 		{	
@@ -96,7 +96,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 		}
 		
 		ResultSet result6 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n "+
-				 "where (date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)= '"+SQL_Queries.yesterDate()+"') and operationunit = "+operationunit+" and off_block_time is not null ) \r\n"
+				 "where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and off_block_time is not null ) \r\n"
 				 		+ "and operationname = 'ofb' order by flightno");
 		while (result6.next())
 		{				
@@ -104,8 +104,8 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 			System.out.println(notNullOffBlockTime);			
 		}
 		
-		ResultSet result7 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where flightdepartureid in (SELECT logid FROM `DailyFlightScheduleDeparture_GMR` \r\n"
-		+ "where (date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") and off_block_time is null \r\n"
+		ResultSet result7 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` \r\n"
+		+ "where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and off_block_time is null \r\n"
 		+ "and(sensor_ata is not null and on_block_time is not null and sensor_atd is not null)");
 				while (result7.next())
 				{	
@@ -119,7 +119,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 				}
 	
 		ResultSet result8 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n " +
-		"flightdepartureId in (SELECT logid FROM `DailyFlightScheduleDeparture_GMR` where (date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') \r\n "
+		"gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' \r\n "
 		+ "and operationunit= "+operationunit+") and sensor_atd is not null");
 				while (result8.next())
 				{				
@@ -128,7 +128,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 				}
 		
 		ResultSet result9 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, off_block_time FROM `DailyFlightSchedule_Merged` where \r\n" + 
-		"flightdepartureId in (SELECT logid FROM `DailyFlightScheduleDeparture_GMR`where (date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") \r\n" + 
+		"gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR`where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
 		"and (sensor_atd is null and on_block_time is not null and off_block_time is not null and sensor_ata is not null)");
 		while (result9.next())
 		{	
@@ -141,8 +141,8 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 			sensorATDIsNullList.add(str_LogID);
 		}
 						
-		ResultSet result10 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where flightdepartureId in \r\n" + 
-		"(SELECT logid FROM `DailyFlightScheduleDeparture_GMR` where (date(std) ='"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit ="+operationunit+")\r\n" + 
+		ResultSet result10 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_departure in \r\n" + 
+		"(SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' and operationunit ="+operationunit+")\r\n" + 
 		"and (sensor_ata is not null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
 		while (result10.next())
 		{				
@@ -151,7 +151,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 		}
 		
 		ResultSet result11 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, Off_block_time, sensor_atd, (case when ((Sensor_ATA < On_Block_Time AND Sensor_ATA < Off_Block_Time) AND (Sensor_ATD > On_Block_Time AND Sensor_ATD > Off_Block_Time)) then 1 else 0 end) as Status\r\n" + 
-		"FROM `DailyFlightSchedule_Merged` where flightdepartureId in (SELECT logid FROM `DailyFlightScheduleDeparture_GMR` where (date(std) ='"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') \r\n" + 
+		"FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' \r\n" + 
 		"and operationunit ="+operationunit+") and (sensor_ata is not null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
 		while (result11.next()){	
 			            
@@ -197,7 +197,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 		 		+ " </tr>");
 		if (sensorATAIsNullList.size()>0) {
 		ResultSet result31 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, on_block_time, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where \r\n" + 
-				"flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") \r\n" + 
+				"flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta, mediator_sta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
 				"and (sensor_ata is null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
 						while (result31.next())
 						{				
@@ -225,8 +225,8 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 						 		+ "<th style=\"width:20%\"><b>Off_BlocK_Time</b></th>"
 						 		+ "<th style=\"width:20%\"><b>Sensor_ATD</b></th>"
 						 		+ " </tr>");
-			ResultSet result51 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ata, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where flightarrivalid in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`\r\n "
-					+ "where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") and on_block_time is null \r\n"
+			ResultSet result51 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ata, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`\r\n "
+					+ "where date(IFNULL(sta, mediator_sta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and on_block_time is null \r\n"
 							+ "and (sensor_ata is not null and off_block_time is not null and sensor_atd is not null)");
 								while (result51.next())
 								{	
@@ -256,8 +256,8 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 											 		+ "<th style=\"width:20%\"><b>On_BlocK_Time</b></th>"
 											 		+ "<th style=\"width:20%\"><b>Sensor_ATD</b></th>"
 											 		+ " </tr>");
-			ResultSet result71 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where flightdepartureid in (SELECT logid FROM `DailyFlightScheduleDeparture_GMR` \r\n "
-			+ "where (date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") and off_block_time is null \r\n"
+			ResultSet result71 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` \r\n "
+			+ "where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and off_block_time is null \r\n"
 			+ "and(sensor_ata is not null and on_block_time is not null and sensor_atd is not null)");
 								while (result71.next())
 								{	
@@ -289,7 +289,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 																 		+ "<th style=\"width:20%\"><b>Off_BlocK_Time</b></th>"
 																 		+ " </tr>");
 		ResultSet result91 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, off_block_time FROM `DailyFlightSchedule_Merged` where \r\n" + 
-				"flightdepartureId in (SELECT logid FROM `DailyFlightScheduleDeparture_GMR`where (date(std)= '"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+") \r\n" + 
+				"gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR`where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
 				"and (sensor_atd is null and on_block_time is not null and off_block_time is not null and sensor_ata is not null)");
 						while (result91.next())
 							{	
@@ -324,7 +324,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_Validation{
 			if(status0List.size()>0)
 			{
 			ResultSet result111 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, Off_block_time, sensor_atd, (case when ((Sensor_ATA < On_Block_Time AND Sensor_ATA < Off_Block_Time) AND (Sensor_ATD > On_Block_Time AND Sensor_ATD > Off_Block_Time)) then 1 else 0 end) as Status\r\n" + 
-					"FROM `DailyFlightSchedule_Merged` where flightdepartureId in (SELECT logid FROM `DailyFlightScheduleDeparture_GMR` where (date(std) ='"+SQL_Queries.yesterDate()+"' or date(mediator_std)='"+SQL_Queries.yesterDate()+"') \r\n" + 
+					"FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' \r\n" + 
 					"and operationunit ="+operationunit+") and (sensor_ata is not null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
 					while (result111.next()){	
 						            
