@@ -33,7 +33,7 @@ publishHTML([allowMissing: false,
   keepAll: false, reportDir: '',
    reportFiles: 'ExecutionReports/HtmlReport/TestReport.html',
     reportName: 'Extent HTML Report', reportTitles: ''])
- mail bcc: '', body: 'This is a confirmation mail that all 'ZestIOT automation scripts' are successfully executed through Jenkins Pipeline', cc: '', from: 'AutomationTeam@Enhops', replyTo: '', subject: 'Notification:Build SUCCESSFULL in Jenkins pipeline: ZestIot-Github', to: 'stiyyagura@enhops.com'   
+ mail bcc: '', body: 'This is a confirmation mail that all ZestIOT automation scripts are successfully executed through Jenkins Pipeline', cc: '', from: 'AutomationTeam@Enhops', replyTo: '', subject: 'Notification:Build SUCCESSFULL in Jenkins pipeline: ZestIot-Github', to: 'stiyyagura@enhops.com'   
 
 }
 }
