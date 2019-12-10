@@ -99,7 +99,7 @@ public class SendMail extends Utility {
 		Date date = new Date();
 		 SimpleDateFormat formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");  
 		 String strDate = formatter.format(date);
-		msg.setSubject(strDate +" - "+subject1);
+		msg.setSubject("<b style=\"color:red;\">"+strDate +" - "+subject1+"</b>");
 
 		if (!"".equals(EMAILTO)) {
 			if (EMAILTO.contains(",")) {
@@ -124,8 +124,8 @@ public class SendMail extends Utility {
 		 */
 
 		BodyPart messageBodyPart = new MimeBodyPart();
-		messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
-				+ " \n \n \nThanks & Regards,\n Automation Team");
+		messageBodyPart.setText("<b style=\"color:#00b8e6;\">Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
+				+ " \n \n \nThanks & Regards,\n Automation Team</b>");
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
 
