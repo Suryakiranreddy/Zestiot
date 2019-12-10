@@ -128,7 +128,12 @@ public class SendMail extends Utility {
 		BodyPart messageBodyPart = new MimeBodyPart();
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
-		messageBodyPart.setContent(SendMailBodyToZestIOT.mailBody, "text/html");
+		String mailBody="<html>"
+    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached current sprint <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins. "				
+    			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
+    			+ "<html>";
+    	
+		messageBodyPart.setContent(mailBody, "text/html");
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
