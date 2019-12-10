@@ -25,6 +25,8 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
+import enh.db.cases.SQL_Queries;
+
 /**
  * @author EN
  */
@@ -47,12 +49,12 @@ public class HtmlReportUtil {
 	private static synchronized void init() {
 
 		if (extentNoHistory == null) {
-			extentNoHistory = new ExtentReports(ConfigReader.getValue("HtmlReport") + "\\TestReport.html", true,
+			extentNoHistory = new ExtentReports(ConfigReader.getValue("HtmlReport") + "\\TestReport - "+SQL_Queries.todayDayDateTime()+".html", true,
 					DisplayOrder.NEWEST_FIRST);
 			extentNoHistory.loadConfig(new File(ConfigReader.getValue("HtmlReportConfigFile")));
 		}
 		if (extentPreserverHistory == null) {
-			extentPreserverHistory = new ExtentReports(ConfigReader.getValue("HtmlReport") + "\\TestReportHistory.html",
+			extentPreserverHistory = new ExtentReports(ConfigReader.getValue("HtmlReport") + "\\TestReportHistory - "+SQL_Queries.todayDayDateTime()+".html",
 					true, DisplayOrder.NEWEST_FIRST);
 			extentPreserverHistory.loadConfig(new File(ConfigReader.getValue("HtmlReportConfigFile")));
 		}

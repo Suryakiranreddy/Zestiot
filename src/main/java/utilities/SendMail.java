@@ -146,10 +146,10 @@ public class SendMail extends Utility {
 		//Utility.createZipFile();
 
 		messageBodyPart = new MimeBodyPart();
-		String path = System.getProperty(DIR_PATH) + "/ExecutionReports/HtmlReport/TestReport.html";
+		String path = System.getProperty(DIR_PATH) + "/ExecutionReports/HtmlReport/TestReport - "+strDate+".html";
 		DataSource source = new FileDataSource(path);
 		messageBodyPart.setDataHandler(new DataHandler(source));
-		messageBodyPart.setFileName("TestExecutionReport.html");
+		messageBodyPart.setFileName("TestExecutionReport - "+strDate+".html");
 		multipart.addBodyPart(messageBodyPart);
 
 		msg.setContent(multipart);
