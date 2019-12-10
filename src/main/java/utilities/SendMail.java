@@ -122,6 +122,7 @@ public class SendMail extends Utility {
 		System.out.println("Sending Automated Execution Report To -  : " + EMAILTO);
 		/*
 		 * if (!"".equals(EMAILTOCC)) {
+		 * 
 		 * msg.addRecipient(Message.RecipientType.CC, new InternetAddress(EMAILTOCC)); }
 		 */
 
