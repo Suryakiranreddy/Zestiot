@@ -1,59 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
   <reporter-output>
   </reporter-output>
-  <suite name="smoke" duration-ms="115802" started-at="2019-12-09T08:55:02Z" finished-at="2019-12-09T08:56:57Z">
+  <suite name="smoke" duration-ms="74021" started-at="2019-12-10T06:03:06Z" finished-at="2019-12-10T06:04:20Z">
     <groups>
       <group name="Regression">
-        <method signature="ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User@16293aa2]" name="test" class="enh.web.tests.ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User"/>
-        <method signature="ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User.test()[pri:0, instance:enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User@5158b42f]" name="test" class="enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User"/>
-        <method signature="ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User.test()[pri:0, instance:enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User@595b007d]" name="test" class="enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User"/>
-        <method signature="ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation@72d1ad2e]" name="test" class="enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation"/>
-        <method signature="ZestIOT_AV_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation@2d7275fc]" name="test" class="enh.web.tests.ZestIOT_AV_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation"/>
-        <method signature="ZestIOT_AV_2307_GMR_HYD_SensorATA_OnBlock_OffBlock_SensorATD_Validation.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_GMR_HYD_SensorATA_OnBlock_OffBlock_SensorATD_Validation@399f45b1]" name="test" class="enh.web.tests.ZestIOT_AV_2307_GMR_HYD_SensorATA_OnBlock_OffBlock_SensorATD_Validation"/>
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@1d2adfbe]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User"/>
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User@36902638]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User"/>
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@223d2c72]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User"/>
+        <method signature="ZestIOT_AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts@8f4ea7c]" name="test" class="enh.web.tests.ZestIOT_AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts"/>
+        <method signature="ZestIOT_AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@436813f3]" name="test" class="enh.web.tests.ZestIOT_AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="smoke-Tests" duration-ms="115802" started-at="2019-12-09T08:55:02Z" finished-at="2019-12-09T08:56:57Z">
-      <class name="enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User@5158b42f]" name="test" duration-ms="5442" started-at="2019-12-09T14:25:19Z" description="Verifying cobt  Activity" finished-at="2019-12-09T14:25:25Z">
+    <test name="smoke-Tests" duration-ms="74021" started-at="2019-12-10T06:03:06Z" finished-at="2019-12-10T06:04:20Z">
+      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User@36902638]" name="test" duration-ms="4939" started-at="2019-12-10T11:33:24Z" description="AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User" finished-at="2019-12-10T11:33:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_AISATS_User -->
-      <class name="enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User@595b007d]" name="test" duration-ms="5338" started-at="2019-12-09T14:25:25Z" description="Verifying cobt  Activity" finished-at="2019-12-09T14:25:30Z">
+      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User -->
+      <class name="enh.web.tests.ZestIOT_AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@436813f3]" name="test" duration-ms="23944" started-at="2019-12-10T11:33:55Z" description="AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts" finished-at="2019-12-10T11:34:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User@595b007d]" name="afterTest" is-config="true" duration-ms="896" started-at="2019-12-09T14:26:57Z" finished-at="2019-12-09T14:26:57Z">
+      </class> <!-- enh.web.tests.ZestIOT_AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts -->
+      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@1d2adfbe]" name="test" duration-ms="5737" started-at="2019-12-10T11:33:17Z" description="AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User" finished-at="2019-12-10T11:33:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User -->
+      <class name="enh.web.tests.ZestIOT_AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts@8f4ea7c]" name="test" duration-ms="19847" started-at="2019-12-10T11:33:34Z" description="AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts" finished-at="2019-12-10T11:33:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts -->
+      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@223d2c72]" name="test" duration-ms="4188" started-at="2019-12-10T11:33:30Z" description="AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User" finished-at="2019-12-10T11:33:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@223d2c72]" name="afterTest" is-config="true" duration-ms="703" started-at="2019-12-10T11:34:20Z" finished-at="2019-12-10T11:34:20Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-      </class> <!-- enh.web.tests.ZestIOT_2268_Verifying_COBT_For_GMR_HYD_SG_User -->
-      <class name="enh.web.tests.ZestIOT_AV_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation@2d7275fc]" name="test" duration-ms="24461" started-at="2019-12-09T14:25:51Z" description="To validate Scheduled and SensorATD for GMR-Hyderabad" finished-at="2019-12-09T14:26:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_AV_2294_GMR_HYD_SensorATD_And_Scheduled_data_Validation -->
-      <class name="enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation@72d1ad2e]" name="test" duration-ms="19420" started-at="2019-12-09T14:25:31Z" description="To validate Scheduled and Sensor ATA for GMR-Hyderabad" finished-at="2019-12-09T14:25:50Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_AV_2293_GMR_HYD_SensorATA_And_Scheduled_data_Validation -->
-      <class name="enh.web.tests.ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User@16293aa2]" name="test" duration-ms="5148" started-at="2019-12-09T14:25:13Z" description="Verifying cobt  Activity" finished-at="2019-12-09T14:25:18Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_2268_Verifying_COBT_For_DIALCelebi_User -->
-      <class name="enh.web.tests.ZestIOT_AV_2307_GMR_HYD_SensorATA_OnBlock_OffBlock_SensorATD_Validation">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_GMR_HYD_SensorATA_OnBlock_OffBlock_SensorATD_Validation@399f45b1]" name="test" duration-ms="39704" started-at="2019-12-09T14:26:16Z" description="To validate Scheduled and Sensor data for GMR-Hyderabad" finished-at="2019-12-09T14:26:56Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_AV_2307_GMR_HYD_SensorATA_OnBlock_OffBlock_SensorATD_Validation -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User -->
     </test> <!-- smoke-Tests -->
   </suite> <!-- smoke -->
 </testng-results>
