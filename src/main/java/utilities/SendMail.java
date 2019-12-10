@@ -129,7 +129,7 @@ public class SendMail extends Utility {
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
 		String mailBody="<html>"
-    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached current sprint <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins. "				
+    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins. "				
     			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
     			+ "<html>";
     	
