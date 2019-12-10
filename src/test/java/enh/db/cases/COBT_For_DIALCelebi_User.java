@@ -15,8 +15,7 @@ import utilities.HtmlReportUtil;
 public class COBT_For_DIALCelebi_User {
 	 public static ArrayList<String> cobtIsNotNull= new ArrayList<String>();
 	 public static ArrayList<String> ofBlockIsNotNull= new ArrayList<String>();
-	 public static ArrayList<String> cobtTimeDiff= new ArrayList<String>();
-	 
+	 public static ArrayList<String> cobtTimeDiff= new ArrayList<String>();	 
 	 public static StringBuilder email_COBT_For_DIALCelebi_User5= new StringBuilder();
 	 public static StringBuilder email_COBT_For_DIALCelebi_User6= new StringBuilder();	 
 	 public static StringBuilder email_COBT_For_DIALCelebi_User7= new StringBuilder();
