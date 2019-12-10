@@ -48,17 +48,15 @@ public class HtmlReportUtil {
 
 	// Initialize reporter
 	private static synchronized void init() {
-		Date date = new Date();
-		 SimpleDateFormat formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");  
-		 String strDate = formatter.format(date);
+		
 
 		if (extentNoHistory == null) {
-			extentNoHistory = new ExtentReports(ConfigReader.getValue("HtmlReport") + "\\TestReport - "+strDate+".html", true,
+			extentNoHistory = new ExtentReports(ConfigReader.getValue("HtmlReport") + "\\TestReport.html", true,
 					DisplayOrder.NEWEST_FIRST);
 			extentNoHistory.loadConfig(new File(ConfigReader.getValue("HtmlReportConfigFile")));
 		}
 		if (extentPreserverHistory == null) {
-			extentPreserverHistory = new ExtentReports(ConfigReader.getValue("HtmlReport") + "\\TestReportHistory - "+strDate+".html",
+			extentPreserverHistory = new ExtentReports(ConfigReader.getValue("HtmlReport") + "\\TestReportHistory.html",
 					true, DisplayOrder.NEWEST_FIRST);
 			extentPreserverHistory.loadConfig(new File(ConfigReader.getValue("HtmlReportConfigFile")));
 		}
