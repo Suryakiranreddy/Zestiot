@@ -126,9 +126,9 @@ public class SendMail extends Utility {
 
 		BodyPart messageBodyPart = new MimeBodyPart();
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
-				+ " \n \n \nThanks & Regards,\n Automation Team");*/
-		messageBodyPart.setContent("<html><b style=\"color:#00b8e6;\">Hi All, <br>Please find attached current sprint Automation Test Results triggred by Jenkins.  "
-				+ " <br><br><br>Thanks & Regards,<br>Automation Team</b><html>", "text/html");
+				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
+		messageBodyPart.setContent("<html><p style=\"color:#008ae6;\">Hi All, <br>Please find <b>"+strDate+"</b> attached current sprint <b><i> Automation Test Results</i> </b>triggred by Jenkins.  "
+				+ " <br><br><br>Thanks & Regards,<br>Automation Team</p><html>", "text/html");
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
