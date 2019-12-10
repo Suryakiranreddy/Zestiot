@@ -6,7 +6,6 @@ import java.util.Date;
 import enh.db.cases.COBT_For_DIALCelebi_User;
 import enh.db.cases.COBT_For_GMR_HYD_AISATS_User;
 import enh.db.cases.COBT_For_GMR_HYD_SG_User;
-import enh.db.cases.SQL_Queries;
 
 public class SendMailBodyToZestIOT extends Utility {
 	public static String mailBody;
