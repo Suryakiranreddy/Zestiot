@@ -127,7 +127,7 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 	public static void scheduled_And_Sensor_ATA_For_Hyderabad_Report(int operationunit) throws Exception {
 		
 	String querry_result=	"SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where \r\n" 
-		+ "(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+"";
+		+ "date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+"";
 	System.out.println(querry_result);	
 	ResultSet result = DBWrapper.Connect(querry_result);
 		while (result.next())
@@ -136,8 +136,9 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 			System.out.println(totalScheduledArrival);
 			//HtmlReportUtil.stepInfo("<b style=\"color:purple;\"> Airport : GMR_HYD :</b> <b style=\"color:green;\">Total No. of flights Scheduled Departure (based on STD or Mediator-STD) = "+ totalScheduledArrival +"</b>");
 		}
+		
 		String querry_result2="SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n" +
-		"flightArrivalId in (SELECT logid FROM `DailyFlightScheduleArrival_GMR`where (date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit="+operationunit+") \r\n" + 
+		"gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' and operationunit="+operationunit+") \r\n" + 
 		"and sensor_ata is not null";
 		ResultSet result2 = DBWrapper.Connect(querry_result2);
 		while (result2.next())
@@ -147,7 +148,7 @@ public class Scheduled_And_Sensor_ATA_Hyd {
 			//HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights detected by Sensor(Merged table) = "+ notNullSensorATA +"</b>");
 		}
 		String querry_result3="SELECT logid, flightnumber, sta, eta, ata FROM `DailyFlightScheduleArrival_GMR`where \r\n" +
-				"(date(sta)= '"+SQL_Queries.yesterDate()+"' or date(mediator_sta)='"+SQL_Queries.yesterDate()+"') and operationunit= "+operationunit+" and sensor_ata is null";
+				"date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+" and sensor_ata is null";
 		ResultSet result3 = DBWrapper.Connect(querry_result3);
 		while (result3.next())
 		{

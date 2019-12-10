@@ -12,13 +12,13 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class ZestIOT_AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts extends KeywordUtil {
+public class ZestIOT_GMR_HYD_AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-	@Test(testName = "AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts", groups = {
-			"Regression" }, description = "AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts")
+	@Test(testName = "AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts", groups = {
+			"Regression" }, description = "AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts")
 	public void test()
 			throws Throwable {
 		try {
@@ -32,10 +32,9 @@ public class ZestIOT_AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_tim
 			// .........Script Start...........................
 
 			
+		
 			
-			Scheduled_And_Sensor_ATA_Hyd.scheduled_And_Sensor_ATA_For_Hyderabad_Report(4);
-			
-			
+			Scheduled_And_Sensor_ATD_Hyd.scheduled_And_Sensor_ATD_For_Hyderabad_Report(4);
 			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {
