@@ -36,7 +36,13 @@ publishHTML([allowMissing: false,
   keepAll: false, reportDir: '',
    reportFiles: 'ExecutionReports/HtmlReport/TestReport.html',
     reportName: 'Extent HTML Report', reportTitles: ''])
- mail bcc: '', body: 'This is a confirmation mail that all ZestIOT automation scripts are successfully executed through Jenkins Pipeline', cc: '', from: 'AutomationTeam@Enhops', replyTo: '', subject: 'Notification:Build SUCCESSFULL in Jenkins pipeline: ZestIot-Github', to: 'stiyyagura@enhops.com'   
+ mail bcc: '', 
+ body: """<b>This is a confirmation mail that all ZestIOT automation scripts are successfully executed through Jenkins Pipeline</b><br><p>Check console output at <a href="${env.BUILD_URL}">${env.JOB_NAME}</a></p>""", 
+ cc:  "stiyyagura@enhops.com"  , 
+ from: "AutomationTeam@Enhops",
+  replyTo: '', 
+  subject: "Notification:Build SUCCESSFULL in Jenkins pipeline: ZestIot-Github '${env.JOB_NAME} ${env.BUILD_NUMBER}'" ,
+   to: "stiyyagura@enhops.com"   
 
 }
 }
