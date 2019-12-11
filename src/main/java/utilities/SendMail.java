@@ -25,8 +25,8 @@ import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 
 import enh.db.cases.COBT_For_DIALCelebi_User;
-import enh.db.cases.COBT_For_GMR_HYD_AISATS_User;
-import enh.db.cases.COBT_For_GMR_HYD_SG_User;
+
+
 
 
 
@@ -133,18 +133,13 @@ public class SendMail extends Utility {
 		BodyPart messageBodyPart = new MimeBodyPart();
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
-		/*String mailBody="<html>"
-    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins.<br> "	
-    			+COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString()
-    			+COBT_For_GMR_HYD_AISATS_User.email_COBT_For_DIALCelebi_User5.toString()
-    			+COBT_For_GMR_HYD_SG_User.email_COBT_For_DIALCelebi_User5.toString()
+		String mailBody="<html>"
+    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins."	
+                 +COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString()+""
     			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
-    			+ "<html>";*/
+    			+ "<html>";
     	
-		messageBodyPart.setContent("<html>"
-    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins. "	   			
-    			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
-    			+ "<html>", "text/html");
+		messageBodyPart.setContent(mailBody, "text/html");
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
