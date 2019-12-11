@@ -209,7 +209,8 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 							
 								email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd2.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td> <td><b style=\"color:red;\">"+str_flightNumber_Arrival+"</b></td>"
 							 		+ " <td> <b style=\"color:red;\">"+str_On_Block_Time+"</b></td> <td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td> <td><b style=\"color:red;\">"+str_Sensor_ATD+"</b></td></tr>");	
-							}}
+							}
+						}
 							else {
 								email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd2.append("<tr><td colspan=\"5\"><b style=\"color:red;\">No values found </b></td></tr>");	
 							}
@@ -225,6 +226,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 						 		+ "<th style=\"width:20%\"><b>Off_BlocK_Time</b></th>"
 						 		+ "<th style=\"width:20%\"><b>Sensor_ATD</b></th>"
 						 		+ " </tr>");
+			if (onBlockIsNullList.size()>0) {
 			ResultSet result51 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ata, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`\r\n "
 					+ "where date(IFNULL(sta, mediator_sta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and on_block_time is null \r\n"
 							+ "and (sensor_ata is not null and off_block_time is not null and sensor_atd is not null)");
@@ -236,13 +238,12 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 									String str_Off_Block_Time = result51.getString("off_block_time");
 									String str_Sensor_ATD = result51.getString("sensor_atd");
 									
-									if (onBlockIsNullList.size()>0) {
-										email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd3.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td> <td><b style=\"color:red;\">"+str_flightNumber_Arrival+"</b></td>"
+									email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd3.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td> <td><b style=\"color:red;\">"+str_flightNumber_Arrival+"</b></td>"
 										 		+ " <td> <b style=\"color:red;\">"+str_Sensor_ATA+"</b></td> <td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td> <td><b style=\"color:red;\">"+str_Sensor_ATD+"</b></td></tr>");	
-									}
-									else {
-										email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd3.append("<tr><td colspan=\"5\"><b style=\"color:red;\">No values found </b></td></tr>");	
-									}
+								}
+							}
+							else {
+									email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd3.append("<tr><td colspan=\"5\"><b style=\"color:red;\">No values found </b></td></tr>");	
 								}
 								email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd3.append("</table>");
 			
@@ -256,6 +257,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 											 		+ "<th style=\"width:20%\"><b>On_BlocK_Time</b></th>"
 											 		+ "<th style=\"width:20%\"><b>Sensor_ATD</b></th>"
 											 		+ " </tr>");
+			if (offBlockIsNullList.size()>0) {
 			ResultSet result71 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` \r\n "
 			+ "where date(IFNULL(std, mediator_std))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and off_block_time is null \r\n"
 			+ "and(sensor_ata is not null and on_block_time is not null and sensor_atd is not null)");
@@ -266,17 +268,15 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 									String str_Sensor_ATA = result71.getString("sensor_ata");
 									String str_On_Block_Time = result71.getString("on_block_time");
 									String str_Sensor_ATD = result71.getString("sensor_atd");
-													
-									if (offBlockIsNullList.size()>0)
-									{
-										email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd4.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td> <td><b style=\"color:red;\">"+str_flightNumber_Departure+"</b></td>"
+									
+									email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd4.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td> <td><b style=\"color:red;\">"+str_flightNumber_Departure+"</b></td>"
 										 		+ " <td> <b style=\"color:red;\">"+str_Sensor_ATA+"</b></td> <td><b style=\"color:red;\">"+str_On_Block_Time+"</b></td> <td><b style=\"color:red;\">"+str_Sensor_ATD+"</b></td></tr>");	
 									}
+						}
 									else
 									{
 										email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd4.append("<tr><td colspan=\"5\"><b style=\"color:red;\">No values found </b></td></tr>");	
 									}
-								}
 								email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd4.append("</table>");
 								
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd5.append("<br><br>");

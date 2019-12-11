@@ -279,8 +279,8 @@ public class Scheduled_And_Sensor_ATD_Hyd {
 		email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append("<table style=\"width:100%\" id=\"t01\"><caption> OFFBLOCK time detected by Flight Sensor less than AIRBORNE time detected by Flight Sensor</caption><tr>"
 				+ "<th style=\"width:10%\"><b>LogID</b></th>"
 				+ "<th style=\"width:15%\"><b>Departure Flight No.</b></th> "
-				+ "<th style=\"width:15%\"><b>Sensor_ATD</b></th> "
 				+ "<th style=\"width:15%\"><b>Off Block time</b></th> "
+				+ "<th style=\"width:15%\"><b>Sensor_ATD</b></th> " 
 				+ "<th style=\"width:15%\"><b>Difference between Off block time and Sensor ATD</b></th> "
 				+ " </tr>");
 		

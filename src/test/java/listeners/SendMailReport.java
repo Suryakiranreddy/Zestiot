@@ -31,7 +31,7 @@ import enh.db.cases.Scheduled_And_Sensor_ATA_DIAL_Delhi;
 import enh.db.cases.Scheduled_And_Sensor_ATA_Hyd;
 import enh.db.cases.Scheduled_And_Sensor_ATD_DIAL_Delhi;
 import enh.db.cases.Scheduled_And_Sensor_ATD_Hyd;
-import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation2;
+import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation;
 import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
 import utilities.GlobalUtil;
 import utilities.Utility;
@@ -138,7 +138,7 @@ public class SendMailReport extends Utility {
 				+ Scheduled_And_Sensor_ATA_Hyd.email_report_Scheduled_And_Sensor_ATA_For_Hyd1.toString() + ""
 				+ Scheduled_And_Sensor_ATD_DIAL_Delhi.email_report_Scheduled_And_Sensor_ATD_For_Delhi1.toString() + ""
 				+ Scheduled_And_Sensor_ATD_Hyd.email_report_Scheduled_And_Sensor_ATD_For_Hyd1.toString() + ""
-				+ SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation2.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_DIAL_Delhi1.toString() + ""
+				+ SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_DIAL_Delhi1.toString() + ""
 				+ SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.toString() + ""
     			+" <p style=\"color:#008ae6;\"><br><br><br> Thanks & Regards,<br>Automation Team</p>"
     			+ "<html>";

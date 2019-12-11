@@ -1,20 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="8" passed="8">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
+  <suite name="Default suite" duration-ms="54982" started-at="2019-12-11T06:46:06Z" finished-at="2019-12-11T06:47:01Z">
+=======
   <suite name="smoke" duration-ms="164012" started-at="2019-12-11T06:59:41Z" finished-at="2019-12-11T07:02:25Z">
+>>>>>>> afecaee4023e113f3e6705e1e6442007db3fea4c
     <groups>
       <group name="Regression">
-        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@1d2adfbe]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User"/>
-        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User@36902638]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User"/>
-        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@223d2c72]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User"/>
-        <method signature="ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts@8f4ea7c]" name="test" class="enh.web.tests.ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts"/>
-        <method signature="ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts@436813f3]" name="test" class="enh.web.tests.ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts"/>
-        <method signature="ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@74fe5c40]" name="test" class="enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts"/>
-        <method signature="ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@3febb011]" name="test" class="enh.web.tests.ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts"/>
-        <method signature="ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@10e31a9a]" name="test" class="enh.web.tests.ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source"/>
+        <method signature="ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@370736d9]" name="test" class="enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source"/>
       </group> <!-- Regression -->
     </groups>
+<<<<<<< HEAD
+    <test name="Default test" duration-ms="54982" started-at="2019-12-11T06:46:06Z" finished-at="2019-12-11T06:47:01Z">
+      <class name="enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@370736d9]" name="test" duration-ms="42484" started-at="2019-12-11T12:16:17Z" description="AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source" finished-at="2019-12-11T12:16:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+=======
     <test name="smoke-Tests" duration-ms="164012" started-at="2019-12-11T06:59:41Z" finished-at="2019-12-11T07:02:25Z">
       <class name="enh.web.tests.ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts">
         <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@3febb011]" name="test" duration-ms="24727" started-at="2019-12-11T12:31:18Z" description="AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts" finished-at="2019-12-11T12:31:43Z">
@@ -70,4 +78,5 @@
       </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User -->
     </test> <!-- smoke-Tests -->
   </suite> <!-- smoke -->
+>>>>>>> afecaee4023e113f3e6705e1e6442007db3fea4c
 </testng-results>
