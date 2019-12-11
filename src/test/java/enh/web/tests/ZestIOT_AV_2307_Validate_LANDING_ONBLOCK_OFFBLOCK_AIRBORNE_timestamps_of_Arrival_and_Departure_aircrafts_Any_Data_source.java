@@ -5,7 +5,7 @@ import org.testng.annotations.Test;
 
 import enh.db.cases.Scheduled_And_Sensor_ATA_Hyd;
 import enh.db.cases.Scheduled_And_Sensor_ATD_Hyd;
-import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_Validation;
+import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
@@ -32,7 +32,7 @@ public class ZestIOT_AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestam
 			// ============================================================
 			// .........Script Start...........................
 
-			SensorATA_OnBlock_OffBlock_SensorATD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_Report(4);
+			SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_HYD_Report(4);
 			
 
 			
