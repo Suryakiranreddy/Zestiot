@@ -24,6 +24,7 @@ import javax.mail.internet.MimeMultipart;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 
+import enh.db.cases.COBT_For_DIALCelebi_User;
 import utilities.GlobalUtil;
 import utilities.Utility;
 
@@ -122,7 +123,7 @@ public class SendMailReport extends Utility {
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
 		String mailBody="<html>"
     			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins."	
-
+                 +COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString()+""
     			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
     			+ "<html>";
     	
