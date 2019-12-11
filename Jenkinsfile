@@ -41,7 +41,7 @@ publishHTML([allowMissing: false,
  cc:  "stiyyagura@enhops.com"  , 
  from: "AutomationTeam@Enhops",
   replyTo: '', 
-  subject: "Notification:Build SUCCESSFUL '${env.JOB_NAME} ${env.BUILD_NUMBER}'" ,
+  subject: "Jenkins Notification: JOB_NAME: '${env.JOB_NAME}'&BUILD_NUMBER: '${env.BUILD_NUMBER}' SUCCESSFUL" ,
    to: "stiyyagura@enhops.com"   
 
 }
