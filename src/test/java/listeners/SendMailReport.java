@@ -130,7 +130,7 @@ public class SendMailReport extends Utility {
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
 		String mailBody="<html>"
-    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins."	
+    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b> report and also find below consolidated report for each Automation Test Case triggred by Jenkins."	
 				+ COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString() + ""
 				+ COBT_For_GMR_HYD_AISATS_User.email_COBT_For_DIALCelebi_User5.toString() + ""
 				+ COBT_For_GMR_HYD_SG_User.email_COBT_For_DIALCelebi_User5.toString() + ""
