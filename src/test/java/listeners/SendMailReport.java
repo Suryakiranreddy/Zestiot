@@ -1,12 +1,12 @@
-package utilities;
+package listeners;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Properties;
+
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
@@ -24,20 +24,10 @@ import javax.mail.internet.MimeMultipart;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 
-import enh.db.cases.COBT_For_DIALCelebi_User;
+import utilities.GlobalUtil;
+import utilities.Utility;
 
-
-
-
-
-
-
-
-/**
- * @author EN
- */
-@SuppressWarnings("unused")
-public class SendMail extends Utility {
+public class SendMailReport extends Utility {
 	private static String mailPropertiesFile = System.getProperty("user.dir")
 			+ "/src/main/resources/ConfigFiles/mail.properties";
 	private static Properties PROP = loadPropertyFile(mailPropertiesFile);
@@ -63,10 +53,7 @@ public class SendMail extends Utility {
 	public static final String DIR_PATH = "user.dir";
 	public static final String BLANK_VARIABLE = "";
 
-	// private static final
-	private SendMail() {
-	}
-
+	
 	/**
 	 * @throws IOException
 	 * @throws MessagingException
@@ -135,7 +122,7 @@ public class SendMail extends Utility {
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
 		String mailBody="<html>"
     			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins."	
-                 +COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString()+""
+
     			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
     			+ "<html>";
     	
@@ -186,4 +173,6 @@ public class SendMail extends Utility {
 		File destDir = new File(System.getProperty(DIR_PATH) + "/ExecutionReports/ExecutionReports/" + targetDir);
 		FileUtils.copyDirectory(srcDir, destDir);
 	}
+
+
 }

@@ -62,7 +62,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 	//1. Send Mail functionality
 		if (GlobalUtil.getCommonSettings().getEmailOutput().equalsIgnoreCase("Y"))
 			try {
-				SendMail.sendEmailToClient();
+				SendMailReport.sendEmailToClient();
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
