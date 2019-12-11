@@ -39,14 +39,14 @@ public class Scheduled_And_Sensor_ATD_DIAL_Delhi {
 					System.out.println(totalScheduledDeparture);
 				}
 				
-				ResultSet result1 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where\r\n" + 
+		ResultSet result1 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where\r\n" + 
 						"date(IFNULL(std, etd))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+")");
 				while (result1.next())
 				{				
 					totalActualDeparture = result1.getInt("count(*)");
 					System.out.println(totalActualDeparture);
 				}
-				ResultSet result2 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n " +
+		ResultSet result2 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n " +
 						"gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std, etd))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
 						"and sensor_atd is not null");
 				while (result2.next())
@@ -54,7 +54,7 @@ public class Scheduled_And_Sensor_ATD_DIAL_Delhi {
 					notNullSensorATD = result2.getInt("count(*)");
 					System.out.println(notNullSensorATD);
 				}
-				ResultSet result3 = DBWrapper.Connect("SELECT logid, flightnumber_departure, std, etd, atd FROM `DailyFlightSchedule_Merged` where date(IFNULL(std, etd))= '"+SQL_Queries.yesterDate()+"' \r\n"
+		ResultSet result3 = DBWrapper.Connect("SELECT logid, flightnumber_departure, std, etd, atd FROM `DailyFlightSchedule_Merged` where date(IFNULL(std, etd))= '"+SQL_Queries.yesterDate()+"' \r\n"
 						+ "and operationunit= "+operationunit+" and sensor_atd is null");
 				while (result3.next())
 				{
@@ -66,7 +66,7 @@ public class Scheduled_And_Sensor_ATD_DIAL_Delhi {
 					
 					sensorATD_NullList.add(str_LogID);
 				}
-				ResultSet result4 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n "+
+		ResultSet result4 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n "+
 						"where date(IFNULL(std, etd))= '"+SQL_Queries.yesterDate()+"'and operationunit = "+operationunit+" and off_block_time is not null ) "
 						+ "and operationname = 'ofb' and type = 'aircraft'order by flightno");
 						while (result4.next())
@@ -75,7 +75,7 @@ public class Scheduled_And_Sensor_ATD_DIAL_Delhi {
 							System.out.println(offBlockFromSensor);
 						}
 				
-				ResultSet result5 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ATD, Off_block_time, (case when (Off_Block_Time < Sensor_ATD) then 1 else 0 end) as Status, \r\n"
+		ResultSet result5 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ATD, Off_block_time, (case when (Off_Block_Time < Sensor_ATD) then 1 else 0 end) as Status, \r\n"
 								+ "CONCAT('',TIMEDIFF(Off_Block_Time, Sensor_ATD)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(std, etd))= '"+SQL_Queries.yesterDate()+"' \r\n"
 								+ "and operationunit = "+operationunit+" and (sensor_atd is not null and Off_block_time is not null) order by flightnumber_departure");
 						while (result5.next())
@@ -153,6 +153,11 @@ public class Scheduled_And_Sensor_ATD_DIAL_Delhi {
 						String str_flight_OffBlock= result51.getString("off_block_time");
 						String str_status= result51.getString("status");
 						String str_difference_between_OffBlockAndSensorATD= result51.getString("difference");
+						email_report_Scheduled_And_Sensor_ATD_For_Delhi3.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td>"
+								+ " <td><b style=\"color:red;\">"+str_flight_NumberDeparture+"</b></td>"
+								+ " <td> <b style=\"color:red;\">"+str_flight_SensorATD+"</b></td>"
+								+ " <td><b style=\"color:red;\">"+str_flight_OffBlock+"</b></td> "
+								+ "<td><b style=\"color:red;\">"+str_difference_between_OffBlockAndSensorATD+"</b></td></tr>");
 					}
 				}
 					else {				
@@ -194,13 +199,13 @@ public class Scheduled_And_Sensor_ATD_DIAL_Delhi {
 				ExtentTest child55 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights OFFBLOCK time detected by Flight Sensor less than AIRBORNE: "+status1List.size()+"</b>");
 				child55.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights OFFBLOCK time detected by Flight Sensor less than AIRBORNE: "+status1List.size()+"</b>");
 					 	 
-				 ExtentTest child6 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\"> Total Flights OFFBLOCK time detected by Flight Sensor greater than AIRBORNE: "+status0List.size()+"</b>");
-				 child6.log(LogStatus.INFO, email_report_Scheduled_And_Sensor_ATD_For_Delhi3.toString());
-				 ExtentTest child66 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:red;\" align=\"center\"> Total Flights OFFBLOCK time detected by Flight Sensor greater than AIRBORNE : "+status0List.size()+"</b>");
-				 child66.log(LogStatus.INFO, email_report_Scheduled_And_Sensor_ATD_For_Delhi3.toString());
+				ExtentTest child6 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\"> Total Flights OFFBLOCK time detected by Flight Sensor greater than AIRBORNE: "+status0List.size()+"</b>");
+				child6.log(LogStatus.INFO, email_report_Scheduled_And_Sensor_ATD_For_Delhi3.toString());
+				ExtentTest child66 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:red;\" align=\"center\"> Total Flights OFFBLOCK time detected by Flight Sensor greater than AIRBORNE : "+status0List.size()+"</b>");
+				child66.log(LogStatus.INFO, email_report_Scheduled_And_Sensor_ATD_For_Delhi3.toString());
 		 
-				 HtmlReportUtil.test.appendChild(child0).appendChild(child1).appendChild(child2).appendChild(child3).appendChild(child4).appendChild(child5).appendChild(child6);
-				 HtmlReportUtil.testHist.appendChild(child00).appendChild(child11).appendChild(child22).appendChild(child33).appendChild(child44).appendChild(child55).appendChild(child66);
+				HtmlReportUtil.test.appendChild(child0).appendChild(child1).appendChild(child2).appendChild(child3).appendChild(child4).appendChild(child5).appendChild(child6);
+				HtmlReportUtil.testHist.appendChild(child00).appendChild(child11).appendChild(child22).appendChild(child33).appendChild(child44).appendChild(child55).appendChild(child66);
 				 
 				 DBWrapper.dbConnectionClose();
 	}
