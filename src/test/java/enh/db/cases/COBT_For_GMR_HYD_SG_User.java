@@ -186,9 +186,9 @@ public class COBT_For_GMR_HYD_SG_User {
 				System.out.println(" No. of Flights for which difference between offblock and COBT is > 5mins :- "+str_cobtDiff);
 			}
 						
-			 email_COBT_For_DIALCelebi_User5.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: #000000;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style>");
+			 email_COBT_For_DIALCelebi_User5.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: #000000;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 
-			email_COBT_For_DIALCelebi_User5.append("<h4 align=\"center\" style=\"color:#336600;\">Executed For :COBT For GMR HYD SG</h4><h5 align=\"center\" style=\"color:#336600;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
+			email_COBT_For_DIALCelebi_User5.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :COBT For GMR HYD SG</h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
 			 email_COBT_For_DIALCelebi_User5.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:15%\"><b>Date</b></th><th style=\"width:20%\"><b>Total No. of Flights</b></th> <th style=\"width:20%\"><b>COBT  Not detected</b></th>"
 			 		+ "<th style=\"width:25%\"><b>OFFBLOCK not detected</b></th><th style=\"width:20%\"><b>Actual OFFBLOCK & COBT diff  > 5mins</b></th>"
 			 		+ " </tr>");
@@ -198,7 +198,7 @@ public class COBT_For_GMR_HYD_SG_User {
 			// HtmlReportUtil.test.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User5.toString());
 			//	HtmlReportUtil.testHist.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User5.toString());
 				
-			 email_COBT_For_DIALCelebi_User6.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style>");
+			 email_COBT_For_DIALCelebi_User6.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 			 email_COBT_For_DIALCelebi_User6.append("<table style=\"width:100%\" id=\"t01\"><h4><caption> COBT not detected flights</caption></h4>"
 			 		+ "<tr><th style=\"width:25%\">LogID</th> <th style=\"width:25%\">FlightNumber_Arrival</th>"
 				 		+ "<th style=\"width:25%\">COBT</th><th style=\"width:25%\">Off_Block_Time</th></tr>");
@@ -220,7 +220,7 @@ public class COBT_For_GMR_HYD_SG_User {
 				email_COBT_For_DIALCelebi_User6.append("</table>");
 				//email_COBT_For_DIALCelebi_User6.append("</body></html>");
 				// email_COBT_For_DIALCelebi_User.append("</body></html>");
-				 email_COBT_For_DIALCelebi_User7.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style>");
+				 email_COBT_For_DIALCelebi_User7.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 
 				 email_COBT_For_DIALCelebi_User7.append("<table style=\"width:100%\" id=\"t01\"><h4><caption> OFFBLOCK not detected flights</caption></h4>"
 					 		+ "<tr><th style=\"width:25%\">LogID</th> <th style=\"width:25%\">FlightNumber_Arrival</th>"
@@ -241,7 +241,7 @@ public class COBT_For_GMR_HYD_SG_User {
 				 }
 					email_COBT_For_DIALCelebi_User7.append("</table>");
 					 //email_COBT_For_DIALCelebi_User7.append("</body></html>");
-					 email_COBT_For_DIALCelebi_User8.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #336600;font-weight: bold;}</style>");
+					 email_COBT_For_DIALCelebi_User8.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 
 					 email_COBT_For_DIALCelebi_User8.append("<table style=\"width:100%\" id=\"t01\"><h4><caption> OFFBLOCK & COBT DIFF > 5MINS</caption></h4>"
 						 		+ "<tr><th style=\"width:10%\">LogID</th> <th style=\"width:25%\">FlightNumber_Arrival</th>"
