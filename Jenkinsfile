@@ -3,7 +3,7 @@ pipeline{
 agent any
 triggers {
 
-        pollSCM ('0 12 * * *')
+        pollSCM ('0 16 * * *')
     }
 stages 
 {
@@ -42,12 +42,12 @@ mail bcc: 'stiyyagura@enhops.com',
 <p style=\"color:#006600;\">Hi All, <br>
 This is a confirmation mail that all <b><i>ZestIOT automation scripts </b></i>are successfully executed through Jenkins Pipeline.<br>
 <b>Job Bilid Number: </b>'${env.BUILD_NUMBER}'<br>
-<b>Job Name:</b>'${env.JOB_NAME}'
+<b>Job Name:</b>'${env.JOB_NAME}'<br>
 Check <b>console output</b> at <a href="${env.BUILD_URL}">${env.BUILD_URL}</a><br><br>
 Thanks& Reagrds<br>
 Automation Team</p>
 """, 
-cc: 'stiyyagura@enhops.com', 
+cc: 'pdwadasi@enhops.com', 
 from: 'automationteam.enhops@gmail.com', 
 mimeType: 'text/html', 
 replyTo: '',
