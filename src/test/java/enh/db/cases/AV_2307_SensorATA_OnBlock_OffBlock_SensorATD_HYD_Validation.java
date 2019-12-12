@@ -344,6 +344,9 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 		}		
 		}	
 				}
+			else {
+				email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd6.append("<tr><td colspan=\"5\"><b style=\"color:red;\">No values found </b></td></tr>");	
+			}
 			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd6.append("</table>");
 		
 
