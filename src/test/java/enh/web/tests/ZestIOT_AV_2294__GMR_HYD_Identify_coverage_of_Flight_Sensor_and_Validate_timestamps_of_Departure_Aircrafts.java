@@ -3,8 +3,8 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.Scheduled_And_Sensor_ATA_Hyd;
-import enh.db.cases.Scheduled_And_Sensor_ATD_Hyd;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Hyd;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Hyd;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
@@ -32,7 +32,7 @@ public class ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Val
 			// ============================================================
 			// .........Script Start...........................
 
-			Scheduled_And_Sensor_ATD_Hyd.scheduled_And_Sensor_ATD_For_Hyderabad_Report(4);
+			AV_2294_Scheduled_And_Sensor_ATD_Hyd.scheduled_And_Sensor_ATD_For_Hyderabad_Report(4);
 			
 			// .........Script Start...........................
 		} catch (Exception e) {

@@ -3,7 +3,7 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.Coverage_of_DeBoarding_Activities_HYD_Validation;
+import enh.db.cases.AV_2305_Coverage_of_DeBoarding_Activities_HYD_Validation;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
@@ -30,7 +30,7 @@ public class ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_
 			// ============================================================
 			// .........Script Start...........................
 
-			Coverage_of_DeBoarding_Activities_HYD_Validation.Coverage_of_DeBoarding_Activities_HYD_Validation_Report(4, "rgi_ACOA");
+			AV_2305_Coverage_of_DeBoarding_Activities_HYD_Validation.Coverage_of_DeBoarding_Activities_HYD_Validation_Report(4, "rgi_ACOA");
 			
 
 			

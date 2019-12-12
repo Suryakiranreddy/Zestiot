@@ -2,8 +2,8 @@ package enh.web.tests;
 
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-import enh.db.cases.COBT_For_DIALCelebi_User;
-import enh.db.cases.COBT_For_GMR_HYD_AISATS_User;
+import enh.db.cases.AV_2268_COBT_For_DIALCelebi_User;
+import enh.db.cases.AV_2268_COBT_For_GMR_HYD_AISATS_User;
 import enh.web.pages.BflActivities;
 import enh.web.pages.DepartedFlights;
 import enh.web.pages.HomePage;
@@ -35,7 +35,7 @@ public class ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User e
 			// ============================================================
 			// .........Script Start...........................
 			//COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User();
-			COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User2();
+			AV_2268_COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User2();
 			/*COBT_For_GMR_HYD_AISATS_User.totalFlights();
 			COBT_For_GMR_HYD_AISATS_User.cobtIsNotNull();
 			COBT_For_GMR_HYD_AISATS_User.ofBlockTimeIsNotNull();

@@ -3,7 +3,7 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.Scheduled_And_Sensor_ATA_DIAL_Delhi;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
@@ -33,7 +33,7 @@ public class ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_V
 			//DBTesting.scheduledAndSensorATAForDelhi();
 			//DBTesting.scheduledAndSensorATDForDelhi();
 			
-			Scheduled_And_Sensor_ATA_DIAL_Delhi.scheduledAndSensorATAForDelhi_Report(22);
+			AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi.scheduledAndSensorATAForDelhi_Report(22);
 			
 
 			
