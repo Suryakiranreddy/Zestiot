@@ -1,9 +1,10 @@
 pipeline{
 
 agent any
+try{
 triggers {
 
-        cron('0 12 * * *')
+        pollSCM ('0 12 * * *')
     }
 stages 
 {
@@ -47,5 +48,13 @@ publishHTML([allowMissing: false,
 
 }
 }
+}}catch(Exception e){
+mail bcc: '', 
+ body: """e""", 
+ cc:  ""  , 
+ from: "AutomationTeam@Enhops",
+  replyTo: '', 
+  subject: "Notification:Jenkins BUILD_NUMBER: '${env.BUILD_NUMBER}' FAILED" ,
+   to: "stiyyagura@enhops.com" 
 }
 }
