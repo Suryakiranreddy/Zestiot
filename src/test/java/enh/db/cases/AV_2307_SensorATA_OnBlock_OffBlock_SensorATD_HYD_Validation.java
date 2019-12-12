@@ -8,7 +8,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.HtmlReportUtil;
 
-public class SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
+public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 	public static int totalScheduledArrival =0;
 	public static int totalScheduledDeparture= 0;
 	public static int notNullSensorATA=0;
@@ -184,7 +184,7 @@ public class SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 		 		+ "<th style=\"width:15%\"><b>Total Flights with Landing time</b></th><th style=\"width:20%\"><b>Total Flights with Airborne time</b></th>"
 		 		+ " </tr>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append(" <tr> <td><b>"+SQL_Queries.yesterDate()+"</b></td> <td><b>"+totalScheduledArrival+"</b></td>"
-		 		+ " <td> <b style=\"color:green;\">"+totalScheduledDeparture+"</b></td> <td><b style=\"color:red;\">"+notNullSensorATA+"</b></td> <td><b style=\"color:green;\">"+notNullSensorATD+"</b></td>");			 	
+		 		+ " <td> <b style=\"color:green;\">"+totalScheduledDeparture+"</b></td> <td><b style=\"color:green;\">"+notNullSensorATA+"</b></td> <td><b style=\"color:green;\">"+notNullSensorATD+"</b></td>");			 	
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("</table>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd2.append("<br><br>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd2.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");

@@ -2,6 +2,7 @@ pipeline{
 
 agent any
 triggers {
+
         cron('0 12 * * *')
     }
 stages 
@@ -42,7 +43,7 @@ publishHTML([allowMissing: false,
  from: "AutomationTeam@Enhops",
   replyTo: '', 
   subject: "Notification:Jenkins BUILD_NUMBER: '${env.BUILD_NUMBER}' SUCCESSFUL" ,
-   to: ""   
+   to: "stiyyagura@enhops.com"   
 
 }
 }

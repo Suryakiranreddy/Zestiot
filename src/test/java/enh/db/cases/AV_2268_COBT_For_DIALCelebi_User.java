@@ -10,27 +10,26 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.HtmlReportUtil;
-import utilities.SendMailBodyToZestIOT;
 
-public class COBT_For_GMR_HYD_AISATS_User {
-	
 
+public class AV_2268_COBT_For_DIALCelebi_User {
 	 public static ArrayList<String> cobtIsNotNull= new ArrayList<String>();
 	 public static ArrayList<String> ofBlockIsNotNull= new ArrayList<String>();
-	 public static ArrayList<String> cobtTimeDiff= new ArrayList<String>();
+	 public static ArrayList<String> cobtTimeDiff= new ArrayList<String>();	 
 	 public static StringBuilder email_COBT_For_DIALCelebi_User5= new StringBuilder();
 	 public static StringBuilder email_COBT_For_DIALCelebi_User6= new StringBuilder();	 
 	 public static StringBuilder email_COBT_For_DIALCelebi_User7= new StringBuilder();
 	 public static StringBuilder email_COBT_For_DIALCelebi_User8= new StringBuilder();
-	 
-	 public static void cOBT_For_GMR_HYD_AISATS_User() throws Exception{
+	 public static void cOBT_For_DIALCelebi_User() throws Exception{
+		
 		  Connection con = DriverManager.getConnection(
 					"jdbc:mysql://avileapuat.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
 					"AviLeap_Read");
 			Statement stmt = con.createStatement();
-			ResultSet result = stmt.executeQuery(SQL_Queries.strQuery_10);
-			while (result.next()){				
-				String str_LogID = result.getString("Logid");	
+			ResultSet result = stmt.executeQuery(SQL_Queries.strQuery_6);
+			while (result.next()){
+				
+				String str_LogID = result.getString("Logid");		
 				String str_FlightNumber_Arrival = result.getString("FlightNumber_Arrival");
 				String str_cobt = result.getString("cobt");
 				cobtIsNotNull.add(str_cobt);
@@ -41,12 +40,10 @@ public class COBT_For_GMR_HYD_AISATS_User {
 				HtmlReportUtil.stepInfo("<b style=\"color:red;\"> FlightNumber:-</b><b style=\"color:red;\"> "+str_FlightNumber_Arrival
 						+" </b>|| <b style=\"color:red;\">Cobt:-</b><b style=\"color:red;\"> "+ str_cobt 
 						+"<b> || <b style=\"color:red;\">Off Block:- </b> <b style=\"color:red;\">"+ str_Off_Block_Time +"  </b>");
-		
-			}
+				}
 			System.out.println("Total Flights with cobt is null:- "+cobtIsNotNull.size());
 			//HtmlReportUtil.stepInfo("<b style=\"color:red;\">  No. of Flights for which cobt is null::- "+cobtIsNotNull.size() +"</b>");
-		
-			ResultSet result1 = stmt.executeQuery(SQL_Queries.strQuery_11);
+			ResultSet result1 = stmt.executeQuery(SQL_Queries.strQuery_7);
 			while (result1.next()){
 				
 				String str_LogID = result1.getString("Logid");	
@@ -64,8 +61,8 @@ public class COBT_For_GMR_HYD_AISATS_User {
 		
 			}
 			System.out.println("Total Flights with off block time is null:- "+ofBlockIsNotNull.size());
-			//HtmlReportUtil.stepInfo("<b style=\"color:red;\"> No of Flights for which off block time is null:- "+ofBlockIsNotNull.size() +"</b>");
-			ResultSet result2 = stmt.executeQuery(SQL_Queries.strQuery_12);
+			//HtmlReportUtil.stepInfo("<b style=\"color:green;\"> No of Flights for which off block time is null:- "+ofBlockIsNotNull.size() +"</b>");
+			ResultSet result2 =stmt.executeQuery(SQL_Queries.strQuery_8);
 			while (result2.next()){
 				String str_LogID = result2.getString("Logid");	
 				String str_FlightNumber_Arrival = result2.getString("FlightNumber_Arrival");
@@ -80,7 +77,6 @@ public class COBT_For_GMR_HYD_AISATS_User {
 				
 				//HtmlReportUtil.stepInfo("");
 				if(str_cobtSecDiff1>300 || str_cobtSecDiff2>300  ) {
-				//System.out.println("| "+ str_LogID +" | "+ str_FlightNumber_Arrival +" | "+ str_cobt +" | "+ str_Off_Block_Time +" | "+ str_cobtTimeDiff +" | ");
 				HtmlReportUtil.stepInfo("<b style=\"color:red;\"> FlightNumber:-</b><b style=\"color:red;\"> "+str_FlightNumber_Arrival
 						+" </b>|| <b style=\"color:red;\">Cobt:-</b><b style=\"color:red;\"> "+ str_cobt 
 						+"<b> || <b style=\"color:red;\">Off Block:- </b> <b style=\"color:red;\">"+ str_Off_Block_Time 
@@ -90,7 +86,7 @@ public class COBT_For_GMR_HYD_AISATS_User {
 							+" </b>|| <b style=\"color:green;\">Cobt:-</b><b style=\"color:green;\"> "+ str_cobt 
 							+"<b> || <b style=\"color:green;\">Off Block:- </b> <b style=\"color:green;\">"+ str_Off_Block_Time 
 							+" </b>|| <b style=\"color:green;\">Cobt Diff:-</b><b style=\"color:green;\"> "+ str_cobtTimeDiff +"  </b>");	
-			*/	
+				*/
 				}
 				
 			}
@@ -98,23 +94,26 @@ public class COBT_For_GMR_HYD_AISATS_User {
 			HtmlReportUtil.stepInfo("<b style=\"color:green;\"> Total number of Flights: - "+cobtTimeDiff.size() +"</b>");
 			HtmlReportUtil.stepInfo("<b style=\"color:red;\">  No. of Flights for which cobt is null::- "+cobtIsNotNull.size() +"</b>");
 			HtmlReportUtil.stepInfo("<b style=\"color:red;\"> No of Flights for which off block time is null:- "+ofBlockIsNotNull.size() +"</b>");		
-			ResultSet result3 =stmt.executeQuery(SQL_Queries.strQuery_13);
+				
+			ResultSet result3 = stmt.executeQuery(SQL_Queries.strQuery_9);
 			while (result3.next()){			
 				String str_LogID = result3.getString("count(CONCAT('',TIMEDIFF(Off_Block_Time, cobt)))");		
-				HtmlReportUtil.stepInfo("<b style=\"color:red;\"> No. of Flights for which difference between offblock and COBT is > 5mins :- "+str_LogID +"</b>");
+				HtmlReportUtil.stepInfo("<b style=\"color:red;\"> No. of Flights for which difference between offblock and COBT is > 5mins :- "+str_LogID +"</b>");			
 				System.out.println(" No. of Flights for which difference between offblock and COBT is > 5mins :- "+str_LogID);
 			}
 			con.close();
-			//SendMailBodyToZestIOT.sendHtmlEmail("COBT_For_GMR_HYD_AISATS_User", "hi");
+				//SendMailBodyToZestIOT.sendHtmlEmail("COBT_For_DIALCelebi_User", "hi");
+			//SentOutLook.sendOutLookMail("COBT_For_DIALCelebi_User", mesg);
 	 }
-	 public static void cOBT_For_GMR_HYD_AISATS_User2() throws Exception{
+		
+	 public static void cOBT_For_DIALCelebi_User2() throws Exception{
 		 String str_cobtDiff=null;
 			
 		  Connection con = DriverManager.getConnection(
 					"jdbc:mysql://avileapuat.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
 					"AviLeap_Read");
 			Statement stmt = con.createStatement();
-			ResultSet result = stmt.executeQuery(SQL_Queries.strQuery_10);
+			ResultSet result = stmt.executeQuery(SQL_Queries.strQuery_6);
 			while (result.next()){
 				
 				String str_LogID = result.getString("Logid");	
@@ -131,7 +130,7 @@ public class COBT_For_GMR_HYD_AISATS_User {
 				}
 			System.out.println("Total Flights with cobt is null:- "+cobtIsNotNull.size());
 			//HtmlReportUtil.stepInfo("<b style=\"color:red;\">  No. of Flights for which cobt is null::- "+cobtIsNotNull.size() +"</b>");
-			ResultSet result1 = stmt.executeQuery(SQL_Queries.strQuery_11);
+			ResultSet result1 = stmt.executeQuery(SQL_Queries.strQuery_7);
 			while (result1.next()){
 				
 				String str_LogID = result1.getString("Logid");	
@@ -150,7 +149,7 @@ public class COBT_For_GMR_HYD_AISATS_User {
 			}
 			System.out.println("Total Flights with off block time is null:- "+ofBlockIsNotNull.size());
 			//HtmlReportUtil.stepInfo("<b style=\"color:green;\"> No of Flights for which off block time is null:- "+ofBlockIsNotNull.size() +"</b>");
-			ResultSet result2 =stmt.executeQuery(SQL_Queries.strQuery_12);
+			ResultSet result2 =stmt.executeQuery(SQL_Queries.strQuery_8);
 			while (result2.next()){
 				String str_LogID = result2.getString("Logid");	
 				String str_FlightNumber_Arrival = result2.getString("FlightNumber_Arrival");
@@ -182,7 +181,7 @@ public class COBT_For_GMR_HYD_AISATS_User {
 			//HtmlReportUtil.stepInfo("<b style=\"color:red;\">  No. of Flights for which cobt is null::- "+cobtIsNotNull.size() +"</b>");
 			//HtmlReportUtil.stepInfo("<b style=\"color:red;\"> No of Flights for which off block time is null:- "+ofBlockIsNotNull.size() +"</b>");		
 				
-			ResultSet result3 = stmt.executeQuery(SQL_Queries.strQuery_13);
+			ResultSet result3 = stmt.executeQuery(SQL_Queries.strQuery_9);
 			while (result3.next()){			
 				str_cobtDiff = result3.getString("count(CONCAT('',TIMEDIFF(Off_Block_Time, cobt)))");		
 				//HtmlReportUtil.stepInfo("<b style=\"color:red;\"> No. of Flights for which difference between offblock and COBT is > 5mins :- "+str_cobtDiff +"</b>");			
@@ -191,7 +190,7 @@ public class COBT_For_GMR_HYD_AISATS_User {
 						
 			 email_COBT_For_DIALCelebi_User5.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: #000000;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 
-			email_COBT_For_DIALCelebi_User5.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :COBT For GMR HYD AISATS</h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
+			email_COBT_For_DIALCelebi_User5.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :COBT For DIALCelebi</h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
 			 email_COBT_For_DIALCelebi_User5.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:15%\"><b>Date</b></th><th style=\"width:20%\"><b>Total No. of Flights</b></th> <th style=\"width:20%\"><b>COBT  Not detected</b></th>"
 			 		+ "<th style=\"width:25%\"><b>OFFBLOCK not detected</b></th><th style=\"width:20%\"><b>Actual OFFBLOCK & COBT diff  > 5mins</b></th>"
 			 		+ " </tr>");
@@ -206,7 +205,7 @@ public class COBT_For_GMR_HYD_AISATS_User {
 			 		+ "<tr><th style=\"width:25%\">LogID</th> <th style=\"width:25%\">FlightNumber_Arrival</th>"
 				 		+ "<th style=\"width:25%\">COBT</th><th style=\"width:25%\">Off_Block_Time</th></tr>");
 			 if(cobtIsNotNull.size()>0) {
-			 ResultSet result6 = stmt.executeQuery(SQL_Queries.strQuery_10);
+			 ResultSet result6 = stmt.executeQuery(SQL_Queries.strQuery_6);
 				while (result6.next()){
 					
 					String str_LogID = result6.getString("Logid");	
@@ -229,7 +228,7 @@ public class COBT_For_GMR_HYD_AISATS_User {
 					 		+ "<tr><th style=\"width:25%\">LogID</th> <th style=\"width:25%\">FlightNumber_Arrival</th>"
 						 		+ "<th style=\"width:25%\">COBT</th><th style=\"width:25%\">Off_Block_Time</th></tr>");
 				 if(ofBlockIsNotNull.size()>0) {
-				 ResultSet result7 = stmt.executeQuery(SQL_Queries.strQuery_11);
+				 ResultSet result7 = stmt.executeQuery(SQL_Queries.strQuery_7);
 					while (result7.next()){
 						
 						String str_LogID = result7.getString("Logid");	
@@ -250,7 +249,7 @@ public class COBT_For_GMR_HYD_AISATS_User {
 						 		+ "<tr><th style=\"width:10%\">LogID</th> <th style=\"width:25%\">FlightNumber_Arrival</th>"
 							 		+ "<th style=\"width:25%\">COBT</th><th style=\"width:25%\">Off_Block_Time</th><th style=\"width:15%\">COBT Diff</th></tr>");
 					 if(!str_cobtDiff.equals("0")) {
-					 ResultSet result8 =stmt.executeQuery(SQL_Queries.strQuery_12);
+					 ResultSet result8 =stmt.executeQuery(SQL_Queries.strQuery_8);
 						while (result8.next()){
 							String str_LogID = result8.getString("Logid");	
 							String str_FlightNumber_Arrival = result8.getString("FlightNumber_Arrival");
@@ -302,6 +301,8 @@ public class COBT_For_GMR_HYD_AISATS_User {
 			//SentOutLook.sendOutLookMail("COBT_For_DIALCelebi_User", email_COBT_For_DIALCelebi_User.toString());
 	 }
 		
- 	
+ 
+
+  
  
 }

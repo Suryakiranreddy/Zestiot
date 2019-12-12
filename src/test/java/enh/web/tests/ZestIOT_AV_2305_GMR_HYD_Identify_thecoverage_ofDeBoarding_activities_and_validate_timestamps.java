@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Hyd;
 import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Hyd;
+import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
@@ -12,14 +13,13 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-
-public class ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts extends KeywordUtil {
+public class ZestIOT_AV_2305_GMR_HYD_Identify_thecoverage_ofDeBoarding_activities_and_validate_timestamps extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-	@Test(testName = "AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts", groups = {
-			"Regression" }, description = "AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts")
+	@Test(testName = "AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source", groups = {
+			"Regression" }, description = "AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source")
 	public void test()
 			throws Throwable {
 		try {
@@ -32,7 +32,9 @@ public class ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Val
 			// ============================================================
 			// .........Script Start...........................
 
-			AV_2294_Scheduled_And_Sensor_ATD_Hyd.scheduled_And_Sensor_ATD_For_Hyderabad_Report(4);
+			AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_HYD_Report(4);
+			
+
 			
 			// .........Script Start...........................
 		} catch (Exception e) {
