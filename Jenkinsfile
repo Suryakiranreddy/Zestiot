@@ -37,12 +37,7 @@ publishHTML([allowMissing: false,
   keepAll: false, reportDir: '',
    reportFiles: 'ExecutionReports/HtmlReport/TestReport.html',
     reportName: 'Extent HTML Report', reportTitles: ''])
-    emailext (
-    subject: "Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
-    body: """<p>Check console output at <a href="${env.BUILD_URL}">${env.JOB_NAME}</a></p>""",
-    to: "stiyyagura@enhops.com",
-    from: "automationteam.enhops@gmail.com"
-)
+  emailext attachLog: true, body: 'hsgd', postsendScript: 'post send', presendScript: 'pre send', subject: 'hi', to: 'stiyyagura@enhops.com'
 }
 }
 }
