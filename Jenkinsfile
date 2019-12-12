@@ -37,7 +37,10 @@ publishHTML([allowMissing: false,
   keepAll: false, reportDir: '',
    reportFiles: 'ExecutionReports/HtmlReport/TestReport.html',
     reportName: 'Extent HTML Report', reportTitles: ''])
-  emailext attachLog: true, body: 'hsgd', postsendScript: 'post send', presendScript: 'pre send', subject: 'hi', to: 'stiyyagura@enhops.com'
+mail bcc: 'stiyyagura@enhops.com', body: '''Hi All,<br>
+<b>body</b><br>
+<h1>hiiiii</h1><br>
+thanks''', cc: 'stiyyagura@enhops.com', from: 'automationteam.enhops@gmail.com', mimeType: 'text/html', replyTo: '', subject: 'notification', to: 'stiyyagura@enhops.com'
 }
 }
 }
