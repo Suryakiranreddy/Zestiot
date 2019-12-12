@@ -202,7 +202,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Hyd {
 			}		
 		}	
 		
-		email_report_Scheduled_And_Sensor_ATA_For_Hyd1.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: #000000;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+		email_report_Scheduled_And_Sensor_ATA_For_Hyd1.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_Scheduled_And_Sensor_ATA_For_Hyd1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Airport Name : GMR-Hyderabad</h4>");
 		email_report_Scheduled_And_Sensor_ATA_For_Hyd1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :Scheduled and Sensor-ATA</h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
 		email_report_Scheduled_And_Sensor_ATA_For_Hyd1.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:10%\"><b>Date</b></th><th style=\"width:15%\"><b>Total No. of Flights Scheduled Arrival</b></th>"
@@ -244,7 +244,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Hyd {
 		email_report_Scheduled_And_Sensor_ATA_For_Hyd2.append("</table>");
 		
 		email_report_Scheduled_And_Sensor_ATA_For_Hyd3.append("<br><br>");
-		email_report_Scheduled_And_Sensor_ATA_For_Hyd3.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+		email_report_Scheduled_And_Sensor_ATA_For_Hyd3.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_Scheduled_And_Sensor_ATA_For_Hyd3.append("<table style=\"width:100%\" id=\"t01\"><caption> Total Flights - ONBLOCK (Not Detected by Flight Sensor but detected from other data source)</caption><tr>"
 				+ "<th style=\"width:10%\"><b>Flight_PK</b></th>"
 				+ "<th style=\"width:15%\"><b>Departure Flight No.</b></th> "
@@ -269,7 +269,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Hyd {
 		email_report_Scheduled_And_Sensor_ATA_For_Hyd3.append("</table>");
 		
 		email_report_Scheduled_And_Sensor_ATA_For_Hyd4.append("<br><br>");
-		email_report_Scheduled_And_Sensor_ATA_For_Hyd4.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+		email_report_Scheduled_And_Sensor_ATA_For_Hyd4.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_Scheduled_And_Sensor_ATA_For_Hyd4.append("<table style=\"width:100%\" id=\"t01\"><caption> Total Flights - LANDING time detected by flight Sensor is less than On-Block</caption><tr>"
 				+ "<th style=\"width:10%\"><b>LogID</b></th>"
 				+ "<th style=\"width:15%\"><b>Arrival Flight No.</b></th> "

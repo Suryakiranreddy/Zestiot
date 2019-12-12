@@ -1,0 +1,1187 @@
+2019-12-11 13:48:04 INFO  - 
+============================================================================================================================
+2019-12-11 13:48:04 INFO  - smoke suite started at Wed Dec 11 13:48:04 IST 2019
+2019-12-11 13:48:04 INFO  - Suite Browser: Chrome
+2019-12-11 13:48:04 INFO  - Test is started with browser: Chrome
+2019-12-11 13:48:18 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-11 13:48:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 13:48:18 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-11 13:48:18 INFO  - Test description: 
+2019-12-11 13:48:23 INFO  - Total Time taken in(seconds):6
+2019-12-11 13:48:24 INFO  - TestResults
+2019-12-11 13:48:25 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 13:48:25 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 13:48:25 INFO  - Closing Browsers
+2019-12-11 13:48:25 INFO  - Test is started with browser: Chrome
+2019-12-11 13:48:25 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-11 13:48:25 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 13:48:25 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-11 13:48:25 INFO  - Test description: 
+2019-12-11 13:48:30 INFO  - Total Time taken in(seconds):4
+2019-12-11 13:48:30 INFO  - TestResults
+2019-12-11 13:48:30 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 13:48:30 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 13:48:30 INFO  - Closing Browsers
+2019-12-11 13:48:30 INFO  - Test is started with browser: Chrome
+2019-12-11 13:48:30 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-11 13:48:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 13:48:30 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-11 13:48:30 INFO  - Test description: 
+2019-12-11 13:48:35 INFO  - Total Time taken in(seconds):4
+2019-12-11 13:48:35 INFO  - TestResults
+2019-12-11 13:48:35 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 13:48:35 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 13:48:35 INFO  - Closing Browsers
+2019-12-11 13:48:35 INFO  - Test is started with browser: Chrome
+2019-12-11 13:48:36 INFO  - No data found with given key-> ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-11 13:48:36 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 13:48:36 INFO  - Test Started: ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-11 13:48:36 INFO  - Test description: 
+2019-12-11 13:48:53 INFO  - Total Time taken in(seconds):17
+2019-12-11 13:48:54 INFO  - TestResults
+2019-12-11 13:48:54 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 13:48:54 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 13:48:54 INFO  - Closing Browsers
+2019-12-11 13:48:54 INFO  - Test is started with browser: Chrome
+2019-12-11 13:48:54 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-11 13:48:54 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 13:48:54 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-11 13:48:54 INFO  - Test description: 
+2019-12-11 13:49:16 INFO  - Total Time taken in(seconds):21
+2019-12-11 13:49:16 INFO  - TestResults
+2019-12-11 13:49:17 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 13:49:17 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 13:49:17 INFO  - Closing Browsers
+2019-12-11 13:49:17 INFO  - Test is started with browser: Chrome
+2019-12-11 13:49:17 INFO  - No data found with given key-> ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-11 13:49:17 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 13:49:17 INFO  - Test Started: ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-11 13:49:17 INFO  - Test description: 
+2019-12-11 13:49:37 INFO  - Total Time taken in(seconds):20
+2019-12-11 13:49:37 INFO  - TestResults
+2019-12-11 13:49:38 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 13:49:38 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 13:49:38 INFO  - Closing Browsers
+2019-12-11 13:49:38 INFO  - Test is started with browser: Chrome
+2019-12-11 13:49:38 INFO  - No data found with given key-> ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-11 13:49:38 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 13:49:38 INFO  - Test Started: ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-11 13:49:38 INFO  - Test description: 
+2019-12-11 13:50:03 INFO  - Total Time taken in(seconds):24
+2019-12-11 13:50:03 INFO  - TestResults
+2019-12-11 13:50:03 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 13:50:03 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 13:50:03 INFO  - Closing Browsers
+2019-12-11 13:50:04 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-11 13:50:04 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 13:50:04 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-11 13:50:04 INFO  - Test description: 
+2019-12-11 13:50:05 INFO  - smoke suite finished at Wed Dec 11 13:50:05 IST 2019
+2019-12-11 13:50:08 INFO  - Test process has ended
+2019-12-11 13:50:16 INFO  - History File created successfully
+2019-12-11 14:11:20 INFO  - 
+============================================================================================================================
+2019-12-11 14:11:20 INFO  - smoke suite started at Wed Dec 11 14:11:20 IST 2019
+2019-12-11 14:11:20 INFO  - Suite Browser: Chrome
+2019-12-11 14:11:20 INFO  - Test is started with browser: Chrome
+2019-12-11 14:11:31 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-11 14:11:31 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:11:31 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-11 14:11:31 INFO  - Test description: 
+2019-12-11 14:11:37 INFO  - Total Time taken in(seconds):5
+2019-12-11 14:11:37 INFO  - TestResults
+2019-12-11 14:11:38 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 14:11:38 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 14:11:38 INFO  - Closing Browsers
+2019-12-11 14:11:38 INFO  - Test is started with browser: Chrome
+2019-12-11 14:11:38 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-11 14:11:38 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:11:38 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-11 14:11:38 INFO  - Test description: 
+2019-12-11 14:11:42 INFO  - Total Time taken in(seconds):4
+2019-12-11 14:11:42 INFO  - TestResults
+2019-12-11 14:11:43 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 14:11:43 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 14:11:43 INFO  - Closing Browsers
+2019-12-11 14:11:43 INFO  - Test is started with browser: Chrome
+2019-12-11 14:11:43 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-11 14:11:43 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:11:43 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-11 14:11:43 INFO  - Test description: 
+2019-12-11 14:11:47 INFO  - Total Time taken in(seconds):4
+2019-12-11 14:11:47 INFO  - TestResults
+2019-12-11 14:11:48 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 14:11:48 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 14:11:48 INFO  - Closing Browsers
+2019-12-11 14:11:48 INFO  - Test is started with browser: Chrome
+2019-12-11 14:11:48 INFO  - No data found with given key-> ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-11 14:11:48 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:11:48 INFO  - Test Started: ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-11 14:11:48 INFO  - Test description: 
+2019-12-11 14:12:06 INFO  - Total Time taken in(seconds):18
+2019-12-11 14:12:06 INFO  - TestResults
+2019-12-11 14:12:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 14:12:06 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 14:12:06 INFO  - Closing Browsers
+2019-12-11 14:12:06 INFO  - Test is started with browser: Chrome
+2019-12-11 14:12:07 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-11 14:12:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:12:07 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-11 14:12:07 INFO  - Test description: 
+2019-12-11 14:12:29 INFO  - Total Time taken in(seconds):22
+2019-12-11 14:12:29 INFO  - TestResults
+2019-12-11 14:12:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 14:12:29 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 14:12:29 INFO  - Closing Browsers
+2019-12-11 14:12:29 INFO  - Test is started with browser: Chrome
+2019-12-11 14:12:30 INFO  - No data found with given key-> ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-11 14:12:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:12:30 INFO  - Test Started: ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-11 14:12:30 INFO  - Test description: 
+2019-12-11 14:12:50 INFO  - Total Time taken in(seconds):20
+2019-12-11 14:12:50 INFO  - TestResults
+2019-12-11 14:12:51 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 14:12:51 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 14:12:51 INFO  - Closing Browsers
+2019-12-11 14:12:51 INFO  - Test is started with browser: Chrome
+2019-12-11 14:12:51 INFO  - No data found with given key-> ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-11 14:12:51 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:12:51 INFO  - Test Started: ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-11 14:12:51 INFO  - Test description: 
+2019-12-11 14:13:15 INFO  - Total Time taken in(seconds):24
+2019-12-11 14:13:15 INFO  - TestResults
+2019-12-11 14:13:16 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 14:13:16 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 14:13:16 INFO  - Closing Browsers
+2019-12-11 14:13:16 INFO  - Test is started with browser: Chrome
+2019-12-11 14:13:16 INFO  - No data found with given key-> ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-11 14:13:17 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:13:17 INFO  - Test Started: ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-11 14:13:17 INFO  - Test description: 
+2019-12-11 14:13:58 INFO  - Total Time taken in(seconds):41
+2019-12-11 14:13:58 INFO  - TestResults
+2019-12-11 14:13:59 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 14:13:59 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 14:13:59 INFO  - Closing Browsers
+2019-12-11 14:13:59 INFO  - Test is started with browser: Chrome
+2019-12-11 14:13:59 INFO  - No data found with given key-> ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-11 14:13:59 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:13:59 INFO  - Test Started: ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-11 14:13:59 INFO  - Test description: 
+2019-12-11 14:14:37 INFO  - Total Time taken in(seconds):37
+2019-12-11 14:14:37 INFO  - TestResults
+2019-12-11 14:14:37 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-11 14:14:37 INFO  - Test has ended - closing browser: Chrome
+2019-12-11 14:14:37 INFO  - Closing Browsers
+2019-12-11 14:14:37 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-11 14:14:37 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-11 14:14:37 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-11 14:14:37 INFO  - Test description: 
+2019-12-11 14:14:39 INFO  - smoke suite finished at Wed Dec 11 14:14:39 IST 2019
+2019-12-11 14:14:44 INFO  - Test process has ended
+2019-12-11 14:14:52 INFO  - History File created successfully
+2019-12-12 12:28:54 INFO  - 
+============================================================================================================================
+2019-12-12 12:28:54 INFO  - smoke suite started at Thu Dec 12 12:28:54 IST 2019
+2019-12-12 12:28:54 INFO  - Suite Browser: Chrome
+2019-12-12 12:28:54 INFO  - Test is started with browser: Chrome
+2019-12-12 12:29:07 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:29:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:29:07 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:29:07 INFO  - Test description: 
+2019-12-12 12:29:09 INFO  -  - 
+2019-12-12 12:29:09 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 12:29:09 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:29:09 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 12:29:09 INFO  - TestResults
+2019-12-12 12:29:11 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 12:29:11 INFO  - Closing Browsers
+2019-12-12 12:29:11 INFO  - smoke suite finished at Thu Dec 12 12:29:11 IST 2019
+2019-12-12 12:29:12 INFO  - Test process has ended
+2019-12-12 12:29:12 INFO  - History File created successfully
+2019-12-12 12:30:33 INFO  - 
+============================================================================================================================
+2019-12-12 12:30:33 INFO  - smoke suite started at Thu Dec 12 12:30:33 IST 2019
+2019-12-12 12:30:33 INFO  - Suite Browser: Chrome
+2019-12-12 12:30:33 INFO  - Test is started with browser: Chrome
+2019-12-12 12:30:44 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:30:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:30:44 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:30:44 INFO  - Test description: 
+2019-12-12 12:30:50 INFO  - Total Time taken in(seconds):5
+2019-12-12 12:30:50 INFO  - TestResults
+2019-12-12 12:30:52 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:30:52 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 12:30:52 INFO  - Closing Browsers
+2019-12-12 12:30:52 INFO  - smoke suite finished at Thu Dec 12 12:30:52 IST 2019
+2019-12-12 12:30:53 INFO  - Test process has ended
+2019-12-12 12:30:58 INFO  - History File created successfully
+2019-12-12 12:37:38 INFO  - 
+============================================================================================================================
+2019-12-12 12:37:38 INFO  - smoke suite started at Thu Dec 12 12:37:38 IST 2019
+2019-12-12 12:37:38 INFO  - Suite Browser: Chrome
+2019-12-12 12:37:38 INFO  - Test is started with browser: Chrome
+2019-12-12 12:37:49 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:37:49 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:37:49 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:37:49 INFO  - Test description: 
+2019-12-12 12:37:55 INFO  - Total Time taken in(seconds):6
+2019-12-12 12:37:56 INFO  - TestResults
+2019-12-12 12:37:57 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:37:57 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 12:37:57 INFO  - Closing Browsers
+2019-12-12 12:37:57 INFO  - Test is started with browser: Chrome
+2019-12-12 12:37:57 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:37:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:37:57 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:37:57 INFO  - Test description: 
+2019-12-12 12:37:57 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:37:57 INFO  - TestResults
+2019-12-12 12:37:58 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:37:58 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:37:58 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:37:58 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:37:58 INFO  - Test description: 
+2019-12-12 12:37:58 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:37:58 INFO  - TestResults
+2019-12-12 12:37:59 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:37:59 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:37:59 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:37:59 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:37:59 INFO  - Test description: 
+2019-12-12 12:37:59 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:37:59 INFO  - TestResults
+2019-12-12 12:38:00 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:00 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:00 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:00 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:00 INFO  - Test description: 
+2019-12-12 12:38:01 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:38:01 INFO  - TestResults
+2019-12-12 12:38:01 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:01 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:01 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:01 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:01 INFO  - Test description: 
+2019-12-12 12:38:01 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:38:02 INFO  - TestResults
+2019-12-12 12:38:02 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:02 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:02 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:02 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:02 INFO  - Test description: 
+2019-12-12 12:38:03 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:38:03 INFO  - TestResults
+2019-12-12 12:38:04 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:04 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:04 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:04 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:04 INFO  - Test description: 
+2019-12-12 12:38:04 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:38:04 INFO  - TestResults
+2019-12-12 12:38:05 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:06 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:06 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:06 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:06 INFO  - Test description: 
+2019-12-12 12:38:06 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:38:06 INFO  - TestResults
+2019-12-12 12:38:08 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:08 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:08 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:08 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:08 INFO  - Test description: 
+2019-12-12 12:38:08 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:38:08 INFO  - TestResults
+2019-12-12 12:38:09 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:10 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:10 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:10 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:10 INFO  - Test description: 
+2019-12-12 12:38:10 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:38:10 INFO  - TestResults
+2019-12-12 12:38:12 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:12 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:12 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:12 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:12 INFO  - Test description: 
+2019-12-12 12:38:13 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:38:13 INFO  - TestResults
+2019-12-12 12:38:14 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:14 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:14 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:14 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:14 INFO  - Test description: 
+2019-12-12 12:38:15 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:38:15 INFO  - TestResults
+2019-12-12 12:38:17 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:17 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:17 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:17 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:17 INFO  - Test description: 
+2019-12-12 12:38:18 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:38:18 INFO  - TestResults
+2019-12-12 12:38:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:20 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:20 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:20 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:20 INFO  - Test description: 
+2019-12-12 12:38:20 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:38:20 INFO  - TestResults
+2019-12-12 12:38:22 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:22 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:23 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:23 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:23 INFO  - Test description: 
+2019-12-12 12:38:24 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:38:24 INFO  - TestResults
+2019-12-12 12:38:25 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:25 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:25 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:25 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:25 INFO  - Test description: 
+2019-12-12 12:38:26 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:38:26 INFO  - TestResults
+2019-12-12 12:38:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:29 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:29 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:29 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:29 INFO  - Test description: 
+2019-12-12 12:38:30 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:38:30 INFO  - TestResults
+2019-12-12 12:38:32 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:33 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:33 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:33 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:33 INFO  - Test description: 
+2019-12-12 12:38:34 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:38:34 INFO  - TestResults
+2019-12-12 12:38:36 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:37 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:37 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:37 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:37 INFO  - Test description: 
+2019-12-12 12:38:42 INFO  - Total Time taken in(seconds):5
+2019-12-12 12:38:42 INFO  - TestResults
+2019-12-12 12:38:45 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:45 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:45 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:45 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:45 INFO  - Test description: 
+2019-12-12 12:38:47 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:38:48 INFO  - TestResults
+2019-12-12 12:38:53 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:53 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:53 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:53 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:53 INFO  - Test description: 
+2019-12-12 12:38:56 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:38:56 INFO  - TestResults
+2019-12-12 12:38:59 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:38:59 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:38:59 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:38:59 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:38:59 INFO  - Test description: 
+2019-12-12 12:39:01 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:39:01 INFO  - TestResults
+2019-12-12 12:39:03 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:39:04 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:39:04 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:39:04 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:39:04 INFO  - Test description: 
+2019-12-12 12:39:04 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:39:04 INFO  - TestResults
+2019-12-12 12:39:04 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:39:04 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:39:04 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:39:04 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:39:04 INFO  - Test description: 
+2019-12-12 12:39:04 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:39:04 INFO  - TestResults
+2019-12-12 12:39:07 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:39:08 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:39:08 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:39:08 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:39:08 INFO  - Test description: 
+2019-12-12 12:39:10 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:39:10 INFO  - TestResults
+2019-12-12 12:39:13 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:39:14 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:39:14 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:39:14 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:39:14 INFO  - Test description: 
+2019-12-12 12:39:17 INFO  - Total Time taken in(seconds):3
+2019-12-12 12:39:17 INFO  - TestResults
+2019-12-12 12:39:21 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:39:21 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 12:39:21 INFO  - Closing Browsers
+2019-12-12 12:39:27 INFO  - smoke suite finished at Thu Dec 12 12:39:27 IST 2019
+2019-12-12 12:39:42 INFO  - Test process has ended
+2019-12-12 12:39:59 INFO  - History File created successfully
+2019-12-12 12:45:54 INFO  - 
+============================================================================================================================
+2019-12-12 12:45:54 INFO  - smoke suite started at Thu Dec 12 12:45:54 IST 2019
+2019-12-12 12:45:54 INFO  - Suite Browser: Chrome
+2019-12-12 12:45:54 INFO  - Test is started with browser: Chrome
+2019-12-12 12:46:06 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:46:06 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:06 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:46:06 INFO  - Test description: 
+2019-12-12 12:46:11 INFO  - Total Time taken in(seconds):5
+2019-12-12 12:46:12 INFO  - TestResults
+2019-12-12 12:46:13 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:13 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 12:46:13 INFO  - Closing Browsers
+2019-12-12 12:46:13 INFO  - Test is started with browser: Chrome
+2019-12-12 12:46:13 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:13 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:13 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:13 INFO  - Test description: 
+2019-12-12 12:46:13 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:13 INFO  - TestResults
+2019-12-12 12:46:14 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:14 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:14 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:14 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:14 INFO  - Test description: 
+2019-12-12 12:46:14 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:14 INFO  - TestResults
+2019-12-12 12:46:15 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:15 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:15 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:15 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:15 INFO  - Test description: 
+2019-12-12 12:46:15 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:15 INFO  - TestResults
+2019-12-12 12:46:16 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:16 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:16 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:16 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:16 INFO  - Test description: 
+2019-12-12 12:46:16 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:16 INFO  - TestResults
+2019-12-12 12:46:17 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:17 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:17 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:17 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:17 INFO  - Test description: 
+2019-12-12 12:46:17 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:17 INFO  - TestResults
+2019-12-12 12:46:18 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:18 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:18 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:18 INFO  - Test description: 
+2019-12-12 12:46:18 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:18 INFO  - TestResults
+2019-12-12 12:46:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:19 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:19 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:19 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:19 INFO  - Test description: 
+2019-12-12 12:46:20 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:20 INFO  - TestResults
+2019-12-12 12:46:21 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:21 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:21 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:21 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:21 INFO  - Test description: 
+2019-12-12 12:46:21 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:21 INFO  - TestResults
+2019-12-12 12:46:22 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:23 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:23 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:23 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:23 INFO  - Test description: 
+2019-12-12 12:46:23 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:23 INFO  - TestResults
+2019-12-12 12:46:24 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:24 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:24 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:24 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:24 INFO  - Test description: 
+2019-12-12 12:46:25 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:46:25 INFO  - TestResults
+2019-12-12 12:46:26 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:27 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:27 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:27 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:27 INFO  - Test description: 
+2019-12-12 12:46:28 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:46:28 INFO  - TestResults
+2019-12-12 12:46:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:29 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:29 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:29 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:29 INFO  - Test description: 
+2019-12-12 12:46:30 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:46:30 INFO  - TestResults
+2019-12-12 12:46:32 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:32 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:32 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:32 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:32 INFO  - Test description: 
+2019-12-12 12:46:34 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:46:34 INFO  - TestResults
+2019-12-12 12:46:36 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:36 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:36 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:36 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:36 INFO  - Test description: 
+2019-12-12 12:46:37 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:46:37 INFO  - TestResults
+2019-12-12 12:46:39 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:39 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:39 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:39 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:39 INFO  - Test description: 
+2019-12-12 12:46:42 INFO  - Total Time taken in(seconds):3
+2019-12-12 12:46:42 INFO  - TestResults
+2019-12-12 12:46:45 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:45 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:45 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:45 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:45 INFO  - Test description: 
+2019-12-12 12:46:47 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:46:47 INFO  - TestResults
+2019-12-12 12:46:48 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:49 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:49 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:49 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:49 INFO  - Test description: 
+2019-12-12 12:46:51 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:46:51 INFO  - TestResults
+2019-12-12 12:46:53 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:53 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:53 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:53 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:53 INFO  - Test description: 
+2019-12-12 12:46:54 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:46:54 INFO  - TestResults
+2019-12-12 12:46:56 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:46:57 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:46:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:46:57 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:46:57 INFO  - Test description: 
+2019-12-12 12:46:59 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:46:59 INFO  - TestResults
+2019-12-12 12:47:01 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:47:01 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:47:01 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:47:01 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:47:01 INFO  - Test description: 
+2019-12-12 12:47:03 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:47:03 INFO  - TestResults
+2019-12-12 12:47:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:47:06 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:47:06 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:47:06 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:47:06 INFO  - Test description: 
+2019-12-12 12:47:08 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:47:08 INFO  - TestResults
+2019-12-12 12:47:11 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:47:12 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:47:12 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:47:12 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:47:12 INFO  - Test description: 
+2019-12-12 12:47:13 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:47:13 INFO  - TestResults
+2019-12-12 12:47:16 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:47:17 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:47:17 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:47:17 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:47:17 INFO  - Test description: 
+2019-12-12 12:47:19 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:47:19 INFO  - TestResults
+2019-12-12 12:47:21 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:47:22 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:47:22 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:47:22 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:47:22 INFO  - Test description: 
+2019-12-12 12:47:24 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:47:24 INFO  - TestResults
+2019-12-12 12:47:27 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:47:27 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:47:27 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:47:27 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:47:27 INFO  - Test description: 
+2019-12-12 12:47:30 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:47:30 INFO  - TestResults
+2019-12-12 12:47:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:47:33 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:47:33 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:47:33 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:47:33 INFO  - Test description: 
+2019-12-12 12:47:36 INFO  - Total Time taken in(seconds):3
+2019-12-12 12:47:36 INFO  - TestResults
+2019-12-12 12:47:40 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:47:40 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 12:47:40 INFO  - Closing Browsers
+2019-12-12 12:47:48 INFO  - smoke suite finished at Thu Dec 12 12:47:48 IST 2019
+2019-12-12 12:48:04 INFO  - Test process has ended
+2019-12-12 12:48:20 INFO  - History File created successfully
+2019-12-12 12:51:07 INFO  - 
+============================================================================================================================
+2019-12-12 12:51:07 INFO  - smoke suite started at Thu Dec 12 12:51:07 IST 2019
+2019-12-12 12:51:07 INFO  - Suite Browser: Chrome
+2019-12-12 12:51:07 INFO  - Test is started with browser: Chrome
+2019-12-12 12:51:21 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:51:21 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:21 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:51:21 INFO  - Test description: 
+2019-12-12 12:51:26 INFO  - Total Time taken in(seconds):5
+2019-12-12 12:51:26 INFO  - TestResults
+2019-12-12 12:51:27 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:27 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 12:51:27 INFO  - Closing Browsers
+2019-12-12 12:51:27 INFO  - Test is started with browser: Chrome
+2019-12-12 12:51:28 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:28 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:28 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:28 INFO  - Test description: 
+2019-12-12 12:51:28 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:28 INFO  - TestResults
+2019-12-12 12:51:28 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:28 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:28 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:28 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:28 INFO  - Test description: 
+2019-12-12 12:51:28 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:28 INFO  - TestResults
+2019-12-12 12:51:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:29 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:29 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:29 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:29 INFO  - Test description: 
+2019-12-12 12:51:29 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:30 INFO  - TestResults
+2019-12-12 12:51:30 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:30 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:30 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:30 INFO  - Test description: 
+2019-12-12 12:51:30 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:30 INFO  - TestResults
+2019-12-12 12:51:31 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:31 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:31 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:31 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:31 INFO  - Test description: 
+2019-12-12 12:51:31 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:32 INFO  - TestResults
+2019-12-12 12:51:32 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:32 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:32 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:32 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:32 INFO  - Test description: 
+2019-12-12 12:51:33 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:33 INFO  - TestResults
+2019-12-12 12:51:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:33 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:33 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:33 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:33 INFO  - Test description: 
+2019-12-12 12:51:34 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:34 INFO  - TestResults
+2019-12-12 12:51:35 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:35 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:35 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:35 INFO  - Test description: 
+2019-12-12 12:51:35 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:35 INFO  - TestResults
+2019-12-12 12:51:36 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:36 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:36 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:36 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:36 INFO  - Test description: 
+2019-12-12 12:51:37 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:37 INFO  - TestResults
+2019-12-12 12:51:37 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:38 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:38 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:38 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:38 INFO  - Test description: 
+2019-12-12 12:51:38 INFO  - Total Time taken in(seconds):0
+2019-12-12 12:51:38 INFO  - TestResults
+2019-12-12 12:51:39 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:39 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:39 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:39 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:39 INFO  - Test description: 
+2019-12-12 12:51:40 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:51:40 INFO  - TestResults
+2019-12-12 12:51:42 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:42 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:42 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:42 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:42 INFO  - Test description: 
+2019-12-12 12:51:43 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:51:43 INFO  - TestResults
+2019-12-12 12:51:44 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:44 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:44 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:44 INFO  - Test description: 
+2019-12-12 12:51:45 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:51:45 INFO  - TestResults
+2019-12-12 12:51:48 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:48 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:48 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:48 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:48 INFO  - Test description: 
+2019-12-12 12:51:49 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:51:49 INFO  - TestResults
+2019-12-12 12:51:50 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:51 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:51 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:51 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:51 INFO  - Test description: 
+2019-12-12 12:51:52 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:51:52 INFO  - TestResults
+2019-12-12 12:51:54 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:54 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:54 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:54 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:54 INFO  - Test description: 
+2019-12-12 12:51:56 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:51:56 INFO  - TestResults
+2019-12-12 12:51:58 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:51:59 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:51:59 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:51:59 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:51:59 INFO  - Test description: 
+2019-12-12 12:52:00 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:52:00 INFO  - TestResults
+2019-12-12 12:52:02 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:02 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:52:02 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:52:02 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:52:02 INFO  - Test description: 
+2019-12-12 12:52:03 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:52:03 INFO  - TestResults
+2019-12-12 12:52:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:06 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:52:06 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:52:06 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:52:06 INFO  - Test description: 
+2019-12-12 12:52:08 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:52:08 INFO  - TestResults
+2019-12-12 12:52:11 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:11 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:52:11 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:52:11 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:52:11 INFO  - Test description: 
+2019-12-12 12:52:13 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:52:13 INFO  - TestResults
+2019-12-12 12:52:15 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:16 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:52:16 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:52:16 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:52:16 INFO  - Test description: 
+2019-12-12 12:52:18 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:52:18 INFO  - TestResults
+2019-12-12 12:52:20 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:21 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:52:21 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:52:21 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:52:21 INFO  - Test description: 
+2019-12-12 12:52:22 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:52:22 INFO  - TestResults
+2019-12-12 12:52:25 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:26 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:52:26 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:52:26 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:52:26 INFO  - Test description: 
+2019-12-12 12:52:29 INFO  - Total Time taken in(seconds):3
+2019-12-12 12:52:29 INFO  - TestResults
+2019-12-12 12:52:31 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:32 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:52:32 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:52:32 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:52:32 INFO  - Test description: 
+2019-12-12 12:52:34 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:52:34 INFO  - TestResults
+2019-12-12 12:52:37 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:37 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:52:37 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:52:37 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:52:37 INFO  - Test description: 
+2019-12-12 12:52:40 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:52:40 INFO  - TestResults
+2019-12-12 12:52:43 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:43 INFO  - No data found with given key-> ZestIOT_TestCasesMailReport
+2019-12-12 12:52:43 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 12:52:43 INFO  - Test Started: ZestIOT_TestCasesMailReport
+2019-12-12 12:52:43 INFO  - Test description: 
+2019-12-12 12:52:45 INFO  - Total Time taken in(seconds):2
+2019-12-12 12:52:45 INFO  - TestResults
+2019-12-12 12:52:49 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 12:52:49 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 12:52:49 INFO  - Closing Browsers
+2019-12-12 12:52:54 INFO  - smoke suite finished at Thu Dec 12 12:52:54 IST 2019
+2019-12-12 12:53:08 INFO  - Test process has ended
+2019-12-12 12:53:20 INFO  - History File created successfully
+2019-12-12 21:51:15 INFO  - 
+============================================================================================================================
+2019-12-12 21:51:15 INFO  - smoke suite started at Thu Dec 12 21:51:15 IST 2019
+2019-12-12 21:51:15 INFO  - Suite Browser: Chrome
+2019-12-12 21:51:16 INFO  - Test is started with browser: Chrome
+2019-12-12 21:51:31 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 21:51:31 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:31 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 21:51:31 INFO  - Test description: 
+2019-12-12 21:51:32 INFO  -  - 
+2019-12-12 21:51:32 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 21:51:32 INFO  - Total Time taken in(seconds):2
+2019-12-12 21:51:32 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:51:33 INFO  - TestResults
+2019-12-12 21:51:35 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:51:35 INFO  - Closing Browsers
+2019-12-12 21:51:35 INFO  - Test is started with browser: Chrome
+2019-12-12 21:51:35 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-12 21:51:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:35 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-12 21:51:35 INFO  - Test description: 
+2019-12-12 21:51:36 INFO  -  - 
+2019-12-12 21:51:36 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 21:51:36 INFO  - Total Time taken in(seconds):0
+2019-12-12 21:51:36 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:51:36 INFO  - TestResults
+2019-12-12 21:51:36 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:51:36 INFO  - Closing Browsers
+2019-12-12 21:51:36 INFO  - Test is started with browser: Chrome
+2019-12-12 21:51:37 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-12 21:51:37 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:37 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-12 21:51:37 INFO  - Test description: 
+2019-12-12 21:51:38 INFO  -  - 
+2019-12-12 21:51:38 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 21:51:38 INFO  - Total Time taken in(seconds):1
+2019-12-12 21:51:38 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:51:38 INFO  - TestResults
+2019-12-12 21:51:38 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:51:38 INFO  - Closing Browsers
+2019-12-12 21:51:38 INFO  - Test is started with browser: Chrome
+2019-12-12 21:51:38 INFO  - No data found with given key-> ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-12 21:51:38 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:38 INFO  - Test Started: ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-12 21:51:38 INFO  - Test description: 
+2019-12-12 21:51:39 INFO  -  - 
+2019-12-12 21:51:39 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 21:51:39 INFO  - Total Time taken in(seconds):0
+2019-12-12 21:51:39 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:51:39 INFO  - TestResults
+2019-12-12 21:51:40 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:51:40 INFO  - Closing Browsers
+2019-12-12 21:51:40 INFO  - Test is started with browser: Chrome
+2019-12-12 21:51:40 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-12 21:51:40 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:40 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-12 21:51:40 INFO  - Test description: 
+2019-12-12 21:51:40 INFO  -  - 
+2019-12-12 21:51:40 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 21:51:40 INFO  - Total Time taken in(seconds):0
+2019-12-12 21:51:40 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:51:41 INFO  - TestResults
+2019-12-12 21:51:41 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:51:41 INFO  - Closing Browsers
+2019-12-12 21:51:41 INFO  - Test is started with browser: Chrome
+2019-12-12 21:51:41 INFO  - No data found with given key-> ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-12 21:51:41 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:41 INFO  - Test Started: ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-12 21:51:41 INFO  - Test description: 
+2019-12-12 21:51:42 INFO  -  - 
+2019-12-12 21:51:42 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 21:51:42 INFO  - Total Time taken in(seconds):0
+2019-12-12 21:51:42 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:51:42 INFO  - TestResults
+2019-12-12 21:51:43 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:51:43 INFO  - Closing Browsers
+2019-12-12 21:51:43 INFO  - Test is started with browser: Chrome
+2019-12-12 21:51:43 INFO  - No data found with given key-> ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-12 21:51:43 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:43 INFO  - Test Started: ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-12 21:51:43 INFO  - Test description: 
+2019-12-12 21:51:44 INFO  -  - 
+2019-12-12 21:51:44 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 21:51:44 INFO  - Total Time taken in(seconds):0
+2019-12-12 21:51:44 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:51:44 INFO  - TestResults
+2019-12-12 21:51:45 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:51:45 INFO  - Closing Browsers
+2019-12-12 21:51:45 INFO  - Test is started with browser: Chrome
+2019-12-12 21:51:46 INFO  - No data found with given key-> ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-12 21:51:46 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:46 INFO  - Test Started: ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-12 21:51:46 INFO  - Test description: 
+2019-12-12 21:51:48 INFO  -  - 
+2019-12-12 21:51:48 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 21:51:48 INFO  - Total Time taken in(seconds):1
+2019-12-12 21:51:48 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:51:48 INFO  - TestResults
+2019-12-12 21:51:49 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:51:49 INFO  - Closing Browsers
+2019-12-12 21:51:49 INFO  - Test is started with browser: Chrome
+2019-12-12 21:51:50 INFO  - No data found with given key-> ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-12 21:51:50 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:50 INFO  - Test Started: ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-12 21:51:50 INFO  - Test description: 
+2019-12-12 21:51:52 INFO  -  - 
+2019-12-12 21:51:52 INFO  - Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 21:51:52 INFO  - Total Time taken in(seconds):1
+2019-12-12 21:51:52 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:51:52 INFO  - TestResults
+2019-12-12 21:51:53 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:51:53 INFO  - Closing Browsers
+2019-12-12 21:51:53 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-12 21:51:53 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:51:53 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-12 21:51:53 INFO  - Test description: 
+2019-12-12 21:51:57 INFO  - smoke suite finished at Thu Dec 12 21:51:57 IST 2019
+2019-12-12 21:52:06 INFO  - Test process has ended
+2019-12-12 21:52:22 INFO  - History File created successfully
+2019-12-12 21:53:49 INFO  - 
+============================================================================================================================
+2019-12-12 21:53:49 INFO  - smoke suite started at Thu Dec 12 21:53:49 IST 2019
+2019-12-12 21:53:49 INFO  - Suite Browser: Chrome
+2019-12-12 21:53:49 INFO  - Test is started with browser: Chrome
+2019-12-12 21:54:01 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 21:54:01 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:54:01 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 21:54:01 INFO  - Test description: 
+2019-12-12 21:54:10 INFO  - Total Time taken in(seconds):9
+2019-12-12 21:54:10 INFO  - TestResults
+2019-12-12 21:54:11 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 21:54:11 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:54:11 INFO  - Closing Browsers
+2019-12-12 21:54:11 INFO  - Test is started with browser: Chrome
+2019-12-12 21:54:11 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-12 21:54:11 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:54:11 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-12 21:54:11 INFO  - Test description: 
+2019-12-12 21:54:19 INFO  - Total Time taken in(seconds):8
+2019-12-12 21:54:19 INFO  - TestResults
+2019-12-12 21:54:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 21:54:19 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:54:19 INFO  - Closing Browsers
+2019-12-12 21:54:19 INFO  - Test is started with browser: Chrome
+2019-12-12 21:54:20 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-12 21:54:20 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:54:20 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-12 21:54:20 INFO  - Test description: 
+2019-12-12 21:54:26 INFO  - Total Time taken in(seconds):6
+2019-12-12 21:54:26 INFO  - TestResults
+2019-12-12 21:54:27 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 21:54:27 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:54:27 INFO  - Closing Browsers
+2019-12-12 21:54:27 INFO  - Test is started with browser: Chrome
+2019-12-12 21:54:27 INFO  - No data found with given key-> ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-12 21:54:27 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:54:27 INFO  - Test Started: ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-12 21:54:27 INFO  - Test description: 
+2019-12-12 21:55:01 INFO  - Total Time taken in(seconds):34
+2019-12-12 21:55:01 INFO  - TestResults
+2019-12-12 21:55:02 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 21:55:02 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:55:02 INFO  - Closing Browsers
+2019-12-12 21:55:02 INFO  - Test is started with browser: Chrome
+2019-12-12 21:55:02 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-12 21:55:02 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:55:02 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-12 21:55:02 INFO  - Test description: 
+2019-12-12 21:55:40 INFO  - Total Time taken in(seconds):38
+2019-12-12 21:55:40 INFO  - TestResults
+2019-12-12 21:55:41 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 21:55:41 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:55:41 INFO  - Closing Browsers
+2019-12-12 21:55:41 INFO  - Test is started with browser: Chrome
+2019-12-12 21:55:41 INFO  - No data found with given key-> ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-12 21:55:41 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:55:41 INFO  - Test Started: ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-12 21:55:41 INFO  - Test description: 
+2019-12-12 21:56:12 INFO  - Total Time taken in(seconds):31
+2019-12-12 21:56:12 INFO  - TestResults
+2019-12-12 21:56:13 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 21:56:13 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:56:13 INFO  - Closing Browsers
+2019-12-12 21:56:13 INFO  - Test is started with browser: Chrome
+2019-12-12 21:56:14 INFO  - No data found with given key-> ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-12 21:56:14 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:56:14 INFO  - Test Started: ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-12 21:56:14 INFO  - Test description: 
+2019-12-12 21:56:57 INFO  - Total Time taken in(seconds):44
+2019-12-12 21:56:57 INFO  - TestResults
+2019-12-12 21:56:58 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 21:56:58 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:56:58 INFO  - Closing Browsers
+2019-12-12 21:56:58 INFO  - Test is started with browser: Chrome
+2019-12-12 21:56:58 INFO  - No data found with given key-> ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-12 21:56:58 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:56:58 INFO  - Test Started: ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-12 21:56:58 INFO  - Test description: 
+2019-12-12 21:58:13 INFO  - Total Time taken in(seconds):75
+2019-12-12 21:58:13 INFO  - TestResults
+2019-12-12 21:58:14 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-12 21:58:14 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:58:14 INFO  - Closing Browsers
+2019-12-12 21:58:14 INFO  - Test is started with browser: Chrome
+2019-12-12 21:58:14 INFO  - No data found with given key-> ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-12 21:58:14 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:58:14 INFO  - Test Started: ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-12 21:58:14 INFO  - Test description: 
+2019-12-12 21:59:28 INFO  -  - 
+2019-12-12 21:59:28 INFO  - Column 'flight_pk' not found.
+2019-12-12 21:59:28 INFO  - Total Time taken in(seconds):73
+2019-12-12 21:59:28 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 21:59:28 INFO  - TestResults
+2019-12-12 21:59:29 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 21:59:29 INFO  - Closing Browsers
+2019-12-12 21:59:29 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-12 21:59:29 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-12 21:59:29 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-12 21:59:29 INFO  - Test description: 
+2019-12-12 21:59:31 INFO  - smoke suite finished at Thu Dec 12 21:59:31 IST 2019
+2019-12-12 21:59:37 INFO  - Test process has ended
+2019-12-12 21:59:53 INFO  - History File created successfully
