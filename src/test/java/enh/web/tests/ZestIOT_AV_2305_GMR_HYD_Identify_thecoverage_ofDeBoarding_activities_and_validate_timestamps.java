@@ -3,7 +3,9 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.Coverage_of_DeBoarding_Activities_HYD_Validation;
+import enh.db.cases.Scheduled_And_Sensor_ATA_Hyd;
+import enh.db.cases.Scheduled_And_Sensor_ATD_Hyd;
+import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
@@ -11,7 +13,7 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source extends KeywordUtil {
+public class ZestIOT_AV_2305_GMR_HYD_Identify_thecoverage_ofDeBoarding_activities_and_validate_timestamps extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
@@ -30,7 +32,7 @@ public class ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_
 			// ============================================================
 			// .........Script Start...........................
 
-			Coverage_of_DeBoarding_Activities_HYD_Validation.Coverage_of_DeBoarding_Activities_HYD_Validation_Report(4, "rgi_ACOA");
+			SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_HYD_Report(4);
 			
 
 			
