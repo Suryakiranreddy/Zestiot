@@ -201,7 +201,7 @@ public class AV_2268_COBT_For_GMR_HYD_AISATS_User {
 			// HtmlReportUtil.test.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User5.toString());
 			//	HtmlReportUtil.testHist.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User5.toString());
 				
-			 email_COBT_For_DIALCelebi_User6.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+			 email_COBT_For_DIALCelebi_User6.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 			 email_COBT_For_DIALCelebi_User6.append("<table style=\"width:100%\" id=\"t01\"><h4><caption> COBT not detected flights</caption></h4>"
 			 		+ "<tr><th style=\"width:25%\">LogID</th> <th style=\"width:25%\">FlightNumber_Arrival</th>"
 				 		+ "<th style=\"width:25%\">COBT</th><th style=\"width:25%\">Off_Block_Time</th></tr>");
