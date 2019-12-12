@@ -3,7 +3,7 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation;
+import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
@@ -30,7 +30,7 @@ public class ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBOR
 			// ============================================================
 			// .........Script Start...........................
 
-			SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_Delhi_Report(22);
+			AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_Delhi_Report(22);
 			
 
 			

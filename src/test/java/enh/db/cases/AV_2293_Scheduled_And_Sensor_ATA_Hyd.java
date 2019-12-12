@@ -9,7 +9,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.HtmlReportUtil;
 
-public class Scheduled_And_Sensor_ATA_Hyd {
+public class AV_2293_Scheduled_And_Sensor_ATA_Hyd {
 	
 	public static String totalScheduledArrival=null;
 	public static String notNullSensorATA =null;

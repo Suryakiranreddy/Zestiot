@@ -9,7 +9,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.HtmlReportUtil;
 
-public class Scheduled_And_Sensor_ATD_DIAL_Delhi {
+public class AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi {
 	
 	public static int totalScheduledDeparture= 0;
 	public static int totalActualDeparture= 0;

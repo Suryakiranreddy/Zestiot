@@ -3,9 +3,9 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.Scheduled_And_Sensor_ATA_Hyd;
-import enh.db.cases.Scheduled_And_Sensor_ATD_Hyd;
-import enh.db.cases.SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Hyd;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Hyd;
+import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
@@ -32,7 +32,7 @@ public class ZestIOT_AV_2305_GMR_HYD_Identify_thecoverage_ofDeBoarding_activitie
 			// ============================================================
 			// .........Script Start...........................
 
-			SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_HYD_Report(4);
+			AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_HYD_Report(4);
 			
 
 			

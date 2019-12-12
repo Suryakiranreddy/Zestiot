@@ -8,7 +8,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.HtmlReportUtil;
 
-public class SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
+public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 	public static int totalScheduledArrival =0;
 	public static int totalScheduledDeparture= 0;
 	public static int notNullSensorATA=0;

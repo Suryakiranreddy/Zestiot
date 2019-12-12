@@ -9,7 +9,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.HtmlReportUtil;
 
-public class Scheduled_And_Sensor_ATA_DIAL_Delhi {
+public class AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi {
 	
 	public static int totalScheduledArrival=0;
 	public static int notNullSensorATA =0;

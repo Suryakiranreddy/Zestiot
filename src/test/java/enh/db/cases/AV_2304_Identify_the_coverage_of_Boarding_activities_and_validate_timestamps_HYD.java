@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import org.testng.annotations.Test;
 
 
-public class HYD_AV2304_Identify_the_coverage_of_Boarding_activities_and_validate_timestamps {
+public class AV_2304_Identify_the_coverage_of_Boarding_activities_and_validate_timestamps_HYD {
 	public static String TotalFlightsDeparted =null;
 	public static ArrayList<String> list_TotalNumberofPassengerCoaches= new ArrayList<String>();
 	public static ArrayList<String> list_TotalNumberofPassengerCoachesUtilizedforBoarding = new ArrayList<String>();

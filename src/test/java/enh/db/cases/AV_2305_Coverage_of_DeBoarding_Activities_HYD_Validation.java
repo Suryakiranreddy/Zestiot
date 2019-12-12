@@ -9,7 +9,7 @@ import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.HtmlReportUtil;
 
-public class Coverage_of_DeBoarding_Activities_HYD_Validation {
+public class AV_2305_Coverage_of_DeBoarding_Activities_HYD_Validation {
 	
 	public static int totalFlightsArrived= 0;
 	public static int totalActivePassengerCoaches =0;
