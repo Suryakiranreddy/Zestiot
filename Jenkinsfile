@@ -40,9 +40,10 @@ publishHTML([allowMissing: false,
 mail bcc: 'stiyyagura@enhops.com',
  body: """
 <p style=\"color:#006600;\">Hi All, <br>
-This is a confirmation mail that all ZestIOT automation scripts are successfully executed through Jenkins Pipeline<br>
-Job Bilid Number: '${env.BUILD_NUMBER}'<br>
-Check console output at <a href="${env.BUILD_URL}">${env.JOB_NAME}</a><br><br>
+This is a confirmation mail that all <b><i>ZestIOT automation scripts </b></i>are successfully executed through Jenkins Pipeline.<br>
+<b>Job Bilid Number: </b>'${env.BUILD_NUMBER}'<br>
+<b>Job Name:</b>'${env.JOB_NAME}'
+Check <b>console output</b> at <a href="${env.BUILD_URL}">${env.BUILD_URL}</a><br><br>
 Thanks& Reagrds<br>
 Automation Team</p>
 """, 
