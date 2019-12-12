@@ -124,6 +124,9 @@ public class AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi {
 						String str_flight_STD = result31.getString("std");
 						String str_flight_ETD = result31.getString("etd");
 						String str_flight_ATD = result31.getString("atd");
+						
+						email_report_Scheduled_And_Sensor_ATD_For_Delhi2.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td> <td><b style=\"color:red;\">"+str_flight_NumberDeparture+"</b></td>"
+						 		+ " <td> <b style=\"color:red;\">"+str_flight_STD+"</b></td> <td><b style=\"color:red;\">"+str_flight_ETD+"</b></td> <td><b style=\"color:red;\">"+str_flight_ATD+"</b></td></tr>");
 					}
 				}
 				else{
@@ -153,12 +156,14 @@ public class AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi {
 						String str_flight_OffBlock= result51.getString("off_block_time");
 						String str_status= result51.getString("status");
 						String str_difference_between_OffBlockAndSensorATD= result51.getString("difference");
+						if(str_status.contains("0")) {
 						email_report_Scheduled_And_Sensor_ATD_For_Delhi3.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td>"
 								+ " <td><b style=\"color:red;\">"+str_flight_NumberDeparture+"</b></td>"
 								+ " <td> <b style=\"color:red;\">"+str_flight_SensorATD+"</b></td>"
 								+ " <td><b style=\"color:red;\">"+str_flight_OffBlock+"</b></td> "
 								+ "<td><b style=\"color:red;\">"+str_difference_between_OffBlockAndSensorATD+"</b></td></tr>");
-					}
+						}
+						}
 				}
 					else {				
 						email_report_Scheduled_And_Sensor_ATD_For_Delhi3.append("<tr><td colspan=\"5\"><b style=\"color:red;\">No values found </b></td></tr>");
