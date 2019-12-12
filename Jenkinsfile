@@ -1,7 +1,6 @@
 pipeline{
 
 agent any
-try{
 triggers {
 
         pollSCM ('0 12 * * *')
@@ -38,23 +37,14 @@ publishHTML([allowMissing: false,
   keepAll: false, reportDir: '',
    reportFiles: 'ExecutionReports/HtmlReport/TestReport.html',
     reportName: 'Extent HTML Report', reportTitles: ''])
- mail bcc: '', 
- body: """This is a confirmation mail that all ZestIOT automation scripts are successfully executed through Jenkins Pipeline, Check console output at "${env.BUILD_URL}"${env.JOB_NAME}""", 
- cc:  ""  , 
- from: "AutomationTeam@Enhops",
-  replyTo: '', 
-  subject: "Notification:Jenkins BUILD_NUMBER: '${env.BUILD_NUMBER}' SUCCESSFUL" ,
-   to: "stiyyagura@enhops.com"   
-
+    emailext (
+    subject: "Job '${env.JOB_NAME} ${env.BUILD_NUMBER}'",
+    body: """<p>Check console output at <a href="${env.BUILD_URL}">${env.JOB_NAME}</a></p>""",
+    to: "stiyyagura@enhops.com",
+    cc: "stiyyagura@enhops.com",
+    from: "automationteam.enhops@gmail.com"
+)
 }
 }
-}}catch(Exception e){
-mail bcc: '', 
- body: """e""", 
- cc:  ""  , 
- from: "AutomationTeam@Enhops",
-  replyTo: '', 
-  subject: "Notification:Jenkins BUILD_NUMBER: '${env.BUILD_NUMBER}' FAILED" ,
-   to: "stiyyagura@enhops.com" 
 }
 }
