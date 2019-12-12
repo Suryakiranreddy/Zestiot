@@ -43,7 +43,7 @@ mail bcc: 'stiyyagura@enhops.com',
 This is a confirmation mail that all <b><i>ZestIOT automation scripts </b></i>are successfully executed through Jenkins Pipeline.<br>
 <b>Job Bilid Number: </b>'${env.BUILD_NUMBER}'<br>
 <b>Job Name:</b>'${env.JOB_NAME}'<br>
-Check <b>console output</b> at <a href="${env.BUILD_URL}">${env.BUILD_URL}</a><br><br>
+Check <b>console output</b> at <a style=\"color:#006600;\" href="${env.BUILD_URL}">${env.BUILD_URL}</a><br><br>
 Thanks& Reagrds<br>
 Automation Team</p>
 """, 
