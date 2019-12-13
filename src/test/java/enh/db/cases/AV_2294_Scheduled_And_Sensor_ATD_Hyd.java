@@ -276,7 +276,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 		
 		email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append("<br><br>");
 		email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
-		email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append("<table style=\"width:100%\" id=\"t01\"><caption> OFFBLOCK time detected by Flight Sensor less than AIRBORNE time detected by Flight Sensor</caption><tr>"
+		email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append("<table style=\"width:100%\" id=\"t01\"><caption> OFFBLOCK time detected by Flight Sensor greater than AIRBORNE time detected by Flight Sensor</caption><tr>"
 				+ "<th style=\"width:10%\"><b>LogID</b></th>"
 				+ "<th style=\"width:15%\"><b>Departure Flight No.</b></th> "
 				+ "<th style=\"width:15%\"><b>Off Block time</b></th> "
@@ -298,8 +298,8 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 			if(str_status.contains("0")) {
 				email_report_Scheduled_And_Sensor_ATD_For_Hyd4.append(" <tr> <td><b style=\"color:red;\">"+str_LogID+"</b></td>"
 						+ " <td><b style=\"color:red;\">"+str_flight_NumberDeparture+"</b></td>"
-						+ " <td> <b style=\"color:red;\">"+str_flight_SensorATD+"</b></td>"
-						+ " <td><b style=\"color:red;\">"+str_flight_OffBlock+"</b></td> "
+						+ " <td> <b style=\"color:red;\">"+str_flight_OffBlock+"</b></td>"
+						+ " <td><b style=\"color:red;\">"+str_flight_SensorATD+"</b></td> "
 						+ "<td><b style=\"color:red;\">"+str_difference_between_OffBlockAndSensorATD+"</b></td></tr>");
 			}
 			}
