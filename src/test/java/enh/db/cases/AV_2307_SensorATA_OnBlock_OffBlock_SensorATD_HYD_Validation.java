@@ -177,7 +177,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 		//HtmlReportUtil.stepInfo("<b style=\"color:green;\">Total No. of flights for which Sensor_ATA < On_Block < Off_Block < Sensor_ATD = "+ status1List.size() +"</b>");
 		//HtmlReportUtil.stepInfo("<b style=\"color:red;\">Total No. of flights for which order is not like Sensor_ATA < On_Block < Off_Block < Sensor_ATD  = "+ status0List.size() +"</b>");
 		
-		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: #000000;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Airport Name : GMR-Hyderabad</h4>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :sensor-ATA, OnBlock, OffBlock, Sensor-ATD</h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:10%\"><b>Date</b></th><th style=\"width:15%\"><b>Total No. of Flights Scheduled Arrival</b></th> <th style=\"width:15%\"><b> Total No. of flights Scheduled Departure</b></th>"
@@ -187,7 +187,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 		 		+ " <td> <b style=\"color:green;\">"+totalScheduledDeparture+"</b></td> <td><b style=\"color:green;\">"+notNullSensorATA+"</b></td> <td><b style=\"color:green;\">"+notNullSensorATD+"</b></td>");			 	
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("</table>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd2.append("<br><br>");
-		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd2.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd2.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd2.append("<table style=\"width:100%\" id=\"t01\"><caption> No. of flights for which OnBlock, OffBlock and Airborne time is available but No Landing time </caption><tr>"
 				+ "<th style=\"width:15%\"><b>logID</b></th> "
 				+ "<th style=\"width:15%\"><b>FlightNumber_Arrival</b></th>"
@@ -218,7 +218,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 						email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd2.append("</table>");
 		
 			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd3.append("<br><br>");
-			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd3.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd3.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd3.append("<table style=\"width:100%\" id=\"t01\"><caption> No. of flights for which Landing, OffBlock and Airborne time is available but No On Block time </caption><tr>"
 								+ "<th style=\"width:15%\"><b>logID</b></th> "
 								+ "<th style=\"width:15%\"><b>FlightNumber_Arrival</b></th>"
@@ -249,7 +249,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 			
 								
 			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd4.append("<br><br>");
-			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd4.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd4.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd4.append("<table style=\"width:100%\" id=\"t01\"><caption> No. of flights for which Landing, OnBlock and Airborne time is available but No Off Block time </caption><tr>"
 													+ "<th style=\"width:15%\"><b>logID</b></th> "
 													+ "<th style=\"width:15%\"><b>FlightNumber_Departure</b></th>"
@@ -280,7 +280,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 								email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd4.append("</table>");
 								
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd5.append("<br><br>");
-		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd5.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd5.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd5.append("<table style=\"width:100%\" id=\"t01\"><caption> No. of flights for which Landing, OnBlock and Off_block time is available but No Airborne time </caption><tr>"
 																		+ "<th style=\"width:15%\"><b>logID</b></th> "
 																		+ "<th style=\"width:15%\"><b>FlightNumber_Departure</b></th>"
@@ -313,7 +313,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 						email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd5.append("</table>");
 		
 			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd6.append("<br><br>");
-			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd6.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; color: white;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd6.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 			email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd6.append("<table style=\"width:100%\" id=\"t01\"><caption> No. of flights for which order is NOT like LANDING time < ONBLOCK time < OFFBLOCK time < AIRBORNE time  </caption><tr>"
 																						+ "<th style=\"width:15%\"><b>logID</b></th> "
 																						+ "<th style=\"width:15%\"><b>FlightNumber_Departure</b></th>"
