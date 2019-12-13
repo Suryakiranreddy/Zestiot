@@ -198,67 +198,25 @@
 2019-12-11 14:14:39 INFO  - smoke suite finished at Wed Dec 11 14:14:39 IST 2019
 2019-12-11 14:14:44 INFO  - Test process has ended
 2019-12-11 14:14:52 INFO  - History File created successfully
-2019-12-13 10:53:49 INFO  - 
+2019-12-12 12:28:54 INFO  - 
 ============================================================================================================================
-2019-12-13 10:53:49 INFO  - Default suite suite started at Fri Dec 13 10:53:49 IST 2019
-2019-12-13 10:53:49 INFO  - Suite Browser: chrome
-2019-12-13 10:53:50 INFO  - +=============Database started=============+
-2019-12-13 10:53:50 INFO  - Database driver name: SQLiteJDBC
-2019-12-13 10:53:50 INFO  - Product name SQLite, Version 3.8.11
-2019-12-13 10:53:50 INFO  - +==========================================+
-
-2019-12-13 10:53:50 INFO  - Test is started with browser: chrome
-2019-12-13 10:54:01 INFO  - No data found with given key-> ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
-2019-12-13 10:54:01 INFO  - 
+2019-12-12 12:28:54 INFO  - smoke suite started at Thu Dec 12 12:28:54 IST 2019
+2019-12-12 12:28:54 INFO  - Suite Browser: Chrome
+2019-12-12 12:28:54 INFO  - Test is started with browser: Chrome
+2019-12-12 12:29:07 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:29:07 INFO  - 
 ----------------------------------------------------------------------------------------------------------------------------
-2019-12-13 10:54:01 INFO  - Test Started: ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
-2019-12-13 10:54:01 INFO  - Test description: 
-2019-12-13 10:54:45 INFO  - Total Time taken in(seconds):43
-2019-12-13 10:54:45 INFO  - TestResults
-2019-12-13 10:54:46 INFO  - **********TEST FINISHED-> -PASS**********
-2019-12-13 10:54:46 INFO  - Test has ended - closing browser: chrome
-2019-12-13 10:54:46 INFO  - Closing Browsers
-2019-12-13 10:54:47 INFO  - Default suite suite finished at Fri Dec 13 10:54:47 IST 2019
-2019-12-13 10:54:47 INFO  - Comparison sheet written successfully
-2019-12-13 10:54:47 INFO  - Data to excel written successfully
-2019-12-13 10:54:48 INFO  - Test process has ended
-2019-12-13 10:54:50 INFO  - +=============Database started=============+
-2019-12-13 10:54:50 INFO  - Database driver name: SQLiteJDBC
-2019-12-13 10:54:50 INFO  - Product name SQLite, Version 3.8.11
-2019-12-13 10:54:50 INFO  - +==========================================+
+2019-12-12 12:29:07 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-12 12:29:07 INFO  - Test description: 
+2019-12-12 12:29:09 INFO  -  - 
+2019-12-12 12:29:09 INFO  - Communications link failure
 
-2019-12-13 10:54:50 INFO  - Comparison sheet written successfully
-2019-12-13 10:54:50 INFO  - Data to excel written successfully
-2019-12-13 10:54:50 INFO  - History File created successfully
-2019-12-13 10:57:53 INFO  - 
-============================================================================================================================
-2019-12-13 10:57:53 INFO  - Default suite suite started at Fri Dec 13 10:57:53 IST 2019
-2019-12-13 10:57:53 INFO  - Suite Browser: chrome
-2019-12-13 10:57:54 INFO  - +=============Database started=============+
-2019-12-13 10:57:54 INFO  - Database driver name: SQLiteJDBC
-2019-12-13 10:57:54 INFO  - Product name SQLite, Version 3.8.11
-2019-12-13 10:57:54 INFO  - +==========================================+
-
-2019-12-13 10:57:54 INFO  - Test is started with browser: chrome
-2019-12-13 10:58:05 INFO  - No data found with given key-> ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
-2019-12-13 10:58:05 INFO  - 
-----------------------------------------------------------------------------------------------------------------------------
-2019-12-13 10:58:05 INFO  - Test Started: ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
-2019-12-13 10:58:05 INFO  - Test description: 
-2019-12-13 10:58:43 INFO  - Total Time taken in(seconds):38
-2019-12-13 10:58:43 INFO  - TestResults
-2019-12-13 10:58:44 INFO  - **********TEST FINISHED-> -PASS**********
-2019-12-13 10:58:44 INFO  - Test has ended - closing browser: chrome
-2019-12-13 10:58:44 INFO  - Closing Browsers
-2019-12-13 10:58:45 INFO  - Default suite suite finished at Fri Dec 13 10:58:45 IST 2019
-2019-12-13 10:58:45 INFO  - Comparison sheet written successfully
-2019-12-13 10:58:45 INFO  - Data to excel written successfully
-2019-12-13 10:58:45 INFO  - Test process has ended
-2019-12-13 10:58:48 INFO  - +=============Database started=============+
-2019-12-13 10:58:48 INFO  - Database driver name: SQLiteJDBC
-2019-12-13 10:58:48 INFO  - Product name SQLite, Version 3.8.11
-2019-12-13 10:58:48 INFO  - +==========================================+
-
-2019-12-13 10:58:48 INFO  - Comparison sheet written successfully
-2019-12-13 10:58:48 INFO  - Data to excel written successfully
-2019-12-13 10:58:48 INFO  - History File created successfully
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2019-12-12 12:29:09 INFO  - Total Time taken in(seconds):1
+2019-12-12 12:29:09 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-12 12:29:09 INFO  - TestResults
+2019-12-12 12:29:11 INFO  - Test has ended - closing browser: Chrome
+2019-12-12 12:29:11 INFO  - Closing Browsers
+2019-12-12 12:29:11 INFO  - smoke suite finished at Thu Dec 12 12:29:11 IST 2019
+2019-12-12 12:29:12 INFO  - Test process has ended
+2019-12-12 12:29:12 INFO  - History File created successfully

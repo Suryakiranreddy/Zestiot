@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
@@ -17,4 +18,152 @@
       </class> <!-- enh.web.tests.ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+<testng-results skipped="0" failed="1" ignored="0" total="9" passed="8">
+  <reporter-output>
+  </reporter-output>
+  <suite name="smoke" duration-ms="340780" started-at="2019-12-12T16:23:49Z" finished-at="2019-12-12T16:29:30Z">
+    <groups>
+      <group name="Regression">
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@8f4ea7c]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User"/>
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User@436813f3]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User"/>
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@74fe5c40]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User"/>
+        <method signature="ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts@3febb011]" name="test" class="enh.web.tests.ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts"/>
+        <method signature="ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts@10e31a9a]" name="test" class="enh.web.tests.ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts"/>
+        <method signature="ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@131774fe]" name="test" class="enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts"/>
+        <method signature="ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@158d2680]" name="test" class="enh.web.tests.ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts"/>
+        <method signature="ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@77847718]" name="test" class="enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source"/>
+        <method signature="ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@7f3b84b8]" name="test" class="enh.web.tests.ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="smoke-Tests" duration-ms="340780" started-at="2019-12-12T16:23:49Z" finished-at="2019-12-12T16:29:30Z">
+      <class name="enh.web.tests.ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@158d2680]" name="test" duration-ms="44005" started-at="2019-12-12T21:56:13Z" description="AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts" finished-at="2019-12-12T21:56:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts -->
+      <class name="enh.web.tests.ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source">
+        <test-method status="FAIL" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@7f3b84b8]" name="test" duration-ms="73311" started-at="2019-12-12T21:58:14Z" description="AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source" finished-at="2019-12-12T21:59:28Z">
+          <exception class="java.sql.SQLException">
+            <message>
+              <![CDATA[Column 'flight_pk' not found.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLException: Column 'flight_pk' not found.
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:963)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:896)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:885)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:860)
+	at com.mysql.jdbc.ResultSetImpl.findColumn(ResultSetImpl.java:1077)
+	at com.mysql.jdbc.ResultSetImpl.getString(ResultSetImpl.java:5202)
+	at enh.db.cases.AV_2305_Coverage_of_DeBoarding_Activities_HYD_Validation.Coverage_of_DeBoarding_Activities_HYD_Validation_Report(AV_2305_Coverage_of_DeBoarding_Activities_HYD_Validation.java:51)
+	at enh.web.tests.ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source.test(ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
+      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User@436813f3]" name="test" duration-ms="8091" started-at="2019-12-12T21:54:11Z" description="AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User" finished-at="2019-12-12T21:54:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User -->
+      <class name="enh.web.tests.ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts@3febb011]" name="test" duration-ms="34569" started-at="2019-12-12T21:54:27Z" description="To validate Scheduled and Sensor data for GMR-Hyderabad" finished-at="2019-12-12T21:55:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts -->
+      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@8f4ea7c]" name="test" duration-ms="9122" started-at="2019-12-12T21:54:01Z" description="AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User" finished-at="2019-12-12T21:54:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User -->
+      <class name="enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts@131774fe]" name="test" duration-ms="31326" started-at="2019-12-12T21:55:41Z" description="AV_2294_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts" finished-at="2019-12-12T21:56:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts -->
+      <class name="enh.web.tests.ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts@10e31a9a]" name="test" duration-ms="38264" started-at="2019-12-12T21:55:02Z" description="AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts" finished-at="2019-12-12T21:55:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts -->
+      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@74fe5c40]" name="test" duration-ms="6819" started-at="2019-12-12T21:54:19Z" description="AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User" finished-at="2019-12-12T21:54:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@74fe5c40]" name="afterTest" is-config="true" duration-ms="957" started-at="2019-12-12T21:59:29Z" finished-at="2019-12-12T21:59:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User -->
+      <class name="enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@77847718]" name="test" duration-ms="75094" started-at="2019-12-12T21:56:58Z" description="AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source" finished-at="2019-12-12T21:58:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
+    </test> <!-- smoke-Tests -->
+  </suite> <!-- smoke -->
+>>>>>>> ece2bc0dc6472b9597733113b29950d08a793378
 </testng-results>

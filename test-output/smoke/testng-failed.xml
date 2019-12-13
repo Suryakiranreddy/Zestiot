@@ -4,11 +4,11 @@
   <parameter name="Browser" value="Chrome"/>
   <test name="smoke-Tests(failed)">
     <classes>
-      <class name="enh.web.tests.ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation">
+      <class name="enh.web.tests.ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- enh.web.tests.ZestIOT_2293_GMR_HYD_Sensor_And_Scheduled_data_Validation -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
     </classes>
   </test> <!-- smoke-Tests(failed) -->
 </suite> <!-- Failed suite [smoke] -->

@@ -1,9 +1,7 @@
 pipeline{
 
 agent any
-triggers {
-        cron('0 12 * * *')
-    }
+
 stages 
 {
 stage('Clone') 
@@ -36,14 +34,22 @@ publishHTML([allowMissing: false,
   keepAll: false, reportDir: '',
    reportFiles: 'ExecutionReports/HtmlReport/TestReport.html',
     reportName: 'Extent HTML Report', reportTitles: ''])
- mail bcc: '', 
- body: """This is a confirmation mail that all ZestIOT automation scripts are successfully executed through Jenkins Pipeline, Check console output at "${env.BUILD_URL}"${env.JOB_NAME}""", 
- cc:  "amit@zestiot.io, sushanto@zestiot.io, sudhir@zestiot.io, Krishna@zestiot.io, anantwar@zestiot.io, shrikant@zestiot.io, aman@zestiot.io, rohan@zestiot.io, leadership@enhops.com, chiranjeevi@zestiot.io, stiyyagura@enhops.com, pdwadasi@enhops.com, rbuddha@enhops.com, rchiluka@enhops.com, smunnangi@enhops.com, nishanth@zestiot.io, hmanthena@enhops.com, mpyla@enhops.com"  , 
- from: "AutomationTeam@Enhops",
-  replyTo: '', 
-  subject: "Jenkins Notification: JOB_NAME: '${env.JOB_NAME}'&BUILD_NUMBER: '${env.BUILD_NUMBER}' SUCCESSFUL" ,
-   to: "nilesh@zestiot.io"   
-
+mail bcc: '',
+ body: """
+<p style=\"color:#006600;\">Hi All, <br>
+This is a confirmation mail that all <b><i>ZestIOT automation scripts </b></i>are successfully executed through Jenkins Pipeline.<br>
+Job Bulid Number:-<b>'${env.BUILD_NUMBER}'</b><br>
+Job Name:-<b>'${env.JOB_NAME}'</b><br>
+Check console output at <b><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i></b><br><br>
+Thanks& Reagrds<br>
+Automation Team.</p>
+""", 
+cc: '', 
+from: 'automationteam.enhops@gmail.com', 
+mimeType: 'text/html', 
+replyTo: '',
+ subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' SUCCESSFUL : Jenkins Pipeline " ,
+ to: 'stiyyagura@enhops.com'
 }
 }
 }
