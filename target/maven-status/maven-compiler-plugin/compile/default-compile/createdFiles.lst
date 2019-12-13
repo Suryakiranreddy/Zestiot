@@ -36,6 +36,5 @@ framework\tests\DropBoxUtilTest.class
 utilities\DriverUtil.class
 utilities\HtmlReportUtil.class
 framework\tests\AppDBTest.class
-utilities\SendMailBodyToZestIOT$1.class
 utilities\ConfigReader.class
 utilities\ExtentReporterNG.class
