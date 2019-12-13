@@ -152,7 +152,11 @@ public class PushbackAndPushbackArrivalActivities extends KeywordUtil {
 		HtmlReportUtil.stepInfo("<b style=\"color:black;\">No. of flights with only Pushback Arrival formed : "+pbArrival+"</b>");
 		HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights for which both Pushback and Pushback Arrival are not formed : "+noPBTnoPushback+"</b>");
 		HtmlReportUtil.stepInfo("<b style=\"color:brown;\">No. of missing flights in automation execution : "+missingFlight+"</b>");
-		}	
+		
+	
+	
+	
+	}	
 		}
 	/*	String pushbackArrivalAndPushbackActivity=
 		         
