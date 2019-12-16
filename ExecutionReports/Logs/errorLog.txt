@@ -1,0 +1,100 @@
+2019-12-16 16:35:54 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:35:54 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:35:54 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:35:54 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:01 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:36:01 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:01 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:01 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:08 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:36:08 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:08 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:08 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:14 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:36:14 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:14 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:14 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:21 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:36:21 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:21 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:21 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:30 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:36:30 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:30 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:30 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:38 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:36:38 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:38 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:38 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:46 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:36:46 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:46 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:46 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:55 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:36:55 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:36:55 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:55 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:05 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:37:05 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:05 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:05 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:16 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:37:16 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:16 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:16 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:28 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:37:28 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:28 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:28 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:39 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:37:39 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:39 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:39 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:53 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:37:53 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:37:53 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:53 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:38:07 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:38:07 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:38:07 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:38:07 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:38:22 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:38:22 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:38:22 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:38:22 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:38:37 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:38:37 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:38:37 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:38:37 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:38:53 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:38:53 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:38:53 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:38:53 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:39:08 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:39:08 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:39:08 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:39:08 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:39:26 ERROR - 
+========ERROR IN TEST : ZestIOT_000_bsspl =====================================
+2019-12-16 16:39:26 ERROR - -----------------------------------------------------------------------
+2019-12-16 16:39:26 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:39:26 ERROR - -----------------------------------------------------------------------
