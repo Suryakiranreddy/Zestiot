@@ -181,13 +181,13 @@ public class KeywordUtil extends Utility {
 	 */
 
 	/**
-	 * @param locator
+	 * @param string
 	 * @return
 	 */
-	public static boolean click(By locator) {
-		KeywordUtil.lastAction = "Click: " + locator.toString();
+	public static boolean click(By string) {
+		KeywordUtil.lastAction = "Click: " + string.toString();
 		LogUtil.infoLog(KeywordUtil.class, KeywordUtil.lastAction);
-		WebElement elm = waitForClickable(locator);
+		WebElement elm = waitForClickable(string);
 		if (elm == null) {
 			return false;
 		} else {

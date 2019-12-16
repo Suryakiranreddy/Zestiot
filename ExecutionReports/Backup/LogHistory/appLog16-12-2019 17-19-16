@@ -1,0 +1,1601 @@
+2019-12-16 15:55:16 INFO  - 
+============================================================================================================================
+2019-12-16 15:55:16 INFO  - smoke suite started at Mon Dec 16 15:55:16 IST 2019
+2019-12-16 15:55:16 INFO  - Suite Browser: Chrome
+2019-12-16 15:55:16 INFO  - +=============Database started=============+
+2019-12-16 15:55:16 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 15:55:16 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 15:55:16 INFO  - +==========================================+
+
+2019-12-16 15:55:16 INFO  - Test is started with browser: Chrome
+2019-12-16 15:55:28 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:55:28 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:55:28 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:55:28 INFO  - Test description: 
+2019-12-16 15:55:35 INFO  - Total Time taken in(seconds):6
+2019-12-16 15:55:35 INFO  - TestResults
+2019-12-16 15:55:36 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:55:36 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:55:36 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:55:36 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:55:36 INFO  - Test description: 
+2019-12-16 15:55:44 INFO  - Total Time taken in(seconds):7
+2019-12-16 15:55:44 INFO  - TestResults
+2019-12-16 15:55:44 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:55:44 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:55:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:55:44 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:55:44 INFO  - Test description: 
+2019-12-16 15:55:54 INFO  - Total Time taken in(seconds):9
+2019-12-16 15:55:54 INFO  - TestResults
+2019-12-16 15:55:55 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:55:55 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:55:55 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:55:55 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:55:55 INFO  - Test description: 
+2019-12-16 15:56:05 INFO  - Total Time taken in(seconds):9
+2019-12-16 15:56:05 INFO  - TestResults
+2019-12-16 15:56:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:56:06 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:56:06 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:56:06 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:56:06 INFO  - Test description: 
+2019-12-16 15:56:19 INFO  - Total Time taken in(seconds):13
+2019-12-16 15:56:19 INFO  - TestResults
+2019-12-16 15:56:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:56:20 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:56:20 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:56:20 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:56:20 INFO  - Test description: 
+2019-12-16 15:56:35 INFO  - Total Time taken in(seconds):15
+2019-12-16 15:56:35 INFO  - TestResults
+2019-12-16 15:56:35 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:56:35 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:56:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:56:35 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:56:35 INFO  - Test description: 
+2019-12-16 15:56:52 INFO  - Total Time taken in(seconds):17
+2019-12-16 15:56:52 INFO  - TestResults
+2019-12-16 15:56:53 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:56:54 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:56:54 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:56:54 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:56:54 INFO  - Test description: 
+2019-12-16 15:57:12 INFO  - Total Time taken in(seconds):18
+2019-12-16 15:57:12 INFO  - TestResults
+2019-12-16 15:57:13 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:57:13 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:57:13 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:57:13 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:57:13 INFO  - Test description: 
+2019-12-16 15:57:32 INFO  - Total Time taken in(seconds):19
+2019-12-16 15:57:32 INFO  - TestResults
+2019-12-16 15:57:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:57:33 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:57:33 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:57:33 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:57:33 INFO  - Test description: 
+2019-12-16 15:57:55 INFO  - Total Time taken in(seconds):21
+2019-12-16 15:57:55 INFO  - TestResults
+2019-12-16 15:57:56 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:57:57 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:57:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:57:57 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:57:57 INFO  - Test description: 
+2019-12-16 15:58:22 INFO  - Total Time taken in(seconds):25
+2019-12-16 15:58:22 INFO  - TestResults
+2019-12-16 15:58:24 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 15:58:24 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 15:58:24 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:58:24 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 15:58:24 INFO  - Test description: 
+2019-12-16 16:04:32 INFO  - 
+============================================================================================================================
+2019-12-16 16:04:32 INFO  - smoke suite started at Mon Dec 16 16:04:32 IST 2019
+2019-12-16 16:04:32 INFO  - Suite Browser: Chrome
+2019-12-16 16:04:33 INFO  - +=============Database started=============+
+2019-12-16 16:04:33 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 16:04:33 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 16:04:33 INFO  - +==========================================+
+
+2019-12-16 16:04:33 INFO  - Test is started with browser: Chrome
+2019-12-16 16:04:45 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:04:45 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:04:45 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:04:45 INFO  - Test description: 
+2019-12-16 16:04:52 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:04:53 INFO  - TestResults
+2019-12-16 16:04:54 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:04:54 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:04:54 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:04:54 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:04:54 INFO  - Test description: 
+2019-12-16 16:05:00 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:05:00 INFO  - TestResults
+2019-12-16 16:05:00 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:05:00 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:05:00 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:05:00 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:05:00 INFO  - Test description: 
+2019-12-16 16:05:06 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:05:06 INFO  - TestResults
+2019-12-16 16:05:07 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:05:07 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:05:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:05:07 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:05:07 INFO  - Test description: 
+2019-12-16 16:05:12 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:05:12 INFO  - TestResults
+2019-12-16 16:05:13 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:05:13 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:05:13 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:05:13 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:05:13 INFO  - Test description: 
+2019-12-16 16:05:19 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:05:19 INFO  - TestResults
+2019-12-16 16:05:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:05:20 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:05:20 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:05:20 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:05:20 INFO  - Test description: 
+2019-12-16 16:05:25 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:05:25 INFO  - TestResults
+2019-12-16 16:05:26 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:05:26 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:05:26 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:05:26 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:05:26 INFO  - Test description: 
+2019-12-16 16:05:32 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:05:32 INFO  - TestResults
+2019-12-16 16:05:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:05:33 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:05:33 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:05:33 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:05:33 INFO  - Test description: 
+2019-12-16 16:05:39 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:05:39 INFO  - TestResults
+2019-12-16 16:05:40 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:05:40 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:05:40 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:05:40 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:05:40 INFO  - Test description: 
+2019-12-16 16:05:46 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:05:46 INFO  - TestResults
+2019-12-16 16:05:47 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:05:47 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:05:47 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:05:47 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:05:47 INFO  - Test description: 
+2019-12-16 16:05:53 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:05:53 INFO  - TestResults
+2019-12-16 16:05:55 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:05:55 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:05:55 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:05:55 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:05:55 INFO  - Test description: 
+2019-12-16 16:06:01 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:06:01 INFO  - TestResults
+2019-12-16 16:06:02 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:06:02 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:06:02 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:06:02 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:06:02 INFO  - Test description: 
+2019-12-16 16:06:08 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:06:08 INFO  - TestResults
+2019-12-16 16:06:09 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:06:10 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:06:10 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:06:10 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:06:10 INFO  - Test description: 
+2019-12-16 16:06:15 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:06:16 INFO  - TestResults
+2019-12-16 16:06:18 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:06:18 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:06:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:06:18 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:06:18 INFO  - Test description: 
+2019-12-16 16:06:25 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:06:25 INFO  - TestResults
+2019-12-16 16:06:27 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:06:28 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:06:28 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:06:28 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:06:28 INFO  - Test description: 
+2019-12-16 16:06:35 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:06:35 INFO  - TestResults
+2019-12-16 16:06:37 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:06:37 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:06:37 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:06:37 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:06:37 INFO  - Test description: 
+2019-12-16 16:06:45 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:06:45 INFO  - TestResults
+2019-12-16 16:06:47 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:06:48 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:06:48 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:06:48 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:06:48 INFO  - Test description: 
+2019-12-16 16:06:55 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:06:55 INFO  - TestResults
+2019-12-16 16:06:57 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:06:58 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:06:58 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:06:58 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:06:58 INFO  - Test description: 
+2019-12-16 16:07:05 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:07:05 INFO  - TestResults
+2019-12-16 16:07:07 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:07:07 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:07:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:07:07 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:07:07 INFO  - Test description: 
+2019-12-16 16:07:15 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:07:15 INFO  - TestResults
+2019-12-16 16:07:18 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:07:18 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:07:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:07:18 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:07:18 INFO  - Test description: 
+2019-12-16 16:07:25 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:07:25 INFO  - TestResults
+2019-12-16 16:07:28 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:07:29 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:07:29 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:07:29 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:07:29 INFO  - Test description: 
+2019-12-16 16:07:36 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:07:36 INFO  - TestResults
+2019-12-16 16:07:40 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:07:40 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:07:40 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:07:40 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:07:40 INFO  - Test description: 
+2019-12-16 16:07:47 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:07:48 INFO  - TestResults
+2019-12-16 16:07:51 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:07:52 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:07:52 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:07:52 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:07:52 INFO  - Test description: 
+2019-12-16 16:08:00 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:08:00 INFO  - TestResults
+2019-12-16 16:08:05 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:08:05 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:08:05 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:08:05 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:08:05 INFO  - Test description: 
+2019-12-16 16:08:14 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:08:15 INFO  - TestResults
+2019-12-16 16:08:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:08:19 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:08:20 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:08:20 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:08:20 INFO  - Test description: 
+2019-12-16 16:08:28 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:08:28 INFO  - TestResults
+2019-12-16 16:08:32 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:08:32 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:08:32 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:08:32 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:08:32 INFO  - Test description: 
+2019-12-16 16:08:40 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:08:40 INFO  - TestResults
+2019-12-16 16:08:44 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:08:45 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:08:45 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:08:45 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:08:45 INFO  - Test description: 
+2019-12-16 16:08:53 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:08:53 INFO  - TestResults
+2019-12-16 16:08:57 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:08:57 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:08:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:08:57 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:08:57 INFO  - Test description: 
+2019-12-16 16:09:07 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:09:07 INFO  - TestResults
+2019-12-16 16:09:12 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:09:12 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:09:12 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:09:12 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:09:12 INFO  - Test description: 
+2019-12-16 16:09:21 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:09:21 INFO  - TestResults
+2019-12-16 16:09:25 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:09:26 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:09:26 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:09:26 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:09:26 INFO  - Test description: 
+2019-12-16 16:09:34 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:09:34 INFO  - TestResults
+2019-12-16 16:09:39 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:09:39 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:09:39 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:09:39 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:09:39 INFO  - Test description: 
+2019-12-16 16:09:48 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:09:48 INFO  - TestResults
+2019-12-16 16:09:52 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:09:52 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:09:52 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:09:52 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:09:52 INFO  - Test description: 
+2019-12-16 16:10:01 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:10:01 INFO  - TestResults
+2019-12-16 16:10:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:10:07 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:10:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:10:07 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:10:07 INFO  - Test description: 
+2019-12-16 16:10:16 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:10:16 INFO  - TestResults
+2019-12-16 16:10:21 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:10:21 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:10:22 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:10:22 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:10:22 INFO  - Test description: 
+2019-12-16 16:10:30 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:10:30 INFO  - TestResults
+2019-12-16 16:10:37 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:10:37 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:10:37 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:10:37 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:10:37 INFO  - Test description: 
+2019-12-16 16:10:51 INFO  - Total Time taken in(seconds):14
+2019-12-16 16:10:51 INFO  - TestResults
+2019-12-16 16:10:56 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:10:56 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:10:56 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:10:56 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:10:56 INFO  - Test description: 
+2019-12-16 16:11:06 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:11:06 INFO  - TestResults
+2019-12-16 16:11:11 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:11:12 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:11:12 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:11:12 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:11:12 INFO  - Test description: 
+2019-12-16 16:11:22 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:11:22 INFO  - TestResults
+2019-12-16 16:11:27 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:11:28 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:11:28 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:11:28 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:11:28 INFO  - Test description: 
+2019-12-16 16:11:37 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:11:37 INFO  - TestResults
+2019-12-16 16:11:43 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:11:44 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:11:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:11:44 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:11:44 INFO  - Test description: 
+2019-12-16 16:11:55 INFO  - Total Time taken in(seconds):12
+2019-12-16 16:11:56 INFO  - TestResults
+2019-12-16 16:12:02 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:12:02 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:12:02 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:12:02 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:12:02 INFO  - Test description: 
+2019-12-16 16:12:12 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:12:12 INFO  - TestResults
+2019-12-16 16:12:18 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:12:19 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:12:19 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:12:19 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:12:19 INFO  - Test description: 
+2019-12-16 16:12:29 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:12:29 INFO  - TestResults
+2019-12-16 16:12:36 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:12:36 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:12:36 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:12:36 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:12:36 INFO  - Test description: 
+2019-12-16 16:12:46 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:12:46 INFO  - TestResults
+2019-12-16 16:12:51 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:12:51 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:12:51 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:12:51 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:12:51 INFO  - Test description: 
+2019-12-16 16:13:02 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:13:02 INFO  - TestResults
+2019-12-16 16:13:08 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:13:09 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:13:09 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:13:09 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:13:09 INFO  - Test description: 
+2019-12-16 16:13:20 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:13:20 INFO  - TestResults
+2019-12-16 16:13:26 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:13:26 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:13:27 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:13:27 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:13:27 INFO  - Test description: 
+2019-12-16 16:13:39 INFO  - Total Time taken in(seconds):13
+2019-12-16 16:13:39 INFO  - TestResults
+2019-12-16 16:13:45 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:13:46 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:13:46 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:13:46 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:13:46 INFO  - Test description: 
+2019-12-16 16:13:57 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:13:57 INFO  - TestResults
+2019-12-16 16:14:05 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:14:06 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:14:06 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:14:06 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:14:06 INFO  - Test description: 
+2019-12-16 16:14:17 INFO  - Total Time taken in(seconds):12
+2019-12-16 16:14:18 INFO  - TestResults
+2019-12-16 16:14:24 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:14:25 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:14:25 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:14:25 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:14:25 INFO  - Test description: 
+2019-12-16 16:14:38 INFO  - Total Time taken in(seconds):13
+2019-12-16 16:14:38 INFO  - TestResults
+2019-12-16 16:14:46 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:14:47 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:14:47 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:14:47 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:14:47 INFO  - Test description: 
+2019-12-16 16:14:58 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:14:58 INFO  - TestResults
+2019-12-16 16:15:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:15:07 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:15:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:15:07 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:15:07 INFO  - Test description: 
+2019-12-16 16:19:52 INFO  - 
+============================================================================================================================
+2019-12-16 16:19:52 INFO  - smoke suite started at Mon Dec 16 16:19:52 IST 2019
+2019-12-16 16:19:52 INFO  - Suite Browser: Chrome
+2019-12-16 16:19:52 INFO  - +=============Database started=============+
+2019-12-16 16:19:52 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 16:19:52 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 16:19:52 INFO  - +==========================================+
+
+2019-12-16 16:19:52 INFO  - Test is started with browser: Chrome
+2019-12-16 16:20:05 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:20:05 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:20:05 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:20:05 INFO  - Test description: 
+2019-12-16 16:20:12 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:20:12 INFO  - TestResults
+2019-12-16 16:20:13 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:20:13 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:20:13 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:20:13 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:20:13 INFO  - Test description: 
+2019-12-16 16:20:20 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:20:20 INFO  - TestResults
+2019-12-16 16:20:20 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:20:20 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:20:20 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:20:20 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:20:20 INFO  - Test description: 
+2019-12-16 16:20:26 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:20:26 INFO  - TestResults
+2019-12-16 16:20:27 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:20:27 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:20:27 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:20:27 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:20:27 INFO  - Test description: 
+2019-12-16 16:20:32 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:20:32 INFO  - TestResults
+2019-12-16 16:20:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:20:33 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:20:33 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:20:33 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:20:33 INFO  - Test description: 
+2019-12-16 16:20:39 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:20:39 INFO  - TestResults
+2019-12-16 16:20:40 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:20:40 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:20:40 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:20:40 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:20:40 INFO  - Test description: 
+2019-12-16 16:20:46 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:20:46 INFO  - TestResults
+2019-12-16 16:20:47 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:20:47 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:20:47 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:20:47 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:20:47 INFO  - Test description: 
+2019-12-16 16:20:53 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:20:53 INFO  - TestResults
+2019-12-16 16:20:54 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:20:54 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:20:54 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:20:54 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:20:54 INFO  - Test description: 
+2019-12-16 16:21:00 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:21:00 INFO  - TestResults
+2019-12-16 16:21:01 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:21:01 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:21:01 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:21:01 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:21:01 INFO  - Test description: 
+2019-12-16 16:21:07 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:21:07 INFO  - TestResults
+2019-12-16 16:21:08 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:21:08 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:21:08 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:21:08 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:21:08 INFO  - Test description: 
+2019-12-16 16:21:14 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:21:14 INFO  - TestResults
+2019-12-16 16:21:16 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:21:16 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:21:16 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:21:16 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:21:16 INFO  - Test description: 
+2019-12-16 16:21:23 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:21:23 INFO  - TestResults
+2019-12-16 16:21:25 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:21:25 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:21:25 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:21:25 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:21:25 INFO  - Test description: 
+2019-12-16 16:21:31 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:21:31 INFO  - TestResults
+2019-12-16 16:21:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:21:34 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:21:34 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:21:34 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:21:34 INFO  - Test description: 
+2019-12-16 16:21:41 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:21:41 INFO  - TestResults
+2019-12-16 16:21:42 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:21:43 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:21:43 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:21:43 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:21:43 INFO  - Test description: 
+2019-12-16 16:21:49 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:21:49 INFO  - TestResults
+2019-12-16 16:21:50 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:28:54 INFO  - 
+============================================================================================================================
+2019-12-16 16:28:54 INFO  - smoke suite started at Mon Dec 16 16:28:54 IST 2019
+2019-12-16 16:28:54 INFO  - Suite Browser: Chrome
+2019-12-16 16:28:54 INFO  - +=============Database started=============+
+2019-12-16 16:28:54 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 16:28:54 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 16:28:54 INFO  - +==========================================+
+
+2019-12-16 16:28:54 INFO  - Test is started with browser: Chrome
+2019-12-16 16:29:07 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:29:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:29:07 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:29:07 INFO  - Test description: 
+2019-12-16 16:29:12 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:29:13 INFO  - TestResults
+2019-12-16 16:29:14 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:29:14 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:29:14 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:29:14 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:29:14 INFO  - Test description: 
+2019-12-16 16:29:19 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:29:19 INFO  - TestResults
+2019-12-16 16:29:20 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:29:20 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:29:20 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:29:20 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:29:20 INFO  - Test description: 
+2019-12-16 16:29:25 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:29:25 INFO  - TestResults
+2019-12-16 16:29:26 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:29:26 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:29:26 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:29:26 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:29:26 INFO  - Test description: 
+2019-12-16 16:29:31 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:29:31 INFO  - TestResults
+2019-12-16 16:29:32 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:29:32 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:29:32 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:29:32 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:29:32 INFO  - Test description: 
+2019-12-16 16:29:37 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:29:37 INFO  - TestResults
+2019-12-16 16:29:38 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:29:38 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:29:38 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:29:38 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:29:38 INFO  - Test description: 
+2019-12-16 16:29:44 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:29:44 INFO  - TestResults
+2019-12-16 16:29:45 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:29:45 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:29:45 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:29:45 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:29:45 INFO  - Test description: 
+2019-12-16 16:29:51 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:29:51 INFO  - TestResults
+2019-12-16 16:29:52 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:35:36 INFO  - 
+============================================================================================================================
+2019-12-16 16:35:36 INFO  - smoke suite started at Mon Dec 16 16:35:36 IST 2019
+2019-12-16 16:35:36 INFO  - Suite Browser: Chrome
+2019-12-16 16:35:36 INFO  - +=============Database started=============+
+2019-12-16 16:35:36 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 16:35:36 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 16:35:36 INFO  - +==========================================+
+
+2019-12-16 16:35:36 INFO  - Test is started with browser: Chrome
+2019-12-16 16:35:48 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:35:48 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:35:48 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:35:48 INFO  - Test description: 
+2019-12-16 16:35:54 INFO  -  - 
+2019-12-16 16:35:54 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:35:54 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:35:54 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:35:54 INFO  - TestResults
+2019-12-16 16:35:56 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:35:56 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:35:56 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:35:56 INFO  - Test description: 
+2019-12-16 16:36:01 INFO  -  - 
+2019-12-16 16:36:01 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:01 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:36:01 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:36:01 INFO  - TestResults
+2019-12-16 16:36:02 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:36:02 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:36:02 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:36:02 INFO  - Test description: 
+2019-12-16 16:36:08 INFO  -  - 
+2019-12-16 16:36:08 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:08 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:36:08 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:36:08 INFO  - TestResults
+2019-12-16 16:36:09 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:36:09 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:36:09 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:36:09 INFO  - Test description: 
+2019-12-16 16:36:14 INFO  -  - 
+2019-12-16 16:36:14 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:14 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:36:14 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:36:14 INFO  - TestResults
+2019-12-16 16:36:15 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:36:15 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:36:15 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:36:15 INFO  - Test description: 
+2019-12-16 16:36:21 INFO  -  - 
+2019-12-16 16:36:21 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:21 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:36:21 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:36:21 INFO  - TestResults
+2019-12-16 16:36:22 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:36:22 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:36:22 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:36:22 INFO  - Test description: 
+2019-12-16 16:36:30 INFO  -  - 
+2019-12-16 16:36:30 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:30 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:36:30 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:36:30 INFO  - TestResults
+2019-12-16 16:36:31 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:36:31 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:36:31 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:36:31 INFO  - Test description: 
+2019-12-16 16:36:38 INFO  -  - 
+2019-12-16 16:36:38 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:38 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:36:38 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:36:38 INFO  - TestResults
+2019-12-16 16:36:40 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:36:40 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:36:40 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:36:40 INFO  - Test description: 
+2019-12-16 16:36:46 INFO  -  - 
+2019-12-16 16:36:46 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:46 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:36:46 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:36:46 INFO  - TestResults
+2019-12-16 16:36:47 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:36:47 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:36:47 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:36:47 INFO  - Test description: 
+2019-12-16 16:36:55 INFO  -  - 
+2019-12-16 16:36:55 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:36:55 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:36:55 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:36:55 INFO  - TestResults
+2019-12-16 16:36:57 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:36:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:36:57 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:36:57 INFO  - Test description: 
+2019-12-16 16:37:05 INFO  -  - 
+2019-12-16 16:37:05 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:05 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:37:05 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:37:05 INFO  - TestResults
+2019-12-16 16:37:07 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:37:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:37:07 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:37:07 INFO  - Test description: 
+2019-12-16 16:37:16 INFO  -  - 
+2019-12-16 16:37:16 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:16 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:37:16 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:37:16 INFO  - TestResults
+2019-12-16 16:37:18 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:37:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:37:18 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:37:18 INFO  - Test description: 
+2019-12-16 16:37:28 INFO  -  - 
+2019-12-16 16:37:28 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:28 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:37:28 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:37:28 INFO  - TestResults
+2019-12-16 16:37:30 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:37:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:37:30 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:37:30 INFO  - Test description: 
+2019-12-16 16:37:39 INFO  -  - 
+2019-12-16 16:37:39 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:39 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:37:39 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:37:39 INFO  - TestResults
+2019-12-16 16:37:43 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:37:43 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:37:43 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:37:43 INFO  - Test description: 
+2019-12-16 16:37:53 INFO  -  - 
+2019-12-16 16:37:53 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:37:53 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:37:53 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:37:53 INFO  - TestResults
+2019-12-16 16:37:56 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:37:56 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:37:56 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:37:56 INFO  - Test description: 
+2019-12-16 16:38:07 INFO  -  - 
+2019-12-16 16:38:07 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:38:07 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:38:07 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:38:07 INFO  - TestResults
+2019-12-16 16:38:11 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:38:11 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:38:11 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:38:11 INFO  - Test description: 
+2019-12-16 16:38:22 INFO  -  - 
+2019-12-16 16:38:22 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:38:22 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:38:22 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:38:22 INFO  - TestResults
+2019-12-16 16:38:26 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:38:26 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:38:26 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:38:26 INFO  - Test description: 
+2019-12-16 16:38:37 INFO  -  - 
+2019-12-16 16:38:37 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:38:37 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:38:37 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:38:37 INFO  - TestResults
+2019-12-16 16:38:42 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:38:42 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:38:42 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:38:42 INFO  - Test description: 
+2019-12-16 16:38:53 INFO  -  - 
+2019-12-16 16:38:53 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:38:53 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:38:53 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:38:53 INFO  - TestResults
+2019-12-16 16:38:58 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:38:58 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:38:58 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:38:58 INFO  - Test description: 
+2019-12-16 16:39:08 INFO  -  - 
+2019-12-16 16:39:08 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:39:08 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:39:08 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:39:08 INFO  - TestResults
+2019-12-16 16:39:14 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:39:14 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:39:14 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:39:14 INFO  - Test description: 
+2019-12-16 16:39:26 INFO  -  - 
+2019-12-16 16:39:26 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'where operationname='fle'' at line 1
+2019-12-16 16:39:26 INFO  - Total Time taken in(seconds):12
+2019-12-16 16:39:26 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 16:39:26 INFO  - TestResults
+2019-12-16 16:39:30 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:39:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:39:30 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:39:30 INFO  - Test description: 
+2019-12-16 16:48:18 INFO  - 
+============================================================================================================================
+2019-12-16 16:48:18 INFO  - smoke suite started at Mon Dec 16 16:48:18 IST 2019
+2019-12-16 16:48:18 INFO  - Suite Browser: Chrome
+2019-12-16 16:48:18 INFO  - +=============Database started=============+
+2019-12-16 16:48:18 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 16:48:18 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 16:48:18 INFO  - +==========================================+
+
+2019-12-16 16:48:18 INFO  - Test is started with browser: Chrome
+2019-12-16 16:48:31 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:48:31 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:48:31 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:48:31 INFO  - Test description: 
+2019-12-16 16:48:36 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:48:37 INFO  - TestResults
+2019-12-16 16:48:38 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:48:38 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:48:38 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:48:38 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:48:38 INFO  - Test description: 
+2019-12-16 16:48:44 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:48:44 INFO  - TestResults
+2019-12-16 16:48:44 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:48:44 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:48:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:48:44 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:48:44 INFO  - Test description: 
+2019-12-16 16:48:50 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:48:50 INFO  - TestResults
+2019-12-16 16:48:50 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:48:50 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:48:50 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:48:50 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:48:50 INFO  - Test description: 
+2019-12-16 16:48:56 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:48:56 INFO  - TestResults
+2019-12-16 16:48:56 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:48:57 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:48:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:48:57 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:48:57 INFO  - Test description: 
+2019-12-16 16:49:03 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:49:03 INFO  - TestResults
+2019-12-16 16:49:03 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:49:04 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:49:04 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:49:04 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:49:04 INFO  - Test description: 
+2019-12-16 16:49:09 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:49:09 INFO  - TestResults
+2019-12-16 16:49:10 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:49:11 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:49:11 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:49:11 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:49:11 INFO  - Test description: 
+2019-12-16 16:49:17 INFO  - Total Time taken in(seconds):6
+2019-12-16 16:49:17 INFO  - TestResults
+2019-12-16 16:49:18 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:49:19 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:49:19 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:49:19 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:49:19 INFO  - Test description: 
+2019-12-16 16:49:24 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:49:24 INFO  - TestResults
+2019-12-16 16:49:25 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:49:25 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:49:25 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:49:25 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:49:25 INFO  - Test description: 
+2019-12-16 16:49:31 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:49:31 INFO  - TestResults
+2019-12-16 16:49:32 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:49:32 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:49:32 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:49:32 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:49:32 INFO  - Test description: 
+2019-12-16 16:49:38 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:49:38 INFO  - TestResults
+2019-12-16 16:49:38 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:49:39 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:49:39 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:49:39 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:49:39 INFO  - Test description: 
+2019-12-16 16:49:44 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:49:44 INFO  - TestResults
+2019-12-16 16:49:45 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:49:46 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:49:46 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:49:46 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:49:46 INFO  - Test description: 
+2019-12-16 16:49:51 INFO  - Total Time taken in(seconds):5
+2019-12-16 16:49:51 INFO  - TestResults
+2019-12-16 16:49:54 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:49:54 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:49:54 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:49:54 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:49:54 INFO  - Test description: 
+2019-12-16 16:50:01 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:50:01 INFO  - TestResults
+2019-12-16 16:50:02 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:50:03 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:50:03 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:50:03 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:50:03 INFO  - Test description: 
+2019-12-16 16:50:10 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:50:10 INFO  - TestResults
+2019-12-16 16:50:12 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:50:13 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:50:13 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:50:13 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:50:13 INFO  - Test description: 
+2019-12-16 16:50:22 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:50:22 INFO  - TestResults
+2019-12-16 16:50:24 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:50:24 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:50:24 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:50:24 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:50:24 INFO  - Test description: 
+2019-12-16 16:50:32 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:50:32 INFO  - TestResults
+2019-12-16 16:50:35 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:50:35 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:50:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:50:35 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:50:35 INFO  - Test description: 
+2019-12-16 16:50:42 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:50:42 INFO  - TestResults
+2019-12-16 16:50:45 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:50:45 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:50:45 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:50:45 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:50:45 INFO  - Test description: 
+2019-12-16 16:50:53 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:50:53 INFO  - TestResults
+2019-12-16 16:50:57 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:50:57 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:50:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:50:57 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:50:57 INFO  - Test description: 
+2019-12-16 16:51:04 INFO  - Total Time taken in(seconds):7
+2019-12-16 16:51:04 INFO  - TestResults
+2019-12-16 16:51:07 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:51:07 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:51:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:51:07 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:51:07 INFO  - Test description: 
+2019-12-16 16:51:15 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:51:15 INFO  - TestResults
+2019-12-16 16:51:18 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:51:18 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:51:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:51:18 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:51:18 INFO  - Test description: 
+2019-12-16 16:51:27 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:51:27 INFO  - TestResults
+2019-12-16 16:51:30 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:51:31 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:51:31 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:51:31 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:51:31 INFO  - Test description: 
+2019-12-16 16:51:39 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:51:39 INFO  - TestResults
+2019-12-16 16:51:42 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:51:43 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:51:43 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:51:43 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:51:43 INFO  - Test description: 
+2019-12-16 16:51:53 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:51:53 INFO  - TestResults
+2019-12-16 16:51:57 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:51:57 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:51:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:51:57 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:51:57 INFO  - Test description: 
+2019-12-16 16:52:05 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:52:05 INFO  - TestResults
+2019-12-16 16:52:08 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:52:08 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:52:08 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:52:08 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:52:08 INFO  - Test description: 
+2019-12-16 16:52:16 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:52:16 INFO  - TestResults
+2019-12-16 16:52:20 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:52:21 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:52:21 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:52:21 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:52:21 INFO  - Test description: 
+2019-12-16 16:52:31 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:52:31 INFO  - TestResults
+2019-12-16 16:52:35 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:52:35 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:52:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:52:35 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:52:35 INFO  - Test description: 
+2019-12-16 16:52:43 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:52:43 INFO  - TestResults
+2019-12-16 16:52:49 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:52:49 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:52:49 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:52:49 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:52:49 INFO  - Test description: 
+2019-12-16 16:52:58 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:52:58 INFO  - TestResults
+2019-12-16 16:53:04 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:53:05 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:53:05 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:53:05 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:53:05 INFO  - Test description: 
+2019-12-16 16:53:14 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:53:14 INFO  - TestResults
+2019-12-16 16:53:18 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:53:19 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:53:19 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:53:19 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:53:19 INFO  - Test description: 
+2019-12-16 16:53:27 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:53:27 INFO  - TestResults
+2019-12-16 16:53:32 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:53:32 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:53:32 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:53:32 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:53:32 INFO  - Test description: 
+2019-12-16 16:53:41 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:53:41 INFO  - TestResults
+2019-12-16 16:53:45 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:53:46 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:53:46 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:53:46 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:53:46 INFO  - Test description: 
+2019-12-16 16:53:54 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:53:54 INFO  - TestResults
+2019-12-16 16:53:59 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:54:00 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:54:00 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:54:00 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:54:00 INFO  - Test description: 
+2019-12-16 16:54:10 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:54:10 INFO  - TestResults
+2019-12-16 16:54:15 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:54:15 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:54:15 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:54:15 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:54:15 INFO  - Test description: 
+2019-12-16 16:54:24 INFO  - Total Time taken in(seconds):8
+2019-12-16 16:54:24 INFO  - TestResults
+2019-12-16 16:54:30 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:54:31 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:54:31 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:54:31 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:54:31 INFO  - Test description: 
+2019-12-16 16:54:39 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:54:39 INFO  - TestResults
+2019-12-16 16:54:45 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:54:46 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:54:46 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:54:46 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:54:46 INFO  - Test description: 
+2019-12-16 16:54:56 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:54:56 INFO  - TestResults
+2019-12-16 16:55:00 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:55:01 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:55:01 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:55:01 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:55:01 INFO  - Test description: 
+2019-12-16 16:55:10 INFO  - Total Time taken in(seconds):9
+2019-12-16 16:55:10 INFO  - TestResults
+2019-12-16 16:55:16 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:55:16 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:55:16 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:55:16 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:55:16 INFO  - Test description: 
+2019-12-16 16:55:28 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:55:28 INFO  - TestResults
+2019-12-16 16:55:34 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:55:34 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:55:34 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:55:34 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:55:34 INFO  - Test description: 
+2019-12-16 16:55:44 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:55:44 INFO  - TestResults
+2019-12-16 16:55:50 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:55:51 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:55:51 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:55:51 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:55:51 INFO  - Test description: 
+2019-12-16 16:56:00 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:56:00 INFO  - TestResults
+2019-12-16 16:56:07 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:56:08 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:56:08 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:56:08 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:56:08 INFO  - Test description: 
+2019-12-16 16:56:17 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:56:17 INFO  - TestResults
+2019-12-16 16:56:23 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:56:24 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:56:24 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:56:24 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:56:24 INFO  - Test description: 
+2019-12-16 16:56:35 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:56:35 INFO  - TestResults
+2019-12-16 16:56:43 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:56:44 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:56:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:56:44 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:56:44 INFO  - Test description: 
+2019-12-16 16:56:55 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:56:55 INFO  - TestResults
+2019-12-16 16:57:02 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:57:02 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:57:02 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:57:02 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:57:02 INFO  - Test description: 
+2019-12-16 16:57:15 INFO  - Total Time taken in(seconds):13
+2019-12-16 16:57:15 INFO  - TestResults
+2019-12-16 16:57:23 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:57:23 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:57:23 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:57:23 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:57:23 INFO  - Test description: 
+2019-12-16 16:57:34 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:57:34 INFO  - TestResults
+2019-12-16 16:57:43 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:57:44 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:57:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:57:44 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:57:44 INFO  - Test description: 
+2019-12-16 16:57:58 INFO  - Total Time taken in(seconds):15
+2019-12-16 16:57:58 INFO  - TestResults
+2019-12-16 16:58:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:58:07 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:58:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:58:07 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:58:07 INFO  - Test description: 
+2019-12-16 16:58:17 INFO  - Total Time taken in(seconds):11
+2019-12-16 16:58:17 INFO  - TestResults
+2019-12-16 16:58:23 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:58:24 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:58:24 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:58:24 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:58:24 INFO  - Test description: 
+2019-12-16 16:58:34 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:58:34 INFO  - TestResults
+2019-12-16 16:58:41 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:58:42 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:58:42 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:58:42 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:58:42 INFO  - Test description: 
+2019-12-16 16:58:52 INFO  - Total Time taken in(seconds):10
+2019-12-16 16:58:52 INFO  - TestResults
+2019-12-16 16:58:59 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:59:00 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:59:00 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:59:00 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:59:00 INFO  - Test description: 
+2019-12-16 16:59:11 INFO  - Total Time taken in(seconds):12
+2019-12-16 16:59:11 INFO  - TestResults
+2019-12-16 16:59:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:59:21 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:59:21 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:59:21 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:59:21 INFO  - Test description: 
+2019-12-16 16:59:40 INFO  - Total Time taken in(seconds):20
+2019-12-16 16:59:40 INFO  - TestResults
+2019-12-16 16:59:47 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 16:59:47 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 16:59:47 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 16:59:47 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 16:59:47 INFO  - Test description: 
+2019-12-16 16:59:59 INFO  - Total Time taken in(seconds):12
+2019-12-16 16:59:59 INFO  - TestResults
+2019-12-16 17:00:06 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:00:07 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:00:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:00:07 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:00:07 INFO  - Test description: 
+2019-12-16 17:00:20 INFO  - Total Time taken in(seconds):13
+2019-12-16 17:00:20 INFO  - TestResults
+2019-12-16 17:00:30 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:00:30 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:00:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:00:31 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:00:31 INFO  - Test description: 
+2019-12-16 17:00:43 INFO  - Total Time taken in(seconds):13
+2019-12-16 17:00:43 INFO  - TestResults
+2019-12-16 17:00:50 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:00:52 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:00:52 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:00:52 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:00:52 INFO  - Test description: 
+2019-12-16 17:01:04 INFO  - Total Time taken in(seconds):13
+2019-12-16 17:01:04 INFO  - TestResults
+2019-12-16 17:01:12 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:01:13 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:01:13 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:01:13 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:01:13 INFO  - Test description: 
+2019-12-16 17:01:25 INFO  - Total Time taken in(seconds):13
+2019-12-16 17:01:25 INFO  - TestResults
+2019-12-16 17:01:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:01:33 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:01:33 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:01:33 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:01:33 INFO  - Test description: 
+2019-12-16 17:01:52 INFO  - Total Time taken in(seconds):19
+2019-12-16 17:01:52 INFO  - TestResults
+2019-12-16 17:02:02 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:02:03 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:02:03 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:02:03 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:02:03 INFO  - Test description: 
+2019-12-16 17:02:16 INFO  - Total Time taken in(seconds):13
+2019-12-16 17:02:16 INFO  - TestResults
+2019-12-16 17:02:24 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:02:25 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:02:25 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:02:25 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:02:25 INFO  - Test description: 
+2019-12-16 17:02:38 INFO  - Total Time taken in(seconds):14
+2019-12-16 17:02:38 INFO  - TestResults
+2019-12-16 17:02:48 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:02:48 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:02:48 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:02:48 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:02:48 INFO  - Test description: 
+2019-12-16 17:02:59 INFO  - Total Time taken in(seconds):11
+2019-12-16 17:02:59 INFO  - TestResults
+2019-12-16 17:03:07 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:03:08 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:03:08 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:03:08 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:03:08 INFO  - Test description: 
+2019-12-16 17:03:24 INFO  - Total Time taken in(seconds):16
+2019-12-16 17:03:24 INFO  - TestResults
+2019-12-16 17:03:31 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:03:32 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:03:32 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:03:32 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:03:32 INFO  - Test description: 
+2019-12-16 17:03:44 INFO  - Total Time taken in(seconds):12
+2019-12-16 17:03:44 INFO  - TestResults
+2019-12-16 17:03:50 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:03:51 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:03:51 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:03:51 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:03:51 INFO  - Test description: 
+2019-12-16 17:04:06 INFO  - Total Time taken in(seconds):16
+2019-12-16 17:04:06 INFO  - TestResults
+2019-12-16 17:04:17 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:04:17 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:04:17 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:04:17 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:04:17 INFO  - Test description: 
+2019-12-16 17:04:32 INFO  - Total Time taken in(seconds):15
+2019-12-16 17:04:32 INFO  - TestResults
+2019-12-16 17:04:41 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:04:42 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:04:42 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:04:42 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:04:42 INFO  - Test description: 
+2019-12-16 17:04:59 INFO  - Total Time taken in(seconds):17
+2019-12-16 17:04:59 INFO  - TestResults
+2019-12-16 17:05:09 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:05:10 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:05:10 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:05:10 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:05:10 INFO  - Test description: 
+2019-12-16 17:05:24 INFO  - Total Time taken in(seconds):15
+2019-12-16 17:05:24 INFO  - TestResults
+2019-12-16 17:05:34 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:05:34 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:05:34 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:05:34 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:05:34 INFO  - Test description: 
+2019-12-16 17:05:48 INFO  - Total Time taken in(seconds):13
+2019-12-16 17:05:48 INFO  - TestResults
+2019-12-16 17:05:57 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:05:59 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:05:59 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:05:59 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:05:59 INFO  - Test description: 
+2019-12-16 17:06:18 INFO  - Total Time taken in(seconds):20
+2019-12-16 17:06:18 INFO  - TestResults
+2019-12-16 17:06:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:06:30 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:06:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:06:30 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:06:30 INFO  - Test description: 
+2019-12-16 17:06:43 INFO  - Total Time taken in(seconds):14
+2019-12-16 17:06:43 INFO  - TestResults
+2019-12-16 17:06:55 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:06:56 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:06:56 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:06:56 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:06:56 INFO  - Test description: 
+2019-12-16 17:07:14 INFO  - Total Time taken in(seconds):18
+2019-12-16 17:07:14 INFO  - TestResults
+2019-12-16 17:07:23 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:07:24 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:07:24 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:07:24 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:07:24 INFO  - Test description: 
+2019-12-16 17:07:39 INFO  - Total Time taken in(seconds):15
+2019-12-16 17:07:39 INFO  - TestResults
+2019-12-16 17:07:50 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:07:50 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:07:50 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:07:50 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:07:50 INFO  - Test description: 
+2019-12-16 17:08:07 INFO  - Total Time taken in(seconds):16
+2019-12-16 17:08:07 INFO  - TestResults
+2019-12-16 17:08:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:08:20 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:08:20 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:08:20 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:08:20 INFO  - Test description: 
+2019-12-16 17:08:34 INFO  - Total Time taken in(seconds):15
+2019-12-16 17:08:34 INFO  - TestResults
+2019-12-16 17:08:48 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:08:50 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:08:50 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:08:50 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:08:50 INFO  - Test description: 
+2019-12-16 17:09:04 INFO  - Total Time taken in(seconds):15
+2019-12-16 17:09:04 INFO  - TestResults
+2019-12-16 17:09:16 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:09:18 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:09:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:09:18 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:09:18 INFO  - Test description: 
+2019-12-16 17:09:32 INFO  - Total Time taken in(seconds):15
+2019-12-16 17:09:32 INFO  - TestResults
+2019-12-16 17:09:42 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:09:43 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:09:43 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:09:44 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:09:44 INFO  - Test description: 
+2019-12-16 17:09:59 INFO  - Total Time taken in(seconds):16
+2019-12-16 17:09:59 INFO  - TestResults
+2019-12-16 17:10:09 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:10:10 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:10:10 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:10:10 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:10:10 INFO  - Test description: 
+2019-12-16 17:10:26 INFO  - Total Time taken in(seconds):17
+2019-12-16 17:10:26 INFO  - TestResults
+2019-12-16 17:10:36 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:10:37 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:10:37 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:10:37 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:10:37 INFO  - Test description: 
+2019-12-16 17:10:57 INFO  - Total Time taken in(seconds):21
+2019-12-16 17:10:57 INFO  - TestResults
+2019-12-16 17:11:10 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:11:11 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:11:11 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:11:11 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:11:11 INFO  - Test description: 
+2019-12-16 17:11:31 INFO  - Total Time taken in(seconds):21
+2019-12-16 17:11:31 INFO  - TestResults
+2019-12-16 17:11:43 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:11:44 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:11:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:11:44 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:11:44 INFO  - Test description: 
+2019-12-16 17:12:01 INFO  - Total Time taken in(seconds):17
+2019-12-16 17:12:01 INFO  - TestResults
+2019-12-16 17:12:13 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:12:14 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:12:14 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:12:14 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:12:14 INFO  - Test description: 
+2019-12-16 17:12:31 INFO  - Total Time taken in(seconds):17
+2019-12-16 17:12:31 INFO  - TestResults
+2019-12-16 17:12:43 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:12:44 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:12:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:12:44 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:12:44 INFO  - Test description: 
+2019-12-16 17:13:02 INFO  - Total Time taken in(seconds):19
+2019-12-16 17:13:02 INFO  - TestResults
+2019-12-16 17:13:16 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:13:17 INFO  - No data found with given key-> ZestIOT_000_bsspl
+2019-12-16 17:13:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 17:13:18 INFO  - Test Started: ZestIOT_000_bsspl
+2019-12-16 17:13:18 INFO  - Test description: 
+2019-12-16 17:13:33 INFO  - Total Time taken in(seconds):17
+2019-12-16 17:13:33 INFO  - TestResults
+2019-12-16 17:13:47 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 17:13:47 INFO  - Test has ended - closing browser: Chrome
+2019-12-16 17:13:47 INFO  - Closing Browsers
+2019-12-16 17:16:17 INFO  - smoke suite finished at Mon Dec 16 17:16:17 IST 2019
+2019-12-16 17:16:43 INFO  - Comparison sheet written successfully
+2019-12-16 17:16:43 INFO  - Data to excel written successfully
+2019-12-16 17:17:24 INFO  - Test process has ended
+2019-12-16 17:19:07 INFO  - +=============Database started=============+
+2019-12-16 17:19:07 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 17:19:07 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 17:19:07 INFO  - +==========================================+
+
+2019-12-16 17:19:12 INFO  - Comparison sheet written successfully
+2019-12-16 17:19:12 INFO  - Data to excel written successfully
+2019-12-16 17:19:16 INFO  - History File created successfully

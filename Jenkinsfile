@@ -1,12 +1,11 @@
 pipeline{
-
 agent any
-
 stages 
 {
 stage('Clone') 
 {
 steps{
+
 echo "Clone the Code from git hub.........."
 checkout([$class: 'GitSCM', 
 branches: [[name: '*/master']], 
@@ -15,13 +14,16 @@ extensions: [],
  submoduleCfg: [],
   userRemoteConfigs: [[credentialsId: 'baa4c5c3-ffe4-4edb-aa94-1e37dadb520f', 
   url: 'https://github.com/RadhikaChiluka/ZestIOTAutomation.git']]])
+ 
 }
 }
 stage('Test') 
 {
 steps{
+
 echo "Running the test cases.........."
 bat "mvn clean install test"
+
 }
 }
 
@@ -38,11 +40,11 @@ mail bcc: '',
  body: """
 <p style=\"color:#006600;\">Hi All, <br>
 This is a confirmation mail that all <b><i>ZestIOT automation scripts </b></i>are successfully executed through Jenkins Pipeline.<br>
-Job Bulid Number:-<b>'${env.BUILD_NUMBER}'</b><br>
+Job Build Number:-<b>'${env.BUILD_NUMBER}'</b><br>
 Job Name:-<b>'${env.JOB_NAME}'</b><br>
 Check console output at <b><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i></b><br><br>
-Thanks& Reagrds<br>
-Automation Team.</p>
+Thanks & Regards,<br>
+Automation Team</p>
 """, 
 cc: '', 
 from: 'automationteam.enhops@gmail.com', 
