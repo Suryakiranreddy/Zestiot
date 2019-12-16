@@ -1,0 +1,1441 @@
+2019-12-13 12:42:18 INFO  - 
+============================================================================================================================
+2019-12-13 12:42:18 INFO  - Default suite suite started at Fri Dec 13 12:42:18 IST 2019
+2019-12-13 12:42:18 INFO  - Suite Browser: chrome
+2019-12-13 12:42:18 INFO  - +=============Database started=============+
+2019-12-13 12:42:18 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 12:42:18 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 12:42:18 INFO  - +==========================================+
+
+2019-12-13 12:42:18 INFO  - Test is started with browser: chrome
+2019-12-13 12:42:30 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 12:42:30 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 12:42:30 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 12:42:30 INFO  - Test description: 
+2019-12-13 12:42:45 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 12:42:47 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 12:42:53 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 12:42:53 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 12:43:05 INFO  - Hover Element: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 12:43:08 INFO  - Hover Element: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 12:44:45 INFO  - 
+============================================================================================================================
+2019-12-13 12:44:45 INFO  - Default suite suite started at Fri Dec 13 12:44:45 IST 2019
+2019-12-13 12:44:45 INFO  - Suite Browser: chrome
+2019-12-13 12:44:45 INFO  - +=============Database started=============+
+2019-12-13 12:44:45 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 12:44:45 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 12:44:45 INFO  - +==========================================+
+
+2019-12-13 12:44:45 INFO  - Test is started with browser: chrome
+2019-12-13 12:44:57 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 12:44:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 12:44:57 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 12:44:57 INFO  - Test description: 
+2019-12-13 12:45:11 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 12:45:13 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 12:45:18 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 12:45:18 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 12:45:30 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 12:45:32 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 12:45:34 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 12:45:37 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 12:45:41 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 12:45:43 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 12:45:54 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 12:45:57 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 12:46:00 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 12:46:03 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 12:46:03 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 12:46:03 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 12:46:03 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 12:46:23 INFO  - 
+============================================================================================================================
+2019-12-13 12:46:23 INFO  - Default suite suite started at Fri Dec 13 12:46:23 IST 2019
+2019-12-13 12:46:23 INFO  - Suite Browser: chrome
+2019-12-13 12:46:23 INFO  - +=============Database started=============+
+2019-12-13 12:46:23 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 12:46:23 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 12:46:23 INFO  - +==========================================+
+
+2019-12-13 12:46:23 INFO  - Test is started with browser: chrome
+2019-12-13 12:46:35 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 12:46:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 12:46:35 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 12:46:35 INFO  - Test description: 
+2019-12-13 12:46:51 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 12:46:53 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 12:46:58 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 12:46:58 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 12:47:10 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 12:47:12 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 12:47:14 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 12:47:16 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 12:47:21 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 12:47:23 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 12:47:33 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 12:47:37 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 12:47:40 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 12:47:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 12:47:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 12:47:43 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 12:47:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 12:48:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 12:48:36 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 12:48:39 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 12:48:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 12:48:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 12:48:43 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 12:48:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 12:49:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 12:49:37 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 12:49:40 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 12:49:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 12:49:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 12:49:43 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 12:49:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 12:50:34 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 12:50:37 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 12:50:40 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 12:50:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 12:50:44 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 12:50:44 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 12:50:44 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 12:51:34 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 12:51:37 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 12:51:41 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 12:51:44 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 12:51:44 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 12:51:44 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 12:51:44 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 12:52:34 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 12:52:37 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 12:52:41 INFO  - Click: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 12:52:41 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 12:52:44 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 12:52:47 INFO  - Click: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 12:52:50 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 12:52:50 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]/descendant::p[1]
+2019-12-13 12:52:50 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 12:52:50 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 12:53:41 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 12:53:44 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 12:53:47 INFO  - Click: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 12:53:50 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 12:53:50 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]/descendant::p[1]
+2019-12-13 12:53:50 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 12:53:50 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 12:54:40 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 12:54:44 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 12:54:47 INFO  - Click: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 12:54:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 12:54:50 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 12:54:53 INFO  - Click: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 12:54:57 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 12:54:57 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]/descendant::p[1]
+2019-12-13 12:54:57 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 12:54:57 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 12:55:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 12:55:47 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 12:55:47 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 12:55:47 INFO  - Total Time taken in(seconds):553
+2019-12-13 12:55:48 INFO  - TestResults
+2019-12-13 12:55:49 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 12:55:49 INFO  - Test has ended - closing browser: chrome
+2019-12-13 12:55:49 INFO  - Closing Browsers
+2019-12-13 12:55:50 INFO  - Default suite suite finished at Fri Dec 13 12:55:50 IST 2019
+2019-12-13 12:55:50 INFO  - Comparison sheet written successfully
+2019-12-13 12:55:50 INFO  - Data to excel written successfully
+2019-12-13 12:55:50 INFO  - Test process has ended
+2019-12-13 13:00:37 INFO  - 
+============================================================================================================================
+2019-12-13 13:00:37 INFO  - Default suite suite started at Fri Dec 13 13:00:37 IST 2019
+2019-12-13 13:00:37 INFO  - Suite Browser: chrome
+2019-12-13 13:00:37 INFO  - +=============Database started=============+
+2019-12-13 13:00:37 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 13:00:37 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 13:00:37 INFO  - +==========================================+
+
+2019-12-13 13:00:37 INFO  - Test is started with browser: chrome
+2019-12-13 13:00:48 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 13:00:48 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 13:00:48 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 13:00:48 INFO  - Test description: 
+2019-12-13 13:01:03 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 13:01:04 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 13:01:10 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 13:01:10 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 13:01:21 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 13:01:23 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 13:01:25 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 13:01:28 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 13:01:32 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 13:01:35 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 13:01:45 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 13:01:48 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:01:51 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:01:54 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:01:54 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 13:01:55 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 13:01:55 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:02:45 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:02:48 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:02:51 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:02:54 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:02:55 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 13:02:55 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 13:02:55 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:03:45 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:03:49 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:03:52 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:03:52 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:03:55 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:03:58 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:04:01 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:04:01 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 13:04:01 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 13:04:01 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:08:13 INFO  - 
+============================================================================================================================
+2019-12-13 13:08:13 INFO  - Default suite suite started at Fri Dec 13 13:08:13 IST 2019
+2019-12-13 13:08:13 INFO  - Suite Browser: chrome
+2019-12-13 13:08:13 INFO  - +=============Database started=============+
+2019-12-13 13:08:13 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 13:08:13 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 13:08:13 INFO  - +==========================================+
+
+2019-12-13 13:08:13 INFO  - Test is started with browser: chrome
+2019-12-13 13:08:25 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 13:08:25 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 13:08:25 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 13:08:25 INFO  - Test description: 
+2019-12-13 13:08:40 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 13:08:41 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 13:08:47 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 13:08:47 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 13:08:58 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 13:09:00 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 13:09:02 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 13:09:05 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 13:09:10 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 13:09:12 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 13:09:22 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 13:09:25 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:09:28 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:09:31 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:09:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 13:09:32 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 13:09:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:10:22 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:10:25 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:10:28 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:10:31 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:10:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 13:10:32 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]/descendant::div[3]/div
+2019-12-13 13:10:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:10:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 13:10:32 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]/descendant::div[3]/div
+2019-12-13 13:10:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:10:32 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:10:34 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:10:40 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:10:43 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:10:46 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:10:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 13:10:47 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 13:10:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:11:37 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:11:40 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:11:43 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:11:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:11:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 13:11:47 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]/descendant::div[3]/div
+2019-12-13 13:11:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:12:37 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:12:40 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 13:12:44 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 13:12:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 13:12:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 13:12:47 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 13:12:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:12:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 13:12:47 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 13:12:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:12:47 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 13:12:49 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:12:55 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 13:12:58 INFO  - Click: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 13:13:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 13:13:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]/descendant::p[1]
+2019-12-13 13:13:02 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][6]/descendant::div[3]/div
+2019-12-13 13:13:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:13:52 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 13:13:55 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 13:13:58 INFO  - Click: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 13:14:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 13:14:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]/descendant::p[1]
+2019-12-13 13:14:02 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][7]/descendant::div[3]/div
+2019-12-13 13:14:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:14:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]/descendant::p[1]
+2019-12-13 13:14:02 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][7]/descendant::div[3]/div
+2019-12-13 13:14:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:14:02 INFO  - Click: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 13:14:04 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:14:10 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 13:14:13 INFO  - Click: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 13:14:16 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 13:14:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]/descendant::p[1]
+2019-12-13 13:14:17 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][8]/descendant::div[3]/div
+2019-12-13 13:14:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:14:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]/descendant::p[1]
+2019-12-13 13:14:17 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][8]/descendant::div[3]/div
+2019-12-13 13:14:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:14:17 INFO  - Click: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 13:14:19 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 13:14:25 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 13:14:28 INFO  - Click: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 13:14:31 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 13:14:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]/descendant::p[1]
+2019-12-13 13:14:32 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][9]/descendant::div[3]/div
+2019-12-13 13:14:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:14:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]/descendant::p[1]
+2019-12-13 13:14:32 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][9]/descendant::div[3]/div
+2019-12-13 13:14:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:14:32 INFO  - Click: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 13:14:34 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 13:14:40 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 13:14:43 INFO  - Click: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 13:14:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 13:14:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]/descendant::p[1]
+2019-12-13 13:14:47 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][10]/descendant::div[3]/div
+2019-12-13 13:14:47 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:15:37 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 13:15:37 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 13:15:43 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 13:15:43 INFO  - Total Time taken in(seconds):438
+2019-12-13 13:15:43 INFO  - TestResults
+2019-12-13 13:15:44 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 13:15:44 INFO  - Test has ended - closing browser: chrome
+2019-12-13 13:15:44 INFO  - Closing Browsers
+2019-12-13 13:15:45 INFO  - Default suite suite finished at Fri Dec 13 13:15:45 IST 2019
+2019-12-13 13:15:45 INFO  - Comparison sheet written successfully
+2019-12-13 13:15:45 INFO  - Data to excel written successfully
+2019-12-13 13:15:45 INFO  - Test process has ended
+2019-12-13 13:15:50 INFO  - +=============Database started=============+
+2019-12-13 13:15:50 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 13:15:50 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 13:15:50 INFO  - +==========================================+
+
+2019-12-13 13:15:50 INFO  - Comparison sheet written successfully
+2019-12-13 13:15:50 INFO  - Data to excel written successfully
+2019-12-13 13:15:50 INFO  - History File created successfully
+2019-12-13 13:21:00 INFO  - 
+============================================================================================================================
+2019-12-13 13:21:00 INFO  - Default suite suite started at Fri Dec 13 13:21:00 IST 2019
+2019-12-13 13:21:00 INFO  - Suite Browser: chrome
+2019-12-13 13:21:01 INFO  - +=============Database started=============+
+2019-12-13 13:21:01 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 13:21:01 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 13:21:01 INFO  - +==========================================+
+
+2019-12-13 13:21:01 INFO  - Test is started with browser: chrome
+2019-12-13 13:21:12 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 13:21:12 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 13:21:12 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 13:21:12 INFO  - Test description: 
+2019-12-13 13:21:28 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 13:21:30 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 13:21:35 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 13:21:35 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 13:21:46 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 13:21:49 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 13:21:51 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 13:21:53 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 13:21:58 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 13:22:00 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 13:22:11 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 13:22:14 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:22:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:22:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 13:22:17 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 13:22:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:23:08 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 13:23:11 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:23:14 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:23:14 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 13:23:15 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]/descendant::div[3]/div
+2019-12-13 13:23:15 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:24:05 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:24:08 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:24:11 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:24:11 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 13:24:12 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 13:24:12 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:25:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 13:25:05 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:25:09 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:25:09 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 13:25:09 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]/descendant::div[3]/div
+2019-12-13 13:25:09 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:25:59 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 13:26:02 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 13:26:05 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 13:26:06 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 13:26:06 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 13:26:06 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:26:06 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 13:26:06 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 13:26:06 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:26:06 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 13:26:08 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 13:26:14 INFO  - Click: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 13:26:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 13:26:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]/descendant::p[1]
+2019-12-13 13:26:18 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][6]/descendant::div[3]/div
+2019-12-13 13:26:18 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:27:08 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 13:27:11 INFO  - Click: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 13:27:14 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 13:27:15 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]/descendant::p[1]
+2019-12-13 13:27:15 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][7]/descendant::div[3]/div
+2019-12-13 13:27:15 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:28:05 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 13:28:08 INFO  - Click: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 13:28:11 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 13:28:12 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]/descendant::p[1]
+2019-12-13 13:28:12 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][8]/descendant::div[3]/div
+2019-12-13 13:28:12 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:29:02 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 13:29:05 INFO  - Click: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 13:29:08 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 13:29:09 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]/descendant::p[1]
+2019-12-13 13:29:09 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][9]/descendant::div[3]/div
+2019-12-13 13:29:09 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:29:59 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 13:30:02 INFO  - Click: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 13:30:06 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 13:30:06 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]/descendant::p[1]
+2019-12-13 13:30:06 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][10]/descendant::div[3]/div
+2019-12-13 13:30:06 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 13:30:56 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 13:30:56 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 13:30:56 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 13:30:57 INFO  - Total Time taken in(seconds):584
+2019-12-13 13:30:57 INFO  - TestResults
+2019-12-13 13:30:58 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 13:30:58 INFO  - Test has ended - closing browser: chrome
+2019-12-13 13:30:58 INFO  - Closing Browsers
+2019-12-13 13:30:59 INFO  - Default suite suite finished at Fri Dec 13 13:30:59 IST 2019
+2019-12-13 13:31:00 INFO  - Comparison sheet written successfully
+2019-12-13 13:31:00 INFO  - Data to excel written successfully
+2019-12-13 13:31:00 INFO  - Test process has ended
+2019-12-13 13:31:05 INFO  - +=============Database started=============+
+2019-12-13 13:31:05 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 13:31:05 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 13:31:05 INFO  - +==========================================+
+
+2019-12-13 13:31:05 INFO  - Comparison sheet written successfully
+2019-12-13 13:31:05 INFO  - Data to excel written successfully
+2019-12-13 13:31:05 INFO  - History File created successfully
+2019-12-13 14:19:04 INFO  - 
+============================================================================================================================
+2019-12-13 14:19:04 INFO  - Default suite suite started at Fri Dec 13 14:19:04 IST 2019
+2019-12-13 14:19:04 INFO  - Suite Browser: chrome
+2019-12-13 14:19:05 INFO  - +=============Database started=============+
+2019-12-13 14:19:05 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 14:19:05 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 14:19:05 INFO  - +==========================================+
+
+2019-12-13 14:19:05 INFO  - Test is started with browser: chrome
+2019-12-13 14:19:16 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 14:19:16 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 14:19:16 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 14:19:16 INFO  - Test description: 
+2019-12-13 14:19:31 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 14:19:33 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 14:19:38 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 14:19:38 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 14:19:49 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 14:19:51 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 14:19:53 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 14:19:56 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 14:20:01 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 14:20:03 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 14:20:13 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 14:20:16 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 14:20:19 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 14:20:20 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 14:20:20 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 14:20:20 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:21:13 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 14:21:16 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 14:21:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 14:21:17 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]/descendant::div[3]/div
+2019-12-13 14:21:17 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:22:10 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 14:22:13 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 14:22:14 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 14:22:14 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 14:22:14 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:23:07 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 14:23:10 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 14:23:11 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 14:23:11 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]/descendant::div[3]/div
+2019-12-13 14:23:11 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:24:04 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 14:24:07 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 14:24:07 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 14:24:08 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 14:24:08 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:24:08 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 14:24:08 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 14:24:08 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:24:08 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 14:24:10 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 14:24:16 INFO  - Click: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 14:24:19 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]
+2019-12-13 14:24:19 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]/descendant::p[1]
+2019-12-13 14:24:19 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][6]/descendant::div[3]/div
+2019-12-13 14:24:19 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][6]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:25:13 INFO  - Click: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 14:25:16 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]
+2019-12-13 14:25:16 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]/descendant::p[1]
+2019-12-13 14:25:16 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][7]/descendant::div[3]/div
+2019-12-13 14:25:16 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][7]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:26:10 INFO  - Click: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 14:26:13 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]
+2019-12-13 14:26:13 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]/descendant::p[1]
+2019-12-13 14:26:13 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][8]/descendant::div[3]/div
+2019-12-13 14:26:13 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][8]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:27:07 INFO  - Click: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 14:27:10 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]
+2019-12-13 14:27:10 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]/descendant::p[1]
+2019-12-13 14:27:10 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][9]/descendant::div[3]/div
+2019-12-13 14:27:10 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][9]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:28:04 INFO  - Click: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 14:28:07 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]
+2019-12-13 14:28:07 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]/descendant::p[1]
+2019-12-13 14:28:07 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][10]/descendant::div[3]/div
+2019-12-13 14:28:07 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][10]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:28:57 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 14:28:57 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 14:28:58 INFO  - Total Time taken in(seconds):581
+2019-12-13 14:28:58 INFO  - TestResults
+2019-12-13 14:28:59 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 14:28:59 INFO  - Test has ended - closing browser: chrome
+2019-12-13 14:28:59 INFO  - Closing Browsers
+2019-12-13 14:29:00 INFO  - Default suite suite finished at Fri Dec 13 14:29:00 IST 2019
+2019-12-13 14:29:00 INFO  - Comparison sheet written successfully
+2019-12-13 14:29:00 INFO  - Data to excel written successfully
+2019-12-13 14:29:00 INFO  - Test process has ended
+2019-12-13 14:29:06 INFO  - +=============Database started=============+
+2019-12-13 14:29:06 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 14:29:06 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 14:29:06 INFO  - +==========================================+
+
+2019-12-13 14:29:06 INFO  - Comparison sheet written successfully
+2019-12-13 14:29:06 INFO  - Data to excel written successfully
+2019-12-13 14:29:06 INFO  - History File created successfully
+2019-12-13 14:35:31 INFO  - 
+============================================================================================================================
+2019-12-13 14:35:31 INFO  - Default suite suite started at Fri Dec 13 14:35:31 IST 2019
+2019-12-13 14:35:31 INFO  - Suite Browser: chrome
+2019-12-13 14:35:31 INFO  - +=============Database started=============+
+2019-12-13 14:35:31 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 14:35:31 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 14:35:31 INFO  - +==========================================+
+
+2019-12-13 14:35:32 INFO  - Test is started with browser: chrome
+2019-12-13 14:35:42 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 14:35:42 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 14:35:42 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 14:35:42 INFO  - Test description: 
+2019-12-13 14:35:57 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 14:35:58 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 14:36:04 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 14:36:04 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 14:36:15 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 14:36:17 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 14:36:19 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 14:36:22 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 14:36:27 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 14:36:29 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 14:36:39 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 14:36:42 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 14:36:46 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 14:36:46 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 14:36:46 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 14:36:46 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:37:39 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 14:37:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 14:37:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 14:37:43 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]/descendant::div[3]/div
+2019-12-13 14:37:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:38:36 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 14:38:40 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 14:38:40 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 14:38:40 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 14:38:40 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:39:33 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 14:39:36 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 14:39:36 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 14:39:36 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]/descendant::div[3]/div
+2019-12-13 14:39:36 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:40:30 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 14:40:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 14:40:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 14:40:33 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 14:40:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:40:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 14:40:33 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 14:40:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:40:33 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 14:40:36 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 14:40:39 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 14:40:39 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 14:40:39 INFO  - Total Time taken in(seconds):296
+2019-12-13 14:40:39 INFO  - TestResults
+2019-12-13 14:40:41 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 14:40:41 INFO  - Test has ended - closing browser: chrome
+2019-12-13 14:40:41 INFO  - Closing Browsers
+2019-12-13 14:40:41 INFO  - Default suite suite finished at Fri Dec 13 14:40:41 IST 2019
+2019-12-13 14:40:41 INFO  - Comparison sheet written successfully
+2019-12-13 14:40:41 INFO  - Data to excel written successfully
+2019-12-13 14:40:42 INFO  - Test process has ended
+2019-12-13 14:40:46 INFO  - +=============Database started=============+
+2019-12-13 14:40:46 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 14:40:46 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 14:40:46 INFO  - +==========================================+
+
+2019-12-13 14:40:46 INFO  - Comparison sheet written successfully
+2019-12-13 14:40:46 INFO  - Data to excel written successfully
+2019-12-13 14:40:46 INFO  - History File created successfully
+2019-12-13 14:45:44 INFO  - 
+============================================================================================================================
+2019-12-13 14:45:44 INFO  - Default suite suite started at Fri Dec 13 14:45:44 IST 2019
+2019-12-13 14:45:44 INFO  - Suite Browser: chrome
+2019-12-13 14:45:45 INFO  - +=============Database started=============+
+2019-12-13 14:45:45 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 14:45:45 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 14:45:45 INFO  - +==========================================+
+
+2019-12-13 14:45:45 INFO  - Test is started with browser: chrome
+2019-12-13 14:45:56 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 14:45:56 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 14:45:56 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 14:45:56 INFO  - Test description: 
+2019-12-13 14:46:06 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 14:46:08 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 14:46:13 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 14:46:13 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 14:46:24 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 14:46:26 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 14:46:29 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 14:46:31 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 14:46:36 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 14:46:38 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 14:46:48 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 14:46:51 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 14:46:55 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 14:46:55 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 14:46:55 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 14:46:55 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:47:48 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 14:47:52 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 14:47:52 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 14:47:52 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]/descendant::div[3]/div
+2019-12-13 14:47:52 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:48:46 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 14:48:49 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 14:48:49 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 14:48:49 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 14:48:49 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:49:43 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 14:49:46 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 14:49:46 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 14:49:46 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]/descendant::div[3]/div
+2019-12-13 14:49:46 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:50:39 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 14:50:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 14:50:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 14:50:43 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 14:50:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:50:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 14:50:43 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 14:50:43 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 14:50:43 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 14:50:45 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 14:50:48 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 14:50:49 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 14:50:49 INFO  - Total Time taken in(seconds):293
+2019-12-13 14:50:49 INFO  - TestResults
+2019-12-13 14:50:51 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 14:50:51 INFO  - Test has ended - closing browser: chrome
+2019-12-13 14:50:51 INFO  - Closing Browsers
+2019-12-13 14:50:51 INFO  - Default suite suite finished at Fri Dec 13 14:50:51 IST 2019
+2019-12-13 14:50:52 INFO  - Comparison sheet written successfully
+2019-12-13 14:50:52 INFO  - Data to excel written successfully
+2019-12-13 14:50:52 INFO  - Test process has ended
+2019-12-13 14:50:56 INFO  - +=============Database started=============+
+2019-12-13 14:50:56 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 14:50:56 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 14:50:56 INFO  - +==========================================+
+
+2019-12-13 14:50:56 INFO  - Comparison sheet written successfully
+2019-12-13 14:50:56 INFO  - Data to excel written successfully
+2019-12-13 14:50:56 INFO  - History File created successfully
+2019-12-13 15:03:27 INFO  - 
+============================================================================================================================
+2019-12-13 15:03:27 INFO  - Default suite suite started at Fri Dec 13 15:03:27 IST 2019
+2019-12-13 15:03:27 INFO  - Suite Browser: chrome
+2019-12-13 15:03:28 INFO  - +=============Database started=============+
+2019-12-13 15:03:28 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 15:03:28 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 15:03:28 INFO  - +==========================================+
+
+2019-12-13 15:03:28 INFO  - Test is started with browser: chrome
+2019-12-13 15:03:39 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 15:03:39 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 15:03:39 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 15:03:39 INFO  - Test description: 
+2019-12-13 15:03:48 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 15:03:50 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 15:03:55 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 15:03:55 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 15:04:06 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 15:04:09 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 15:04:59 INFO  -  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 15:04:59 INFO  - Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(.,'Flight Info')] (tried for 50 second(s) with 500 milliseconds interval)
+2019-12-13 15:05:00 INFO  - Total Time taken in(seconds):81
+2019-12-13 15:05:00 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-13 15:05:00 INFO  - TestResults
+2019-12-13 15:05:01 INFO  - Test has ended - closing browser: chrome
+2019-12-13 15:05:01 INFO  - Closing Browsers
+2019-12-13 15:05:01 INFO  - Default suite suite finished at Fri Dec 13 15:05:01 IST 2019
+2019-12-13 15:05:02 INFO  - Comparison sheet written successfully
+2019-12-13 15:05:02 INFO  - Data to excel written successfully
+2019-12-13 15:05:02 INFO  - Test process has ended
+2019-12-13 15:05:11 INFO  - +=============Database started=============+
+2019-12-13 15:05:11 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 15:05:11 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 15:05:11 INFO  - +==========================================+
+
+2019-12-13 15:05:11 INFO  - Comparison sheet written successfully
+2019-12-13 15:05:11 INFO  - Data to excel written successfully
+2019-12-13 15:05:11 INFO  - History File created successfully
+2019-12-13 15:06:04 INFO  - 
+============================================================================================================================
+2019-12-13 15:06:04 INFO  - Default suite suite started at Fri Dec 13 15:06:04 IST 2019
+2019-12-13 15:06:04 INFO  - Suite Browser: chrome
+2019-12-13 15:06:04 INFO  - +=============Database started=============+
+2019-12-13 15:06:04 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 15:06:04 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 15:06:04 INFO  - +==========================================+
+
+2019-12-13 15:06:04 INFO  - Test is started with browser: chrome
+2019-12-13 15:06:15 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 15:06:15 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 15:06:15 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 15:06:15 INFO  - Test description: 
+2019-12-13 15:06:24 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 15:06:25 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 15:06:31 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 15:06:31 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 15:06:42 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 15:06:44 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 15:07:35 INFO  -  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 15:07:35 INFO  - Expected condition failed: waiting for element to be clickable: By.xpath: //a[contains(.,'Flight Info')] (tried for 50 second(s) with 500 milliseconds interval)
+2019-12-13 15:07:35 INFO  - Total Time taken in(seconds):80
+2019-12-13 15:07:35 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-13 15:07:35 INFO  - TestResults
+2019-12-13 15:07:36 INFO  - Test has ended - closing browser: chrome
+2019-12-13 15:07:36 INFO  - Closing Browsers
+2019-12-13 15:07:37 INFO  - Default suite suite finished at Fri Dec 13 15:07:37 IST 2019
+2019-12-13 15:07:37 INFO  - Comparison sheet written successfully
+2019-12-13 15:07:37 INFO  - Data to excel written successfully
+2019-12-13 15:07:37 INFO  - Test process has ended
+2019-12-13 15:07:44 INFO  - +=============Database started=============+
+2019-12-13 15:07:44 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 15:07:44 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 15:07:44 INFO  - +==========================================+
+
+2019-12-13 15:07:45 INFO  - Comparison sheet written successfully
+2019-12-13 15:07:45 INFO  - Data to excel written successfully
+2019-12-13 15:07:45 INFO  - History File created successfully
+2019-12-13 15:08:52 INFO  - 
+============================================================================================================================
+2019-12-13 15:08:52 INFO  - Default suite suite started at Fri Dec 13 15:08:52 IST 2019
+2019-12-13 15:08:52 INFO  - Suite Browser: chrome
+2019-12-13 15:08:53 INFO  - +=============Database started=============+
+2019-12-13 15:08:53 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 15:08:53 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 15:08:53 INFO  - +==========================================+
+
+2019-12-13 15:08:53 INFO  - Test is started with browser: chrome
+2019-12-13 15:09:04 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 15:09:04 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 15:09:04 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 15:09:04 INFO  - Test description: 
+2019-12-13 15:09:13 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 15:09:15 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 15:09:20 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 15:09:20 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 15:09:31 INFO  - Hover Element: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 15:09:34 INFO  - Hover Element: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 15:09:57 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 15:10:10 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 15:10:14 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 15:10:17 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 15:10:27 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 15:10:30 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 15:10:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 15:10:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 15:10:33 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 15:10:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 15:11:27 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 15:11:30 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 15:11:30 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 15:11:30 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]/descendant::div[3]/div
+2019-12-13 15:11:30 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 15:12:24 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 15:12:27 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 15:12:27 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 15:12:27 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 15:12:27 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 15:13:20 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 15:13:23 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 15:13:24 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 15:13:24 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]/descendant::div[3]/div
+2019-12-13 15:13:24 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 15:14:17 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 15:14:20 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 15:14:20 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 15:14:21 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 15:14:21 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 15:14:21 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 15:14:21 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 15:14:21 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 15:14:21 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 15:14:23 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 15:14:26 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 15:14:26 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 15:14:26 INFO  - Total Time taken in(seconds):322
+2019-12-13 15:14:27 INFO  - TestResults
+2019-12-13 15:14:28 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 15:14:28 INFO  - Test has ended - closing browser: chrome
+2019-12-13 15:14:28 INFO  - Closing Browsers
+2019-12-13 15:14:28 INFO  - Default suite suite finished at Fri Dec 13 15:14:28 IST 2019
+2019-12-13 15:14:29 INFO  - Comparison sheet written successfully
+2019-12-13 15:14:29 INFO  - Data to excel written successfully
+2019-12-13 15:14:29 INFO  - Test process has ended
+2019-12-13 15:14:34 INFO  - +=============Database started=============+
+2019-12-13 15:14:34 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 15:14:34 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 15:14:34 INFO  - +==========================================+
+
+2019-12-13 15:14:34 INFO  - Comparison sheet written successfully
+2019-12-13 15:14:34 INFO  - Data to excel written successfully
+2019-12-13 15:14:34 INFO  - History File created successfully
+2019-12-13 16:08:21 INFO  - 
+============================================================================================================================
+2019-12-13 16:08:21 INFO  - Default suite suite started at Fri Dec 13 16:08:21 IST 2019
+2019-12-13 16:08:21 INFO  - Suite Browser: chrome
+2019-12-13 16:08:21 INFO  - +=============Database started=============+
+2019-12-13 16:08:21 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 16:08:21 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 16:08:21 INFO  - +==========================================+
+
+2019-12-13 16:08:21 INFO  - Test is started with browser: chrome
+2019-12-13 16:08:32 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 16:08:32 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 16:08:32 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 16:08:32 INFO  - Test description: 
+2019-12-13 16:08:47 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 16:08:49 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 16:08:54 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 16:08:55 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 16:09:06 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 16:09:08 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 16:09:10 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 16:09:13 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 16:09:17 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 16:09:19 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 16:09:29 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 16:09:33 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 16:09:36 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 16:09:36 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 16:09:36 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 16:09:36 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:10:29 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 16:10:32 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 16:10:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 16:10:33 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]/descendant::div[3]/div
+2019-12-13 16:10:33 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:11:26 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 16:11:29 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 16:11:30 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 16:11:30 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 16:11:30 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:12:23 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 16:12:26 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 16:12:26 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 16:12:26 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]/descendant::div[3]/div
+2019-12-13 16:12:26 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:13:20 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 16:13:23 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 16:13:23 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 16:13:23 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 16:13:23 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:13:23 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 16:13:23 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 16:13:23 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:13:23 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 16:13:24 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 16:13:24 INFO  - Total Time taken in(seconds):291
+2019-12-13 16:13:24 INFO  - TestResults
+2019-12-13 16:13:25 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 16:13:25 INFO  - Test has ended - closing browser: chrome
+2019-12-13 16:13:25 INFO  - Closing Browsers
+2019-12-13 16:13:26 INFO  - Default suite suite finished at Fri Dec 13 16:13:26 IST 2019
+2019-12-13 16:13:26 INFO  - Comparison sheet written successfully
+2019-12-13 16:13:26 INFO  - Data to excel written successfully
+2019-12-13 16:13:26 INFO  - Test process has ended
+2019-12-13 16:13:31 INFO  - +=============Database started=============+
+2019-12-13 16:13:31 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 16:13:31 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 16:13:31 INFO  - +==========================================+
+
+2019-12-13 16:13:31 INFO  - Comparison sheet written successfully
+2019-12-13 16:13:31 INFO  - Data to excel written successfully
+2019-12-13 16:13:31 INFO  - History File created successfully
+2019-12-13 16:20:26 INFO  - 
+============================================================================================================================
+2019-12-13 16:20:26 INFO  - Default suite suite started at Fri Dec 13 16:20:26 IST 2019
+2019-12-13 16:20:26 INFO  - Suite Browser: chrome
+2019-12-13 16:20:26 INFO  - +=============Database started=============+
+2019-12-13 16:20:26 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 16:20:26 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 16:20:26 INFO  - +==========================================+
+
+2019-12-13 16:20:26 INFO  - Test is started with browser: chrome
+2019-12-13 16:20:37 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 16:20:37 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 16:20:37 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 16:20:37 INFO  - Test description: 
+2019-12-13 16:20:52 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 16:20:53 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 16:20:58 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 16:20:59 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 16:21:10 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 16:21:12 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 16:21:14 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 16:21:17 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 16:21:21 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 16:21:24 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 16:21:34 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 16:21:37 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 16:21:40 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 16:21:40 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 16:21:40 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 16:21:40 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]
+2019-12-13 16:22:34 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 16:22:37 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 16:22:37 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][2]/descendant::p[1]
+2019-12-13 16:22:37 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]/descendant::div[3]/div
+2019-12-13 16:22:38 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][2]//div[@class= 'arrival-time-col']/descendant::div[3]
+2019-12-13 16:23:31 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 16:23:34 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 16:23:34 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 16:23:34 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 16:23:34 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]
+2019-12-13 16:24:27 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 16:24:31 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 16:24:31 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][4]/descendant::p[1]
+2019-12-13 16:24:31 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]/descendant::div[3]/div
+2019-12-13 16:24:31 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][4]//div[@class= 'arrival-time-col']/descendant::div[3]
+2019-12-13 16:25:24 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 16:25:28 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 16:25:28 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 16:25:28 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 16:25:28 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]
+2019-12-13 16:25:29 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:25:29 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 16:25:29 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 16:25:29 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]
+2019-12-13 16:25:31 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:25:31 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 16:25:31 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 16:25:31 INFO  - Total Time taken in(seconds):294
+2019-12-13 16:25:32 INFO  - TestResults
+2019-12-13 16:25:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 16:25:33 INFO  - Test has ended - closing browser: chrome
+2019-12-13 16:25:33 INFO  - Closing Browsers
+2019-12-13 16:25:33 INFO  - Default suite suite finished at Fri Dec 13 16:25:33 IST 2019
+2019-12-13 16:25:34 INFO  - Comparison sheet written successfully
+2019-12-13 16:25:34 INFO  - Data to excel written successfully
+2019-12-13 16:25:34 INFO  - Test process has ended
+2019-12-13 16:25:38 INFO  - +=============Database started=============+
+2019-12-13 16:25:38 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 16:25:38 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 16:25:38 INFO  - +==========================================+
+
+2019-12-13 16:25:38 INFO  - Comparison sheet written successfully
+2019-12-13 16:25:38 INFO  - Data to excel written successfully
+2019-12-13 16:25:38 INFO  - History File created successfully
+2019-12-13 16:32:39 INFO  - 
+============================================================================================================================
+2019-12-13 16:32:39 INFO  - Default suite suite started at Fri Dec 13 16:32:39 IST 2019
+2019-12-13 16:32:39 INFO  - Suite Browser: chrome
+2019-12-13 16:32:39 INFO  - +=============Database started=============+
+2019-12-13 16:32:39 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 16:32:39 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 16:32:39 INFO  - +==========================================+
+
+2019-12-13 16:32:39 INFO  - Test is started with browser: chrome
+2019-12-13 16:32:50 INFO  - No data found with given key-> ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 16:32:50 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 16:32:50 INFO  - Test Started: ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities
+2019-12-13 16:32:50 INFO  - Test description: 
+2019-12-13 16:33:01 INFO  - Input Text: Sheroy.Sooi@celebiaviation.in - By.id: login
+2019-12-13 16:33:02 INFO  - Input Text: zestiot123 - By.id: password
+2019-12-13 16:33:08 INFO  - Click: By.xpath: //span[contains(.,'Ready for Departure')]
+2019-12-13 16:33:08 INFO  - Get Element text: By.xpath: html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]
+2019-12-13 16:33:19 INFO  - Click: By.xpath: //mat-icon[contains(.,'menu')] 
+2019-12-13 16:33:21 INFO  - Click: By.xpath: //a[contains(.,'Flight Info')]
+2019-12-13 16:33:23 INFO  - Click: By.xpath: //a[contains(.,'Turnaround List')]
+2019-12-13 16:33:26 INFO  - Click: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 16:33:30 INFO  - Input Text: 2019-12-12 - By.xpath: //input[@name='date']
+2019-12-13 16:33:33 INFO  - Click: By.xpath: //mat-icon[contains(.,'search')]
+2019-12-13 16:33:43 INFO  - Get Element text: By.xpath: //*[@class='mat-tab-label-content'][contains(.,'Departed')]
+2019-12-13 16:33:46 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 16:33:49 INFO  - Click: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 16:33:52 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]
+2019-12-13 16:33:52 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 16:33:53 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 16:33:53 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[2]
+2019-12-13 16:33:54 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:33:54 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]/descendant::p[1]
+2019-12-13 16:33:54 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][1]/descendant::div[3]/div
+2019-12-13 16:33:54 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[2]
+2019-12-13 16:33:55 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][1]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:33:58 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 16:34:01 INFO  - Click: By.xpath: //div[@id='selectedCard'][2]
+2019-12-13 16:34:04 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 16:34:07 INFO  - Click: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 16:34:10 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]
+2019-12-13 16:34:11 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 16:34:11 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 16:34:11 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[2]
+2019-12-13 16:34:12 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:34:12 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]/descendant::p[1]
+2019-12-13 16:34:12 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][3]/descendant::div[3]/div
+2019-12-13 16:34:12 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[2]
+2019-12-13 16:34:13 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][3]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:34:16 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 16:34:19 INFO  - Click: By.xpath: //div[@id='selectedCard'][4]
+2019-12-13 16:34:22 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 16:34:25 INFO  - Click: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 16:34:29 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]
+2019-12-13 16:34:29 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 16:34:29 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 16:34:29 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[2]
+2019-12-13 16:34:30 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:34:30 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]/descendant::p[1]
+2019-12-13 16:34:30 INFO  - Find Element: By.xpath: //div[@id='selectedCard'][5]/descendant::div[3]/div
+2019-12-13 16:34:30 INFO  - Hover Element: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[2]
+2019-12-13 16:34:31 INFO  - Get Element text: By.xpath: //div[@id='selectedCard'][5]//div[@class= 'arrival-time-col']/descendant::div[3]/p[5]
+2019-12-13 16:34:31 INFO  - Click: By.xpath: //img[@class='img-circle']
+2019-12-13 16:34:31 INFO  - Click : By.xpath: //span[contains(.,'Logout')]
+2019-12-13 16:34:32 INFO  - Total Time taken in(seconds):102
+2019-12-13 16:34:32 INFO  - TestResults
+2019-12-13 16:34:33 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 16:34:33 INFO  - Test has ended - closing browser: chrome
+2019-12-13 16:34:33 INFO  - Closing Browsers
+2019-12-13 16:34:33 INFO  - Default suite suite finished at Fri Dec 13 16:34:33 IST 2019
+2019-12-13 16:34:34 INFO  - Comparison sheet written successfully
+2019-12-13 16:34:34 INFO  - Data to excel written successfully
+2019-12-13 16:34:34 INFO  - Test process has ended
+2019-12-13 16:34:38 INFO  - +=============Database started=============+
+2019-12-13 16:34:38 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 16:34:38 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 16:34:38 INFO  - +==========================================+
+
+2019-12-13 16:34:38 INFO  - Comparison sheet written successfully
+2019-12-13 16:34:38 INFO  - Data to excel written successfully
+2019-12-13 16:34:38 INFO  - History File created successfully
+2019-12-13 17:16:29 INFO  - 
+============================================================================================================================
+2019-12-13 17:16:29 INFO  - smoke suite started at Fri Dec 13 17:16:29 IST 2019
+2019-12-13 17:16:29 INFO  - Suite Browser: Chrome
+2019-12-13 17:16:29 INFO  - +=============Database started=============+
+2019-12-13 17:16:29 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 17:16:29 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 17:16:29 INFO  - +==========================================+
+
+2019-12-13 17:16:29 INFO  - Test is started with browser: Chrome
+2019-12-13 17:16:40 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-13 17:16:40 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:16:40 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-13 17:16:40 INFO  - Test description: 
+2019-12-13 17:16:46 INFO  - Total Time taken in(seconds):5
+2019-12-13 17:16:46 INFO  - TestResults
+2019-12-13 17:16:47 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 17:16:47 INFO  - Test has ended - closing browser: Chrome
+2019-12-13 17:16:47 INFO  - Closing Browsers
+2019-12-13 17:16:47 INFO  - Test is started with browser: Chrome
+2019-12-13 17:16:48 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-13 17:16:48 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:16:48 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2019-12-13 17:16:48 INFO  - Test description: 
+2019-12-13 17:16:53 INFO  - Total Time taken in(seconds):5
+2019-12-13 17:16:53 INFO  - TestResults
+2019-12-13 17:16:53 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 17:16:53 INFO  - Test has ended - closing browser: Chrome
+2019-12-13 17:16:53 INFO  - Closing Browsers
+2019-12-13 17:16:53 INFO  - Test is started with browser: Chrome
+2019-12-13 17:16:53 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-13 17:16:53 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:16:53 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-13 17:16:53 INFO  - Test description: 
+2019-12-13 17:16:58 INFO  - Total Time taken in(seconds):4
+2019-12-13 17:16:58 INFO  - TestResults
+2019-12-13 17:16:58 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 17:16:58 INFO  - Test has ended - closing browser: Chrome
+2019-12-13 17:16:58 INFO  - Closing Browsers
+2019-12-13 17:16:58 INFO  - Test is started with browser: Chrome
+2019-12-13 17:16:59 INFO  - No data found with given key-> ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-13 17:16:59 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:16:59 INFO  - Test Started: ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-13 17:16:59 INFO  - Test description: 
+2019-12-13 17:17:17 INFO  - Total Time taken in(seconds):18
+2019-12-13 17:17:17 INFO  - TestResults
+2019-12-13 17:17:18 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 17:17:18 INFO  - Test has ended - closing browser: Chrome
+2019-12-13 17:17:18 INFO  - Closing Browsers
+2019-12-13 17:17:18 INFO  - Test is started with browser: Chrome
+2019-12-13 17:17:18 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-13 17:17:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:17:18 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-13 17:17:18 INFO  - Test description: 
+2019-12-13 17:17:38 INFO  - Total Time taken in(seconds):20
+2019-12-13 17:17:38 INFO  - TestResults
+2019-12-13 17:17:39 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 17:17:39 INFO  - Test has ended - closing browser: Chrome
+2019-12-13 17:17:39 INFO  - Closing Browsers
+2019-12-13 17:17:39 INFO  - Test is started with browser: Chrome
+2019-12-13 17:17:40 INFO  - No data found with given key-> ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-13 17:17:40 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:17:40 INFO  - Test Started: ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-13 17:17:40 INFO  - Test description: 
+2019-12-13 17:18:01 INFO  - Total Time taken in(seconds):21
+2019-12-13 17:18:01 INFO  - TestResults
+2019-12-13 17:18:02 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 17:18:02 INFO  - Test has ended - closing browser: Chrome
+2019-12-13 17:18:02 INFO  - Closing Browsers
+2019-12-13 17:18:02 INFO  - Test is started with browser: Chrome
+2019-12-13 17:18:03 INFO  - No data found with given key-> ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-13 17:18:03 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:18:03 INFO  - Test Started: ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-13 17:18:03 INFO  - Test description: 
+2019-12-13 17:18:28 INFO  - Total Time taken in(seconds):25
+2019-12-13 17:18:28 INFO  - TestResults
+2019-12-13 17:18:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 17:18:29 INFO  - Test has ended - closing browser: Chrome
+2019-12-13 17:18:29 INFO  - Closing Browsers
+2019-12-13 17:18:29 INFO  - Test is started with browser: Chrome
+2019-12-13 17:18:31 INFO  - No data found with given key-> ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-13 17:18:31 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:18:31 INFO  - Test Started: ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-13 17:18:31 INFO  - Test description: 
+2019-12-13 17:19:14 INFO  - Total Time taken in(seconds):43
+2019-12-13 17:19:15 INFO  - TestResults
+2019-12-13 17:19:16 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 17:19:16 INFO  - Test has ended - closing browser: Chrome
+2019-12-13 17:19:16 INFO  - Closing Browsers
+2019-12-13 17:19:16 INFO  - Test is started with browser: Chrome
+2019-12-13 17:19:17 INFO  - No data found with given key-> ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-13 17:19:17 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:19:17 INFO  - Test Started: ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2019-12-13 17:19:17 INFO  - Test description: 
+2019-12-13 17:19:56 INFO  - Total Time taken in(seconds):39
+2019-12-13 17:19:56 INFO  - TestResults
+2019-12-13 17:19:58 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-13 17:19:58 INFO  - Test has ended - closing browser: Chrome
+2019-12-13 17:19:58 INFO  - Closing Browsers
+2019-12-13 17:19:58 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-13 17:19:58 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-13 17:19:58 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2019-12-13 17:19:58 INFO  - Test description: 
+2019-12-13 17:20:01 INFO  - smoke suite finished at Fri Dec 13 17:20:01 IST 2019
+2019-12-13 17:20:04 INFO  - Comparison sheet written successfully
+2019-12-13 17:20:04 INFO  - Data to excel written successfully
+2019-12-13 17:20:08 INFO  - Test process has ended
+2019-12-13 17:20:17 INFO  - +=============Database started=============+
+2019-12-13 17:20:17 INFO  - Database driver name: SQLiteJDBC
+2019-12-13 17:20:17 INFO  - Product name SQLite, Version 3.8.11
+2019-12-13 17:20:17 INFO  - +==========================================+
+
+2019-12-13 17:20:18 INFO  - Comparison sheet written successfully
+2019-12-13 17:20:18 INFO  - Data to excel written successfully
+2019-12-13 17:20:18 INFO  - History File created successfully
+2019-12-16 14:31:05 INFO  - 
+============================================================================================================================
+2019-12-16 14:31:05 INFO  - Default suite suite started at Mon Dec 16 14:31:05 IST 2019
+2019-12-16 14:31:05 INFO  - Suite Browser: chrome
+2019-12-16 14:31:05 INFO  - +=============Database started=============+
+2019-12-16 14:31:05 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 14:31:05 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 14:31:05 INFO  - +==========================================+
+
+2019-12-16 14:31:05 INFO  - Test is started with browser: chrome
+2019-12-16 14:31:18 INFO  - No data found with given key-> ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-16 14:31:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 14:31:18 INFO  - Test Started: ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-16 14:31:18 INFO  - Test description: 
+2019-12-16 14:31:26 INFO  -  - 
+2019-12-16 14:31:26 INFO  - Column 'count(*)' not found.
+2019-12-16 14:31:26 INFO  - Total Time taken in(seconds):7
+2019-12-16 14:31:26 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 14:31:26 INFO  - TestResults
+2019-12-16 14:31:28 INFO  - Test has ended - closing browser: chrome
+2019-12-16 14:31:28 INFO  - Closing Browsers
+2019-12-16 14:31:28 INFO  - Default suite suite finished at Mon Dec 16 14:31:28 IST 2019
+2019-12-16 14:31:28 INFO  - Comparison sheet written successfully
+2019-12-16 14:31:28 INFO  - Data to excel written successfully
+2019-12-16 14:31:29 INFO  - Test process has ended
+2019-12-16 14:31:33 INFO  - +=============Database started=============+
+2019-12-16 14:31:33 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 14:31:33 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 14:31:33 INFO  - +==========================================+
+
+2019-12-16 14:31:33 INFO  - Comparison sheet written successfully
+2019-12-16 14:31:33 INFO  - Data to excel written successfully
+2019-12-16 14:31:33 INFO  - History File created successfully
+2019-12-16 14:50:56 INFO  - 
+============================================================================================================================
+2019-12-16 14:50:56 INFO  - Default suite suite started at Mon Dec 16 14:50:56 IST 2019
+2019-12-16 14:50:56 INFO  - Suite Browser: chrome
+2019-12-16 14:50:56 INFO  - +=============Database started=============+
+2019-12-16 14:50:56 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 14:50:56 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 14:50:56 INFO  - +==========================================+
+
+2019-12-16 14:50:56 INFO  - Test is started with browser: chrome
+2019-12-16 14:51:07 INFO  - No data found with given key-> ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-16 14:51:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 14:51:07 INFO  - Test Started: ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-16 14:51:07 INFO  - Test description: 
+2019-12-16 14:51:16 INFO  -  - 
+2019-12-16 14:51:16 INFO  - Column 'flightnumber' not found.
+2019-12-16 14:51:16 INFO  - Total Time taken in(seconds):8
+2019-12-16 14:51:16 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 14:51:16 INFO  - TestResults
+2019-12-16 14:51:17 INFO  - Test has ended - closing browser: chrome
+2019-12-16 14:51:17 INFO  - Closing Browsers
+2019-12-16 14:51:17 INFO  - Default suite suite finished at Mon Dec 16 14:51:17 IST 2019
+2019-12-16 14:51:18 INFO  - Comparison sheet written successfully
+2019-12-16 14:51:18 INFO  - Data to excel written successfully
+2019-12-16 14:51:18 INFO  - Test process has ended
+2019-12-16 14:51:22 INFO  - +=============Database started=============+
+2019-12-16 14:51:22 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 14:51:22 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 14:51:22 INFO  - +==========================================+
+
+2019-12-16 14:51:22 INFO  - Comparison sheet written successfully
+2019-12-16 14:51:22 INFO  - Data to excel written successfully
+2019-12-16 14:51:22 INFO  - History File created successfully
+2019-12-16 14:52:43 INFO  - 
+============================================================================================================================
+2019-12-16 14:52:43 INFO  - Default suite suite started at Mon Dec 16 14:52:43 IST 2019
+2019-12-16 14:52:43 INFO  - Suite Browser: chrome
+2019-12-16 14:52:44 INFO  - +=============Database started=============+
+2019-12-16 14:52:44 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 14:52:44 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 14:52:44 INFO  - +==========================================+
+
+2019-12-16 14:52:44 INFO  - Test is started with browser: chrome
+2019-12-16 14:52:55 INFO  - No data found with given key-> ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-16 14:52:55 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 14:52:55 INFO  - Test Started: ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-16 14:52:55 INFO  - Test description: 
+2019-12-16 14:53:10 INFO  - Total Time taken in(seconds):15
+2019-12-16 14:53:10 INFO  - TestResults
+2019-12-16 14:53:11 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 14:53:11 INFO  - Test has ended - closing browser: chrome
+2019-12-16 14:53:11 INFO  - Closing Browsers
+2019-12-16 14:53:12 INFO  - Default suite suite finished at Mon Dec 16 14:53:12 IST 2019
+2019-12-16 14:53:12 INFO  - Comparison sheet written successfully
+2019-12-16 14:53:12 INFO  - Data to excel written successfully
+2019-12-16 14:53:12 INFO  - Test process has ended
+2019-12-16 14:53:16 INFO  - +=============Database started=============+
+2019-12-16 14:53:16 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 14:53:16 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 14:53:16 INFO  - +==========================================+
+
+2019-12-16 14:53:16 INFO  - Comparison sheet written successfully
+2019-12-16 14:53:16 INFO  - Data to excel written successfully
+2019-12-16 14:53:17 INFO  - History File created successfully
+2019-12-16 15:04:32 INFO  - 
+============================================================================================================================
+2019-12-16 15:04:32 INFO  - Default suite suite started at Mon Dec 16 15:04:32 IST 2019
+2019-12-16 15:04:32 INFO  - Suite Browser: chrome
+2019-12-16 15:04:33 INFO  - +=============Database started=============+
+2019-12-16 15:04:33 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 15:04:33 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 15:04:33 INFO  - +==========================================+
+
+2019-12-16 15:04:33 INFO  - Test is started with browser: chrome
+2019-12-16 15:04:44 INFO  - No data found with given key-> ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 15:04:44 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:04:44 INFO  - Test Started: ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 15:04:44 INFO  - Test description: 
+2019-12-16 15:04:55 INFO  -  - 
+2019-12-16 15:04:55 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|S' at line 2
+2019-12-16 15:04:55 INFO  - Total Time taken in(seconds):11
+2019-12-16 15:04:55 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 15:04:55 INFO  - TestResults
+2019-12-16 15:04:56 INFO  - Test has ended - closing browser: chrome
+2019-12-16 15:04:56 INFO  - Closing Browsers
+2019-12-16 15:04:57 INFO  - Default suite suite finished at Mon Dec 16 15:04:57 IST 2019
+2019-12-16 15:04:57 INFO  - Comparison sheet written successfully
+2019-12-16 15:04:57 INFO  - Data to excel written successfully
+2019-12-16 15:04:57 INFO  - Test process has ended
+2019-12-16 15:05:01 INFO  - +=============Database started=============+
+2019-12-16 15:05:01 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 15:05:01 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 15:05:01 INFO  - +==========================================+
+
+2019-12-16 15:05:01 INFO  - Comparison sheet written successfully
+2019-12-16 15:05:01 INFO  - Data to excel written successfully
+2019-12-16 15:05:01 INFO  - History File created successfully
+2019-12-16 15:06:53 INFO  - 
+============================================================================================================================
+2019-12-16 15:06:53 INFO  - Default suite suite started at Mon Dec 16 15:06:53 IST 2019
+2019-12-16 15:06:53 INFO  - Suite Browser: chrome
+2019-12-16 15:06:54 INFO  - +=============Database started=============+
+2019-12-16 15:06:54 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 15:06:54 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 15:06:54 INFO  - +==========================================+
+
+2019-12-16 15:06:54 INFO  - Test is started with browser: chrome
+2019-12-16 15:07:05 INFO  - No data found with given key-> ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 15:07:05 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:07:05 INFO  - Test Started: ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 15:07:05 INFO  - Test description: 
+2019-12-16 15:07:16 INFO  -  - 
+2019-12-16 15:07:16 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|S' at line 2
+2019-12-16 15:07:16 INFO  - Total Time taken in(seconds):10
+2019-12-16 15:07:16 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 15:07:16 INFO  - TestResults
+2019-12-16 15:07:17 INFO  - Test has ended - closing browser: chrome
+2019-12-16 15:07:17 INFO  - Closing Browsers
+2019-12-16 15:07:18 INFO  - Default suite suite finished at Mon Dec 16 15:07:18 IST 2019
+2019-12-16 15:07:18 INFO  - Comparison sheet written successfully
+2019-12-16 15:07:18 INFO  - Data to excel written successfully
+2019-12-16 15:07:18 INFO  - Test process has ended
+2019-12-16 15:07:22 INFO  - +=============Database started=============+
+2019-12-16 15:07:22 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 15:07:22 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 15:07:22 INFO  - +==========================================+
+
+2019-12-16 15:07:22 INFO  - Comparison sheet written successfully
+2019-12-16 15:07:22 INFO  - Data to excel written successfully
+2019-12-16 15:07:22 INFO  - History File created successfully
+2019-12-16 15:09:24 INFO  - 
+============================================================================================================================
+2019-12-16 15:09:24 INFO  - Default suite suite started at Mon Dec 16 15:09:24 IST 2019
+2019-12-16 15:09:24 INFO  - Suite Browser: chrome
+2019-12-16 15:09:24 INFO  - +=============Database started=============+
+2019-12-16 15:09:24 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 15:09:24 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 15:09:24 INFO  - +==========================================+
+
+2019-12-16 15:09:24 INFO  - Test is started with browser: chrome
+2019-12-16 15:09:35 INFO  - No data found with given key-> ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 15:09:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:09:35 INFO  - Test Started: ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 15:09:35 INFO  - Test description: 
+2019-12-16 15:09:46 INFO  -  - 
+2019-12-16 15:09:46 INFO  - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|S' at line 2
+2019-12-16 15:09:46 INFO  - Total Time taken in(seconds):11
+2019-12-16 15:09:46 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 15:09:47 INFO  - TestResults
+2019-12-16 15:09:48 INFO  - Test has ended - closing browser: chrome
+2019-12-16 15:09:48 INFO  - Closing Browsers
+2019-12-16 15:09:48 INFO  - Default suite suite finished at Mon Dec 16 15:09:48 IST 2019
+2019-12-16 15:09:49 INFO  - Comparison sheet written successfully
+2019-12-16 15:09:49 INFO  - Data to excel written successfully
+2019-12-16 15:09:49 INFO  - Test process has ended
+2019-12-16 15:09:53 INFO  - +=============Database started=============+
+2019-12-16 15:09:53 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 15:09:53 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 15:09:53 INFO  - +==========================================+
+
+2019-12-16 15:09:53 INFO  - Comparison sheet written successfully
+2019-12-16 15:09:53 INFO  - Data to excel written successfully
+2019-12-16 15:09:53 INFO  - History File created successfully
+2019-12-16 15:18:56 INFO  - 
+============================================================================================================================
+2019-12-16 15:18:56 INFO  - Default suite suite started at Mon Dec 16 15:18:56 IST 2019
+2019-12-16 15:18:56 INFO  - Suite Browser: chrome
+2019-12-16 15:18:56 INFO  - +=============Database started=============+
+2019-12-16 15:18:56 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 15:18:56 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 15:18:56 INFO  - +==========================================+
+
+2019-12-16 15:18:56 INFO  - Test is started with browser: chrome
+2019-12-16 15:19:07 INFO  - No data found with given key-> ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 15:19:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 15:19:07 INFO  - Test Started: ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 15:19:07 INFO  - Test description: 
+2019-12-16 15:19:18 INFO  -  - 
+2019-12-16 15:19:18 INFO  - Unknown column 'flightnumber' in 'where clause'
+2019-12-16 15:19:18 INFO  - Total Time taken in(seconds):11
+2019-12-16 15:19:18 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-16 15:19:19 INFO  - TestResults
+2019-12-16 15:19:20 INFO  - Test has ended - closing browser: chrome
+2019-12-16 15:19:20 INFO  - Closing Browsers
+2019-12-16 15:19:20 INFO  - Default suite suite finished at Mon Dec 16 15:19:20 IST 2019
+2019-12-16 15:19:20 INFO  - Comparison sheet written successfully
+2019-12-16 15:19:20 INFO  - Data to excel written successfully
+2019-12-16 15:19:21 INFO  - Test process has ended
+2019-12-16 15:19:25 INFO  - +=============Database started=============+
+2019-12-16 15:19:25 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 15:19:25 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 15:19:25 INFO  - +==========================================+
+
+2019-12-16 15:19:25 INFO  - Comparison sheet written successfully
+2019-12-16 15:19:25 INFO  - Data to excel written successfully
+2019-12-16 15:19:25 INFO  - History File created successfully
