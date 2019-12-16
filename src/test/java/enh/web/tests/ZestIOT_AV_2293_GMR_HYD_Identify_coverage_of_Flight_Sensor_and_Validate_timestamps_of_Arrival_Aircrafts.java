@@ -18,7 +18,7 @@ public class ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Vali
 	static int retryingNumber = 1;
 
 	@Test(testName = "AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts", groups = {
-			"Regression" }, description = "AV_2293_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts")
+			"Regression" }, description = "Identify coverage of Flight Sensor and Validate timestamps of Arrival Aircrafts for GMR-Hyderabad")
 	public void test()
 			throws Throwable {
 		try {

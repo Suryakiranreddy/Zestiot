@@ -4328,3 +4328,43 @@ java.lang.NullPointerException
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 2019-12-13 17:09:58 ERROR - ----------------------------------------------------------------------
+2019-12-16 14:31:26 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts =====================================
+2019-12-16 14:31:26 ERROR - -----------------------------------------------------------------------
+2019-12-16 14:31:26 ERROR - Column 'count(*)' not found.
+2019-12-16 14:31:26 ERROR - -----------------------------------------------------------------------
+2019-12-16 14:51:16 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts =====================================
+2019-12-16 14:51:16 ERROR - -----------------------------------------------------------------------
+2019-12-16 14:51:16 ERROR - Column 'flightnumber' not found.
+2019-12-16 14:51:16 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:04:55 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts =====================================
+2019-12-16 15:04:55 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:04:55 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|S' at line 2
+2019-12-16 15:04:55 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:07:16 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts =====================================
+2019-12-16 15:07:16 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:07:16 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|S' at line 2
+2019-12-16 15:07:16 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:09:46 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts =====================================
+2019-12-16 15:09:46 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:09:46 ERROR - You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|S' at line 2
+2019-12-16 15:09:46 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:19:18 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts =====================================
+2019-12-16 15:19:18 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:19:18 ERROR - Unknown column 'flightnumber' in 'where clause'
+2019-12-16 15:19:18 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:22:25 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts =====================================
+2019-12-16 15:22:25 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:22:25 ERROR - Unknown column 'flightnumber_departure' in 'where clause'
+2019-12-16 15:22:25 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:27:33 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts =====================================
+2019-12-16 15:27:33 ERROR - -----------------------------------------------------------------------
+2019-12-16 15:27:33 ERROR - Unknown column 'flightnumber_departure' in 'where clause'
+2019-12-16 15:27:33 ERROR - -----------------------------------------------------------------------

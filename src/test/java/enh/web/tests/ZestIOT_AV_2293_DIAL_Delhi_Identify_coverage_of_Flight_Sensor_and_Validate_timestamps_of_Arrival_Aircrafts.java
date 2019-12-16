@@ -17,7 +17,7 @@ public class ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_V
 	static int retryingNumber = 1;
 
 	@Test(testName = "ZestIOT_019_SensorAnd_Scheduled_data_Validation", groups = {
-			 "Regression" }, description = "To validate Scheduled and Sensor data for GMR-Hyderabad")
+			 "Regression" }, description = "Identify coverage of Flight Sensor and Validate timestamps of Arrival Aircrafts for DIAL-Delhi")
 	public void test()
 			throws Throwable {
 		try {

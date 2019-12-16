@@ -17,7 +17,7 @@ public class ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_
 	static int retryingNumber = 1;
 
 	@Test(testName = "AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source", groups = {
-			"Regression" }, description = "AV_2307_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source")
+			"Regression" }, description = "Validate LANDING, ONBLOCK, OFFBLOCK and AIRBORNE timestamps of Arrival and Departure aircrafts from Any Data source for GMR-HYD")
 	public void test()
 			throws Throwable {
 		try {

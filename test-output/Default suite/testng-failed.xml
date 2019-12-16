@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="enh.web.tests.ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities">
+      <class name="enh.web.tests.ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- enh.web.tests.ZestIOT_UI_AV_2298_Identify_Coverage_of_Deplane_Activities -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

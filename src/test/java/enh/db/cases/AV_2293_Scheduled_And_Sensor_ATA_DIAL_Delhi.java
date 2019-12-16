@@ -65,9 +65,9 @@ public class AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi {
 					System.out.println(onBlockFromSensor);
 				}
 		
-		ResultSet result5 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ATA, On_block_time, (case when (sensor_ATA < On_Block_Time) then 1 else 0 end) as Status, \r\n"
-								+ "CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"'\r\n "
-								+ "and operationunit = "+operationunit+" and (sensor_ata is not null and On_block_time is not null)");
+		ResultSet result5 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ATA, On_block_time, (case when (sensor_ATA < On_Block_Time) then 1 else 0 end) as Status,\r\n" + 
+				"CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"' and \r\n " +
+				"and operationunit= "+operationunit+" and (sensor_ata is not null and On_block_time is not null)");
 				while (result5.next())
 				{				
 					String str_LogID = result5.getString("logid");
@@ -128,7 +128,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi {
 		
 		email_report_Scheduled_And_Sensor_ATA_For_Delhi3.append("<br><br>");
 		email_report_Scheduled_And_Sensor_ATA_For_Delhi3.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
-		email_report_Scheduled_And_Sensor_ATA_For_Delhi3.append("<table style=\"width:100%\" id=\"t01\"><caption> Total Flights - LANDING time detected by flight Sensor is less than On-Block</caption><tr>"
+		email_report_Scheduled_And_Sensor_ATA_For_Delhi3.append("<table style=\"width:100%\" id=\"t01\"><caption> Total Flights - LANDING time detected by flight Sensor is greater than On-Block</caption><tr>"
 				+ "<th style=\"width:10%\"><b>LogID</b></th>"
 				+ "<th style=\"width:15%\"><b>Arrival Flight No.</b></th> "
 				+ "<th style=\"width:15%\"><b>Sensor_ATA</b></th> "
