@@ -42,7 +42,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 			// ============================================================
 			// .........Script Start...........................
 			
-			if(SQL_Queries.todayDayDateTime().contains("Tue")) {
+			/*if(SQL_Queries.todayDayDateTime().contains("Tue")) {
 				Bsspl.bsspl(Mon_Flight_Num);
 			}else if(SQL_Queries.todayDayDateTime().contains("Wed")) {
 				Bsspl.bsspl(Tue_Flight_Num);
@@ -57,8 +57,8 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 			}else if(SQL_Queries.todayDayDateTime().contains("Mon")) {
 				Bsspl.bsspl(Sun_Flight_Num);
 			}
-
-			
+*/
+			Bsspl.bsspl(Fri_Flight_Num);
 			
 			// .........Script Start...........................
 		} catch (Exception e) {
