@@ -1,10 +1,10 @@
 pipeline{
-
+try{
 agent any
 
 stages 
 {
-try{
+
 stage('Clone') 
 {
 steps{
@@ -52,7 +52,7 @@ replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' SUCCESSFUL : Jenkins Pipeline " ,
  to: ''
 }
-}}catch(err){
+}}}catch(err){
 mail bcc: '',
  body: """
 <p style=\"color:#006600;\">Hi All, <br>
@@ -70,6 +70,5 @@ mimeType: 'text/html',
 replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' FAILED : Jenkins Pipeline " ,
  to: ''
-}
 }
 }
