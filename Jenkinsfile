@@ -5,7 +5,7 @@ stages
 stage('Clone') 
 {
 steps{
-try{
+
 echo "Clone the Code from git hub.........."
 checkout([$class: 'GitSCM', 
 branches: [[name: '*/master']], 
@@ -14,23 +14,22 @@ extensions: [],
  submoduleCfg: [],
   userRemoteConfigs: [[credentialsId: 'baa4c5c3-ffe4-4edb-aa94-1e37dadb520f', 
   url: 'https://github.com/RadhikaChiluka/ZestIOTAutomation.git']]])
-  }catch(err){echo "Failed: ${err}"}
+ 
 }
 }
 stage('Test') 
 {
 steps{
-try{
+
 echo "Running the test cases.........."
 bat "mvn clean install test"
- }catch(err){echo "Failed: ${err}"}
+
 }
 }
 
 stage('Report') 
 {
 steps{
-try{
 echo " woooooooooooooooow Deploying the Project.........."
 publishHTML([allowMissing: false,
  alwaysLinkToLastBuild: false,
@@ -52,8 +51,7 @@ from: 'automationteam.enhops@gmail.com',
 mimeType: 'text/html', 
 replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' SUCCESSFUL : Jenkins Pipeline " ,
- to: ''
- }catch(err){echo "Failed: ${err}"}
+ to: 'stiyyagura@enhops.com'
 }
 }
 }
