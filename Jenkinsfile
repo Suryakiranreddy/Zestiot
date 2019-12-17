@@ -46,12 +46,12 @@ Check console output at <b><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i
 Thanks & Regards,<br>
 Automation Team</p>
 """, 
-cc: '', 
+cc: ' amit@zestiot.io, sushanto@zestiot.io, sudhir@zestiot.io, Krishna@zestiot.io, anantwar@zestiot.io, shrikant@zestiot.io, aman@zestiot.io, rohan@zestiot.io, leadership@enhops.com, chiranjeevi@zestiot.io, stiyyagura@enhops.com, pdwadasi@enhops.com, rbuddha@enhops.com, rchiluka@enhops.com, smunnangi@enhops.com, nishanth@zestiot.io, hmanthena@enhops.com, mpyla@enhops.com', 
 from: 'automationteam.enhops@gmail.com', 
 mimeType: 'text/html', 
 replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' SUCCESSFUL : Jenkins Pipeline " ,
- to: 'stiyyagura@enhops.com'
+ to: 'nilesh@zestiot.io'
 }
 }
 }
