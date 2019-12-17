@@ -67,7 +67,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi {
 		
 		ResultSet result5 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ATA, On_block_time, (case when (sensor_ATA < On_Block_Time) then 1 else 0 end) as Status,\r\n" + 
 				"CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"' and \r\n " +
-				"and operationunit= "+operationunit+" and (sensor_ata is not null and On_block_time is not null)");
+				"operationunit= "+operationunit+" and (sensor_ata is not null and On_block_time is not null)");
 				while (result5.next())
 				{				
 					String str_LogID = result5.getString("logid");
