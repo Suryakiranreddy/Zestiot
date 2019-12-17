@@ -19,7 +19,7 @@ public class TestDataProvider {
 	static XSSFCell cell;
 	 
 	public static Object[][] excelReader(String Execlfilepath, String sheetName) throws Exception{
-		
+		int k=0;
 		try {
 			
 			 file = new FileInputStream(new File(Execlfilepath));
@@ -42,6 +42,8 @@ public class TestDataProvider {
 		for(int i=0;i<sheet.getLastRowNum();i++){			
 			for(int j=0;j<sheet.getRow(0).getLastCellNum();j++){
 				//data[i][j]=sheet.getRow(i+1).getCell(j).toString();
+				k=k+1;
+				System.out.println(k);
 				DataFormatter formatter = new DataFormatter();
 				data[i][j] = formatter.formatCellValue(sheet.getRow(i+1).getCell(j));
 				System.out.println(data[i][j]);
@@ -81,7 +83,7 @@ public class TestDataProvider {
 	}
 	
 	public static void main(String[] args) throws Exception {
-		TestDataProvider.excelReader(ConfigReader.getValue("ExcelPath"),"CreateSingleReservation");
+		TestDataProvider.excelReader(ConfigReader.getValue("ExcelPath"),"Tue_Flight_Num");
 	}
 	
 	}

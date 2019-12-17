@@ -487,3 +487,6 @@
 2019-09-21 17:17:50 INFO  - Report is not initialized! Please use init Method before calling method:stepInfo
 2019-09-21 17:17:50 INFO  - Report is not initialized! Please use init Method before calling method:stepInfo
 2019-09-21 17:20:31 INFO  - Report is not initialized! Please use init Method before calling method:stepInfo
+2019-12-16 22:22:36 INFO  - Report is not initialized! Please use init Method before calling method:stepInfo
+2019-12-16 22:22:45 INFO  - Report is not initialized! Please use init Method before calling method:stepInfo
+2019-12-16 22:22:58 INFO  - Report is not initialized! Please use init Method before calling method:stepInfo

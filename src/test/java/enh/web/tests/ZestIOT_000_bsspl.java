@@ -29,8 +29,8 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 	}
 
 	@Test(testName = "ZestIOT_000_bsspl", groups = {
-			"Regression" }, description = "ZestIOT_000_bsspl", dataProvider = "testData")
-	public void test(String Mon_Flight_Num, String Tue_Flight_Num,String Wed_Flight_Num,String Thu_Flight_Num,String Fri_Flight_Num,String Sat_Flight_Num,String Sun_Flight_Num)
+			"Regression" }, description = "ZestIOT_000_bsspl")
+	public void test()
 			throws Throwable {
 		try {
 			setTestCaseID(getClass().getSimpleName());
@@ -58,7 +58,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 				Bsspl.bsspl(Sun_Flight_Num);
 			}
 */
-			Bsspl.bsspl(Fri_Flight_Num);
+			Bsspl.bsspl(ConfigReader.getValue("ExcelPath"),"Thu");
 			
 			// .........Script Start...........................
 		} catch (Exception e) {
@@ -78,7 +78,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 						+ " Secs before retrying.***********");
 				delay(getIntValue("retryDelayTime"));
 				// Rerun same test
-				test( Mon_Flight_Num, Tue_Flight_Num,Wed_Flight_Num, Thu_Flight_Num, Fri_Flight_Num, Sat_Flight_Num, Sun_Flight_Num);
+				test( );
 			} else {
 				String imagePath = takeScreenshot(getDriver(), getTestCaseID());
 				logStepFail(stepInfo + " - " + KeywordUtil.lastAction);
