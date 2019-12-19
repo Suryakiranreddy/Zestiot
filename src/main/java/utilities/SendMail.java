@@ -74,8 +74,8 @@ public class SendMail extends Utility {
 	 * @throws Exception
 	 */
 	@Test
-	public static void sendEmailToClient() throws IOException, MessagingException {
-		String subject1 = PROP.getProperty("subject");
+	public static void sendEmailToClient(String Mailbody) throws IOException, MessagingException {
+		String subject1 = "Automation Test Cases Status Report ";
 		//String subject2 = SQL_Queries.todayDayDateTime();
 		Properties PROPS = System.getProperties();
 		PROPS.put("mail.smtp.host", HOST);
@@ -133,13 +133,13 @@ public class SendMail extends Utility {
 		BodyPart messageBodyPart = new MimeBodyPart();
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
-		String mailBody="<html>"
+		/*String mailBody="<html>"
     			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins."	
 
     			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
-    			+ "<html>";
+    			+ "<html>";*/
     	
-		messageBodyPart.setContent(mailBody, "text/html");
+		messageBodyPart.setContent(Mailbody, "text/html");
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);

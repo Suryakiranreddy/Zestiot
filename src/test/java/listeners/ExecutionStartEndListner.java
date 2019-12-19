@@ -8,6 +8,7 @@ import javax.mail.MessagingException;
 
 import org.testng.IExecutionListener;
 
+import enh.web.tests.ZestIOT_TestCasesMailReport;
 import utilities.ConfigReader;
 import utilities.Delete;
 import utilities.GlobalUtil;
@@ -63,6 +64,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 		if (GlobalUtil.getCommonSettings().getEmailOutput().equalsIgnoreCase("Y"))
 			try {
 				SendMailReport.sendEmailToClient();
+				SendMail.sendEmailToClient(ZestIOT_TestCasesMailReport.testCase_Summary_Report.toString());
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
