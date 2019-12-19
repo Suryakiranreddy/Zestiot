@@ -1,20 +1,14 @@
 package enh.web.tests;
 
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
-
 import enh.db.cases.Bsspl;
-import enh.db.cases.SQL_Queries;
-import enh.web.pages.DepartedFlights;
-import enh.web.pages.HomePage;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.ConfigReader;
 import utilities.GlobalUtil;
 import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
-import utilities.TestDataProvider;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
 public class ZestIOT_000_bsspl extends KeywordUtil {
@@ -22,13 +16,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-	@DataProvider
-	public Object[][] testData() throws Exception {
-		Object data[][] = TestDataProvider.excelReader(ConfigReader.getValue("ExcelPath"), "bsspl");
-		return data;
-	}
-
-	@Test(testName = "ZestIOT_000_bsspl", groups = {
+		@Test(testName = "ZestIOT_000_bsspl", groups = {
 			"Regression" }, description = "ZestIOT_000_bsspl")
 	public void test()
 			throws Throwable {
@@ -58,7 +46,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 				Bsspl.bsspl(Sun_Flight_Num);
 			}
 */
-			Bsspl.bsspl(ConfigReader.getValue("ExcelPath"),"Thu");
+			Bsspl.bsspl(ConfigReader.getValue("ExcelPath"),"Wed_Flight_Num");
 			
 			// .........Script Start...........................
 		} catch (Exception e) {

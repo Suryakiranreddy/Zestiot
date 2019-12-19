@@ -35,7 +35,7 @@ public class ZestIOT_016_Celebi_User_BFL_group_Activity_Validation extends Keywo
 			// ============================================================
 			// .........Script Start...........................
 
-			HomePage.prodlogin("Sheroy.Sooi@celebiaviation.in","zestiot123",
+			HomePage.login("anantspice@zestiot.io","zestiot123",
 					ConfigReader.getValue("hotelCode"));
 			BflActivities.verifyBFLActivityInTurnaroundList();
 			HomePage.logOut();

@@ -42,9 +42,9 @@ public class BflActivities extends KeywordUtil {
 		String userName = getElementText(By.xpath("html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]"));
 		System.out.println(userName);
 		HtmlReportUtil.stepInfo("<b style=\"color:brown;\"> Reports for user: " + userName + " </b>");
-		hoverElement(menu);
+		click(menu);
 		delay(2000);
-		hoverElement(flightInfo);
+		click(flightInfo);
 		delay(2000);
 		click(turnaroundList);
 		delay(2000);
@@ -77,7 +77,7 @@ public class BflActivities extends KeywordUtil {
 				click(By.xpath("//div[@id='selectedCard'][" + i + "]"));
 				delay(3000);
 				String activityList = getElementText(By.xpath("//div[@id='selectedCard'][" + i + "]"));
-
+                System.out.println(activityList);
 				if (activityList.contains("BFL Connected") && activityList.contains("BFL Arrival")
 						&& activityList.contains("Baggage Unloading") && activityList.contains("Baggage Loading")) {
 					allActivitiesCount = allActivitiesCount + 1;

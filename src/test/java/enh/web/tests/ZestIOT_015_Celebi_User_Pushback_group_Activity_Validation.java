@@ -34,7 +34,7 @@ public class ZestIOT_015_Celebi_User_Pushback_group_Activity_Validation extends 
 			// ============================================================
 			// .........Script Start...........................
 
-			HomePage.prodlogin("Sheroy.Sooi@celebiaviation.in","zestiot123",
+			HomePage.login("anantspice@zestiot.io","zestiot123",
 					ConfigReader.getValue("hotelCode"));
 			
 			PushbackAndPushbackArrivalActivities.verifyPushbackActivityInTurnaroundList();
