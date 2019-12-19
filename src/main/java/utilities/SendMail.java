@@ -24,7 +24,6 @@ import javax.mail.internet.MimeMultipart;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 
-import enh.web.tests.ZestIOT_TestCasesMailReport;
 
 
 
@@ -135,13 +134,13 @@ public class SendMail extends Utility {
 		BodyPart messageBodyPart = new MimeBodyPart();
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
-		/*String mailBody="<html>"
+		String mailBody="<html>"
     			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins."	
 
     			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
-    			+ "<html>";*/
+    			+ "<html>";
     	
-		//messageBodyPart.setContent(ZestIOT_TestCasesMailReport.testCase_Summary_Report.toString(), "text/html");
+		messageBodyPart.setContent(mailBody, "text/html");
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
