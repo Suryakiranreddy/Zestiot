@@ -24,6 +24,8 @@ import javax.mail.internet.MimeMultipart;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 
+import enh.web.tests.ZestIOT_TestCasesMailReport;
+
 
 
 
@@ -74,7 +76,7 @@ public class SendMail extends Utility {
 	 * @throws Exception
 	 */
 	@Test
-	public static void sendEmailToClient(String Mailbody) throws IOException, MessagingException {
+	public static void sendEmailToClient() throws IOException, MessagingException {
 		String subject1 = "Automation Test Cases Status Report ";
 		//String subject2 = SQL_Queries.todayDayDateTime();
 		Properties PROPS = System.getProperties();
@@ -139,7 +141,7 @@ public class SendMail extends Utility {
     			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
     			+ "<html>";*/
     	
-		messageBodyPart.setContent(Mailbody, "text/html");
+		messageBodyPart.setContent(ZestIOT_TestCasesMailReport.testCase_Summary_Report.toString(), "text/html");
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);

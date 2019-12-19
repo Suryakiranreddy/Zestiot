@@ -25,7 +25,6 @@ import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-import enh.web.tests.ZestIOT_TestCasesMailReport;
 import utilities.DriverUtil;
 import utilities.DropBoxUtil;
 import utilities.ExcelDataUtil;
@@ -135,7 +134,7 @@ public class CustomListeners_RestTest extends Utility implements ISuiteListener,
 			}
 
 			if (GlobalUtil.getCommonSettings().getEmailOutput().equalsIgnoreCase("Y"))
-				SendMail.sendEmailToClient(ZestIOT_TestCasesMailReport.testCase_Summary_Report.toString());
+				SendMail.sendEmailToClient();
 
 		} catch (Exception e) {
 			e.printStackTrace();
