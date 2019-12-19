@@ -42,7 +42,7 @@ mail bcc: '',
 This is a confirmation mail that all <b><i>ZestIOT automation scripts </b></i>are successfully executed through Jenkins Pipeline.<br>
 Job Build Number:-<b>'${env.BUILD_NUMBER}'</b><br>
 Job Name:-<b>'${env.JOB_NAME}'</b><br>
-Check console output at <b><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i></b><br><br>
+Check console output at <b style=\"color:#008ae6;\"><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i></b><br><br>
 Thanks & Regards,<br>
 Automation Team</p>
 """, 
