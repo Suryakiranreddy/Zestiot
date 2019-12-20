@@ -11,6 +11,7 @@ import utilities.Delete;
 import utilities.GlobalUtil;
 import utilities.LogUtil;
 import utilities.ReportFactoryDB;
+import utilities.SendMail;
 import utilities.Utility;
 import utilities.WriteToFile;
 
@@ -61,6 +62,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 			try {
 				SendMailReport.sendEmailToClient();
 				TestCasesSendMail.sendDSREmailToClient();
+				//SendMail.sendImage();
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();

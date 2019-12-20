@@ -56,9 +56,7 @@ public class DriverUtil {
 				cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 				cap.setCapability(ChromeOptions.CAPABILITY, options);
 				options.setExperimentalOption("prefs",chromePrefs);
-				cap.setCapability(ChromeOptions.CAPABILITY, options);
-				
-				
+				cap.setCapability(ChromeOptions.CAPABILITY, options);				
 				browser = new ChromeDriver(cap);
 				drivers.put("Chrome", browser);
 			} // End if

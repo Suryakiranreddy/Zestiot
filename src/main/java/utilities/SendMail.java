@@ -6,7 +6,11 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Properties;
+import java.util.Set;
+
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
 import javax.activation.FileDataSource;
@@ -63,6 +67,7 @@ public class SendMail extends Utility {
 	public static final String REPORT_PATH = "/ExecutionReports/ExecutionReports";
 	public static final String DIR_PATH = "user.dir";
 	public static final String BLANK_VARIABLE = "";
+	public static String strDate;
 
 	// private static final
 	private SendMail() {
@@ -75,8 +80,9 @@ public class SendMail extends Utility {
 	 * @throws Exception
 	 */
 	@Test
-	public static void sendEmailToClient() throws IOException, MessagingException {
-		String subject1 = "Automation Test Cases Status Report ";
+	public static void sendEmailToClient(String htmlBody,
+            Map<String, String> mapInlineImages) throws IOException, MessagingException {
+		String subject1 = "WELCOME Twenty20 ";
 		//String subject2 = SQL_Queries.todayDayDateTime();
 		Properties PROPS = System.getProperties();
 		PROPS.put("mail.smtp.host", HOST);
@@ -104,8 +110,8 @@ public class SendMail extends Utility {
 		msg.setFrom(new InternetAddress(USERNAME, PROP.getProperty("userFullName")));
 		Date date = new Date();
 		 SimpleDateFormat formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");  
-		 String strDate = formatter.format(date);
-		msg.setSubject(strDate +" - "+subject1);
+		  strDate = formatter.format(date);
+		msg.setSubject(subject1);
 		
 
 		if (!"".equals(EMAILTO)) {
@@ -134,13 +140,10 @@ public class SendMail extends Utility {
 		BodyPart messageBodyPart = new MimeBodyPart();
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
-		String mailBody="<html>"
-    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b>triggred by Jenkins."	
-
-    			+" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
-    			+ "<html>";
+		
+	
     	
-		messageBodyPart.setContent(mailBody, "text/html");
+		messageBodyPart.setContent(htmlBody, "text/html; charset=ISO-8859-1");
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
@@ -158,18 +161,31 @@ public class SendMail extends Utility {
 		if (GlobalUtil.getCommonSettings().getTestLogs().contains("Y")) {
 			copyDirectoryData("Logs", "Logs");
 		}
-
+		
+		
 		//Utility.createZipFile();
 
-		messageBodyPart = new MimeBodyPart();
-		String path = System.getProperty(DIR_PATH) + "/ExecutionReports/HtmlReport/TestReport.html";
-		DataSource source = new FileDataSource(path);
-		messageBodyPart.setDataHandler(new DataHandler(source));
-		messageBodyPart.setFileName("TestExecutionReport.html");
-		multipart.addBodyPart(messageBodyPart);
+		// adds inline image attachments
+        if (mapInlineImages != null && mapInlineImages.size() > 0) {
+            Set<String> setImageID = mapInlineImages.keySet();
+             
+            for (String contentId : setImageID) {
+                MimeBodyPart imagePart = new MimeBodyPart();
+                imagePart.setHeader("Content-ID", "<" + contentId + ">");
+                imagePart.setDisposition(MimeBodyPart.INLINE);
+                 
+                String imageFilePath = mapInlineImages.get(contentId);
+                try {
+                    imagePart.attachFile(imageFilePath);
+                } catch (IOException ex) {
+                    ex.printStackTrace();
+                }
+ 
+                multipart.addBodyPart(imagePart);
+            }
+        }
 
-		msg.setContent(multipart);
-
+		msg.setContent(multipart);      
 		Transport transport = session.getTransport("smtp");
 		transport.connect(HOST, USERNAME, PASSWORD);
 		transport.sendMessage(msg, msg.getAllRecipients());
@@ -186,5 +202,17 @@ public class SendMail extends Utility {
 		File srcDir = new File(System.getProperty(DIR_PATH) + "/ExecutionReports/" + sourceDir);
 		File destDir = new File(System.getProperty(DIR_PATH) + "/ExecutionReports/ExecutionReports/" + targetDir);
 		FileUtils.copyDirectory(srcDir, destDir);
+	}
+	public static void sendImage() throws IOException, MessagingException {
+		String mailBody="<html>"
+    			+ "<p style=\"color:#008ae6;\"><h1>Hi All,</h1> <br><br> "	
+                +"<img align=\"middle\" src=\"cid:image1\" alt=\"Smiley face\" height=\"500\" width=\"700\">"
+                +" <p style=\"color:#008ae6;\"><br><br><br> <h1>Thanks & Regards,<br>Automation Team</h1></p>"
+				+ "<html>";
+		String imagePath = System.getProperty(DIR_PATH) + "/happynewyear.jpg";
+		// inline images
+        Map<String, String> inlineImages = new HashMap<String, String>();
+        inlineImages.put("image1", imagePath);
+        sendEmailToClient(mailBody,inlineImages);
 	}
 }

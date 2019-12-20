@@ -163,14 +163,14 @@ public class TestCasesSendMail extends Utility {
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
 		String Mail_Body="<html>"
-				+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find below  <b><i>'"+strDate+"'</b></i> executed <b>'Automation Test Cases Status Report' </b> triggred by Jenkins."
+				+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find below list of <b>Automation Test Cases</b> triggred by Jenkins on <b><i>'"+strDate+"'</b></i> ."
 				+"<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>"
 		+"<h3 align=\"center\" style=\"color:#008ae6;\"> Daily Status Report for Automation ("+todayDate+")</h3>"
 		
 		+"<table style=\"width:100%\" id=\"t01\"><tr>"
 						+ "<th style=\"width:10%\"><b> TC.No.</b></th>"
 						+ "<th style=\"width:50%\"><b>Test Case name</b></th>"
-						+ "<th style=\"width:25%\"><b>Executed For</b></th>"
+						+ "<th style=\"width:20%\"><b>Executed For</b></th>"
 						+ "<th style=\"width:15%\"><b> Execution Type</b></th>"
 						+ " </tr>"
 		+" <tr style=\"color:#008ae6;\"> "
