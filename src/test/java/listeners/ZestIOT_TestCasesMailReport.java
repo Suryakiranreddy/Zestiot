@@ -1,4 +1,4 @@
-package enh.web.tests;
+package listeners;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -27,10 +27,11 @@ import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
 
 public class ZestIOT_TestCasesMailReport {
 
-public static StringBuilder testCase_Summary_Report = new StringBuilder();	
+    public static StringBuilder testCase_Summary_Report = new StringBuilder();	
+    public static StringBuilder testCase_consolidated_Summary_Report = new StringBuilder();
 	public static Calendar cal;
 	public static DateFormat dateFormat;
-	public static String mailBody;
+
 	
 	public static void zestIOT_TestCasesMailReport() {
 	Date date = new Date();
@@ -43,7 +44,7 @@ public static StringBuilder testCase_Summary_Report = new StringBuilder();
 	  // System.out.println("Today's date is "+dateFormat.format(cal.getTime()));
    String todayDate= dateFormat.format(cal.getTime());
    
-    mailBody="<html>"
+   testCase_consolidated_Summary_Report.append("<html>"
 			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b> report and also find below consolidated report for each Automation Test Case triggred by Jenkins."	
 			+ AV_2268_COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString() + ""
 			+ AV_2268_COBT_For_GMR_HYD_AISATS_User.email_COBT_For_DIALCelebi_User5.toString() + ""
@@ -63,7 +64,7 @@ public static StringBuilder testCase_Summary_Report = new StringBuilder();
 			+ AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User.email_report_Scheduled_And_Sensor_ATD_For_CELEBI_Delhi1.toString() + ""
 			+ AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd.email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd1.toString() + ""
 		   +" <p style=\"color:#008ae6;\"><br><br><br> Thanks & Regards,<br>Automation Team</p>"
-			+ "<html>";
+			+ "<html>");
    
    //===================================================================
 	

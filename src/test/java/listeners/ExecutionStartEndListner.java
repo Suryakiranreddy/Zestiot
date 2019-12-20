@@ -4,17 +4,13 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 
-import javax.mail.MessagingException;
-
 import org.testng.IExecutionListener;
 
-import enh.web.tests.ZestIOT_TestCasesMailReport;
 import utilities.ConfigReader;
 import utilities.Delete;
 import utilities.GlobalUtil;
 import utilities.LogUtil;
 import utilities.ReportFactoryDB;
-import utilities.SendMail;
 import utilities.Utility;
 import utilities.WriteToFile;
 
