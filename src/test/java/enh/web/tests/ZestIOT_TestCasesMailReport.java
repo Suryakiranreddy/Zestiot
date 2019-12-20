@@ -5,6 +5,24 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
+import enh.db.cases.AV_2268_COBT_For_DIALCelebi_User;
+import enh.db.cases.AV_2268_COBT_For_GMR_HYD_AISATS_User;
+import enh.db.cases.AV_2268_COBT_For_GMR_HYD_SG_User;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Delhi_CELEBI_User;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Hyd;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_SG_Hyd;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Delhi_BSSPL_User;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Hyd;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd;
+import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation;
+import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
+
 
 
 public class ZestIOT_TestCasesMailReport {
@@ -12,6 +30,7 @@ public class ZestIOT_TestCasesMailReport {
 public static StringBuilder testCase_Summary_Report = new StringBuilder();	
 	public static Calendar cal;
 	public static DateFormat dateFormat;
+	public static String mailBody;
 	
 	public static void zestIOT_TestCasesMailReport() {
 	Date date = new Date();
@@ -23,6 +42,30 @@ public static StringBuilder testCase_Summary_Report = new StringBuilder();
 	   dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 	  // System.out.println("Today's date is "+dateFormat.format(cal.getTime()));
    String todayDate= dateFormat.format(cal.getTime());
+   
+    mailBody="<html>"
+			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b> report and also find below consolidated report for each Automation Test Case triggred by Jenkins."	
+			+ AV_2268_COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString() + ""
+			+ AV_2268_COBT_For_GMR_HYD_AISATS_User.email_COBT_For_DIALCelebi_User5.toString() + ""
+			+ AV_2268_COBT_For_GMR_HYD_SG_User.email_COBT_For_DIALCelebi_User5.toString() + ""
+			+ AV_2293_Scheduled_And_Sensor_ATA_Hyd.email_report_Scheduled_And_Sensor_ATA_For_Hyd1.toString() + ""
+			+ AV_2294_Scheduled_And_Sensor_ATD_Hyd.email_report_Scheduled_And_Sensor_ATD_For_Hyd1.toString() + ""
+			+ AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.toString() + ""
+			+ AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi.email_report_Scheduled_And_Sensor_ATA_For_Delhi1.toString() + ""
+			+ AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi.email_report_Scheduled_And_Sensor_ATD_For_Delhi1.toString() + ""
+			+ AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_DIAL_Delhi1.toString() + ""
+			+ AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User.email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1.toString() + ""
+			+ AV_2294_Scheduled_And_Sensor_ATD_Delhi_BSSPL_User.email_report_Scheduled_And_Sensor_ATD_For_BSSPL_Delhi1.toString() + ""				
+			+ AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd.email_report_Scheduled_And_Sensor_ATA_For_AISATS_Hyd1.toString() + ""
+			+ AV_2293_Scheduled_And_Sensor_ATA_SG_Hyd.email_report_Scheduled_And_Sensor_ATA_For_SG_Hyd1.toString() + ""
+			+ AV_2293_Scheduled_And_Sensor_ATA_Delhi_CELEBI_User.email_report_Scheduled_And_Sensor_ATA_For_CELEBI_Delhi1.toString() + ""
+			+ AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd.email_report_Scheduled_And_Sensor_ATD_For_AISATS_Hyd1.toString() + ""
+			+ AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User.email_report_Scheduled_And_Sensor_ATD_For_CELEBI_Delhi1.toString() + ""
+			+ AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd.email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd1.toString() + ""
+		   +" <p style=\"color:#008ae6;\"><br><br><br> Thanks & Regards,<br>Automation Team</p>"
+			+ "<html>";
+   
+   //===================================================================
 	
 	testCase_Summary_Report.append("<html>"
 			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find below executed "+strDate+" Automation test cases status Report triggred by Jenkins.");	
@@ -141,8 +184,7 @@ public static StringBuilder testCase_Summary_Report = new StringBuilder();
 			+ " </tr>");
 	testCase_Summary_Report.append("</table>");
 			
-	testCase_Summary_Report.append(" <br><br><br> Thanks & Regards,<br>Automation Team</p>"
-			+ "<html>");
+	testCase_Summary_Report.append(" <br><br><br> Thanks & Regards,<br>Automation Team</p>"+ "<html>");
 	
 	}
 }
