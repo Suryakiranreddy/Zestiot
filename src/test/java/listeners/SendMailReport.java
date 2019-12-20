@@ -112,7 +112,7 @@ public class SendMailReport extends Utility {
 		Date date = new Date();
 		 SimpleDateFormat formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");  
 		 String strDate = formatter.format(date);
-		msg.setSubject(strDate +" - "+subject1);
+		msg.setSubject(subject1+"-"+strDate);
 
 		cal = Calendar.getInstance();
 		  dateFormat = new SimpleDateFormat("yyyy-MM-dd");
