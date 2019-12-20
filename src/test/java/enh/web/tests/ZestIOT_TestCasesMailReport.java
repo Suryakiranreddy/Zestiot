@@ -39,7 +39,7 @@ public static StringBuilder testCase_Summary_Report = new StringBuilder();
 	
 	
 	cal = Calendar.getInstance();
-	   dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+	  dateFormat = new SimpleDateFormat("yyyy-MM-dd");
 	  // System.out.println("Today's date is "+dateFormat.format(cal.getTime()));
    String todayDate= dateFormat.format(cal.getTime());
    

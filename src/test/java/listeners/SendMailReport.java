@@ -140,7 +140,8 @@ public class SendMailReport extends Utility {
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
 		
     	
-		messageBodyPart.setContent(ZestIOT_TestCasesMailReport.mailBody, "text/html");
+		//messageBodyPart.setContent(ZestIOT_TestCasesMailReport.mailBody, "text/html");
+		messageBodyPart.setContent("hiii", "text/html");
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
