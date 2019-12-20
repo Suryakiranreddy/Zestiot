@@ -51,7 +51,7 @@ from: 'automationteam.enhops@gmail.com',
 mimeType: 'text/html', 
 replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' SUCCESSFUL : Jenkins Pipeline " ,
- to: ''
+ to: 'stiyyagura@enhops.com'
 }
 }
 }
