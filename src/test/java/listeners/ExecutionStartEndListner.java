@@ -64,7 +64,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 		if (GlobalUtil.getCommonSettings().getEmailOutput().equalsIgnoreCase("Y"))
 			try {
 				SendMailReport.sendEmailToClient();
-				TestCasesSendMail.sendEmailToClient();
+				TestCasesSendMail.sendDSREmailToClient();
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
