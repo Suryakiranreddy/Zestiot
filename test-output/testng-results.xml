@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="smoke" duration-ms="459248" started-at="2019-12-19T10:50:14Z" finished-at="2019-12-19T10:57:53Z">
+  <suite name="smoke" duration-ms="488164" started-at="2019-12-19T13:21:24Z" finished-at="2019-12-19T13:29:32Z">
     <groups>
       <group name="Regression">
-        <method signature="ZestIOT_000_bsspl.test()[pri:0, instance:enh.web.tests.ZestIOT_000_bsspl@16293aa2]" name="test" class="enh.web.tests.ZestIOT_000_bsspl"/>
+        <method signature="ZestIOT_000_bsspl.test()[pri:0, instance:enh.web.tests.ZestIOT_000_bsspl@2d7275fc]" name="test" class="enh.web.tests.ZestIOT_000_bsspl"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="smoke-Tests" duration-ms="459248" started-at="2019-12-19T10:50:14Z" finished-at="2019-12-19T10:57:53Z">
+    <test name="smoke-Tests" duration-ms="488164" started-at="2019-12-19T13:21:24Z" finished-at="2019-12-19T13:29:32Z">
       <class name="enh.web.tests.ZestIOT_000_bsspl">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_000_bsspl@16293aa2]" name="test" duration-ms="445741" started-at="2019-12-19T16:20:26Z" description="ZestIOT_000_bsspl" finished-at="2019-12-19T16:27:52Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_000_bsspl@2d7275fc]" name="test" duration-ms="475702" started-at="2019-12-19T18:51:35Z" description="ZestIOT_000_bsspl" finished-at="2019-12-19T18:59:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
