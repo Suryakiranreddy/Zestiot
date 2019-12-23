@@ -23,7 +23,6 @@ public class DBWrapper {
 				"AviLeap_Read");*/
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery(dB_Queru);
-
 		return rs;
 	}
 	

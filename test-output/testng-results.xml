@@ -1,38 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="101674" started-at="2019-12-20T12:24:51Z" finished-at="2019-12-20T12:26:33Z">
+  <suite name="smoke" duration-ms="13744" started-at="2019-12-23T06:41:06Z" finished-at="2019-12-23T06:41:20Z">
     <groups>
       <group name="Regression">
-        <method signature="ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@370736d9]" name="test" class="enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source"/>
+        <method signature="ZestIOT_000_bsspl.test()[pri:0, instance:enh.web.tests.ZestIOT_000_bsspl@5158b42f]" name="test" class="enh.web.tests.ZestIOT_000_bsspl"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="Default test" duration-ms="101674" started-at="2019-12-20T12:24:51Z" finished-at="2019-12-20T12:26:33Z">
-      <class name="enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@370736d9]" name="test" duration-ms="89152" started-at="2019-12-20T17:55:02Z" description="Validate LANDING, ONBLOCK, OFFBLOCK and AIRBORNE timestamps of Arrival and Departure aircrafts from Any Data source for CELEBI in UI" finished-at="2019-12-20T17:56:31Z">
+    <test name="smoke-Tests" duration-ms="13744" started-at="2019-12-23T06:41:06Z" finished-at="2019-12-23T06:41:20Z">
+      <class name="enh.web.tests.ZestIOT_000_bsspl">
+        <test-method status="FAIL" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_000_bsspl@5158b42f]" name="test" duration-ms="1280" started-at="2019-12-23T12:11:17Z" description="ZestIOT_000_bsspl" finished-at="2019-12-23T12:11:18Z">
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+	at enh.db.cases.Bsspl.bsspl(Bsspl.java:43)
+	at enh.web.tests.ZestIOT_000_bsspl.test(ZestIOT_000_bsspl.java:43)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
-=======
-  <suite name="smoke" duration-ms="26368" started-at="2019-12-22T06:45:03Z" finished-at="2019-12-22T06:45:30Z">
-    <groups>
-      <group name="Regression">
-        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@72d1ad2e]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User"/>
-      </group> <!-- Regression -->
-    </groups>
-    <test name="smoke-Tests" duration-ms="26368" started-at="2019-12-22T06:45:03Z" finished-at="2019-12-22T06:45:30Z">
-      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@72d1ad2e]" name="test" duration-ms="13475" started-at="2019-12-22T12:15:14Z" description="AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User" finished-at="2019-12-22T12:15:27Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User -->
+      </class> <!-- enh.web.tests.ZestIOT_000_bsspl -->
     </test> <!-- smoke-Tests -->
   </suite> <!-- smoke -->
->>>>>>> ed53840863c6146f52d0c9fa4a27d4edfeaef2cb
 </testng-results>

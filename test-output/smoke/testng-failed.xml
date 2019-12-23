@@ -4,19 +4,11 @@
   <parameter name="Browser" value="Chrome"/>
   <test name="smoke-Tests(failed)">
     <classes>
-<<<<<<< HEAD
-      <class name="enh.web.tests.ZestIOT_AV_2405_bsspl">
-        <methods>
-          <include name="test"/>
-        </methods>
-      </class> <!-- enh.web.tests.ZestIOT_AV_2405_bsspl -->
-=======
       <class name="enh.web.tests.ZestIOT_000_bsspl">
         <methods>
           <include name="test"/>
         </methods>
       </class> <!-- enh.web.tests.ZestIOT_000_bsspl -->
->>>>>>> ed53840863c6146f52d0c9fa4a27d4edfeaef2cb
     </classes>
   </test> <!-- smoke-Tests(failed) -->
 </suite> <!-- Failed suite [smoke] -->
