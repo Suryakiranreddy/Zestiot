@@ -23,14 +23,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 	@Override
 	public void onExecutionStart() {
 		
-		if (GlobalUtil.getCommonSettings().getEmailOutput().equalsIgnoreCase("Y"))
-			try {
-				TestCasesSendMail.sendDSREmailToClient();
-				//SendMail.sendImage();
-			} catch (Exception e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			} 
+		
 		
 		//delete video before running test
 		Delete.DeleteAFile();
@@ -68,7 +61,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 		if (GlobalUtil.getCommonSettings().getEmailOutput().equalsIgnoreCase("Y"))
 			try {
 				SendMailReport.sendEmailToClient();
-				
+				TestCasesSendMail.sendDSREmailToClient();
 				//SendMail.sendImage();
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
