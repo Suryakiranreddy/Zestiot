@@ -1,9 +1,12 @@
 package listeners;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Properties;
 
@@ -22,17 +25,30 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
 import enh.db.cases.AV_2268_COBT_For_DIALCelebi_User;
 import enh.db.cases.AV_2268_COBT_For_GMR_HYD_AISATS_User;
 import enh.db.cases.AV_2268_COBT_For_GMR_HYD_SG_User;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd;
 import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Delhi_CELEBI_User;
 import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Hyd;
+import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_SG_Hyd;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd;
 import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Delhi_BSSPL_User;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User;
 import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Hyd;
+import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd;
 import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation;
 import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
+import utilities.ConfigReader;
 import utilities.GlobalUtil;
 import utilities.Utility;
 
@@ -40,7 +56,7 @@ public class SendMailReport extends Utility {
 	private static String mailPropertiesFile = System.getProperty("user.dir")
 			+ "/src/main/resources/ConfigFiles/mail.properties";
 	private static Properties PROP = loadPropertyFile(mailPropertiesFile);
-	
+
 	// PROP.load(new FileInputStream(mailPropertiesFile));
 	public static final String USERNAME = PROP.getProperty("userName");
 	public static final String PASSWORD = PROP.getProperty("passWord");
@@ -61,8 +77,15 @@ public class SendMailReport extends Utility {
 	public static final String REPORT_PATH = "/ExecutionReports/ExecutionReports";
 	public static final String DIR_PATH = "user.dir";
 	public static final String BLANK_VARIABLE = "";
+	public static StringBuilder testCase_Summary_Report = new StringBuilder();
+	public static StringBuilder testCase_consolidated_Summary_Report = new StringBuilder();
+	public static Calendar cal;
+	public static DateFormat dateFormat;
+	public static XSSFWorkbook workbook;
+	public static FileInputStream file;
+	public static XSSFSheet sheet;   
+	public static XSSFCell cell;
 
-	
 	/**
 	 * @throws IOException
 	 * @throws MessagingException
@@ -72,7 +95,7 @@ public class SendMailReport extends Utility {
 	@Test
 	public static void sendEmailToClient() throws IOException, MessagingException {
 		String subject1 = PROP.getProperty("subject");
-		//String subject2 = SQL_Queries.todayDayDateTime();
+		// String subject2 = SQL_Queries.todayDayDateTime();
 		Properties PROPS = System.getProperties();
 		PROPS.put("mail.smtp.host", HOST);
 		PROPS.put("mail.smtp.user", USERNAME);
@@ -98,10 +121,14 @@ public class SendMailReport extends Utility {
 		Message msg = new MimeMessage(session);
 		msg.setFrom(new InternetAddress(USERNAME, PROP.getProperty("userFullName")));
 		Date date = new Date();
-		 SimpleDateFormat formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");  
-		 String strDate = formatter.format(date);
-		msg.setSubject(strDate +" - "+subject1);
-		
+		SimpleDateFormat formatter = new SimpleDateFormat("E, dd MMM yyyy HH:mm:ss z");
+		String strDate = formatter.format(date);
+		msg.setSubject(subject1 + "-" + strDate);
+
+		cal = Calendar.getInstance();
+		dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		// System.out.println("Today's date is "+dateFormat.format(cal.getTime()));
+		String todayDate = dateFormat.format(cal.getTime());
 
 		if (!"".equals(EMAILTO)) {
 			if (EMAILTO.contains(",")) {
@@ -127,24 +154,36 @@ public class SendMailReport extends Utility {
 		 */
 
 		BodyPart messageBodyPart = new MimeBodyPart();
-		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
-				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
-		String mailBody="<html>"
-    			+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'"+strDate+" Automation Test Results'</i> </b> report and also find below consolidated report for each Automation Test Case triggred by Jenkins."	
-				+ AV_2268_COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString() + ""
-				+ AV_2268_COBT_For_GMR_HYD_AISATS_User.email_COBT_For_DIALCelebi_User5.toString() + ""
-				+ AV_2268_COBT_For_GMR_HYD_SG_User.email_COBT_For_DIALCelebi_User5.toString() + ""
-				+ AV_2293_Scheduled_And_Sensor_ATA_Hyd.email_report_Scheduled_And_Sensor_ATA_For_Hyd1.toString() + ""
-				+ AV_2294_Scheduled_And_Sensor_ATD_Hyd.email_report_Scheduled_And_Sensor_ATD_For_Hyd1.toString() + ""
-				+ AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.toString() + ""
-				+ AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi.email_report_Scheduled_And_Sensor_ATA_For_Delhi1.toString() + ""
-				+ AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi.email_report_Scheduled_And_Sensor_ATD_For_Delhi1.toString() + ""
-				+ AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_DIAL_Delhi1.toString() + ""
-    			+" <p style=\"color:#008ae6;\"><br><br><br> Thanks & Regards,<br>Automation Team</p>"
-    			+ "<html>";
-    	
-		messageBodyPart.setContent(mailBody, "text/html");
-		
+		/*
+		 * messageBodyPart.
+		 * setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
+		 * + " \n \n \nThanks & Regards,\n Automation Team");#00b8e6
+		 */
+		testCase_consolidated_Summary_Report.append("<html>"
+				+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'" + strDate
+				+ " Automation Test Results'</i> </b> report and also find below consolidated report for each Automation Test Case triggred by Jenkins.");
+		testCase_consolidated_Summary_Report.append(AV_2268_COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString());
+		testCase_consolidated_Summary_Report.append(AV_2268_COBT_For_GMR_HYD_AISATS_User.email_COBT_For_DIALCelebi_User5.toString());
+		testCase_consolidated_Summary_Report.append(AV_2268_COBT_For_GMR_HYD_SG_User.email_COBT_For_DIALCelebi_User5.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_Hyd.email_report_Scheduled_And_Sensor_ATA_For_Hyd1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Hyd.email_report_Scheduled_And_Sensor_ATD_For_Hyd1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi.email_report_Scheduled_And_Sensor_ATA_For_Delhi1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi.email_report_Scheduled_And_Sensor_ATD_For_Delhi1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_DIAL_Delhi1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User.email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Delhi_BSSPL_User.email_report_Scheduled_And_Sensor_ATD_For_BSSPL_Delhi1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd.email_report_Scheduled_And_Sensor_ATA_For_AISATS_Hyd1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_SG_Hyd.email_report_Scheduled_And_Sensor_ATA_For_SG_Hyd1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_Delhi_CELEBI_User.email_report_Scheduled_And_Sensor_ATA_For_CELEBI_Delhi1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd.email_report_Scheduled_And_Sensor_ATD_For_AISATS_Hyd1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User.email_report_Scheduled_And_Sensor_ATD_For_CELEBI_Delhi1.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd.email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd1.toString());	
+		testCase_consolidated_Summary_Report.append(" <p style=\"color:#008ae6;\"><br><br><br> Thanks & Regards,<br>Automation Team</p></html>");
+
+		messageBodyPart.setContent(testCase_consolidated_Summary_Report.toString(), "text/html; charset=ISO-8859-1");
+		// messageBodyPart.setContent("hiii", "text/html");
+
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);
 
@@ -162,7 +201,7 @@ public class SendMailReport extends Utility {
 			copyDirectoryData("Logs", "Logs");
 		}
 
-		//Utility.createZipFile();
+		// Utility.createZipFile();
 
 		messageBodyPart = new MimeBodyPart();
 		String path = System.getProperty(DIR_PATH) + "/ExecutionReports/HtmlReport/TestReport.html";
@@ -170,9 +209,7 @@ public class SendMailReport extends Utility {
 		messageBodyPart.setDataHandler(new DataHandler(source));
 		messageBodyPart.setFileName("TestExecutionReport.html");
 		multipart.addBodyPart(messageBodyPart);
-
 		msg.setContent(multipart);
-
 		Transport transport = session.getTransport("smtp");
 		transport.connect(HOST, USERNAME, PASSWORD);
 		transport.sendMessage(msg, msg.getAllRecipients());
@@ -190,6 +227,5 @@ public class SendMailReport extends Utility {
 		File destDir = new File(System.getProperty(DIR_PATH) + "/ExecutionReports/ExecutionReports/" + targetDir);
 		FileUtils.copyDirectory(srcDir, destDir);
 	}
-
 
 }

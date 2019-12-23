@@ -324,10 +324,11 @@ public class ExcelDataUtil {
 		// 1. Read Excel File
 		List<TestConfig> listTestConfigs = new ArrayList<>();
 
-		int startRowNum = ConfigReader.getIntValue("rowToStart");
-		int columnToLookFlag = ConfigReader.getIntValue("columnToLookFlag");
+		String str_startRowNum = ConfigReader.getValue("rowToStart");
+		String str_columnToLookFlag = ConfigReader.getValue("columnToLookFlag");
 		String sheetName = ConfigReader.getValue("AutomationControlSheet");
-
+		int startRowNum = Integer.parseInt(str_startRowNum);
+		int columnToLookFlag =Integer.parseInt(str_columnToLookFlag);
 		
 		
 		try (FileInputStream fis=new FileInputStream(ConfigReader.getValue(automationcontrolexcelpath));

@@ -20,47 +20,17 @@ public class ConfigReader {
 	 * @return
 	 */
 	
-	public static Properties loadPropertyFile(String filePath) {
+	public static String getValue(String key) {
 		// Read from properties file
-		 file = new File(filePath);
-		
-		
-	
+		 file = new File("src\\main\\resources\\ConfigFiles\\config.properties");	
 		try {
 			fileInput = new FileInputStream(file);
 			prop.load(fileInput);
 		} catch (Exception e) {
 			LogUtil.errorLog(ConfigReader.class, "Caught the exception", e);
-			
-		
-
 		}
-		return prop;
+		return prop.getProperty(key);
 
 	}
-	/**
-	 * will get sting value from properties file
-	 * @param key
-	 * @return
-	 */
-	public static String getValue(String key) {
-
-	 prop = loadPropertyFile("src\\main\\resources\\ConfigFiles\\config.properties");
-		// Open the URL in firefox browser
-		 return prop.getProperty(key);
-	}
-	/**
-	 * will get int value from properties file
-	 * @param key
-	 * @return
-	 */
-	public static int getIntValue(String key) {
-		 prop = loadPropertyFile("src\\main\\resources\\ConfigFiles\\config.properties");
-
-		// Open the URL in firefox browser
-		String strKey = prop.getProperty(key);
-
-		return Integer.parseInt(strKey);
-	}
-
+	
 }

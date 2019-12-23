@@ -1,27 +1,22 @@
 package enh.web.tests;
 
-import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.Bsspl;
 import enh.db.cases.Bsspl_Bay;
-import enh.db.cases.SQL_Queries;
-import enh.web.pages.DepartedFlights;
-import enh.web.pages.HomePage;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.ConfigReader;
 import utilities.GlobalUtil;
 import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
-import utilities.TestDataProvider;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
 public class ZestIOT_000_bsspl extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
+
 
 	/*@DataProvider
 	public Object[][] testData() throws Exception {
@@ -43,7 +38,25 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 			// ============================================================
 			// .........Script Start...........................
 			
+
 			Bsspl_Bay.bsspl(ConfigReader.getValue("ExcelPath"),"9Dec-bayNo");
+
+			
+			/*if(SQL_Queries.todayDayDateTime().contains("Tue")) {
+				Bsspl.bsspl(Mon_Flight_Num);
+			}else if(SQL_Queries.todayDayDateTime().contains("Wed")) {
+				Bsspl.bsspl(Tue_Flight_Num);
+			}else if(SQL_Queries.todayDayDateTime().contains("Thu")) {
+				Bsspl.bsspl(Wed_Flight_Num);
+			}else if(SQL_Queries.todayDayDateTime().contains("Fri")) {
+				Bsspl.bsspl(Thu_Flight_Num);
+			}else if(SQL_Queries.todayDayDateTime().contains("Sat")) {
+				Bsspl.bsspl(Fri_Flight_Num);
+			}else if(SQL_Queries.todayDayDateTime().contains("Sun")) {
+				Bsspl.bsspl(Sat_Flight_Num);
+			}else if(SQL_Queries.todayDayDateTime().contains("Mon")) {
+				Bsspl.bsspl(Sun_Flight_Num);
+			}*/
 
 			
 			
@@ -65,7 +78,9 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 						+ " Secs before retrying.***********");
 				delay(getIntValue("retryDelayTime"));
 				// Rerun same test
-				test();
+				
+
+				test( );
 			} else {
 				String imagePath = takeScreenshot(getDriver(), getTestCaseID());
 				logStepFail(stepInfo + " - " + KeywordUtil.lastAction);

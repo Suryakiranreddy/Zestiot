@@ -2,6 +2,7 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
+<<<<<<< HEAD
   <suite name="Default suite" duration-ms="101674" started-at="2019-12-20T12:24:51Z" finished-at="2019-12-20T12:26:33Z">
     <groups>
       <group name="Regression">
@@ -17,4 +18,21 @@
       </class> <!-- enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
+=======
+  <suite name="smoke" duration-ms="26368" started-at="2019-12-22T06:45:03Z" finished-at="2019-12-22T06:45:30Z">
+    <groups>
+      <group name="Regression">
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@72d1ad2e]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="smoke-Tests" duration-ms="26368" started-at="2019-12-22T06:45:03Z" finished-at="2019-12-22T06:45:30Z">
+      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@72d1ad2e]" name="test" duration-ms="13475" started-at="2019-12-22T12:15:14Z" description="AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User" finished-at="2019-12-22T12:15:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User -->
+    </test> <!-- smoke-Tests -->
+  </suite> <!-- smoke -->
+>>>>>>> ed53840863c6146f52d0c9fa4a27d4edfeaef2cb
 </testng-results>

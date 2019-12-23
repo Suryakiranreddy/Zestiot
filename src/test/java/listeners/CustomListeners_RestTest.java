@@ -134,7 +134,8 @@ public class CustomListeners_RestTest extends Utility implements ISuiteListener,
 			}
 
 			if (GlobalUtil.getCommonSettings().getEmailOutput().equalsIgnoreCase("Y"))
-				SendMail.sendEmailToClient();
+			SendMailReport.sendEmailToClient();
+			TestCasesSendMail.sendDSREmailToClient();
 
 		} catch (Exception e) {
 			e.printStackTrace();
