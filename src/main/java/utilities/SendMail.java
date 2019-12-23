@@ -209,7 +209,7 @@ public class SendMail extends Utility {
                 +"<img align=\"middle\" src=\"cid:image1\" alt=\"Smiley face\" height=\"500\" width=\"700\">"
                 +" <p style=\"color:#008ae6;\"><br><br><br> <h1>Thanks & Regards,<br>Automation Team</h1></p>"
 				+ "<html>";
-		String imagePath = System.getProperty(DIR_PATH) + "/happynewyear.jpg";
+		String imagePath = System.getProperty(DIR_PATH) + "/141.gif";
 		// inline images
         Map<String, String> inlineImages = new HashMap<String, String>();
         inlineImages.put("image1", imagePath);

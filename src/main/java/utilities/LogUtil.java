@@ -38,7 +38,7 @@ public class LogUtil {
 	 * @param clazz
 	 */
 	public static void init(Class clazz) {
-		if (!isInit) {
+		
 
 			try {
 				htmlLogger = Logger.getLogger(clazz+",HtmlLogger");
@@ -107,15 +107,13 @@ public class LogUtil {
 			
 			normalLogger.addAppender(conApp);
 
-			isInit = true;
-		}
 	}
 
 	/**
 	 * @param className
 	 */
 	public static void init(String className) {
-		if (!isInit) {
+		
 			try {
 				htmlLogger = Logger.getLogger(className+",HtmlLogger");
 				htmlLogger .setLevel(Level.INFO);
@@ -159,10 +157,7 @@ public class LogUtil {
 			conApp.setTarget("System.out");
 			conApp.activateOptions();
 
-			normalLogger.addAppender(conApp);
-
-			isInit = true;
-		}
+			normalLogger.addAppender(conApp);	
 	}
 
 	/**

@@ -1,6 +1,7 @@
 package listeners;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -24,25 +25,14 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.xssf.usermodel.XSSFCell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.testng.annotations.Test;
 
-import enh.db.cases.AV_2268_COBT_For_DIALCelebi_User;
-import enh.db.cases.AV_2268_COBT_For_GMR_HYD_AISATS_User;
-import enh.db.cases.AV_2268_COBT_For_GMR_HYD_SG_User;
-import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd;
-import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi;
-import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User;
-import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Delhi_CELEBI_User;
-import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_Hyd;
-import enh.db.cases.AV_2293_Scheduled_And_Sensor_ATA_SG_Hyd;
-import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd;
-import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi;
-import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Delhi_BSSPL_User;
-import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User;
-import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Hyd;
-import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd;
-import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation;
-import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
+import enh.db.cases.SQL_Queries;
+import utilities.ConfigReader;
 import utilities.GlobalUtil;
 import utilities.Utility;
 
@@ -88,10 +78,10 @@ public class TestCasesSendMail extends Utility {
 	    public static StringBuilder testCase_consolidated_Summary_Report = new StringBuilder();
 	    public static Calendar cal;
 		public static DateFormat dateFormat;
-	// private static final
-	private TestCasesSendMail() {
-	}
-
+		public static XSSFWorkbook workbook;
+		public static FileInputStream file;
+		public static XSSFSheet sheet;   
+		public static XSSFCell cell;
 	/**
 	 * @throws IOException
 	 * @throws MessagingException
@@ -162,129 +152,37 @@ public class TestCasesSendMail extends Utility {
 		BodyPart messageBodyPart = new MimeBodyPart();
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
-		String Mail_Body="<html>"
-				+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find below list of <b>Automation Test Cases</b> triggred by Jenkins on <b><i>'"+strDate+"'</b></i> ."
+		testCase_Summary_Report.append("<html>"
+				+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find below list of <b>Automation Test Cases</b> triggred by Jenkins on <b><i>'"+SQL_Queries.todayDayDateTime()+"'</b></i> ."
 				+"<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>"
-		+"<h3 align=\"center\" style=\"color:#008ae6;\"> Daily Status Report for Automation ("+todayDate+")</h3>"
-		
-		+"<table style=\"width:100%\" id=\"t01\"><tr>"
-						+ "<th style=\"width:10%\"><b> TC.No.</b></th>"
-						+ "<th style=\"width:50%\"><b>Test Case name</b></th>"
-						+ "<th style=\"width:20%\"><b>Executed For</b></th>"
-						+ "<th style=\"width:15%\"><b> Execution Type</b></th>"
-						+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-						+ "<td><b><b>1</td></b> "
-						+ "<td><b><b>AV 2268 Validate Accuracy of COBT </td></b>"
-						+ " <td><b><b>  DIAL Celebi </td></b> "
-						+ "<td><b> DB </td></b> "
-	 					+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>2</td></b> "
-				+ "<td><b>  AV 2268 Validate Accuracy of COBT </td></b>"
-				+ " <td><b>  GMR-HYD-AISATS </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>3</td></b> "
-				+ "<td><b>  AV 2268 Validate Accuracy of COBT </td></b>"
-				+ " <td><b>  GMR-HYD-SG </td></b> "
-				+ "<td><b>DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>4</td></b> "
-				+ "<td><b>  AV 2307 Validate LANDING ONBLOCK OFFBLOCK AIRBORNE timestamps of Arrival and Departure aircrafts Any Data source </td></b>"
-				+ " <td><b>  DIAL-Delhi </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>5</td></b> "
-				+ "<td><b>  AV 2307 Validate LANDING ONBLOCK OFFBLOCK AIRBORNE timestamps of Arrival and Departure aircrafts Any Data source </td></b>"
-				+ " <td><b>  GMR-Hyd </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>6</td></b> "
-				+ "<td><b> AV 2293 Identify coverage of Flight Sensor and Validate timestamps of Arrival Aircrafts </td></b>"
-				+ " <td><b> GMR-Hyd </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>7</td></b> "
-				+ "<td><b> AV 2293 Identify coverage of Flight Sensor and Validate timestamps of Arrival Aircrafts </td></b>"
-				+ " <td><b> DIAL-Delhi </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>8</td></b> "
-				+ "<td><b>  AV 2293 Identify coverage of Flight Sensor and Validate timestamps of Arrival Aircrafts </td></b>"
-				+ " <td><b>  BSSPL-Delhi </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>9</td></b> "
-				+ "<td><b>AV 2293 Identify coverage of Flight Sensor and Validate timestamps of Arrival Aircrafts </td></b>"
-				+ " <td><b>  AISATS-Hyd </td></b> "
-				+ "<td><b>DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>10</td></b> "
-				+ "<td><b> AV 2293 Identify coverage of Flight Sensor and Validate timestamps of Arrival Aircrafts </td></b>"
-				+ " <td><b> SG-Hyd </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>11</td></b> "
-				+ "<td><b>  AV 2293 Identify coverage of Flight Sensor and Validate timestamps of Arrival Aircrafts </td></b>"
-				+ " <td><b> CELEBI-Delhi </td></b> "
-				+ "<td><b>DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>12</td></b> "
-				+ "<td><b> AV 2294 Identify coverage of Flight Sensor and Validate timestamps of Departure Aircrafts </td></b>"
-				+ " <td><b>GMR-Hyd</td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>13</td></b> "
-				+ "<td><b> AV 2294 Identify coverage of Flight Sensor and Validate timestamps of Departure Aircrafts </td></b>"
-				+ " <td><b> DIAL-Delhi </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>14</td></b> "
-				+ "<td><b> AV 2294 Identify coverage of Flight Sensor and Validate timestamps of Departure Aircrafts </td></b>"
-				+ " <td><b> BSSPL-Delhi </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>15</td></b> "
-				+ "<td><b>  AV 2294 Identify coverage of Flight Sensor and Validate timestamps of Departure Aircrafts </b></td></b>"
-				+ " <td><b>  AISATS-Hyd </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>16</td></b> "
-				+ "<td><b>  AV 2294 Identify coverage of Flight Sensor and Validate timestamps of Departure Aircrafts </td></b>"
-				+ " <td><b>  SG-Hyd </td></b> "
-				+ "<td><b> DB </td></b> "
-				+ " </tr>"
-		+" <tr style=\"color:#008ae6;\"> "
-				+ "<td><b>17</td></b> "
-				+ "<td><b> AV 2294 Identify coverage of Flight Sensor and Validate timestamps of Departure Aircrafts</td></b>"
-				+ " <td><b> CELEBI-Delhi </td></b> "
-				+ "<td><b>DB </td></b> "
-				+ " </tr>"
-		+"</table>"
-				
-+" <p style=\"color:#008ae6;\"><br><br><br> Thanks & Regards,<br>Automation Team</p>"
-+ "<html>";
-		
-	   
-    	
-		messageBodyPart.setContent(Mail_Body, "text/html");
+		+"<h3 align=\"center\" style=\"color:#008ae6;\"> Daily Status Report for Automation ("+SQL_Queries.todayDate()+")</h3>");
+		testCase_Summary_Report.append("<table style=\"width:100%\" id=\"t01\"><tr>"
+				+ "<th style=\"width:10%\"><b> TC.No.</b></th>"
+				+ "<th style=\"width:50%\"><b>Test Case name</b></th>"
+				+ "<th style=\"width:20%\"><b>Executed For</b></th>"
+				+ "<th style=\"width:15%\"><b> Execution Type</b></th>"
+				+ " </tr>");
+			file = new FileInputStream(new File(ConfigReader.getValue("AutomationControlExcelPath")));	
+			workbook = new XSSFWorkbook(file);		
+		 sheet =workbook.getSheet("smoke");		
+			for(int i=1;i<sheet.getLastRowNum();i++){			
+				DataFormatter formatterr = new DataFormatter();
+				String flag = formatterr.formatCellValue(sheet.getRow(i).getCell(1));
+				String dec = formatterr.formatCellValue(sheet.getRow(i).getCell(2));
+				String exeFor = formatterr.formatCellValue(sheet.getRow(i).getCell(3));
+				String exeType = formatterr.formatCellValue(sheet.getRow(i).getCell(4));
+				if(flag.equalsIgnoreCase("y")) {
+				testCase_Summary_Report.append(" <tr style=\"color:#008ae6;\"> "
+						+ "<td><b>"+i+"</b> </td>"
+						+ "<td><b>"+dec+"</b> </td>"
+						+ "<td><b>"+exeFor+"</b> </td>"
+						+ "<td><b>"+exeType+"</b> </td>"
+	 					+ " </tr>");
+				}
+			}
+	testCase_Summary_Report.append("</table><p style=\"color:#008ae6;\"><br><br><br> Thanks & Regards,<br>Automation Team</p> <html>");
+	    	
+		messageBodyPart.setContent(testCase_Summary_Report.toString(), "text/html; charset=ISO-8859-1");
 		//messageBodyPart.setContent("Hi", "text/html");
 		
 		Multipart multipart = new MimeMultipart();
