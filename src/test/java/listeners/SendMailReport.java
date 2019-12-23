@@ -48,6 +48,9 @@ import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_Hyd;
 import enh.db.cases.AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd;
 import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation;
 import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation;
+import enh.db.cases.AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_SG_HYD_Validation;
+import enh.db.cases.AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL;
+import enh.web.pages.AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation;
 import utilities.ConfigReader;
 import utilities.GlobalUtil;
 import utilities.Utility;
@@ -179,6 +182,8 @@ public class SendMailReport extends Utility {
 		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd.email_report_Scheduled_And_Sensor_ATD_For_AISATS_Hyd1.toString());
 		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User.email_report_Scheduled_And_Sensor_ATD_For_CELEBI_Delhi1.toString());
 		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd.email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd1.toString());	
+		testCase_consolidated_Summary_Report.append(AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_SG_HYD_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.toString());			
+		testCase_consolidated_Summary_Report.append(AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.toString());
 		testCase_consolidated_Summary_Report.append(" <p style=\"color:#008ae6;\"><br><br><br> Thanks & Regards,<br>Automation Team</p></html>");
 
 		messageBodyPart.setContent(testCase_consolidated_Summary_Report.toString(), "text/html; charset=ISO-8859-1");
