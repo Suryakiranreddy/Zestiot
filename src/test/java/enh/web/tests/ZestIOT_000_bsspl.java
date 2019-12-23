@@ -5,6 +5,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 import enh.db.cases.Bsspl;
+import enh.db.cases.Bsspl_Bay;
 import enh.db.cases.SQL_Queries;
 import enh.web.pages.DepartedFlights;
 import enh.web.pages.HomePage;
@@ -22,15 +23,15 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-	@DataProvider
+	/*@DataProvider
 	public Object[][] testData() throws Exception {
-		Object data[][] = TestDataProvider.excelReader(ConfigReader.getValue("ExcelPath"), "bsspl");
+		Object data[][] = TestDataProvider.excelReader(ConfigReader.getValue("ExcelPath"), "9Dec-bayNo");
 		return data;
-	}
+	}*/
 
 	@Test(testName = "ZestIOT_000_bsspl", groups = {
-			"Regression" }, description = "ZestIOT_000_bsspl", dataProvider = "testData")
-	public void test(String Mon_Flight_Num, String Tue_Flight_Num,String Wed_Flight_Num,String Thu_Flight_Num,String Fri_Flight_Num,String Sat_Flight_Num,String Sun_Flight_Num)
+			"Regression" }, description = "ZestIOT_000_bsspl")
+	public void test()
 			throws Throwable {
 		try {
 			setTestCaseID(getClass().getSimpleName());
@@ -42,21 +43,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 			// ============================================================
 			// .........Script Start...........................
 			
-			if(SQL_Queries.todayDayDateTime().contains("Tue")) {
-				Bsspl.bsspl(Mon_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Wed")) {
-				Bsspl.bsspl(Tue_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Thu")) {
-				Bsspl.bsspl(Wed_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Fri")) {
-				Bsspl.bsspl(Thu_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Sat")) {
-				Bsspl.bsspl(Fri_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Sun")) {
-				Bsspl.bsspl(Sat_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Mon")) {
-				Bsspl.bsspl(Sun_Flight_Num);
-			}
+			Bsspl_Bay.bsspl(ConfigReader.getValue("ExcelPath"),"9Dec-bayNo");
 
 			
 			
@@ -78,7 +65,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 						+ " Secs before retrying.***********");
 				delay(getIntValue("retryDelayTime"));
 				// Rerun same test
-				test( Mon_Flight_Num, Tue_Flight_Num,Wed_Flight_Num, Thu_Flight_Num, Fri_Flight_Num, Sat_Flight_Num, Sun_Flight_Num);
+				test();
 			} else {
 				String imagePath = takeScreenshot(getDriver(), getTestCaseID());
 				logStepFail(stepInfo + " - " + KeywordUtil.lastAction);

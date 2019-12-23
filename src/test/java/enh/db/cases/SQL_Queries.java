@@ -8,6 +8,7 @@ import java.util.Date;
 	public class SQL_Queries {
 		public static Calendar cal;
 		public static DateFormat dateFormat;
+		
 	public static String yesterDate(){
 			 cal = Calendar.getInstance();
 			   dateFormat = new SimpleDateFormat("yyyy-MM-dd");

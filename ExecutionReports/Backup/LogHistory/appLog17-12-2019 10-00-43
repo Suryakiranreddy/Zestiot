@@ -1,0 +1,94 @@
+2019-12-16 18:50:45 INFO  - 
+============================================================================================================================
+2019-12-16 18:50:45 INFO  - Default suite suite started at Mon Dec 16 18:50:45 IST 2019
+2019-12-16 18:50:45 INFO  - Suite Browser: chrome
+2019-12-16 18:50:46 INFO  - +=============Database started=============+
+2019-12-16 18:50:46 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 18:50:46 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 18:50:46 INFO  - +==========================================+
+
+2019-12-16 18:50:46 INFO  - Test is started with browser: chrome
+2019-12-16 18:50:57 INFO  - No data found with given key-> ZestIOT_AV_2294__SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 18:50:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-16 18:50:57 INFO  - Test Started: ZestIOT_AV_2294__SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2019-12-16 18:50:57 INFO  - Test description: 
+2019-12-16 18:51:16 INFO  - Total Time taken in(seconds):18
+2019-12-16 18:51:16 INFO  - TestResults
+2019-12-16 18:51:17 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-16 18:51:17 INFO  - Test has ended - closing browser: chrome
+2019-12-16 18:51:17 INFO  - Closing Browsers
+2019-12-16 18:51:17 INFO  - Default suite suite finished at Mon Dec 16 18:51:17 IST 2019
+2019-12-16 18:51:18 INFO  - Comparison sheet written successfully
+2019-12-16 18:51:18 INFO  - Data to excel written successfully
+2019-12-16 18:51:18 INFO  - Test process has ended
+2019-12-16 18:51:22 INFO  - +=============Database started=============+
+2019-12-16 18:51:22 INFO  - Database driver name: SQLiteJDBC
+2019-12-16 18:51:22 INFO  - Product name SQLite, Version 3.8.11
+2019-12-16 18:51:22 INFO  - +==========================================+
+
+2019-12-16 18:51:22 INFO  - Comparison sheet written successfully
+2019-12-16 18:51:22 INFO  - Data to excel written successfully
+2019-12-16 18:51:22 INFO  - History File created successfully
+2019-12-17 09:59:54 INFO  - 
+============================================================================================================================
+2019-12-17 09:59:54 INFO  - Default suite suite started at Tue Dec 17 09:59:54 IST 2019
+2019-12-17 09:59:54 INFO  - Suite Browser: chrome
+2019-12-17 09:59:54 INFO  - 
+============================================================================================================================
+2019-12-17 09:59:54 INFO  - Default suite suite started at Tue Dec 17 09:59:54 IST 2019
+2019-12-17 09:59:54 INFO  - Suite Browser: chrome
+2019-12-17 09:59:55 INFO  - +=============Database started=============+
+2019-12-17 09:59:55 INFO  - Database driver name: SQLiteJDBC
+2019-12-17 09:59:55 INFO  - Product name SQLite, Version 3.8.11
+2019-12-17 09:59:55 INFO  - +==========================================+
+
+2019-12-17 09:59:55 INFO  - Test is started with browser: chrome
+2019-12-17 09:59:55 INFO  - +=============Database started=============+
+2019-12-17 09:59:55 INFO  - Database driver name: SQLiteJDBC
+2019-12-17 09:59:55 INFO  - Product name SQLite, Version 3.8.11
+2019-12-17 09:59:55 INFO  - +==========================================+
+
+2019-12-17 09:59:55 INFO  - Test is started with browser: chrome
+2019-12-17 10:00:09 INFO  - No data found with given key-> ZestIOT_AV_2293_SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-17 10:00:09 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-17 10:00:09 INFO  - Test Started: ZestIOT_AV_2293_SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-17 10:00:09 INFO  - Test description: 
+2019-12-17 10:00:09 INFO  - No data found with given key-> ZestIOT_AV_2293_SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-17 10:00:09 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-17 10:00:09 INFO  - Test Started: ZestIOT_AV_2293_SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2019-12-17 10:00:09 INFO  - Test description: 
+2019-12-17 10:00:31 INFO  - Total Time taken in(seconds):22
+2019-12-17 10:00:32 INFO  - Total Time taken in(seconds):22
+2019-12-17 10:00:32 INFO  - TestResults
+2019-12-17 10:00:32 INFO  - TestResults
+2019-12-17 10:00:36 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-17 10:00:36 INFO  - Test has ended - closing browser: chrome
+2019-12-17 10:00:36 INFO  - Closing Browsers
+2019-12-17 10:00:36 INFO  - Default suite suite finished at Tue Dec 17 10:00:36 IST 2019
+2019-12-17 10:00:36 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-17 10:00:36 INFO  - Test has ended - closing browser: chrome
+2019-12-17 10:00:36 INFO  - Closing Browsers
+2019-12-17 10:00:36 INFO  - Default suite suite finished at Tue Dec 17 10:00:36 IST 2019
+2019-12-17 10:00:37 INFO  - Comparison sheet written successfully
+2019-12-17 10:00:37 INFO  - Data to excel written successfully
+2019-12-17 10:00:37 INFO  - Test process has ended
+2019-12-17 10:00:37 INFO  - Test process has ended
+2019-12-17 10:00:42 INFO  - +=============Database started=============+
+2019-12-17 10:00:42 INFO  - Database driver name: SQLiteJDBC
+2019-12-17 10:00:42 INFO  - Product name SQLite, Version 3.8.11
+2019-12-17 10:00:42 INFO  - +==========================================+
+
+2019-12-17 10:00:42 INFO  - Comparison sheet written successfully
+2019-12-17 10:00:42 INFO  - Data to excel written successfully
+2019-12-17 10:00:43 INFO  - History File created successfully
+2019-12-17 10:00:43 INFO  - +=============Database started=============+
+2019-12-17 10:00:43 INFO  - Database driver name: SQLiteJDBC
+2019-12-17 10:00:43 INFO  - Product name SQLite, Version 3.8.11
+2019-12-17 10:00:43 INFO  - +==========================================+
+
+2019-12-17 10:00:43 INFO  - Comparison sheet written successfully
+2019-12-17 10:00:43 INFO  - Data to excel written successfully
+2019-12-17 10:00:43 INFO  - History File created successfully

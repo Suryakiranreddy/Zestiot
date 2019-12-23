@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="101674" started-at="2019-12-20T12:24:51Z" finished-at="2019-12-20T12:26:33Z">
+    <groups>
+      <group name="Regression">
+        <method signature="ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@370736d9]" name="test" class="enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source"/>
+      </group> <!-- Regression -->
+    </groups>
+    <test name="Default test" duration-ms="101674" started-at="2019-12-20T12:24:51Z" finished-at="2019-12-20T12:26:33Z">
+      <class name="enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source@370736d9]" name="test" duration-ms="89152" started-at="2019-12-20T17:55:02Z" description="Validate LANDING, ONBLOCK, OFFBLOCK and AIRBORNE timestamps of Arrival and Departure aircrafts from Any Data source for CELEBI in UI" finished-at="2019-12-20T17:56:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
