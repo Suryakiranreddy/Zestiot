@@ -12,13 +12,15 @@ public class DBWrapper {
 
 	public static ResultSet Connect(String dB_Queru) throws SQLException {
 
-	/*	con = DriverManager.getConnection(
-				"jdbc:mysql://avileapuat.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
-				"AviLeap_Read");*/
 
-		con = DriverManager.getConnection(
-				"jdbc:mysql://avileap-test.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
+		// Prod url DB
+		con = DriverManager.getConnection("jdbc:mysql://avileapuat.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
 				"AviLeap_Read");
+		
+		// Test url DB
+		/*con = DriverManager.getConnection(
+				"jdbc:mysql://avileap-test.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
+				"AviLeap_Read");*/
 		Statement stmt = con.createStatement();
 		ResultSet rs = stmt.executeQuery(dB_Queru);
 

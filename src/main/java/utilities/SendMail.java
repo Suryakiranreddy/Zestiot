@@ -4,7 +4,9 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -27,6 +29,8 @@ import javax.mail.internet.MimeMultipart;
 
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
+
+import enh.db.cases.SQL_Queries;
 
 
 
@@ -67,7 +71,15 @@ public class SendMail extends Utility {
 	public static final String REPORT_PATH = "/ExecutionReports/ExecutionReports";
 	public static final String DIR_PATH = "user.dir";
 	public static final String BLANK_VARIABLE = "";
+
+	
+	public static StringBuilder testCase_Summary_Report = new StringBuilder();
+	
+	public static Calendar cal;
+	public static DateFormat dateFormat;
+
 	public static String strDate;
+
 
 	// private static final
 	private SendMail() {
@@ -113,6 +125,10 @@ public class SendMail extends Utility {
 		  strDate = formatter.format(date);
 		msg.setSubject(subject1);
 		
+		cal = Calendar.getInstance();
+		   dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+		  // System.out.println("Today's date is "+dateFormat.format(cal.getTime()));
+        String todayDate= dateFormat.format(cal.getTime());
 
 		if (!"".equals(EMAILTO)) {
 			if (EMAILTO.contains(",")) {
@@ -141,9 +157,13 @@ public class SendMail extends Utility {
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
 		
+		
+		//messageBodyPart.setContent(mailBody, "text/html");
+
 	
     	
 		messageBodyPart.setContent(htmlBody, "text/html; charset=ISO-8859-1");
+
 		
 		Multipart multipart = new MimeMultipart();
 		multipart.addBodyPart(messageBodyPart);

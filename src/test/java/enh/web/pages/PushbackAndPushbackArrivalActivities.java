@@ -43,9 +43,9 @@ public class PushbackAndPushbackArrivalActivities extends KeywordUtil {
 		System.out.println(userName);
 		HtmlReportUtil.stepInfo("<b style=\"color:brown;\"> Reports for "+userName+" </b>");
 		delay(10000);
-		hoverElement(menu);
+		click(menu);
 		delay(2000);
-		hoverElement(flightInfo);
+		click(flightInfo);
 		delay(2000);
 		click(turnaroundList);
 		delay(2000);
