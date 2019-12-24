@@ -178,7 +178,7 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 						 		+ " <td><b style=\"color:red;\">"+flight_OnBlockTime+"</b></td> "
 						 		+ "<td><b style=\"color:red;\">"+flight_ATD+"</b></td></tr>");
 					}
-					if(flight_ATD==null || flight_ATA.isEmpty()) {
+					if(flight_ATD==null || flight_ATD.isEmpty()) {
 						ATDIsNull = ATDIsNull+1;
 						email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL5.append(" <tr> <td><b style=\"color:red;\">"+logId+"</b></td> "
 								+ "<td><b style=\"color:red;\">"+flightnumber_Arrival+"</b></td>"
