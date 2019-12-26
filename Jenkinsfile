@@ -48,9 +48,10 @@ replyTo: '',
 This is a confirmation mail that  <b><i>ZestIOT automation scripts </b></i>build Failed through Jenkins Pipeline.<br>
 Job Build Number:-<b>'${env.BUILD_NUMBER}'</b><br>
 Job Name:-<b>'${env.JOB_NAME}'</b><br>
-Check console output at <b style=\"color:#008ae6;\"><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i></b><br><br>
+Check console output at <b style=\"color:#008ae6;\"><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i></b><br>
 '${err.getMessage()}'<br>
-'${err}'<br><br>
+'${err}'<br>
+'${err.toString()}'<br><br>
 Thanks & Regards,<br>
 Automation Team</p>
 """, 
@@ -60,7 +61,7 @@ mimeType: 'text/html',
 replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' FAILED : Jenkins Pipeline " ,
  to: 'stiyyagura@enhops.com'
- }
+}
 }
 }
 }
