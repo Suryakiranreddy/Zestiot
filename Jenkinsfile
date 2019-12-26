@@ -44,7 +44,7 @@ replyTo: '',
 stage('Test') 
 {
 steps{
-
+echo "Running the test cases.........."
 
 
 }
