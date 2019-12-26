@@ -40,16 +40,16 @@ replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' SUCCESSFUL : Jenkins Pipeline " ,
  to: 'stiyyagura@enhops.com'
  }catch (err) {
-            echo err.getMessage()
-            echo "Error detected, but we will continue."
-            mail bcc: '',
+ echo err.getMessage()
+ echo "Error detected, but we will continue."
+ mail bcc: '',
  body: """
 <p style=\"color:red;\">Hi All, <br>
-This is a confirmation mail that  <b><i>ZestIOT automation scripts </b></i>are Failed through Jenkins Pipeline.<br>
+This is a confirmation mail that  <b><i>ZestIOT automation scripts </b></i>build Failed through Jenkins Pipeline.<br>
 Job Build Number:-<b>'${env.BUILD_NUMBER}'</b><br>
 Job Name:-<b>'${env.JOB_NAME}'</b><br>
 Check console output at <b style=\"color:#008ae6;\"><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i></b><br><br>
-'${err.getMessage()}'<br><br>
+'${err.getMessage()}'<br>
 '${err}'<br><br>
 Thanks & Regards,<br>
 Automation Team</p>

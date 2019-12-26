@@ -1,7 +1,6 @@
 package utilities;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.text.DateFormat;
@@ -13,9 +12,6 @@ import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
 
-import javax.activation.DataHandler;
-import javax.activation.DataSource;
-import javax.activation.FileDataSource;
 import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
@@ -29,8 +25,6 @@ import javax.mail.internet.MimeMultipart;
 
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
-
-import enh.db.cases.SQL_Queries;
 
 
 
@@ -160,7 +154,6 @@ public class SendMail extends Utility {
 		/*messageBodyPart.setText("Hi, \nPlease find attached current sprint Automation Test Results triggred by Jenkins.  "
 				+ " \n \n \nThanks & Regards,\n Automation Team");#00b8e6*/
 		
-		String aa=SQL_Queries.yesterDate();
 		//messageBodyPart.setContent(mailBody, "text/html");
 
 	
