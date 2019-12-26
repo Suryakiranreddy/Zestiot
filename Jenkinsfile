@@ -15,7 +15,7 @@ extensions: [],
  submoduleCfg: [],
   userRemoteConfigs: [[credentialsId: 'baa4c5c3-ffe4-4edb-aa94-1e37dadb520f', 
   url: 'https://github.com/RadhikaChiluka/ZestIOTAutomation.git']]])
-  echo "Running the test cases.........."
+echo "Running the test cases.........."
 bat "mvn clean install test"
  }catch (err) {
             echo err.getMessage()
@@ -23,11 +23,11 @@ bat "mvn clean install test"
             mail bcc: '',
  body: """
 <p style=\"color:red;\">Hi All, <br>
-This is a confirmation mail that all <b><i>ZestIOT automation scripts </b></i>are failed through Jenkins Pipeline.<br>
+This is a confirmation mail that  '<b><i>Zestiot project clone </b></i>'is failed through Jenkins Pipeline.<br>
 Job Build Number:-<b>'${env.BUILD_NUMBER}'</b><br>
 Job Name:-<b>'${env.JOB_NAME}'</b><br>
 Check console output at <b style=\"color:#008ae6;\"><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i></b><br><br>
-echo err.getMessage()
+err.getMessage()<br><br>
 Thanks & Regards,<br>
 Automation Team</p>
 """, 
@@ -45,8 +45,7 @@ stage('Test')
 {
 steps{
 
-echo "Running the test cases.........."
-bat "mvn clean install test"
+
 
 }
 }
