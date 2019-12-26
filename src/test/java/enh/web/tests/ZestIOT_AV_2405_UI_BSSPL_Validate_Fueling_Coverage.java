@@ -3,8 +3,8 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.Bsspl;
-import enh.db.cases.Bsspl_Bay;
+import enh.web.pages.AV_2405_UI_BSSPL_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed;
+import enh.web.pages.HomePage;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.ConfigReader;
@@ -13,20 +13,13 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class ZestIOT_000_bsspl extends KeywordUtil {
+public class ZestIOT_AV_2405_UI_BSSPL_Validate_Fueling_Coverage extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-
-	/*@DataProvider
-	public Object[][] testData() throws Exception {
-		Object data[][] = TestDataProvider.excelReader(ConfigReader.getValue("ExcelPath"), "9Dec-bayNo");
-		return data;
-	}*/
-
-	@Test(testName = "ZestIOT_000_bsspl", groups = {
-			"Regression" }, description = "Verify Bay number obtained from BSSPL with Avileap DB")
+	@Test(testName = "AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source", groups = {
+			"Regression" }, description = "Validate LANDING, ONBLOCK, OFFBLOCK and AIRBORNE timestamps of Arrival and Departure aircrafts from Any Data source for CELEBI in UI")
 	public void test()
 			throws Throwable {
 		try {
@@ -38,28 +31,12 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			
 
-			Bsspl.bsspl(ConfigReader.getValue("ExcelPath"),"Wed_BSSPL");
+			HomePage.prodlogin("ajit.dogra@bsspl.in","zestiot123",
+					ConfigReader.getValue("hotelCode"));
+			AV_2405_UI_BSSPL_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed.verifyFuelingActivityForBSSPL();
+			HomePage.logOut();
 
-			
-			/*if(SQL_Queries.todayDayDateTime().contains("Tue")) {
-				Bsspl.bsspl(Mon_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Wed")) {
-				Bsspl.bsspl(Tue_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Thu")) {
-				Bsspl.bsspl(Wed_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Fri")) {
-				Bsspl.bsspl(Thu_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Sat")) {
-				Bsspl.bsspl(Fri_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Sun")) {
-				Bsspl.bsspl(Sat_Flight_Num);
-			}else if(SQL_Queries.todayDayDateTime().contains("Mon")) {
-				Bsspl.bsspl(Sun_Flight_Num);
-			}*/
-
-			
 			
 			// .........Script Start...........................
 		} catch (Exception e) {
@@ -79,9 +56,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 						+ " Secs before retrying.***********");
 				delay(getIntValue("retryDelayTime"));
 				// Rerun same test
-				
-
-				test( );
+				test();
 			} else {
 				String imagePath = takeScreenshot(getDriver(), getTestCaseID());
 				logStepFail(stepInfo + " - " + KeywordUtil.lastAction);
