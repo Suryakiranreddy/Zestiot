@@ -26,6 +26,8 @@ import javax.mail.internet.MimeMultipart;
 import org.apache.commons.io.FileUtils;
 import org.testng.annotations.Test;
 
+import enh.db.cases.SQL_Queries;
+
 
 
 
@@ -220,6 +222,7 @@ public class SendMail extends Utility {
 		FileUtils.copyDirectory(srcDir, destDir);
 	}
 	public static void sendImage() throws IOException, MessagingException {
+		SQL_Queries.todayDate();
 		String mailBody="<html>"
     			+ "<p style=\"color:#008ae6;\"><h1>Hi All,</h1> <br><br> "	
                 +"<img align=\"middle\" src=\"cid:image1\" alt=\"Smiley face\" height=\"500\" width=\"700\">"
