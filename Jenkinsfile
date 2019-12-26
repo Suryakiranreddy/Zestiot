@@ -15,7 +15,7 @@ extensions: [],
  submoduleCfg: [],
   userRemoteConfigs: [[credentialsId: 'baa4c5c3-ffe4-4edb-aa94-1e37dadb520f', 
   url: 'https://github.com/RadhikaChiluka/ZestIOTAutomation.git']]])
- catch (err) {
+ }catch (err) {
             echo err.getMessage()
             echo "Error detected, but we will continue."
             mail bcc: '',
@@ -35,6 +35,7 @@ mimeType: 'text/html',
 replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' FAILED : Jenkins Pipeline " ,
  to: 'stiyyagura@enhops.com'
+ }
 }
 }
 }
