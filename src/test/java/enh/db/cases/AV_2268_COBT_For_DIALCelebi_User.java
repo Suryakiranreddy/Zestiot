@@ -16,6 +16,7 @@ import utilities.HtmlReportUtil;
 
 
 public class AV_2268_COBT_For_DIALCelebi_User {
+	
 	 public static ArrayList<String> cobtIsNotNull= new ArrayList<String>();
 	 public static ArrayList<String> ofBlockIsNotNull= new ArrayList<String>();
 	 public static ArrayList<String> cobtTimeDiff= new ArrayList<String>();	 
@@ -28,99 +29,13 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 	 public static JSONObject COBT_For_DIALCelebi_DataJson = new JSONObject();
 	 public static JSONArray Json_TotalFlightsofEntity = new JSONArray();
 	 public static JSONArray Json_COBTisNOTdetected = new JSONArray();
-	 public static JSONArray Json_OFFBLOCKisNOTdetected = new JSONArray();
-	 
+	 public static JSONArray Json_OFFBLOCKisNOTdetected = new JSONArray();	 
 	 public static JSONArray Json_differenceOfActualOffBlockAndFinalCOBTdiffIsGreaterThan5Minutes = new JSONArray();
 	 
-	 public static void cOBT_For_DIALCelebi_User() throws Exception{
-		 
-		 
+	
 		
-		  Connection con = DriverManager.getConnection(
-					"jdbc:mysql://avileapuat.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
-					"AviLeap_Read");
-			Statement stmt = con.createStatement();
-			ResultSet result = stmt.executeQuery(SQL_Queries.strQuery_6);
-			while (result.next()){
-				
-				String str_LogID = result.getString("Logid");		
-				String str_FlightNumber_Arrival = result.getString("FlightNumber_Arrival");
-				String str_cobt = result.getString("cobt");
-				cobtIsNotNull.add(str_cobt);
-				String str_Off_Block_Time = result.getString("Off_Block_Time");				
-				//HtmlReportUtil.stepInfo("");
-				//System.out.println("| "+ str_LogID +" | "+ str_FlightNumber_Arrival +" | "+ str_cobt +" | "+ str_Off_Block_Time +" | ");
-				System.out.println(" ");
-				HtmlReportUtil.stepInfo("<b style=\"color:red;\"> FlightNumber:-</b><b style=\"color:red;\"> "+str_FlightNumber_Arrival
-						+" </b>|| <b style=\"color:red;\">Cobt:-</b><b style=\"color:red;\"> "+ str_cobt 
-						+"<b> || <b style=\"color:red;\">Off Block:- </b> <b style=\"color:red;\">"+ str_Off_Block_Time +"  </b>");
-				}
-			System.out.println("Total Flights with cobt is null:- "+cobtIsNotNull.size());
-			//HtmlReportUtil.stepInfo("<b style=\"color:red;\">  No. of Flights for which cobt is null::- "+cobtIsNotNull.size() +"</b>");
-			ResultSet result1 = stmt.executeQuery(SQL_Queries.strQuery_7);
-			while (result1.next()){
-				
-				String str_LogID = result1.getString("Logid");	
-				String str_FlightNumber_Arrival = result1.getString("FlightNumber_Arrival");
-				String str_cobt = result1.getString("cobt");
-				
-				String str_Off_Block_Time = result1.getString("Off_Block_Time");
-				ofBlockIsNotNull.add(str_Off_Block_Time);
-				//HtmlReportUtil.stepInfo("");
-				//System.out.println("| "+ str_LogID +" | "+ str_FlightNumber_Arrival +" | "+ str_cobt +" | "+ str_Off_Block_Time +" | ");
-				System.out.println(" ");
-				HtmlReportUtil.stepInfo("<b style=\"color:red;\"> FlightNumber:-</b><b style=\"color:red;\"> "+str_FlightNumber_Arrival
-						+" </b>|| <b style=\"color:red;\">Cobt:-</b><b style=\"color:red;\"> "+ str_cobt 
-						+"<b> || <b style=\"color:red;\">Off Block:- </b> <b style=\"color:red;\">"+ str_Off_Block_Time +"  </b>");
-		
-			}
-			System.out.println("Total Flights with off block time is null:- "+ofBlockIsNotNull.size());
-			//HtmlReportUtil.stepInfo("<b style=\"color:green;\"> No of Flights for which off block time is null:- "+ofBlockIsNotNull.size() +"</b>");
-			ResultSet result2 =stmt.executeQuery(SQL_Queries.strQuery_8);
-			while (result2.next()){
-				String str_LogID = result2.getString("Logid");	
-				String str_FlightNumber_Arrival = result2.getString("FlightNumber_Arrival");
-				String str_cobt = result2.getString("cobt");
-				
-				String str_Off_Block_Time = result2.getString("Off_Block_Time");
-				String str_cobtTimeDiff = result2.getString("CONCAT('',TIMEDIFF(Off_Block_Time, cobt))");
-				int str_cobtSecDiff1 = result2.getInt("TIME_TO_SEC(TIMEDIFF(Off_Block_Time, cobt))");
-				int str_cobtSecDiff2 = result2.getInt("TIME_TO_SEC(TIMEDIFF(cobt, Off_Block_Time))");
-				cobtTimeDiff.add(str_Off_Block_Time);
-				System.out.println("| "+ str_LogID +" | "+ str_FlightNumber_Arrival +" | "+ str_cobt +" | "+ str_Off_Block_Time +" | "+ str_cobtTimeDiff +" | ");
-				
-				//HtmlReportUtil.stepInfo("");
-				if(str_cobtSecDiff1>300 || str_cobtSecDiff2>300  ) {
-				HtmlReportUtil.stepInfo("<b style=\"color:red;\"> FlightNumber:-</b><b style=\"color:red;\"> "+str_FlightNumber_Arrival
-						+" </b>|| <b style=\"color:red;\">Cobt:-</b><b style=\"color:red;\"> "+ str_cobt 
-						+"<b> || <b style=\"color:red;\">Off Block:- </b> <b style=\"color:red;\">"+ str_Off_Block_Time 
-						+" </b>|| <b style=\"color:red;\">Cobt Diff:-</b><b style=\"color:red;\"> "+ str_cobtTimeDiff +"  </b>");
-				}else {
-					/*HtmlReportUtil.stepInfo("<b style=\"color:green;\"> FlightNumber:-</b><b style=\"color:green;\"> "+str_FlightNumber_Arrival
-							+" </b>|| <b style=\"color:green;\">Cobt:-</b><b style=\"color:green;\"> "+ str_cobt 
-							+"<b> || <b style=\"color:green;\">Off Block:- </b> <b style=\"color:green;\">"+ str_Off_Block_Time 
-							+" </b>|| <b style=\"color:green;\">Cobt Diff:-</b><b style=\"color:green;\"> "+ str_cobtTimeDiff +"  </b>");	
-				*/
-				}
-				
-			}
-			System.out.println("Total Flights  - "+cobtTimeDiff.size());
-			HtmlReportUtil.stepInfo("<b style=\"color:green;\"> Total number of Flights: - "+cobtTimeDiff.size() +"</b>");
-			HtmlReportUtil.stepInfo("<b style=\"color:red;\">  No. of Flights for which cobt is null::- "+cobtIsNotNull.size() +"</b>");
-			HtmlReportUtil.stepInfo("<b style=\"color:red;\"> No of Flights for which off block time is null:- "+ofBlockIsNotNull.size() +"</b>");		
-				
-			ResultSet result3 = stmt.executeQuery(SQL_Queries.strQuery_9);
-			while (result3.next()){			
-				String str_LogID = result3.getString("count(CONCAT('',TIMEDIFF(Off_Block_Time, cobt)))");		
-				HtmlReportUtil.stepInfo("<b style=\"color:red;\"> No. of Flights for which difference between offblock and COBT is > 5mins :- "+str_LogID +"</b>");			
-				System.out.println(" No. of Flights for which difference between offblock and COBT is > 5mins :- "+str_LogID);
-			}
-			con.close();
-				//SendMailBodyToZestIOT.sendHtmlEmail("COBT_For_DIALCelebi_User", "hi");
-			//SentOutLook.sendOutLookMail("COBT_For_DIALCelebi_User", mesg);
-	 }
-		
-	 public static void cOBT_For_DIALCelebi_User2() throws Exception{
+	 @SuppressWarnings("unchecked")
+	public static void cOBT_For_DIALCelebi_User2() throws Exception{
 		 String str_cobtDiff=null;
 		 AV_2268_COBT_For_DIALCelebi_UserJson.put("title", "AV_2268_COBT_For_DIALCelebi_User");
 		 AV_2268_COBT_For_DIALCelebi_UserJson.put("feature", "COBT");
@@ -269,6 +184,12 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 						String str_FlightNumber_Arrival = result7.getString("FlightNumber_Arrival");
 						String str_cobt = result7.getString("cobt");						
 						String str_Off_Block_Time = result7.getString("Off_Block_Time");
+						JSONObject record = new JSONObject();
+						record.put("logid",str_LogID);
+						record.put("flightNumberArrival", str_FlightNumber_Arrival);
+						record.put("COBT", str_cobt);
+						record.put("OffBlockTime",str_Off_Block_Time);					
+						Json_OFFBLOCKisNOTdetected.add(record);
 						email_COBT_For_DIALCelebi_User7.append("<tr><td><b style=\"color:red;\">"+str_LogID+"</b></td><td><b style=\"color:red;\">"+str_FlightNumber_Arrival+"</b></td>"
 								+ "<td><b style=\"color:red;\">"+str_cobt+"</b></td><td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td></tr>");
 					}
@@ -293,6 +214,13 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 							int str_cobtSecDiff1 = result8.getInt("TIME_TO_SEC(TIMEDIFF(Off_Block_Time, cobt))");
 							int str_cobtSecDiff2 = result8.getInt("TIME_TO_SEC(TIMEDIFF(cobt, Off_Block_Time))");
 						if(str_cobtSecDiff1>300 || str_cobtSecDiff2>300  ) {
+							JSONObject record = new JSONObject();
+							record.put("logid",str_LogID);
+							record.put("flightNumberArrival", str_FlightNumber_Arrival);
+							record.put("COBT", str_cobt);
+							record.put("OffBlockTime",str_Off_Block_Time);
+							record.put("cobtTimeDiff",str_cobtTimeDiff);
+							Json_differenceOfActualOffBlockAndFinalCOBTdiffIsGreaterThan5Minutes.add(record);
 							email_COBT_For_DIALCelebi_User8.append("<tr><td><b style=\"color:red;\">"+str_LogID+"</b></td><td><b style=\"color:red;\">"+str_FlightNumber_Arrival+"</b></td>"
 									+ "<td><b style=\"color:red;\">"+str_cobt+"</b></td><td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td><td><b style=\"color:red;\">"+str_cobtTimeDiff+"</b></td></tr>");							
 							}else {
@@ -330,16 +258,16 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 	
 			 HtmlReportUtil.test.appendChild(child0).appendChild(child1).appendChild(child2).appendChild(child3);
 			 HtmlReportUtil.testHist.appendChild(child0).appendChild(child11).appendChild(child12).appendChild(child13);
-
+			 
 			 COBT_For_DIALCelebi_DataJson.put("Total Flights of Entity", Json_TotalFlightsofEntity);
 			 COBT_For_DIALCelebi_DataJson.put("Cobt not detected",Json_COBTisNOTdetected);
+			 COBT_For_DIALCelebi_DataJson.put("OffBlock not detected",Json_OFFBLOCKisNOTdetected);
+			 COBT_For_DIALCelebi_DataJson.put("Difference Of Actual OffBlock and FinalCOBT is > 5 Minutes",Json_differenceOfActualOffBlockAndFinalCOBTdiffIsGreaterThan5Minutes);
 			 AV_2268_COBT_For_DIALCelebi_UserJson.put("data", COBT_For_DIALCelebi_DataJson);
 			 AV_2268_COBT_For_DIALCelebi_UserArray.add(AV_2268_COBT_For_DIALCelebi_UserJson);			 
-			 System.out.println("\nJSON Object: " + AV_2268_COBT_For_DIALCelebi_UserArray);
-			 
-			 //System.out.println("\nJSON Object: " + "["+AV_2268_COBT_For_DIALCelebi_UserJson.toString()+"]");
+			 System.out.println("\nJSON Object: " + AV_2268_COBT_For_DIALCelebi_UserArray);			
 			 con.close();	
-			//SentOutLook.sendOutLookMail("COBT_For_DIALCelebi_User", email_COBT_For_DIALCelebi_User.toString());
+			
 	 }
 		
  
