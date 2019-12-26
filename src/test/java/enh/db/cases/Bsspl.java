@@ -37,6 +37,7 @@ public class Bsspl {
 	
 	public static void bsspl(String Execlfilepath, String sheetName) throws SQLException, IOException {
 		 HtmlReportUtil.stepInfo(sheetName);
+			System.out.println(sheetName);
 		 file = new FileInputStream(new File(Execlfilepath));
 		 workbook = new XSSFWorkbook(file);
 		 sheet =workbook.getSheet(sheetName);
@@ -47,10 +48,10 @@ public class Bsspl {
 					DataFormatter formatter = new DataFormatter();
 					data[i][j] = formatter.formatCellValue(sheet.getRow(i+1).getCell(j));
 					String FlightNum=data[i][j].replace("-", " ");
-					//System.out.println(FlightNum);
+					System.out.println(FlightNum);
 					testData.add(FlightNum);
 					String SQL_Querry1="SELECT * FROM `DailyFlightSchedule_Merged` "
-							+ "where date(IFNULL(atd, sensor_atd))= '2019-12-22' and operationunit = 22 "
+							+ "where date(IFNULL(atd, sensor_atd))= '2019-12-25' and operationunit = 22 "
 							+ "and flightnumber_departure like '%"+FlightNum+"%' ";
 					
 					ResultSet result = DBWrapper.Connect(SQL_Querry1);

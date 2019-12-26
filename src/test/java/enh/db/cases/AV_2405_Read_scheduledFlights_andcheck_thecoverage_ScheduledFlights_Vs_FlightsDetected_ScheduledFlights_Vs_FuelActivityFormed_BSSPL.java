@@ -131,12 +131,12 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 				dataFromSheet[i][0] = formatter.formatCellValue(sheet.getRow(i+1).getCell(0));
 				String FlightNumber=dataFromSheet[i][0].replace("-", " ");
 				list_flightNumberFromExcel.add(FlightNumber);
-				//System.out.println("FlightNumber: " +FlightNumber);
-	 			}
-	  for(int i=0; i<list_flightNumberFromExcel.size(); i++) {
+				System.out.println("FlightNumber: " +FlightNumber);
+	 			/*}
+	  for(int i=0; i<list_flightNumberFromExcel.size(); i++) {*/
 				ResultSet result = DBWrapper.Connect("SELECT * FROM `DailyFlightSchedule_Merged`\r\n" + 
 						"where date(IFNULL(std, etd))= '"+SQL_Queries.yesterDate()+"' and operationunit = 22 and \r\n"
-						+ "flightnumber_departure like '%"+list_flightNumberFromExcel.get(i)+"%'");
+						+ "flightnumber_departure like '%"+FlightNumber+"%'");
 				
 				while(result.next()) {
 					String logId=  result.getString("LogId");
@@ -146,12 +146,12 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 					String flight_OnBlockTime = result.getString("On_block_time");
 					String flight_OffBlockTime = result.getString("Off_block_time");
 					String flight_ATD=  result.getString("atd");
-									
+					System.out.println(logId+"-"+flightnumber_Arrival+"-"+flightnumber_departure+"-"+flight_ATA+"-"+flight_OnBlockTime+"-"+flight_OffBlockTime+"-"+flight_ATD);				
 					list_logID.add(logId);
 					list_NoflelogID.add(logId);
 					if(flight_ATA==null || flight_ATA.isEmpty()) {
 						ATAIsNull = ATAIsNull+1;
-						System.out.println("hello");
+						System.out.println("flight_ATA==null || flight_ATA.isEmpty()");
 						email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL2.append(" <tr> <td><b style=\"color:red;\">"+logId+"</b></td> "
 								+ "<td><b style=\"color:red;\">"+flightnumber_Arrival+"</b></td>"
 						 		+ " <td> <b style=\"color:red;\">"+flightnumber_departure+"</b></td>"
@@ -161,6 +161,7 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 						
 					}
 					if(flight_OnBlockTime==null || flight_OnBlockTime.isEmpty()) {
+						System.out.println("flight_OnBlockTime==null || flight_OnBlockTime.isEmpty()");
 						OnBlockIsNull = OnBlockIsNull+1;
 						email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL3.append(" <tr> <td><b style=\"color:red;\">"+logId+"</b></td> "
 								+ "<td><b style=\"color:red;\">"+flightnumber_Arrival+"</b></td>"
@@ -170,6 +171,7 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 						 		+ "<td><b style=\"color:red;\">"+flight_ATD+"</b></td></tr>");
 					}
 					if(flight_OffBlockTime==null || flight_OffBlockTime.isEmpty()) {
+						System.out.println("flight_OffBlockTime==null || flight_OffBlockTime.isEmpty()");
 						OffBlockIsNull = OffBlockIsNull+1;
 						email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL4.append(" <tr> <td><b style=\"color:red;\">"+logId+"</b></td> "
 								+ "<td><b style=\"color:red;\">"+flightnumber_Arrival+"</b></td>"
@@ -178,7 +180,8 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 						 		+ " <td><b style=\"color:red;\">"+flight_OnBlockTime+"</b></td> "
 						 		+ "<td><b style=\"color:red;\">"+flight_ATD+"</b></td></tr>");
 					}
-					if(flight_ATD==null || flight_ATA.isEmpty()) {
+					if(flight_ATD==null || flight_ATD.isEmpty()) {
+						System.out.println("flight_ATD==null || flight_ATD.isEmpty()");
 						ATDIsNull = ATDIsNull+1;
 						email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL5.append(" <tr> <td><b style=\"color:red;\">"+logId+"</b></td> "
 								+ "<td><b style=\"color:red;\">"+flightnumber_Arrival+"</b></td>"
@@ -344,5 +347,6 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 	 HtmlReportUtil.testHist.appendChild(child00).appendChild(child001).appendChild(child1111).appendChild(child11).appendChild(child22).appendChild(child33).appendChild(child44).appendChild(child55);
 	 
 	 DBWrapper.dbConnectionClose();
+		
 	}
 }

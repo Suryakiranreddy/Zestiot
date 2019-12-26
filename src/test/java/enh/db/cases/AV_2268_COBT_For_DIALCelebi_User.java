@@ -6,6 +6,9 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 
+import org.json.simple.JSONArray;
+import org.json.simple.JSONObject;
+
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
@@ -20,7 +23,18 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 	 public static StringBuilder email_COBT_For_DIALCelebi_User6= new StringBuilder();	 
 	 public static StringBuilder email_COBT_For_DIALCelebi_User7= new StringBuilder();
 	 public static StringBuilder email_COBT_For_DIALCelebi_User8= new StringBuilder();
+	 public static JSONObject AV_2268_COBT_For_DIALCelebi_UserJson = new JSONObject();
+	 public static JSONArray AV_2268_COBT_For_DIALCelebi_UserArray = new JSONArray();
+	 public static JSONObject COBT_For_DIALCelebi_DataJson = new JSONObject();
+	 public static JSONArray Json_TotalFlightsofEntity = new JSONArray();
+	 public static JSONArray Json_COBTisNOTdetected = new JSONArray();
+	 public static JSONArray Json_OFFBLOCKisNOTdetected = new JSONArray();
+	 
+	 public static JSONArray Json_differenceOfActualOffBlockAndFinalCOBTdiffIsGreaterThan5Minutes = new JSONArray();
+	 
 	 public static void cOBT_For_DIALCelebi_User() throws Exception{
+		 
+		 
 		
 		  Connection con = DriverManager.getConnection(
 					"jdbc:mysql://avileapuat.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
@@ -108,7 +122,12 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 		
 	 public static void cOBT_For_DIALCelebi_User2() throws Exception{
 		 String str_cobtDiff=null;
-			
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("title", "AV_2268_COBT_For_DIALCelebi_User");
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("feature", "COBT");
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("subFeature", "Start");
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("entity", 4);
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("airport", 4);
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("reportedOn", SQL_Queries.yesterDate());
 		  Connection con = DriverManager.getConnection(
 					"jdbc:mysql://avileapuat.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
 					"AviLeap_Read");
@@ -160,6 +179,13 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 				int str_cobtSecDiff2 = result2.getInt("TIME_TO_SEC(TIMEDIFF(cobt, Off_Block_Time))");
 				cobtTimeDiff.add(str_Off_Block_Time);
 				System.out.println("| "+ str_LogID +" | "+ str_FlightNumber_Arrival +" | "+ str_cobt +" | "+ str_Off_Block_Time +" | "+ str_cobtTimeDiff +" | ");
+				JSONObject record = new JSONObject();
+				record.put("logid",str_LogID);
+				record.put("flightNumberArrival", str_FlightNumber_Arrival);
+				record.put("COBT", str_cobt);
+				record.put("OffBlockTime",str_Off_Block_Time);
+				
+				Json_TotalFlightsofEntity.add(record);
 				
 				//HtmlReportUtil.stepInfo("");
 				if(str_cobtSecDiff1>300 || str_cobtSecDiff2>300  ) {
@@ -214,7 +240,15 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 					String str_Off_Block_Time = result6.getString("Off_Block_Time");				
 					email_COBT_For_DIALCelebi_User6.append("<tr><td><b style=\"color:red;\">"+str_LogID+"</b></td><td><b style=\"color:red;\">"+str_FlightNumber_Arrival+"</b></td>"
 							+ "<td><b style=\"color:red;\">"+str_cobt+"</b></td><td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td></tr>");
-					}
+					JSONObject record = new JSONObject();
+					record.put("logid",str_LogID);
+					record.put("flightNumberArrival", str_FlightNumber_Arrival);
+					record.put("COBT", str_cobt);
+					record.put("OffBlockTime",str_Off_Block_Time);
+					
+					Json_COBTisNOTdetected.add(record);
+				
+				}
 	 }else {
 			email_COBT_For_DIALCelebi_User6.append("<tr><td colspan=\"5\"><b style=\"color:red;\" >No values found</b></td></tr>");
 
@@ -297,6 +331,13 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 			 HtmlReportUtil.test.appendChild(child0).appendChild(child1).appendChild(child2).appendChild(child3);
 			 HtmlReportUtil.testHist.appendChild(child0).appendChild(child11).appendChild(child12).appendChild(child13);
 
+			 COBT_For_DIALCelebi_DataJson.put("Total Flights of Entity", Json_TotalFlightsofEntity);
+			 COBT_For_DIALCelebi_DataJson.put("Cobt not detected",Json_COBTisNOTdetected);
+			 AV_2268_COBT_For_DIALCelebi_UserJson.put("data", COBT_For_DIALCelebi_DataJson);
+			 AV_2268_COBT_For_DIALCelebi_UserArray.add(AV_2268_COBT_For_DIALCelebi_UserJson);			 
+			 System.out.println("\nJSON Object: " + AV_2268_COBT_For_DIALCelebi_UserArray);
+			 
+			 //System.out.println("\nJSON Object: " + "["+AV_2268_COBT_For_DIALCelebi_UserJson.toString()+"]");
 			 con.close();	
 			//SentOutLook.sendOutLookMail("COBT_For_DIALCelebi_User", email_COBT_For_DIALCelebi_User.toString());
 	 }

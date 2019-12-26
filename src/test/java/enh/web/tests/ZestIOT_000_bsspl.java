@@ -40,7 +40,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 			// .........Script Start...........................
 			
 
-			Bsspl.bsspl(ConfigReader.getValue("ExcelPath"),"Sun_Flight_Num");
+			Bsspl.bsspl(ConfigReader.getValue("ExcelPath"),"Wed_BSSPL");
 
 			
 			/*if(SQL_Queries.todayDayDateTime().contains("Tue")) {
