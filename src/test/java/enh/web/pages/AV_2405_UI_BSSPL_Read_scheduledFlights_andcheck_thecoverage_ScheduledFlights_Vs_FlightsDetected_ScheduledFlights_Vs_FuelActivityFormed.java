@@ -136,11 +136,11 @@ public class AV_2405_UI_BSSPL_Read_scheduledFlights_andcheck_thecoverage_Schedul
 		for(int i=1;i<=DepatedFlightsCount;i++)
 		{
 			try {
-				delay(3000);
+				delay(2000);
 				js.executeScript("arguments[0].scrollIntoView();",getWebElement(By.xpath("//div[@id='selectedCard']["+i+"]")));
-				delay(3000);
+				delay(2000);
 				click(By.xpath("//div[@id='selectedCard']["+i+"]"));
-				delay(3000);
+				delay(2000);
 				String flightInfoText=getElementText(By.xpath("//div[@id='selectedCard']["+i+"]"));
 				
 				hoverElement(By.xpath("//div[@id='selectedCard']["+i+"]//div[@class= 'arrival-time-col']/descendant::div[2]"));
