@@ -50,6 +50,7 @@ Job Build Number:-<b>'${env.BUILD_NUMBER}'</b><br>
 Job Name:-<b>'${env.JOB_NAME}'</b><br>
 Check console output at <b style=\"color:#008ae6;\"><i><a href="${env.BUILD_URL}">${env.BUILD_URL}</a></i></b><br><br>
 '${err.getMessage()}'<br><br>
+'${err}'<br><br>
 Thanks & Regards,<br>
 Automation Team</p>
 """, 
