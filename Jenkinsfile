@@ -15,6 +15,8 @@ extensions: [],
  submoduleCfg: [],
   userRemoteConfigs: [[credentialsId: 'baa4c5c3-ffe4-4edb-aa94-1e37dadb520f', 
   url: 'https://github.com/RadhikaChiluka/ZestIOTAutomation.git']]])
+  echo "Running the test cases.........."
+bat "mvn clean install test"
  }catch (err) {
             echo err.getMessage()
             echo "Error detected, but we will continue."
