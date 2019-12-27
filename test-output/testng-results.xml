@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="smoke" duration-ms="18830" started-at="2019-12-26T06:11:54Z" finished-at="2019-12-26T06:12:13Z">
+  <suite name="smoke" duration-ms="20597" started-at="2019-12-26T12:29:44Z" finished-at="2019-12-26T12:30:04Z">
     <groups>
       <group name="Regression">
-        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@79e2c065]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User"/>
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@3a93b025]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="smoke-Tests" duration-ms="18830" started-at="2019-12-26T06:11:54Z" finished-at="2019-12-26T06:12:13Z">
+    <test name="smoke-Tests" duration-ms="20597" started-at="2019-12-26T12:29:44Z" finished-at="2019-12-26T12:30:04Z">
       <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@79e2c065]" name="test" duration-ms="6132" started-at="2019-12-26T11:42:05Z" description="AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User" finished-at="2019-12-26T11:42:11Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@3a93b025]" name="test" duration-ms="6035" started-at="2019-12-26T17:59:55Z" description="AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User" finished-at="2019-12-26T18:00:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->

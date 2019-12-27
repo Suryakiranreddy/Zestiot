@@ -4622,3 +4622,195 @@
 2019-12-26 11:42:22 INFO  - Data to excel written successfully
 2019-12-26 11:42:22 INFO  - Data to excel written successfully
 2019-12-26 11:42:22 INFO  - History File created successfully
+2019-12-26 17:10:34 INFO  - 
+============================================================================================================================
+2019-12-26 17:10:34 INFO  - smoke suite started at Thu Dec 26 17:10:34 IST 2019
+2019-12-26 17:10:34 INFO  - Suite Browser: Chrome
+2019-12-26 17:10:34 INFO  - +=============Database started=============+
+2019-12-26 17:10:34 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:10:34 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:10:34 INFO  - +==========================================+
+
+2019-12-26 17:10:34 INFO  - Test is started with browser: Chrome
+2019-12-26 17:10:49 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:10:49 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-26 17:10:49 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:10:49 INFO  - Test description: 
+2019-12-26 17:10:54 INFO  - Total Time taken in(seconds):5
+2019-12-26 17:10:55 INFO  - TestResults
+2019-12-26 17:10:57 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 17:10:57 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 17:10:57 INFO  - Closing Browsers
+2019-12-26 17:10:57 INFO  - smoke suite finished at Thu Dec 26 17:10:57 IST 2019
+2019-12-26 17:10:57 INFO  - Comparison sheet written successfully
+2019-12-26 17:10:57 INFO  - Data to excel written successfully
+2019-12-26 17:10:58 INFO  - Test process has ended
+2019-12-26 17:11:06 INFO  - +=============Database started=============+
+2019-12-26 17:11:06 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:11:06 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:11:06 INFO  - +==========================================+
+
+2019-12-26 17:11:06 INFO  - Comparison sheet written successfully
+2019-12-26 17:11:06 INFO  - Data to excel written successfully
+2019-12-26 17:11:06 INFO  - History File created successfully
+2019-12-26 17:18:07 INFO  - 
+============================================================================================================================
+2019-12-26 17:18:07 INFO  - smoke suite started at Thu Dec 26 17:18:07 IST 2019
+2019-12-26 17:18:07 INFO  - Suite Browser: Chrome
+2019-12-26 17:18:07 INFO  - +=============Database started=============+
+2019-12-26 17:18:07 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:18:07 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:18:07 INFO  - +==========================================+
+
+2019-12-26 17:18:07 INFO  - Test is started with browser: Chrome
+2019-12-26 17:18:18 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:18:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-26 17:18:18 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:18:18 INFO  - Test description: 
+2019-12-26 17:18:24 INFO  - Total Time taken in(seconds):6
+2019-12-26 17:18:25 INFO  - TestResults
+2019-12-26 17:18:25 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 17:18:25 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 17:18:25 INFO  - Closing Browsers
+2019-12-26 17:18:26 INFO  - smoke suite finished at Thu Dec 26 17:18:26 IST 2019
+2019-12-26 17:18:26 INFO  - Comparison sheet written successfully
+2019-12-26 17:18:26 INFO  - Data to excel written successfully
+2019-12-26 17:18:26 INFO  - Test process has ended
+2019-12-26 17:18:35 INFO  - +=============Database started=============+
+2019-12-26 17:18:35 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:18:35 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:18:35 INFO  - +==========================================+
+
+2019-12-26 17:18:35 INFO  - Comparison sheet written successfully
+2019-12-26 17:18:35 INFO  - Data to excel written successfully
+2019-12-26 17:18:35 INFO  - History File created successfully
+2019-12-26 17:20:10 INFO  - 
+============================================================================================================================
+2019-12-26 17:20:10 INFO  - smoke suite started at Thu Dec 26 17:20:10 IST 2019
+2019-12-26 17:20:10 INFO  - Suite Browser: Chrome
+2019-12-26 17:20:10 INFO  - +=============Database started=============+
+2019-12-26 17:20:10 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:20:10 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:20:10 INFO  - +==========================================+
+
+2019-12-26 17:20:10 INFO  - Test is started with browser: Chrome
+2019-12-26 17:20:22 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:20:22 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-26 17:20:22 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:20:22 INFO  - Test description: 
+2019-12-26 17:20:27 INFO  - Total Time taken in(seconds):6
+2019-12-26 17:20:28 INFO  - TestResults
+2019-12-26 17:20:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 17:20:29 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 17:20:29 INFO  - Closing Browsers
+2019-12-26 17:20:29 INFO  - smoke suite finished at Thu Dec 26 17:20:29 IST 2019
+2019-12-26 17:20:29 INFO  - Comparison sheet written successfully
+2019-12-26 17:20:29 INFO  - Data to excel written successfully
+2019-12-26 17:20:29 INFO  - Test process has ended
+2019-12-26 17:20:37 INFO  - +=============Database started=============+
+2019-12-26 17:20:37 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:20:37 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:20:37 INFO  - +==========================================+
+
+2019-12-26 17:20:37 INFO  - Comparison sheet written successfully
+2019-12-26 17:20:37 INFO  - Data to excel written successfully
+2019-12-26 17:20:37 INFO  - History File created successfully
+2019-12-26 17:52:41 INFO  - 
+============================================================================================================================
+2019-12-26 17:52:41 INFO  - smoke suite started at Thu Dec 26 17:52:41 IST 2019
+2019-12-26 17:52:41 INFO  - Suite Browser: Chrome
+2019-12-26 17:52:41 INFO  - +=============Database started=============+
+2019-12-26 17:52:41 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:52:41 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:52:41 INFO  - +==========================================+
+
+2019-12-26 17:52:41 INFO  - Test is started with browser: Chrome
+2019-12-26 17:52:53 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:52:53 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-26 17:52:53 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:52:53 INFO  - Test description: 
+2019-12-26 17:52:59 INFO  - Total Time taken in(seconds):6
+2019-12-26 17:53:02 INFO  - TestResults
+2019-12-26 17:53:05 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 17:53:05 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 17:53:05 INFO  - Closing Browsers
+2019-12-26 17:53:06 INFO  - smoke suite finished at Thu Dec 26 17:53:06 IST 2019
+2019-12-26 17:53:06 INFO  - Comparison sheet written successfully
+2019-12-26 17:53:06 INFO  - Data to excel written successfully
+2019-12-26 17:53:07 INFO  - Test process has ended
+2019-12-26 17:53:59 INFO  - +=============Database started=============+
+2019-12-26 17:53:59 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:53:59 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:53:59 INFO  - +==========================================+
+
+2019-12-26 17:53:59 INFO  - Comparison sheet written successfully
+2019-12-26 17:53:59 INFO  - Data to excel written successfully
+2019-12-26 17:53:59 INFO  - History File created successfully
+2019-12-26 17:57:09 INFO  - 
+============================================================================================================================
+2019-12-26 17:57:09 INFO  - smoke suite started at Thu Dec 26 17:57:09 IST 2019
+2019-12-26 17:57:09 INFO  - Suite Browser: Chrome
+2019-12-26 17:57:10 INFO  - +=============Database started=============+
+2019-12-26 17:57:10 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:57:10 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:57:10 INFO  - +==========================================+
+
+2019-12-26 17:57:10 INFO  - Test is started with browser: Chrome
+2019-12-26 17:57:21 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:57:21 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-26 17:57:21 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:57:21 INFO  - Test description: 
+2019-12-26 17:57:27 INFO  - Total Time taken in(seconds):6
+2019-12-26 17:57:27 INFO  - TestResults
+2019-12-26 17:57:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 17:57:29 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 17:57:29 INFO  - Closing Browsers
+2019-12-26 17:57:29 INFO  - smoke suite finished at Thu Dec 26 17:57:29 IST 2019
+2019-12-26 17:57:29 INFO  - Comparison sheet written successfully
+2019-12-26 17:57:29 INFO  - Data to excel written successfully
+2019-12-26 17:57:30 INFO  - Test process has ended
+2019-12-26 17:58:14 INFO  - +=============Database started=============+
+2019-12-26 17:58:14 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:58:14 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:58:14 INFO  - +==========================================+
+
+2019-12-26 17:58:14 INFO  - Comparison sheet written successfully
+2019-12-26 17:58:14 INFO  - Data to excel written successfully
+2019-12-26 17:58:14 INFO  - History File created successfully
+2019-12-26 17:59:43 INFO  - 
+============================================================================================================================
+2019-12-26 17:59:43 INFO  - smoke suite started at Thu Dec 26 17:59:43 IST 2019
+2019-12-26 17:59:43 INFO  - Suite Browser: Chrome
+2019-12-26 17:59:44 INFO  - +=============Database started=============+
+2019-12-26 17:59:44 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 17:59:44 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 17:59:44 INFO  - +==========================================+
+
+2019-12-26 17:59:44 INFO  - Test is started with browser: Chrome
+2019-12-26 17:59:55 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:59:55 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2019-12-26 17:59:55 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2019-12-26 17:59:55 INFO  - Test description: 
+2019-12-26 18:00:01 INFO  - Total Time taken in(seconds):6
+2019-12-26 18:00:02 INFO  - TestResults
+2019-12-26 18:00:04 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 18:00:04 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 18:00:04 INFO  - Closing Browsers
+2019-12-26 18:00:05 INFO  - smoke suite finished at Thu Dec 26 18:00:05 IST 2019
+2019-12-26 18:00:06 INFO  - Comparison sheet written successfully
+2019-12-26 18:00:06 INFO  - Data to excel written successfully
+2019-12-26 18:00:06 INFO  - Test process has ended
+2019-12-26 18:00:50 INFO  - +=============Database started=============+
+2019-12-26 18:00:50 INFO  - Database driver name: SQLiteJDBC
+2019-12-26 18:00:50 INFO  - Product name SQLite, Version 3.8.11
+2019-12-26 18:00:50 INFO  - +==========================================+
+
+2019-12-26 18:00:50 INFO  - Comparison sheet written successfully
+2019-12-26 18:00:50 INFO  - Data to excel written successfully
+2019-12-26 18:00:50 INFO  - History File created successfully

@@ -91,7 +91,7 @@ public class SendMail extends Utility {
 	@Test
 	public static void sendEmailToClient(String htmlBody,
             Map<String, String> mapInlineImages) throws IOException, MessagingException {
-		String subject1 = "WELCOME Twenty20 ";
+		String subject1 = "'HaPpY NeW yEaR !!'";
 		//String subject2 = SQL_Queries.todayDayDateTime();
 		Properties PROPS = System.getProperties();
 		PROPS.put("mail.smtp.host", HOST);
@@ -221,14 +221,15 @@ public class SendMail extends Utility {
 	}
 	public static void sendImage() throws IOException, MessagingException {
 		String mailBody="<html>"
-    			+ "<p style=\"color:#008ae6;\"><h1>Hi All,</h1> <br><br> "	
-                +"<img align=\"middle\" src=\"cid:image1\" alt=\"Smiley face\" height=\"500\" width=\"700\">"
+    			+ "<p style=\"color:#008ae6;\"><h1>Hi All,</h1> <br></br>"	
+                +"<img align=\"middle\" src=\"cid:image1\" alt=\"Smiley face\" height=\"400\" width=\"700\">"
                 +" <p style=\"color:#008ae6;\"><br><br><br> <h1>Thanks & Regards,<br>Automation Team</h1></p>"
 				+ "<html>";
-		String imagePath = System.getProperty(DIR_PATH) + "/141.gif";
+		String imagePath = System.getProperty(DIR_PATH) + "/happyNewYear.gif";
 		// inline images
         Map<String, String> inlineImages = new HashMap<String, String>();
         inlineImages.put("image1", imagePath);
         sendEmailToClient(mailBody,inlineImages);
 	}
+	
 }

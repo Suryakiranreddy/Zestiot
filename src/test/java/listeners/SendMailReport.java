@@ -187,6 +187,21 @@ public class SendMailReport extends Utility {
 		testCase_consolidated_Summary_Report.append(AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.toString());
 		testCase_consolidated_Summary_Report.append(AV_2405_UI_BSSPL_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed.email_report_Fueling_Activity_BSSPL_UI1.toString());			
 		testCase_consolidated_Summary_Report.append(AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation.email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI1.toString());
+		/*file = new FileInputStream(new File(ConfigReader.getValue("AutomationControlExcelPath")));	
+	workbook = new XSSFWorkbook(file);		
+   sheet =workbook.getSheet("smoke");		
+	for(int i=1;i<sheet.getLastRowNum();i++){			
+		DataFormatter formatterr = new DataFormatter();
+		String flag = formatterr.formatCellValue(sheet.getRow(i).getCell(1));
+		String dec = formatterr.formatCellValue(sheet.getRow(i).getCell(2));
+		String exeFor = formatterr.formatCellValue(sheet.getRow(i).getCell(3));
+		String exeType = formatterr.formatCellValue(sheet.getRow(i).getCell(4));
+		String report = formatterr.formatCellValue(sheet.getRow(i).getCell(5));
+		if(flag.equalsIgnoreCase("y")) {
+			testCase_consolidated_Summary_Report.append(report);
+		}
+	}*/
+		
 		testCase_consolidated_Summary_Report.append(" <p style=\"color:#008ae6;\"><br><br><br> Thanks & Regards,<br>Automation Team</p></html>");
 
 		messageBodyPart.setContent(testCase_consolidated_Summary_Report.toString(), "text/html; charset=ISO-8859-1");
