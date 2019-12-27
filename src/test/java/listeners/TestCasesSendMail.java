@@ -82,6 +82,7 @@ public class TestCasesSendMail extends Utility {
 		public static FileInputStream file;
 		public static XSSFSheet sheet;   
 		public static XSSFCell cell;
+		public static int sno=0;
 	/**
 	 * @throws IOException
 	 * @throws MessagingException
@@ -171,9 +172,10 @@ public class TestCasesSendMail extends Utility {
 				String dec = formatterr.formatCellValue(sheet.getRow(i).getCell(2));
 				String exeFor = formatterr.formatCellValue(sheet.getRow(i).getCell(3));
 				String exeType = formatterr.formatCellValue(sheet.getRow(i).getCell(4));
-				if(flag.equalsIgnoreCase("y")) {
+				if(flag.equalsIgnoreCase("y")) {					
+					sno=sno+1;
 				testCase_Summary_Report.append(" <tr style=\"color:#008ae6;\"> "
-						+ "<td><b>"+i+"</b> </td>"
+						+ "<td><b>"+sno+"</b> </td>"
 						+ "<td><b>"+dec+"</b> </td>"
 						+ "<td><b>"+exeFor+"</b> </td>"
 						+ "<td><b>"+exeType+"</b> </td>"

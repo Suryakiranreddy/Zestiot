@@ -34,7 +34,7 @@ public class ZestIOT_AV_2389_UI_CELEBI_Detect_COBT_isDisplyed_ForFlights extends
 
 			HomePage.prodlogin("Sheroy.Sooi@celebiaviation.in","zestiot123",
 					ConfigReader.getValue("hotelCode"));
-			AV_2389_UI_CELEBI_Detect_theflight_forwhich_COBT_isnot_available.verifyCOBTIsDisplyedForFlights();
+			AV_2389_UI_CELEBI_Detect_theflight_forwhich_COBT_isnot_available.verifyCOBTIsDisplyedForFlights("Delhi","CELEBI");
 			HomePage.logOut();
 
 			

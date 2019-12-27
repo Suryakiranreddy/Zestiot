@@ -34,7 +34,7 @@ public class ZestIOT_AV_2390_UI_CELEBI_Detect_totalNo_offlights_forwhich_finalCO
 
 			HomePage.prodlogin("Sheroy.Sooi@celebiaviation.in","zestiot123",
 					ConfigReader.getValue("hotelCode"));
-			AV_2390_UI_CELEBI_Detect_totalNo_offlights_forwhichfinal_COBT_has_highORless_difference_compare_toActual_Offblock.verifyCOBTAndOffBlockTimeDifferenceForFlights();
+			AV_2390_UI_CELEBI_Detect_totalNo_offlights_forwhichfinal_COBT_has_highORless_difference_compare_toActual_Offblock.verifyCOBTAndOffBlockTimeDifferenceForFlights("DELHI", "CELEBI");
 			HomePage.logOut();
 
 			

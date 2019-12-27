@@ -57,7 +57,7 @@ public class AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation e
 	 *         20/Dec/2019                   Padmaja	                                   AD/-/Dec/2019                                      
 	 * @throws Exception 
 	 ***********************************************************************************************************/
-	public static void verifySensorATA_OnBlock_OffBlock_SensorATD_timestamps() throws Exception
+	public static void verifySensorATA_OnBlock_OffBlock_SensorATD_timestamps(String airportName, String userName) throws Exception
 	{
 		 email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI2.append("<br><br>");
 		 email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI2.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
@@ -115,9 +115,9 @@ public class AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation e
 											 		+ "<th style=\"width:15%\"><b>Airborne</b></th>"
 											 		+ " </tr>");
 		 
-		String userName=getElementText(By.xpath("html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]"));
-		System.out.println(userName);
-		HtmlReportUtil.stepInfo("<b style=\"color:brown;\"> Reports for "+userName+" </b>");
+		String userNamee=getElementText(By.xpath("html/body/app-root/div/app-topnav/mat-toolbar/div[4]/div[2]"));
+		System.out.println(userNamee);
+		HtmlReportUtil.stepInfo("<b style=\"color:brown;\"> Reports for "+userNamee+" </b>");
 		delay(10000);
 		click(menu);
 		delay(2000);
@@ -313,8 +313,8 @@ public class AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation e
 		email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI6.append("</table>");
 		
 	email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI1.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
-	email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI1.append("<h4 align=\"center\" style=\"color:#008ae6;\"> Airport Name : Delhi</h4>");
-	email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :CELEBI User  </h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
+	email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI1.append("<h4 align=\"center\" style=\"color:#008ae6;\"> Airport Name : "+airportName+"</h4>");
+	email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :"+userName+"  </h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
 	email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI1.append("<table style=\"width:100%\" id=\"t01\"><tr>"
 						+ "<th style=\"width:10%\"><b>Total Flights Departed ("+SQL_Queries.yesterDate()+") </b></th>"
 						+ "<th style=\"width:15%\"><b>Total Flights with Landing time</b></th> "

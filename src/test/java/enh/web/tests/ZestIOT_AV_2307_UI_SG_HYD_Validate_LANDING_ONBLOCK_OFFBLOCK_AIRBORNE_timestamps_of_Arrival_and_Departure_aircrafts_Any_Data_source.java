@@ -13,13 +13,13 @@ import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 @Listeners({ CustomListeners.class, ExecutionStartEndListner.class })
-public class ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source extends KeywordUtil {
+public class ZestIOT_AV_2307_UI_SG_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source extends KeywordUtil {
 	String stepInfo = "";
 	int retryCount = getIntValue("retryCount");
 	static int retryingNumber = 1;
 
-	@Test(testName = "AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source", groups = {
-			"Regression" }, description = "Validate LANDING, ONBLOCK, OFFBLOCK and AIRBORNE timestamps of Arrival and Departure aircrafts from Any Data source for CELEBI in UI")
+	@Test(testName = "ZestIOT_AV_2307_UI_SG_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source", groups = {
+			"Regression" }, description = "Validate LANDING, ONBLOCK, OFFBLOCK and AIRBORNE timestamps of Arrival and Departure aircrafts from Any Data source for SG-HYD in UI")
 	public void test()
 			throws Throwable {
 		try {
@@ -32,9 +32,9 @@ public class ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORN
 			// ============================================================
 			// .........Script Start...........................
 
-			HomePage.prodlogin("Sheroy.Sooi@celebiaviation.in","zestiot123",
+			HomePage.prodlogin("anantspice@zestiot.io","zestiot123",
 					ConfigReader.getValue("hotelCode"));
-			AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation.verifySensorATA_OnBlock_OffBlock_SensorATD_timestamps("DELHI", "CELEBI");
+			AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation.verifySensorATA_OnBlock_OffBlock_SensorATD_timestamps("HYD", "SG");
 			HomePage.logOut();
 
 			
