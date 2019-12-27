@@ -140,9 +140,11 @@ public class AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation e
 		for(int i=1;i<=DepatedFlightsCount;i++)
 		{
 			try {
-			
+
 				js.executeScript("arguments[0].scrollIntoView();",getWebElement(By.xpath("//div[@id='selectedCard']["+i+"]")));
+				
 				delay(2000);
+
 				click(By.xpath("//div[@id='selectedCard']["+i+"]"));
 				delay(2000);
 				String flightInfoText=getElementText(By.xpath("//div[@id='selectedCard']["+i+"]"));
@@ -300,7 +302,7 @@ public class AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation e
 			{
 				missingFlight=missingFlight+1;
 				//e.printStackTrace();
-				//HtmlReportUtil.stepInfo("<b style=\"color:red;\"> "+i+" - "+getElementText(By.xpath("//div[@id='selectedCard']["+i+"]"))+"</b>");
+				//HtmlReportUtil.stepInfo("<b style=\"color:brown;\"> "+i+" - "+getElementText(By.xpath("//div[@id='selectedCard']["+i+"]"))+"</b>");
 			} 
 		}
 		
