@@ -108,7 +108,7 @@ public class Utility {
 		// Set Test browser name for reporting
 		// Initialize HTML Report
 		HtmlReportUtil.startTest(
-				GlobalUtil.getCurrentSuiteName() + "-" + testCaseID + "-" + GlobalUtil.getCurrentBrowser(),
+				 testCaseID + "-" + GlobalUtil.getCurrentSuiteName(),
 				GlobalUtil.getTestData().getTestDesc(), GlobalUtil.getCurrentSuiteName());
 		// Check Y/N for this test from excel file based on suiteID
 

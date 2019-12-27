@@ -164,7 +164,7 @@ public class TestCasesSendMail extends Utility {
 				+ " </tr>");
 			file = new FileInputStream(new File(ConfigReader.getValue("AutomationControlExcelPath")));	
 			workbook = new XSSFWorkbook(file);		
-		    sheet =workbook.getSheet("smoke");		
+		    sheet =workbook.getSheet(GlobalUtil.getCurrentSuiteName());		
 			for(int i=1;i<sheet.getLastRowNum();i++){			
 				DataFormatter formatterr = new DataFormatter();
 				String flag = formatterr.formatCellValue(sheet.getRow(i).getCell(1));

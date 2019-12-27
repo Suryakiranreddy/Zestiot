@@ -16,9 +16,6 @@ import utilities.Utility;
 import utilities.WriteToFile;
 
 public class ExecutionStartEndListner extends Utility implements IExecutionListener {
-
-
-
 	//This method will be the Starting point for whole test process with TestNG
 	@Override
 	public void onExecutionStart() {

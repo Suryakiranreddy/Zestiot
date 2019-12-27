@@ -136,7 +136,7 @@ public class AV_2405_UI_BSSPL_Read_scheduledFlights_andcheck_thecoverage_Schedul
 		for(int i=1;i<=DepatedFlightsCount;i++)
 		{
 			try {
-				delay(2000);
+				
 				js.executeScript("arguments[0].scrollIntoView();",getWebElement(By.xpath("//div[@id='selectedCard']["+i+"]")));
 				delay(2000);
 				click(By.xpath("//div[@id='selectedCard']["+i+"]"));

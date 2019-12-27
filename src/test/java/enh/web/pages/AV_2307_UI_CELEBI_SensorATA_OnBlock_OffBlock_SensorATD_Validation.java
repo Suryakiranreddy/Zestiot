@@ -140,7 +140,7 @@ public class AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation e
 		for(int i=1;i<=DepatedFlightsCount;i++)
 		{
 			try {
-				delay(2000);
+			
 				js.executeScript("arguments[0].scrollIntoView();",getWebElement(By.xpath("//div[@id='selectedCard']["+i+"]")));
 				delay(2000);
 				click(By.xpath("//div[@id='selectedCard']["+i+"]"));
