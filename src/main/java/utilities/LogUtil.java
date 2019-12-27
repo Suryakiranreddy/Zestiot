@@ -29,7 +29,7 @@ public class LogUtil {
 	static RollingFileAppender normalRap;
 	static RollingFileAppender errorRap;
 	private static boolean isInit = false;
-	//private LogUtil(){}
+	private LogUtil(){}
 
 	static PatternLayout patternLayout = new PatternLayout("%d{yyyy-MM-dd HH:mm:ss} %-5p - %m%n");
 	static PatternLayout consolePatternLayout = new PatternLayout("\tLOG-: [%m -  %d{yyyy-MM-dd HH:mm:ss a}] %n");
@@ -38,7 +38,7 @@ public class LogUtil {
 	 * @param clazz
 	 */
 	public static void init(Class clazz) {
-		
+		if (!isInit) {
 
 			try {
 				htmlLogger = Logger.getLogger(clazz+",HtmlLogger");
@@ -107,13 +107,15 @@ public class LogUtil {
 			
 			normalLogger.addAppender(conApp);
 
+			isInit = true;
+		}
 	}
 
 	/**
 	 * @param className
 	 */
 	public static void init(String className) {
-		
+		if (!isInit) {
 			try {
 				htmlLogger = Logger.getLogger(className+",HtmlLogger");
 				htmlLogger .setLevel(Level.INFO);
@@ -157,7 +159,10 @@ public class LogUtil {
 			conApp.setTarget("System.out");
 			conApp.activateOptions();
 
-			normalLogger.addAppender(conApp);	
+			normalLogger.addAppender(conApp);
+
+			isInit = true;
+		}
 	}
 
 	/**
@@ -219,3 +224,4 @@ public class LogUtil {
 
 
 }
+

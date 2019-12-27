@@ -3,6 +3,7 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+import enh.db.cases.Bsspl;
 import enh.db.cases.Bsspl_Bay;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
@@ -39,7 +40,7 @@ public class ZestIOT_000_bsspl extends KeywordUtil {
 			// .........Script Start...........................
 			
 
-			Bsspl_Bay.bsspl(ConfigReader.getValue("ExcelPath"),"9Dec-bayNo");
+			Bsspl.bsspl(ConfigReader.getValue("ExcelPath"),"Wed_BSSPL");
 
 			
 			/*if(SQL_Queries.todayDayDateTime().contains("Tue")) {

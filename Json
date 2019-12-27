@@ -1,0 +1,73 @@
+
+	 public static JSONObject AV_2268_COBT_For_DIALCelebi_UserJson = new JSONObject();
+	 public static JSONArray AV_2268_COBT_For_DIALCelebi_UserArray = new JSONArray();
+	 public static JSONObject COBT_For_DIALCelebi_DataJson = new JSONObject();
+	 public static JSONArray Json_TotalFlightsofEntity = new JSONArray();
+	 public static JSONArray Json_COBTisNOTdetected = new JSONArray();
+	 public static JSONArray Json_OFFBLOCKisNOTdetected = new JSONArray();	 
+	 public static JSONArray Json_differenceOfActualOffBlockAndFinalCOBTdiffIsGreaterThan5Minutes = new JSONArray();
+	 
+	
+
+
+			ResultSet result2 =stmt.executeQuery(SQL_Queries.strQuery_8);
+			while (result2.next()){
+				String str_LogID = result2.getString("Logid");	
+				String str_FlightNumber_Arrival = result2.getString("FlightNumber_Arrival");
+				String str_cobt = result2.getString("cobt");
+				String str_Off_Block_Time = result2.getString("Off_Block_Time");
+				String str_cobtTimeDiff = result2.getString("CONCAT('',TIMEDIFF(Off_Block_Time, cobt))");
+				int str_cobtSecDiff1 = result2.getInt("TIME_TO_SEC(TIMEDIFF(Off_Block_Time, cobt))");
+				int str_cobtSecDiff2 = result2.getInt("TIME_TO_SEC(TIMEDIFF(cobt, Off_Block_Time))");
+				cobtTimeDiff.add(str_Off_Block_Time);
+				System.out.println("| "+ str_LogID +" | "+ str_FlightNumber_Arrival +" | "+ str_cobt +" | "+ str_Off_Block_Time +" | "+ str_cobtTimeDiff +" | ");
+				JSONObject record = new JSONObject();
+				record.put("logid",str_LogID);
+				record.put("flightNumberArrival", str_FlightNumber_Arrival);
+				record.put("COBT", str_cobt);
+				record.put("OffBlockTime",str_Off_Block_Time);
+				
+				Json_TotalFlightsofEntity.add(record);
+				}
+			 if(cobtIsNotNull.size()>0) {
+			 ResultSet result6 = stmt.executeQuery(SQL_Queries.strQuery_6);
+				while (result6.next()){
+					
+					String str_LogID = result6.getString("Logid");	
+					String str_FlightNumber_Arrival = result6.getString("FlightNumber_Arrival");
+					String str_cobt = result6.getString("cobt");
+					String str_Off_Block_Time = result6.getString("Off_Block_Time");				
+					email_COBT_For_DIALCelebi_User6.append("<tr><td><b style=\"color:red;\">"+str_LogID+"</b></td><td><b style=\"color:red;\">"+str_FlightNumber_Arrival+"</b></td>"
+							+ "<td><b style=\"color:red;\">"+str_cobt+"</b></td><td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td></tr>");
+					JSONObject record = new JSONObject();
+					record.put("logid",str_LogID);
+					record.put("flightNumberArrival", str_FlightNumber_Arrival);
+					record.put("COBT", str_cobt);
+					record.put("OffBlockTime",str_Off_Block_Time);
+					
+					Json_COBTisNOTdetected.add(record);
+				
+				}
+			  COBT_For_DIALCelebi_DataJson.put("Total Flights of Entity", Json_TotalFlightsofEntity);
+			 COBT_For_DIALCelebi_DataJson.put("Cobt not detected",Json_COBTisNOTdetected);
+			 COBT_For_DIALCelebi_DataJson.put("OffBlock not detected",Json_OFFBLOCKisNOTdetected);
+			 COBT_For_DIALCelebi_DataJson.put("Difference Of Actual OffBlock and FinalCOBT is > 5 Minutes",Json_differenceOfActualOffBlockAndFinalCOBTdiffIsGreaterThan5Minutes);
+			 
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("title", "AV_2268_COBT_For_DIALCelebi_User");
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("feature", "COBT");
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("subFeature", "Start");
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("entity", 4);
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("airport", 4);
+		 AV_2268_COBT_For_DIALCelebi_UserJson.put("reportedOn", SQL_Queries.yesterDate());
+		AV_2268_COBT_For_DIALCelebi_UserJson.put("data", COBT_For_DIALCelebi_DataJson);
+		 AV_2268_COBT_For_DIALCelebi_UserArray.add(AV_2268_COBT_For_DIALCelebi_UserJson);			 
+		 System.out.println("\nJSON Object: " + AV_2268_COBT_For_DIALCelebi_UserArray);
+			 
+			
+	 }
+		
+ 
+
+  
+ 
+}

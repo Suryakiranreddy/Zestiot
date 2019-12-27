@@ -1,0 +1,176 @@
+2019-12-23 11:21:05 INFO  - Test is started with browser: Chrome
+2019-12-23 11:29:27 INFO  - Total Time taken in(seconds):487
+2019-12-23 11:29:28 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-23 11:29:28 INFO  - Test has ended - closing browser: Chrome
+2019-12-23 11:29:29 INFO  - Test process has ended
+2019-12-23 11:35:41 INFO  - Test is started with browser: Chrome
+2019-12-23 11:38:22 INFO  - Total Time taken in(seconds):150
+2019-12-23 11:38:22 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-23 11:38:24 INFO  - Test has ended - closing browser: Chrome
+2019-12-23 11:38:26 INFO  - Test process has ended
+2019-12-23 11:42:30 INFO  - Test is started with browser: Chrome
+2019-12-23 11:42:43 INFO  - Total Time taken in(seconds):1
+2019-12-23 11:42:43 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-23 11:42:46 INFO  - Test has ended - closing browser: Chrome
+2019-12-23 11:42:48 INFO  - Test process has ended
+2019-12-23 11:46:07 INFO  - Test is started with browser: Chrome
+2019-12-23 11:46:19 INFO  - Total Time taken in(seconds):1
+2019-12-23 11:46:19 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-23 11:46:21 INFO  - Test has ended - closing browser: Chrome
+2019-12-23 11:46:22 INFO  - Test process has ended
+2019-12-23 11:48:24 INFO  - Test is started with browser: Chrome
+2019-12-23 11:48:36 INFO  - Total Time taken in(seconds):1
+2019-12-23 11:48:36 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-23 11:48:38 INFO  - Test has ended - closing browser: Chrome
+2019-12-23 11:48:40 INFO  - Test process has ended
+2019-12-23 12:11:06 INFO  - Test is started with browser: Chrome
+2019-12-23 12:11:18 INFO  - Total Time taken in(seconds):1
+2019-12-23 12:11:18 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-23 12:11:20 INFO  - Test has ended - closing browser: Chrome
+2019-12-23 12:11:21 INFO  - Test process has ended
+2019-12-23 13:19:08 INFO  - Test is started with browser: Chrome
+2019-12-23 13:19:26 INFO  - Total Time taken in(seconds):5
+2019-12-23 13:19:29 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-23 13:19:29 INFO  - Test has ended - closing browser: Chrome
+2019-12-23 13:19:30 INFO  - Test process has ended
+2019-12-24 10:33:58 INFO  - Test is started with browser: Chrome
+2019-12-24 10:37:11 INFO  - Total Time taken in(seconds):180
+2019-12-24 10:37:11 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-24 10:37:12 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 10:37:13 INFO  - Test process has ended
+2019-12-24 10:44:23 INFO  - Test is started with browser: Chrome
+2019-12-24 10:44:36 INFO  - Total Time taken in(seconds):1
+2019-12-24 10:44:36 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-24 10:44:38 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 10:44:39 INFO  - Test process has ended
+2019-12-24 10:46:47 INFO  - Test is started with browser: Chrome
+2019-12-24 10:47:00 INFO  - Total Time taken in(seconds):2
+2019-12-24 10:47:00 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-24 10:47:03 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 10:47:05 INFO  - Test process has ended
+2019-12-24 10:49:31 INFO  - Test is started with browser: Chrome
+2019-12-24 10:49:44 INFO  - Total Time taken in(seconds):1
+2019-12-24 10:49:44 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-24 10:49:46 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 10:49:48 INFO  - Test process has ended
+2019-12-24 10:54:33 INFO  - Test is started with browser: Chrome
+2019-12-24 10:54:53 INFO  - Total Time taken in(seconds):8
+2019-12-24 10:54:53 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-24 10:54:55 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 10:54:56 INFO  - Test process has ended
+2019-12-24 10:55:57 INFO  - Test is started with browser: Chrome
+2019-12-24 11:03:50 INFO  - Total Time taken in(seconds):461
+2019-12-24 11:03:52 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 11:03:52 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 11:03:54 INFO  - Test process has ended
+2019-12-24 11:09:19 INFO  - Test is started with browser: Chrome
+2019-12-24 11:12:25 INFO  - Total Time taken in(seconds):173
+2019-12-24 11:12:25 INFO  - **********TEST FINISHED->  - FAILED**********
+2019-12-24 11:12:26 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 11:12:27 INFO  - Test process has ended
+2019-12-24 11:20:16 INFO  - Test is started with browser: Chrome
+2019-12-24 11:23:18 INFO  - Total Time taken in(seconds):170
+2019-12-24 11:23:20 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 11:23:20 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 11:23:21 INFO  - Test process has ended
+2019-12-24 11:31:42 INFO  - Test is started with browser: Chrome
+2019-12-24 11:39:02 INFO  - Total Time taken in(seconds):428
+2019-12-24 11:39:04 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 11:39:04 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 11:39:06 INFO  - Test process has ended
+2019-12-24 11:42:19 INFO  - Test is started with browser: Chrome
+2019-12-24 11:49:42 INFO  - Total Time taken in(seconds):431
+2019-12-24 11:49:44 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 11:49:44 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 11:49:45 INFO  - Test process has ended
+2019-12-24 11:53:40 INFO  - Test is started with browser: Chrome
+2019-12-24 11:56:49 INFO  - Test is started with browser: Chrome
+2019-12-24 12:05:14 INFO  - Total Time taken in(seconds):493
+2019-12-24 12:05:16 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 12:05:16 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 12:05:17 INFO  - Test process has ended
+2019-12-24 12:08:52 INFO  - Test is started with browser: Chrome
+2019-12-24 12:17:20 INFO  - Total Time taken in(seconds):496
+2019-12-24 12:17:22 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 12:17:22 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 12:17:24 INFO  - Test process has ended
+2019-12-24 12:22:51 INFO  - Test is started with browser: Chrome
+2019-12-24 12:30:17 INFO  - Total Time taken in(seconds):434
+2019-12-24 12:30:19 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 12:30:19 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 12:30:20 INFO  - Test process has ended
+2019-12-24 12:35:24 INFO  - Test is started with browser: Chrome
+2019-12-24 12:43:51 INFO  - Total Time taken in(seconds):495
+2019-12-24 12:43:52 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 12:43:52 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 12:43:54 INFO  - Test process has ended
+2019-12-24 14:23:17 INFO  - Test is started with browser: Chrome
+2019-12-24 14:23:35 INFO  - Total Time taken in(seconds):7
+2019-12-24 14:23:37 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 14:23:37 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 14:23:40 INFO  - Test process has ended
+2019-12-24 17:14:17 INFO  - Test is started with browser: Chrome
+2019-12-24 17:14:47 INFO  - Total Time taken in(seconds):16
+2019-12-24 17:14:52 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 17:14:52 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 17:14:56 INFO  - Test process has ended
+2019-12-24 17:24:03 INFO  - Test is started with browser: Chrome
+2019-12-24 17:24:21 INFO  - Total Time taken in(seconds):6
+2019-12-24 17:24:24 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 17:24:24 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 17:24:26 INFO  - Test process has ended
+2019-12-24 17:29:18 INFO  - Test is started with browser: Chrome
+2019-12-24 17:29:34 INFO  - Total Time taken in(seconds):6
+2019-12-24 17:29:37 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 17:29:38 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 17:29:40 INFO  - Test process has ended
+2019-12-24 17:33:34 INFO  - Test is started with browser: Chrome
+2019-12-24 17:33:54 INFO  - Total Time taken in(seconds):7
+2019-12-24 17:33:57 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 17:33:57 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 17:34:00 INFO  - Test process has ended
+2019-12-24 17:40:22 INFO  - Test is started with browser: Chrome
+2019-12-24 17:40:47 INFO  - Total Time taken in(seconds):10
+2019-12-24 17:40:52 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-24 17:40:52 INFO  - Test has ended - closing browser: Chrome
+2019-12-24 17:40:57 INFO  - Test process has ended
+2019-12-26 10:05:05 INFO  - Test is started with browser: Chrome
+2019-12-26 10:05:28 INFO  - Total Time taken in(seconds):7
+2019-12-26 10:05:31 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 10:05:31 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 10:05:32 INFO  - Test process has ended
+2019-12-26 10:08:20 INFO  - Test is started with browser: Chrome
+2019-12-26 10:08:39 INFO  - Total Time taken in(seconds):6
+2019-12-26 10:08:42 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 10:08:42 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 10:08:43 INFO  - Test process has ended
+2019-12-26 10:15:12 INFO  - Test is started with browser: Chrome
+2019-12-26 10:15:28 INFO  - Total Time taken in(seconds):5
+2019-12-26 10:15:30 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 10:15:30 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 10:15:31 INFO  - Test process has ended
+2019-12-26 10:19:55 INFO  - Test is started with browser: Chrome
+2019-12-26 10:28:02 INFO  - Total Time taken in(seconds):476
+2019-12-26 10:28:04 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 10:28:04 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 10:28:06 INFO  - Test process has ended
+2019-12-26 10:29:37 INFO  - Test is started with browser: Chrome
+2019-12-26 10:37:22 INFO  - Total Time taken in(seconds):453
+2019-12-26 10:37:23 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 10:37:23 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 10:37:25 INFO  - Test process has ended
+2019-12-26 10:47:35 INFO  - Test is started with browser: Chrome
+2019-12-26 10:56:19 INFO  - Total Time taken in(seconds):512
+2019-12-26 10:56:21 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 10:56:21 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 10:56:22 INFO  - Test process has ended
+2019-12-26 11:25:05 INFO  - Test is started with browser: Chrome
+2019-12-26 11:25:22 INFO  - Total Time taken in(seconds):6
+2019-12-26 11:25:24 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 11:25:24 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 11:25:25 INFO  - Test process has ended
+2019-12-26 11:41:54 INFO  - Test is started with browser: Chrome
+2019-12-26 11:42:11 INFO  - Total Time taken in(seconds):6
+2019-12-26 11:42:13 INFO  - **********TEST FINISHED-> -PASS**********
+2019-12-26 11:42:13 INFO  - Test has ended - closing browser: Chrome
+2019-12-26 11:42:14 INFO  - Test process has ended

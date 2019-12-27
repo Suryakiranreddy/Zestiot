@@ -51,7 +51,7 @@ public class Bsspl_Bay {
 						System.out.println("BayNumber: " +BayNumberFromExcel);
 						
 						ResultSet result = DBWrapper.Connect("SELECT * FROM `DailyFlightSchedule_Merged`\r\n" + 
-						"where date(IFNULL(atd, sensor_atd))= '2019-12-09' and operationunit = 22 and \r\n"
+						"where date(IFNULL(atd, sensor_atd))= '2019-12-22' and operationunit = 22 and \r\n"
 						+ "flightnumber_departure like '%"+FlightNum+"%' and bay is not null");
 						
 						while(result.next()) {

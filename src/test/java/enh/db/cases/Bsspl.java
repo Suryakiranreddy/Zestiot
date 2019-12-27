@@ -37,6 +37,7 @@ public class Bsspl {
 	
 	public static void bsspl(String Execlfilepath, String sheetName) throws SQLException, IOException {
 		 HtmlReportUtil.stepInfo(sheetName);
+			System.out.println(sheetName);
 		 file = new FileInputStream(new File(Execlfilepath));
 		 workbook = new XSSFWorkbook(file);
 		 sheet =workbook.getSheet(sheetName);
@@ -47,10 +48,11 @@ public class Bsspl {
 					DataFormatter formatter = new DataFormatter();
 					data[i][j] = formatter.formatCellValue(sheet.getRow(i+1).getCell(j));
 					String FlightNum=data[i][j].replace("-", " ");
-					//System.out.println(FlightNum);
+					System.out.println(FlightNum);
 					testData.add(FlightNum);
 					String SQL_Querry1="SELECT * FROM `DailyFlightSchedule_Merged` "
-							+ "where date(IFNULL(atd, sensor_atd))= '2019-12-18' and operationunit = 22 and flightnumber_departure like '%"+FlightNum+"%' ";
+							+ "where date(IFNULL(atd, sensor_atd))= '2019-12-25' and operationunit = 22 "
+							+ "and flightnumber_departure like '%"+FlightNum+"%' ";
 					
 					ResultSet result = DBWrapper.Connect(SQL_Querry1);
 					while(result.next()) {
@@ -158,7 +160,9 @@ public class Bsspl {
 					testData.removeAll(list_logid);
 					HtmlReportUtil.stepInfo("missing  -"+testData);
 					DBWrapper.dbConnectionClose();
-*/	}
+*/
+				
+	}
 	
 	public static void main(String[] args) throws Exception {
 		Bsspl.bsspl(ConfigReader.getValue("ExcelPath"),"Fri_Flight_Num");

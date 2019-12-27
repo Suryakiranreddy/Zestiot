@@ -1,28 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
-    <classes>
-      <class name="enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source">
-        <methods>
-          <include name="test"/>
-        </methods>
-      </class> <!-- enh.web.tests.ZestIOT_AV_2307_UI_CELEBI_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source -->
-    </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
-=======
 <suite name="Failed suite [smoke]">
   <parameter name="Browser" value="Chrome"/>
   <test name="smoke-Tests(failed)">
     <classes>
-      <class name="enh.web.tests.ZestIOT_000_bsspl">
+      <class name="enh.web.tests.ZestIOT_AV_2405_bsspl">
         <methods>
           <include name="test"/>
         </methods>
-      </class> <!-- enh.web.tests.ZestIOT_000_bsspl -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2405_bsspl -->
     </classes>
   </test> <!-- smoke-Tests(failed) -->
 </suite> <!-- Failed suite [smoke] -->
->>>>>>> ed53840863c6146f52d0c9fa4a27d4edfeaef2cb

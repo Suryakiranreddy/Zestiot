@@ -42,7 +42,6 @@ public class ZestIOT_AV_2405_UI_BSSPL_Validate_Fueling_Coverage extends KeywordU
 		} catch (Exception e) {
 			if (retryCount > 0) {
 				String imagePath = takeScreenshot(getDriver(), getTestCaseID() + "_" + retryingNumber);
-
 				logStepFail(stepInfo + " - " + KeywordUtil.lastAction);
 				logStepError(e.getMessage());
 				HtmlReportUtil.attachScreenshot(imagePath, false);
