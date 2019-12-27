@@ -285,7 +285,7 @@ public class AV_2405_UI_BSSPL_Read_scheduledFlights_andcheck_thecoverage_Schedul
 			{
 				missingFlight=missingFlight+1;
 				//e.printStackTrace();
-				//HtmlReportUtil.stepInfo("<b style=\"color:red;\"> "+i+" - "+getElementText(By.xpath("//div[@id='selectedCard']["+i+"]"))+"</b>");
+				//HtmlReportUtil.stepInfo("<b style=\"color:brown;\"> "+i+" - "+getElementText(By.xpath("//div[@id='selectedCard']["+i+"]"))+"</b>");
 			} 
 		}
 		
