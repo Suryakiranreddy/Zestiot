@@ -57,7 +57,7 @@ public class DriverUtil {
 				cap.setCapability(ChromeOptions.CAPABILITY, options);
 				options.setExperimentalOption("prefs",chromePrefs);
 				cap.setCapability(ChromeOptions.CAPABILITY, options);				
-				browser = new ChromeDriver(cap);
+				browser = new ChromeDriver();
 				drivers.put("Chrome", browser);
 			} // End if
 		} else if (browserName.equalsIgnoreCase(IE)) {
