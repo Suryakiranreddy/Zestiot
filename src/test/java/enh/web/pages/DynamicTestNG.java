@@ -1,22 +1,16 @@
 package enh.web.pages;
 import java.io.File;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 import org.testng.TestNG;
 import org.testng.xml.XmlClass;
-import org.testng.xml.XmlInclude;
-import org.testng.xml.XmlPackage;
 import org.testng.xml.XmlSuite;
 import org.testng.xml.XmlTest;
-import org.yaml.snakeyaml.reader.UnicodeReader;
 public class DynamicTestNG {
  public void runTestNGTest(Map<String,String> testngParams)
  {   //Create an instance on TestNG 

@@ -25,7 +25,7 @@ public class CustomSuiteRunner {
 	/**
 	 * Creating suite XMLs at runtime for execution
 	 */
-	@Test
+	@Test 
 	public static void suiteRunner() {
 		/*
 		 * This is Test runner Utility that run all the tests based on enabled
