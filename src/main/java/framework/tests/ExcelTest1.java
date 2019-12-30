@@ -1,6 +1,5 @@
 package framework.tests;
 
-import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 import utilities.ExcelDataUtil;

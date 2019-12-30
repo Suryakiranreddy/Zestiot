@@ -1,11 +1,5 @@
 package utilities;
 
-import java.sql.ResultSet;
-
-import javax.mail.MessagingException;
-
-import com.mysql.jdbc.PreparedStatement;
-
 public class GetOutstanding {/*
 	StringBuilder email;
 	public void getOutstanding() throws MessagingException {

@@ -10,7 +10,6 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
 import utilities.HtmlReportUtil;
-import utilities.SendMailBodyToZestIOT;
 
 public class AV_2268_COBT_For_GMR_HYD_SG_User {
 	 public static ArrayList<String> cobtIsNotNull= new ArrayList<String>();

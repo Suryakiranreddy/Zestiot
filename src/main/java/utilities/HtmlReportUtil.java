@@ -19,8 +19,6 @@
 package utilities;
 
 import java.io.File;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import com.relevantcodes.extentreports.DisplayOrder;
 import com.relevantcodes.extentreports.ExtentReports;

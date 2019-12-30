@@ -8,8 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.Collections;
 
-import org.testng.annotations.Test;
-
 import utilities.HtmlReportUtil;
 
 public class FlightNumber_Arrival_FlightNumber_DepartureComparison {

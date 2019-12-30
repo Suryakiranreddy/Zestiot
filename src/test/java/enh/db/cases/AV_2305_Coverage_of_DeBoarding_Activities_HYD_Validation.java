@@ -1,13 +1,7 @@
 package enh.db.cases;
 
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
-
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
-
-import utilities.HtmlReportUtil;
 
 public class AV_2305_Coverage_of_DeBoarding_Activities_HYD_Validation {
 	

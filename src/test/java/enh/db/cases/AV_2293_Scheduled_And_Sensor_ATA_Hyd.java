@@ -1,7 +1,6 @@
 package enh.db.cases;
 
 import java.sql.ResultSet;
-import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.relevantcodes.extentreports.ExtentTest;

@@ -3,7 +3,6 @@ package enh.web.pages;
 import org.openqa.selenium.By;
 
 import utilities.ConfigReader;
-import utilities.HtmlReportUtil;
 import utilities.KeywordUtil;
 
 public class HomePage extends KeywordUtil {

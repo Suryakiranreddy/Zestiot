@@ -3,7 +3,6 @@ package enh.web.tests;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import enh.db.cases.DBTesting;
 import listeners.CustomListeners;
 import listeners.ExecutionStartEndListner;
 import utilities.GlobalUtil;
