@@ -45,6 +45,7 @@
 			<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 				<li class='analysis waves-effect active'><a href='#!' class='test-view' onclick="_updateCurrentStage(0)"><i class='mdi-action-dashboard'></i>Test Details</a></li>
 					<li class='analysis waves-effect'><a href='#!' class='categories-view' onclick="_updateCurrentStage(1)"><i class='mdi-maps-local-offer'></i>Categories</a></li>
+					<li class='analysis waves-effect'><a href='#!' class='exceptions-view' onclick="_updateCurrentStage(2)"><i class='mdi-action-bug-report'></i>Exceptions</a></li>
 				<li class='analysis waves-effect'>
 					<a href='#!' onclick="_updateCurrentStage(-1)" class='dashboard-view'><i class='mdi-action-track-changes'></i></i>Analysis</a>
 				</li>
@@ -55,7 +56,7 @@
 					<i class='mdi-hardware-desktop-windows'></i>
 				</li>
 				<li>
-					<span class='suite-started-time'>2019-12-30 11:58:21</span>
+					<span class='suite-started-time'>2019-12-30 13:29:30</span>
 				</li>
 				<li>
 					<span>v2.41.1</span>
@@ -85,25 +86,25 @@
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-current'> 
 							<span class='panel-name'>Total Time Taken (Current Run)</span> 
-							<span class='suite-total-time-current-value panel-lead'>0h 0m 23s+551ms</span> 
+							<span class='suite-total-time-current-value panel-lead'>0h 0m 35s+199ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s12'>
 						<div class='card suite-total-time-overall'> 
 							<span class='panel-name'>Total Time Taken (Overall)</span> 
-							<span class='suite-total-time-overall-value panel-lead'>0h 0m 23s+551ms</span> 
+							<span class='suite-total-time-overall-value panel-lead'>0h 0m 35s+199ms</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-start-time'>
 						<div class='card accent green-accent'> 
 							<span class='panel-name'>Start</span> 
-							<span class='panel-lead suite-started-time'>2019-12-30 11:57:57</span> 
+							<span class='panel-lead suite-started-time'>2019-12-30 13:28:55</span> 
 						</div> 
 					</div>
 					<div class='col l2 m4 s6 suite-end-time'>
 						<div class='card accent pink-accent'> 
 							<span class='panel-name'>End</span> 
-							<span class='panel-lead suite-ended-time'>2019-12-30 11:58:21</span> 
+							<span class='panel-lead suite-ended-time'>2019-12-30 13:29:30</span> 
 						</div> 
 					</div>
 				</div>
@@ -270,17 +271,17 @@
 						<div class='card-panel no-padding-h no-padding-v no-margin-v'>
 							<div class='wrapper'>
 								<ul id='test-collection' class='test-collection'>
-										<li class='collection-item test displayed active pass ' extentid='b4ef540e-1dc1-49b8-b8cd-f28768592910'>
+										<li class='collection-item test displayed active fail ' extentid='37116814-cd5f-4898-a9e5-b252bfa2d1cc'>
 											<div class='test-head'>
-												<span class='test-name'><b style="color:green;" align="center">Total Flights of Entity: 73</b> </span>
-												<span class='test-status label right outline capitalize pass'>pass</span>
+												<span class='test-name'><b style="color:green;" align="center">Total Flights of Entity: 73</b> <i class='tooltipped mdi-alert-error' data-position='top' data-delay='50' data-tooltip='Close was called before test could end safely using EndTest.'></i></span>
+												<span class='test-status label right outline capitalize fail'>fail</span>
 												<span class='category-assigned hide '></span>
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-30 11:58:17</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'></span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'></span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-30 13:29:23</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-30 13:29:30</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 7s+279ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -297,8 +298,55 @@
 														<tbody>
 																<tr>
 																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>11:58:17</td>
+																	<td class='timestamp'>13:29:23</td>
 																	<td class='step-details'><b style="color:green;" >Total Flights of Entity: 73</b></td>
+																</tr>
+																<tr>
+																	<td class='status fail' title='fail' alt='fail'><i class='mdi-navigation-cancel'></i></td>
+																	<td class='timestamp'>13:29:30</td>
+																	<td class='step-details'><pre>com.relevantcodes.extentreports.ExtentTestInterruptedException: Close was called before test could end safely using EndTest.
+	at com.relevantcodes.extentreports.Report.terminate(Report.java:425)
+	at com.relevantcodes.extentreports.ExtentReports.close(ExtentReports.java:917)
+	at utilities.HtmlReportUtil.tearDownReport(HtmlReportUtil.java:320)
+	at listeners.CustomListeners.onFinish(CustomListeners.java:123)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:229)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:292)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></td>
 																</tr>
 														</tbody>
 													</table>
@@ -307,7 +355,7 @@
 												</div>
 											</div>
 										</li>
-										<li class='collection-item test displayed active pass hasChildren' extentid='55eb2e39-73bb-4fb5-bb9c-410b086e23b0'>
+										<li class='collection-item test displayed active pass hasChildren' extentid='c96aa9e7-94be-461f-ac83-1e67ee7bf5f7'>
 											<div class='test-head'>
 												<span class='test-name'>ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User-smoke </span>
 												<span class='test-status label right outline capitalize pass'>pass</span>
@@ -315,9 +363,9 @@
 											</div>
 											<div class='test-body'>
 												<div class='test-info'>
-													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-30 11:58:12</span>
-													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-30 11:58:19</span>
-													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 6s+412ms</span>
+													<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-1 text-white'>2019-12-30 13:29:18</span>
+													<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-1 text-white'>2019-12-30 13:29:27</span>
+													<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-3 text-white'>0h 0m 9s+538ms</span>
 												</div>
 												<div class='test-desc'></div>
 												<div class='test-attributes'>
@@ -337,12 +385,12 @@
 														<tbody>
 																<tr>
 																	<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																	<td class='timestamp'>11:58:17</td>
-																	<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style><h4 align="center" style="color:#008ae6;">Executed For :COBT For DIALCelebi</h4><h5 align="center" style="color:#008ae6;" >Execution Time: Mon, 30 Dec 2019 11:58:17 IST </h5><table style="width:100%" id="t01"><tr><th style="width:15%"><b>Date</b></th><th style="width:20%"><b>Total No. of Flights</b></th> <th style="width:20%"><b>COBT  Not detected</b></th><th style="width:25%"><b>OFFBLOCK not detected</b></th><th style="width:20%"><b>Actual OFFBLOCK & COBT diff  > 5mins</b></th> </tr> <tr> <td><b>2019-12-29</b></td> <td><b>73</b></td> <td> <b style="color:red;">1</b></td> <td><b style="color:red;">0</b></td> <td><b style="color:red;">7</b></td>  </tr></table></td>
+																	<td class='timestamp'>13:29:23</td>
+																	<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style><h4 align="center" style="color:#008ae6;">Executed For :COBT For DIALCelebi</h4><h5 align="center" style="color:#008ae6;" >Execution Time: Mon, 30 Dec 2019 13:29:22 IST </h5><table style="width:100%" id="t01"><tr><th style="width:15%"><b>Date</b></th><th style="width:20%"><b>Total No. of Flights</b></th> <th style="width:20%"><b>COBT  Not detected</b></th><th style="width:25%"><b>OFFBLOCK not detected</b></th><th style="width:20%"><b>Actual OFFBLOCK & COBT diff  > 5mins</b></th> </tr> <tr> <td><b>2019-12-29</b></td> <td><b>73</b></td> <td> <b style="color:red;">1</b></td> <td><b style="color:red;">0</b></td> <td><b style="color:red;">7</b></td>  </tr></table></td>
 																</tr>
 																<tr>
 																	<td class='status pass' title='pass' alt='pass'><i class='mdi-action-check-circle'></i></td>
-																	<td class='timestamp'>11:58:19</td>
+																	<td class='timestamp'>13:29:27</td>
 																	<td class='step-details'><span class='success label'>PASS</span> <span style='color:green;margin-left: 10px'></span></td>
 																</tr>
 														</tbody>
@@ -351,9 +399,9 @@
 																	<li class='displayed pass node-1x'>
 																		<div class='collapsible-header test-node pass'>
 																			<div class='right test-info'>
-																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-30 11:58:17</span>
-																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-30 11:58:17</span>
-																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-30 13:29:23</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-30 13:29:23</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
 																				<span class='test-status label outline capitalize pass'>pass</span>
 																			</div>
 																			<div class='test-node-name'><b style="color:green;" align="center">Total Flights of Entity: 73</b></div>
@@ -372,7 +420,7 @@
 																					<tbody>
 																							<tr>
 																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																								<td class='timestamp'>11:58:17</td>
+																								<td class='timestamp'>13:29:23</td>
 																								<td class='step-details'><b style="color:green;" >Total Flights of Entity: 73</b></td>
 																							</tr>
 																					</tbody>
@@ -383,9 +431,9 @@
 																	<li class='displayed pass node-1x'>
 																		<div class='collapsible-header test-node pass'>
 																			<div class='right test-info'>
-																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-30 11:58:17</span>
-																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-30 11:58:17</span>
-																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+1ms</span>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-30 13:29:23</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-30 13:29:23</span>
+																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
 																				<span class='test-status label outline capitalize pass'>pass</span>
 																			</div>
 																			<div class='test-node-name'><b style="color:red;" align="center">Total Flights For which COBT is NOT detected: 1</b></div>
@@ -404,7 +452,7 @@
 																					<tbody>
 																							<tr>
 																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																								<td class='timestamp'>11:58:17</td>
+																								<td class='timestamp'>13:29:23</td>
 																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> COBT not detected flights</caption></h4><tr><th style="width:25%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th></tr><tr><td><b style="color:red;">227477</b></td><td><b style="color:red;">PS 391</b></td><td><b style="color:red;">null</b></td><td><b style="color:red;">2019-12-29 23:43:00.0</b></td></tr></table></td>
 																							</tr>
 																					</tbody>
@@ -415,8 +463,8 @@
 																	<li class='displayed pass node-1x'>
 																		<div class='collapsible-header test-node pass'>
 																			<div class='right test-info'>
-																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-30 11:58:17</span>
-																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-30 11:58:17</span>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-30 13:29:23</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-30 13:29:23</span>
 																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
 																				<span class='test-status label outline capitalize pass'>pass</span>
 																			</div>
@@ -436,7 +484,7 @@
 																					<tbody>
 																							<tr>
 																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																								<td class='timestamp'>11:58:17</td>
+																								<td class='timestamp'>13:29:23</td>
 																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> OFFBLOCK not detected flights</caption></h4><tr><th style="width:25%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th></tr><tr><td colspan="5"><b style="color:red;" >No values found</b></td></tr></table></td>
 																							</tr>
 																					</tbody>
@@ -447,8 +495,8 @@
 																	<li class='displayed pass node-1x'>
 																		<div class='collapsible-header test-node pass'>
 																			<div class='right test-info'>
-																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-30 11:58:17</span>
-																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-30 11:58:17</span>
+																				<span title='Test started time' alt='Test started time' class='test-started-time label green lighten-2 text-white'>2019-12-30 13:29:23</span>
+																				<span title='Test ended time' alt='Test ended time' class='test-ended-time label red lighten-2 text-white'>2019-12-30 13:29:23</span>
 																				<span title='Time taken to finish' alt='Time taken to finish' class='test-time-taken label blue-grey lighten-2 text-white'>0h 0m 0s+0ms</span>
 																				<span class='test-status label outline capitalize pass'>pass</span>
 																			</div>
@@ -468,7 +516,7 @@
 																					<tbody>
 																							<tr>
 																								<td class='status info' title='info' alt='info'><i class='mdi-action-info-outline'></i></td>
-																								<td class='timestamp'>11:58:17</td>
+																								<td class='timestamp'>13:29:23</td>
 																								<td class='step-details'><style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style><table style="width:100%" id="t01"><h4><caption> OFFBLOCK & COBT DIFF > 5MINS</caption></h4><tr><th style="width:10%">LogID</th> <th style="width:25%">FlightNumber_Arrival</th><th style="width:25%">COBT</th><th style="width:25%">Off_Block_Time</th><th style="width:15%">COBT Diff</th></tr><tr><td><b style="color:red;">227324</b></td><td><b style="color:red;">I5 774</b></td><td><b style="color:red;">2019-12-29 05:06:18.0</b></td><td><b style="color:red;">2019-12-29 05:11:29.0</b></td><td><b style="color:red;">00:05:11</b></td></tr><tr><td><b style="color:red;">227362</b></td><td><b style="color:red;">I5 330</b></td><td><b style="color:red;">2019-12-29 07:20:00.0</b></td><td><b style="color:red;">2019-12-29 07:14:00.0</b></td><td><b style="color:red;">-00:06:00</b></td></tr><tr><td><b style="color:red;">227685</b></td><td><b style="color:red;">I5 737</b></td><td><b style="color:red;">2019-12-29 12:13:00.0</b></td><td><b style="color:red;">2019-12-29 12:23:05.0</b></td><td><b style="color:red;">00:10:05</b></td></tr><tr><td><b style="color:red;">227782</b></td><td><b style="color:red;">I5 546</b></td><td><b style="color:red;">2019-12-29 15:37:09.0</b></td><td><b style="color:red;">2019-12-29 15:50:00.0</b></td><td><b style="color:red;">00:12:51</b></td></tr><tr><td><b style="color:red;">227797</b></td><td><b style="color:red;">I5 602</b></td><td><b style="color:red;">2019-12-29 14:11:32.0</b></td><td><b style="color:red;">2019-12-29 14:30:00.0</b></td><td><b style="color:red;">00:18:28</b></td></tr><tr><td><b style="color:red;">227951</b></td><td><b style="color:red;">ET 8801</b></td><td><b style="color:red;">2019-12-29 18:05:48.0</b></td><td><b style="color:red;">2019-12-29 18:00:00.0</b></td><td><b style="color:red;">-00:05:48</b></td></tr><tr><td><b style="color:red;">228090</b></td><td><b style="color:red;">I5 784</b></td><td><b style="color:red;">2019-12-29 21:01:49.0</b></td><td><b style="color:red;">2019-12-29 21:11:00.0</b></td><td><b style="color:red;">00:09:11</b></td></tr></table></td>
 																							</tr>
 																					</tbody>
@@ -553,8 +601,8 @@
 															</thead>
 															<tbody>
 																	<tr class='pass'>
-																		<td>2019-12-30 11:58:12</td>
-																		<td><span class='category-link linked' extentid='55eb2e39-73bb-4fb5-bb9c-410b086e23b0'>ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User-smoke</span></td>
+																		<td>2019-12-30 13:29:18</td>
+																		<td><span class='category-link linked' extentid='c96aa9e7-94be-461f-ac83-1e67ee7bf5f7'>ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User-smoke</span></td>
 																		<td><div class='status label capitalize pass'>pass</div></td>
 																	</tr>
 															<tbody>
@@ -580,6 +628,110 @@
 			<!-- /categories -->
 			
 			<!-- exceptions -->
+				<div id='exceptions-view' class='row _addedTable hide'>
+					<div class='col _addedCell1'>
+						<div class='contents'>
+							<div class='card-panel heading'>
+								<h5>Defects</h5>
+							</div>
+							<div class='card-panel filters'>
+								<div class='search' alt='Search tests' title='Search tests'>
+									<div class='input-field left'>
+										<input id='searchTests' type='text' class='validate' placeholder='Search tests...'>
+									</div>
+									<a href="#" class='btn-floating btn-small waves-effect waves-light blue lighten-1'>
+										<i class='mdi-action-search'></i>
+									</a>
+								</div>
+							</div>
+							<div class='card-panel no-padding-h no-padding-v'>
+								<div class='wrapper'>
+									<ul id='exception-collection' class='exception-collection'>
+											<li class='exception-item displayed'>
+												<div class='exception-head'>
+													<span class='exception-name'>com.relevantcodes.extentreports.ExtentTestInterruptedException</span>
+												</div>
+												<div class='exception-test-count'>
+													<span class='fail label'>1</span>
+												</div>
+												<div class='exception-body'>
+													<div class='exception-tests'>
+														<table class='bordered'>
+															<thead>
+																<tr>
+																	<th>RunDate</th>
+																	<th>Test Name</th>
+																	<th>Exception</th>
+																</tr>
+															</thead>
+															<tbody>
+                                                                   <tr class='fail'>
+                                                                       <td>2019-12-30 13:29:23</td>
+                                                                       <td><span class='exception-link linked' extentid='37116814-cd5f-4898-a9e5-b252bfa2d1cc'><b style="color:green;" align="center">Total Flights of Entity: 73</b></span></td>
+                                                                       <td><pre class='exception-message'>com.relevantcodes.extentreports.ExtentTestInterruptedException: Close was called before test could end safely using EndTest.
+	at com.relevantcodes.extentreports.Report.terminate(Report.java:425)
+	at com.relevantcodes.extentreports.ExtentReports.close(ExtentReports.java:917)
+	at utilities.HtmlReportUtil.tearDownReport(HtmlReportUtil.java:320)
+	at listeners.CustomListeners.onFinish(CustomListeners.java:123)
+	at org.testng.SuiteRunner.invokeListeners(SuiteRunner.java:229)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:292)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at suite.runner.CustomSuiteRunner.suiteRunner(CustomSuiteRunner.java:140)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at org.testng.TestRunner.privateRun(TestRunner.java:744)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:375)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1226)
+	at org.testng.TestNG.runSuites(TestNG.java:1144)
+	at org.testng.TestNG.run(TestNG.java:1115)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:281)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:121)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:290)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
+</pre></td>
+                                                                   </tr>
+                                                            </tbody>
+														</table>
+													</div>
+												</div> 
+											</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id='exception-details-wrapper' class='col _addedCell2'>
+						<div class='contents'>
+							<div class='card-panel details-view'>
+								<h5 class='exception-name'></h5>
+								<div class='exception-container'>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			<!-- /exceptions -->
 			
 			<!-- testrunner logs -->
