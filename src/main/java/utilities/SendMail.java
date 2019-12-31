@@ -221,11 +221,11 @@ public class SendMail extends Utility {
 	}
 	public static void sendImage() throws IOException, MessagingException {
 		String mailBody="<html>"
-    			+ "<p style=\"color:#008ae6;\"><h1>Hi All,</h1> <br></br>"	
-                +"<img align=\"middle\" src=\"cid:image1\" alt=\"Smiley face\" height=\"400\" width=\"700\">"
-                +" <p style=\"color:#008ae6;\"><br><br><br> <h1>Thanks & Regards,<br>Automation Team</h1></p>"
+    			+ "<p ><h2 style=\"color:#669900;\" align=\"center\">We Wish You All A Very HAPPY NEW YEAR !!</h2></p>"
+                +"<img align=\"middle\" src=\"cid:image1\" alt=\"We Wish You All A Very HAPPY NEW YEAR\" height=\"400\" width=\"600\">"
+                +" <p ><h2 style=\"color:#669900;\">Thanks & Regards,<br>Automation Team</h2></p>"
 				+ "<html>";
-		String imagePath = System.getProperty(DIR_PATH) + "/happyNewYear.gif";
+		String imagePath = System.getProperty(DIR_PATH) + "/newye.jpg";
 		// inline images
         Map<String, String> inlineImages = new HashMap<String, String>();
         inlineImages.put("image1", imagePath);

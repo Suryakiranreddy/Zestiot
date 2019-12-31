@@ -2,19 +2,19 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="smoke" duration-ms="545985" started-at="2019-12-31T08:32:22Z" finished-at="2019-12-31T08:41:28Z">
+  <suite name="smoke" duration-ms="17412" started-at="2019-12-31T10:14:25Z" finished-at="2019-12-31T10:14:43Z">
     <groups>
       <group name="Regression">
-        <method signature="ZestIOT_AV_2405_bsspl.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2405_bsspl@399f45b1]" name="test" class="enh.web.tests.ZestIOT_AV_2405_bsspl"/>
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@3a93b025]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="smoke-Tests" duration-ms="545985" started-at="2019-12-31T08:32:22Z" finished-at="2019-12-31T08:41:28Z">
-      <class name="enh.web.tests.ZestIOT_AV_2405_bsspl">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2405_bsspl@399f45b1]" name="test" duration-ms="534141" started-at="2019-12-31T14:02:33Z" description="ZestIOT_000_bsspl" finished-at="2019-12-31T14:11:27Z">
+    <test name="smoke-Tests" duration-ms="17412" started-at="2019-12-31T10:14:25Z" finished-at="2019-12-31T10:14:43Z">
+      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@3a93b025]" name="test" duration-ms="5090" started-at="2019-12-31T15:44:36Z" description="AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User" finished-at="2019-12-31T15:44:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_AV_2405_bsspl -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User -->
     </test> <!-- smoke-Tests -->
   </suite> <!-- smoke -->
 </testng-results>
