@@ -223,7 +223,7 @@ public class SendMail extends Utility {
 		String mailBody="<html>"
     			+ "<p ><h2 style=\"color:#669900;\" align=\"center\">We Wish You All A Very HAPPY NEW YEAR !!</h2></p>"
                 +"<img align=\"middle\" src=\"cid:image1\" alt=\"We Wish You All A Very HAPPY NEW YEAR\" height=\"400\" width=\"600\">"
-                +" <p ><h2 style=\"color:#669900;\">Thanks & Regards,<br>Automation Team</h2></p>"
+                +" <p ><h2 style=\"color:#669900;\">Regards,<br>Testing Team</h2></p>"
 				+ "<html>";
 		String imagePath = System.getProperty(DIR_PATH) + "/newye.jpg";
 		// inline images
