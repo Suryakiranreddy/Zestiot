@@ -41,7 +41,7 @@ public class Utility {
 	public static final String USERDIR = "user.dir";
 
 	// Set folder path for test results
-	private static String RESULT_FOLDER_NAME = System.getProperty(USERDIR) + "\\ExecutionReports\\ExecutionReports";
+	private static String RESULT_FOLDER_NAME = System.getProperty(USERDIR) + "/ExecutionReports/ExecutionReports";
 
 	/*
 	 * Property file handling functionalities
@@ -79,7 +79,7 @@ public class Utility {
 	 * @return
 	 */
 	public static int getIntValue(String key) {
-		Properties prop = loadPropertyFile("src\\main\\resources\\ConfigFiles\\config.properties");
+		Properties prop = loadPropertyFile("./src/main/resources/ConfigFiles/config.properties");
 		String strKey = prop.getProperty(key);
 		return Integer.parseInt(strKey);
 	}
@@ -89,7 +89,7 @@ public class Utility {
 	 * @return
 	 */
 	public static String getValue(String key) {
-		Properties prop = loadPropertyFile("src\\main\\resources\\ConfigFiles\\config.properties");
+		Properties prop = loadPropertyFile("./src/main/resources/ConfigFiles/config.properties");
 
 		return prop.getProperty(key);
 	}
@@ -174,7 +174,7 @@ public class Utility {
 		String timeStamp = dateFormat.format(date);
 		try {
 			File oldFile = new File(System.getProperty(USERDIR) + Utility.getValue("testResultExcelPath"));
-			String newFilePath = oldFile.getAbsolutePath().replace(oldFile.getName(), "") + "\\ReportHistory\\"
+			String newFilePath = oldFile.getAbsolutePath().replace(oldFile.getName(), "") + "/ReportHistory/"
 					+ timeStamp + "-TestResult.xls";
 			File newFile = new File(newFilePath);
 
@@ -190,7 +190,7 @@ public class Utility {
 	 * 
 	 */
 	public static void checkFileOpen() {
-		String fileName = System.getProperty(USERDIR) + "\\ExecutionReports\\ExcelReport\\TestResult.xls";
+		String fileName = System.getProperty(USERDIR) + "/ExecutionReports/ExcelReport/TestResult.xls";
 		File file = new File(fileName);
 		File sameFileName = new File(fileName);
 
@@ -305,15 +305,15 @@ public class Utility {
 		DateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
 		String timeStamp = dateFormat.format(date);
 		timeStamp = timeStamp + "_";
-		String path = System.getProperty(USERDIR) + "\\ExecutionReports\\HtmlReport\\"
-				+ ConfigReader.getValue("screenshotPath") + "\\" + timeStamp + testCaseID + ".jpg";
+		String path = System.getProperty(USERDIR) + "/ExecutionReports/HtmlReport/"
+				+ ConfigReader.getValue("screenshotPath") + "/" + timeStamp + testCaseID + ".jpg";
 
 		Screenshot screenshot = new AShot().shootingStrategy(ShootingStrategies.simple()).takeScreenshot(driver,
 				element);
 		File src = new File(path);
 		LogUtil.infoLog(Utility.class, "Screenshot Image Path: " + src.getPath());
 		ImageIO.write(screenshot.getImage(), "PNG", src);
-		return ConfigReader.getValue("screenshotPath") + "\\" + timeStamp + testCaseID + ".jpg";
+		return ConfigReader.getValue("screenshotPath") + "/" + timeStamp + testCaseID + ".jpg";
 	}
 
 	/**

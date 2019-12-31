@@ -30,8 +30,8 @@ public class ZestIOT_019_GMR_HYD_Sensor_And_Scheduled_data_Validation extends Ke
 			// ============================================================
 			// .........Script Start...........................
 
-			DBTesting.scheduledAndSensorATAForHyderabad();
-			DBTesting.scheduledAndSensorATDForHyderabad();
+			DBTesting.scheduledAndSensorATAForHyderabad("prod");
+			DBTesting.scheduledAndSensorATDForHyderabad("prod");
 			//DBTesting.onBlockAndSensorATAForHyderabad();
 			//DBTesting.offBlockAndSensorATDForHyderabad();
 

@@ -31,7 +31,7 @@ public class ZestIOT_AV_2294__SG_HYD_Identify_coverage_of_Flight_Sensor_and_Vali
 			// ============================================================
 			// .........Script Start...........................
 
-			AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd.scheduled_And_Sensor_ATD_For_SG_Hyderabad_Report(4, "SG");
+			AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd.scheduled_And_Sensor_ATD_For_SG_Hyderabad_Report(4, "SG","prod");
 			
 			// .........Script Start...........................
 		} catch (Exception e) {

@@ -32,10 +32,10 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 	public static StringBuilder email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_DIAL_Delhi6= new StringBuilder();
 	
 	
-	public static void SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_Delhi_Report(int operationunit) throws Exception{
+	public static void SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_Delhi_Report(int operationunit,String environment) throws Exception{
 	
 		ResultSet result = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where \r\n" + 
-				"date(IFNULL(sta, eta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+"");
+				"date(IFNULL(sta, eta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+"",environment);
 		while (result.next())
 		{				
 			totalScheduledArrival = result.getInt("count(*)");
@@ -43,7 +43,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 		}	
 		
 		ResultSet result1 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleDeparture_GMR` where \r\n" +
-				"date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+"");
+				"date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+"",environment);
 		while (result1.next())
 		{				
 			totalScheduledDeparture = result1.getInt("count(*)");
@@ -52,7 +52,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 		
 		ResultSet result2 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n" + 
 			"gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta, eta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
-			"and sensor_ata is not null");
+			"and sensor_ata is not null",environment);
 						while (result2.next())
 						{				
 							notNullSensorATA = result2.getInt("count(*)");
@@ -61,7 +61,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 						
 		ResultSet result3 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, on_block_time, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where\r\n" + 
 			"gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta, eta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
-			"and (sensor_ata is null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
+			"and (sensor_ata is null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)",environment);
 						while (result3.next())
 						{				
 							String str_LogID = result3.getString("logid");
@@ -73,7 +73,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 						}
 						
 		ResultSet result4 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR` \r\n"
-				+ "where date(IFNULL(sta, eta))='"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" ) and on_block_time is not null");
+				+ "where date(IFNULL(sta, eta))='"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" ) and on_block_time is not null",environment);
 								while (result4.next())
 								{				
 									notNullOnBlockTime = result4.getInt("count(*)");
@@ -82,7 +82,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 								
 		ResultSet result5 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ata, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`\r\n "
 			+ "where date(IFNULL(sta, eta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and on_block_time is null \r\n"
-					+ "and (sensor_ata is not null and off_block_time is not null and sensor_atd is not null)");
+					+ "and (sensor_ata is not null and off_block_time is not null and sensor_atd is not null)",environment);
 								while (result5.next())
 								{	
 									String str_LogID = result5.getString("logid");
@@ -95,7 +95,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 								}
 								
 		ResultSet result6 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` \r\n"
-				+ "where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" ) and off_block_time is not null");
+				+ "where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" ) and off_block_time is not null",environment);
 								while (result6.next())
 								{				
 									notNullOffBlockTime = result6.getInt("count(*)");
@@ -104,7 +104,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 								
 		ResultSet result7 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` \r\n"
 		+ "where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and off_block_time is null \r\n"
-		+ "and(sensor_ata is not null and on_block_time is not null and sensor_atd is not null)");
+		+ "and(sensor_ata is not null and on_block_time is not null and sensor_atd is not null)",environment);
 								while (result7.next())
 								{	
 									String str_LogID = result7.getString("logid");
@@ -118,7 +118,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 		
 		ResultSet result8 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n " +
 		"gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' \r\n "
-			+ "and operationunit= "+operationunit+") and sensor_atd is not null");
+			+ "and operationunit= "+operationunit+") and sensor_atd is not null",environment);
 								while (result8.next())
 								{				
 								notNullSensorATD = result8.getInt("count(*)");
@@ -127,7 +127,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 								
 		ResultSet result9 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, off_block_time FROM `DailyFlightSchedule_Merged` where \r\n" + 
 		"gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR`where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
-		"and (sensor_atd is null and on_block_time is not null and off_block_time is not null and sensor_ata is not null)");
+		"and (sensor_atd is null and on_block_time is not null and off_block_time is not null and sensor_ata is not null)",environment);
 								while (result9.next())
 								{	
 								String str_LogID = result9.getString("logid");
@@ -141,7 +141,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 								
 		ResultSet result10 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_departure in \r\n" + 
 			"(SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' and operationunit ="+operationunit+")\r\n" + 
-				"and (sensor_ata is not null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
+				"and (sensor_ata is not null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)",environment);
 								while (result10.next())
 								{				
 								totalFlightsContainAll = result10.getInt("count(*)");
@@ -150,7 +150,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 										
 	ResultSet result11 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, Off_block_time, sensor_atd, (case when ((Sensor_ATA < On_Block_Time AND Sensor_ATA < Off_Block_Time) AND (Sensor_ATD > On_Block_Time AND Sensor_ATD > Off_Block_Time)) then 1 else 0 end) as Status\r\n" + 
 		"FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' \r\n" + 
-			"and operationunit ="+operationunit+") and (sensor_ata is not null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
+			"and operationunit ="+operationunit+") and (sensor_ata is not null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)",environment);
 								while (result11.next()){	
 											            
 								String str_LogID = result11.getString("logid");			
@@ -193,7 +193,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 		if (sensorATAIsNullList.size()>0) {
 		ResultSet result31 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, on_block_time, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where\r\n" + 
 				"gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta, eta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
-				"and (sensor_ata is null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
+				"and (sensor_ata is null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)",environment);
 							while (result31.next())
 							{				
 								String str_LogID = result31.getString("logid");
@@ -225,7 +225,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 			if (onBlockIsNullList.size()>0)	{		
 			ResultSet result51 = DBWrapper.Connect("SELECT logid, flightnumber_arrival, sensor_ata, off_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`\r\n "
 					+ "where date(IFNULL(sta, eta))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and on_block_time is null \r\n"
-							+ "and (sensor_ata is not null and off_block_time is not null and sensor_atd is not null)");
+							+ "and (sensor_ata is not null and off_block_time is not null and sensor_atd is not null)",environment);
 										while (result51.next())
 										{	
 											String str_LogID = result51.getString("logid");
@@ -256,7 +256,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 			if (offBlockIsNullList.size() > 0){			
 			ResultSet result71 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, sensor_atd FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` \r\n"
 					+ "where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") and off_block_time is null \r\n"
-					+ "and(sensor_ata is not null and on_block_time is not null and sensor_atd is not null)");
+					+ "and(sensor_ata is not null and on_block_time is not null and sensor_atd is not null)",environment);
 											while (result71.next())
 											{	
 												String str_LogID = result71.getString("logid");
@@ -289,7 +289,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 			if(sensorATDIsNullList.size() > 0) {									
 			ResultSet result91 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, off_block_time FROM `DailyFlightSchedule_Merged` where \r\n" + 
 					"gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR`where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
-					"and (sensor_atd is null and on_block_time is not null and off_block_time is not null and sensor_ata is not null)");
+					"and (sensor_atd is null and on_block_time is not null and off_block_time is not null and sensor_ata is not null)",environment);
 									while (result91.next())
 									{	
 									String str_LogID = result91.getString("logid");
@@ -323,7 +323,7 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation{
 			{	
 			ResultSet result111 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ata, on_block_time, Off_block_time, sensor_atd, (case when ((Sensor_ATA < On_Block_Time AND Sensor_ATA < Off_Block_Time) AND (Sensor_ATD > On_Block_Time AND Sensor_ATD > Off_Block_Time)) then 1 else 0 end) as Status\r\n" + 
 				"FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std, etd))='"+SQL_Queries.yesterDate()+"' \r\n" + 
-					"and operationunit ="+operationunit+") and (sensor_ata is not null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)");
+					"and operationunit ="+operationunit+") and (sensor_ata is not null and on_block_time is not null and off_block_time is not null and sensor_atd is not null)",environment);
 						
 					while (result111.next()){	
 																				            

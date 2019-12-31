@@ -31,7 +31,7 @@ public class ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_
 			// ============================================================
 			// .........Script Start...........................
 
-			AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi.scheduledAndSensorATDForDelhi_Report(22);
+			AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi.scheduledAndSensorATDForDelhi_Report(22,"prod");
 			
 			// .........Script Start...........................
 		} catch (Exception e) {

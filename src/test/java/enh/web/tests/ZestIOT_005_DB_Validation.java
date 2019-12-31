@@ -42,7 +42,7 @@ public class ZestIOT_005_DB_Validation extends KeywordUtil {
 			// ============================================================
 			// .........Script Start...........................
 
-			DBTesting.Sensor_ATA_LessThan_On_Block_LessThan_Off_Block_LessThan_Sensor_ATD();
+			DBTesting.Sensor_ATA_LessThan_On_Block_LessThan_Off_Block_LessThan_Sensor_ATD("prod");
 
 			
 			// .........Script Start...........................

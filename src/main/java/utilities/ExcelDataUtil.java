@@ -146,7 +146,7 @@ public class ExcelDataUtil {
 				// If it is xls file then create object of XSSFWorkbook class
 				fileName = "TestResult" + excelextensionxls;
 			}
-			String destfilepath = workingDir + "\\ExecutionReports\\ExcelReport\\" + fileName;
+			String destfilepath = workingDir + "/ExecutionReports/ExcelReport/" + fileName;
 			dest = new File(destfilepath);
 			FileUtils.copyFile(source, dest);
 			return dest;

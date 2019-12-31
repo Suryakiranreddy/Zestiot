@@ -27,13 +27,13 @@ public class AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd {
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATA_For_AISATS_Hyd4 = new StringBuilder();
 	
 		
-	public static void scheduled_And_Sensor_ATA_For_AISATS_Hyderabad_Report(int operationunit) throws Exception {
+	public static void scheduled_And_Sensor_ATA_For_AISATS_Hyderabad_Report(int operationunit, String envoronment) throws Exception {
 		
 	String querry_result=	"SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where \r\n" 
 		+ "date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+" and flightnumber regexp \r\n"
 				+ "('G9|AI|9I|CX|EY|FZ|G8|J9|9W|S2|SV|MI|UL|TG|UK|WY')";
 	System.out.println(querry_result);	
-	ResultSet result = DBWrapper.Connect(querry_result);
+	ResultSet result = DBWrapper.Connect(querry_result,envoronment);
 		while (result.next())
 		{				
 			totalScheduledArrival = result.getString("count(*)");
@@ -43,7 +43,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd {
 		String querry_result2="SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n" +
 		"gmrpk_arrival in (SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' and operationunit="+operationunit+" \r\n"
 		+ "and flightnumber regexp ('G9|AI|9I|CX|EY|FZ|G8|J9|9W|S2|SV|MI|UL|TG|UK|WY')) and sensor_ata is not null";
-		ResultSet result2 = DBWrapper.Connect(querry_result2);
+		ResultSet result2 = DBWrapper.Connect(querry_result2,envoronment);
 		while (result2.next())
 		{				
 			notNullSensorATA = result2.getString("count(*)");
@@ -52,7 +52,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd {
 		String querry_result3="SELECT logid, flightnumber, sta, eta, ata FROM `DailyFlightScheduleArrival_GMR`where \r\n" +
 		"date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+" and \r\n "
 				+ "flightnumber regexp ('G9|AI|9I|CX|EY|FZ|G8|J9|9W|S2|SV|MI|UL|TG|UK|WY') and sensor_ata is null";
-		ResultSet result3 = DBWrapper.Connect(querry_result3);
+		ResultSet result3 = DBWrapper.Connect(querry_result3,envoronment);
 		while (result3.next())
 		{
 			String str_LogID = result3.getString("logid");
@@ -66,7 +66,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd {
 		String querry_result4="SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n" + 
 		"where date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"'  and operationunit = "+operationunit+" and flightnumber_arrival regexp ('G9|AI|9I|CX|EY|FZ|G8|J9|9W|S2|SV|MI|UL|TG|UK|WY') \r\n"
 		+ "and on_block_time is not null ) and operationname = 'onb' and type = 'aircraft' order by flightno";
-		ResultSet result4 = DBWrapper.Connect(querry_result4);
+		ResultSet result4 = DBWrapper.Connect(querry_result4,envoronment);
 		while (result4.next())
 		{				
 			onBlockFromSensor = result4.getString("count(*)");
@@ -75,7 +75,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd {
 		String querry_result5="SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n"
 		+ "where date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and flightnumber_arrival regexp ('G9|AI|9I|CX|EY|FZ|G8|J9|9W|S2|SV|MI|UL|TG|UK|WY') \r\n"
 		+ "and on_block_time is not null ) and operationname = 'onb' and type = 'cv' order by flightno";
-		ResultSet result5 = DBWrapper.Connect(querry_result5);
+		ResultSet result5 = DBWrapper.Connect(querry_result5,envoronment);
 		while (result5.next())
 		{				
 			String str_Flight_PK = result5.getString("flight_pk");
@@ -87,7 +87,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd {
 		+ "CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' \r\n"
 		+ "and operationunit = "+operationunit+" and flightnumber_arrival regexp ('G9|AI|9I|CX|EY|FZ|G8|J9|9W|S2|SV|MI|UL|TG|UK|WY') \r\n"
 		+ "and (sensor_ata is not null and On_block_time is not null) order by flightnumber_arrival";
-		ResultSet result6 = DBWrapper.Connect(querry_result6);
+		ResultSet result6 = DBWrapper.Connect(querry_result6,envoronment);
 		while (result6.next())
 		{				
 			String str_LogID = result6.getString("logid");
@@ -133,7 +133,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd {
 		String querry_result31= "SELECT logid, flightnumber, sta, eta, ata FROM `DailyFlightScheduleArrival_GMR`where \r\n" +
 		"date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+" and flightnumber regexp ('G9|AI|9I|CX|EY|FZ|G8|J9|9W|S2|SV|MI|UL|TG|UK|WY') \r\n"
 		+ " and sensor_ata is null";
-		ResultSet result31 = DBWrapper.Connect(querry_result31);
+		ResultSet result31 = DBWrapper.Connect(querry_result31,envoronment);
 		while (result31.next())
 		{
 			String str_LogID = result31.getString("logid");
@@ -162,7 +162,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd {
 		String querry_result51="SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n" + 
 		"where date(IFNULL(sta,mediator_sta))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and flightnumber_arrival regexp ('G9|AI|9I|CX|EY|FZ|G8|J9|9W|S2|SV|MI|UL|TG|UK|WY') \r\n"
 		 + "and on_block_time is not null ) and operationname = 'onb' and type = 'cv' order by flightno";
-		ResultSet result51 = DBWrapper.Connect(querry_result51);
+		ResultSet result51 = DBWrapper.Connect(querry_result51,envoronment);
 		while (result51.next())
 		{				
 			String str_Flight_PK = result51.getString("flight_pk");
@@ -193,7 +193,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd {
 		"and operationunit = "+operationunit+" and flightnumber_arrival regexp ('G9|AI|9I|CX|EY|FZ|G8|J9|9W|S2|SV|MI|UL|TG|UK|WY') \r\n"
 		+ "and (sensor_ata is not null and On_block_time is not null) order by flightnumber_arrival";
 	
-		ResultSet result61 = DBWrapper.Connect(querry_result61);
+		ResultSet result61 = DBWrapper.Connect(querry_result61,envoronment);
 		while (result61.next())
 		{	
 			String str_LogID = result61.getString("logid");

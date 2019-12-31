@@ -48,11 +48,11 @@ public class DriverUtil {
 				System.setProperty("webdriver.chrome.driver", chromeExecutable.getAbsolutePath());
 				ChromeOptions options = new ChromeOptions();
 				DesiredCapabilities cap=DesiredCapabilities.chrome();
-				String downloadFilepath = "D:\\2019 POCs\\AkbarTravels\\AkbarTravels\\ExcelDownloadedFromTravels";
+				//String downloadFilepath = "D:\\2019 POCs\\AkbarTravels\\AkbarTravels\\ExcelDownloadedFromTravels";
 				HashMap<String, Object> chromePrefs = new HashMap<String, Object>();
 				chromePrefs.put("profile.default_content_settings.popups", 0);
 				chromePrefs.put("profile.default_content_setting_values.notifications", 2);
-				chromePrefs.put("download.default_directory", downloadFilepath);
+				//chromePrefs.put("download.default_directory", downloadFilepath);
 				cap.setCapability(CapabilityType.ACCEPT_SSL_CERTS, true);
 				cap.setCapability(ChromeOptions.CAPABILITY, options);
 				options.setExperimentalOption("prefs",chromePrefs);

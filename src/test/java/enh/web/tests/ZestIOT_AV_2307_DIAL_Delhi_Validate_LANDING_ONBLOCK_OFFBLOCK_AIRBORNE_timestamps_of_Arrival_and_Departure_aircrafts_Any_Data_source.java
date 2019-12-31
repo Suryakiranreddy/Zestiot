@@ -30,7 +30,7 @@ public class ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBOR
 			// ============================================================
 			// .........Script Start...........................
 
-			AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_Delhi_Report(22);
+			AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_Delhi_Report(22,"prod");
 			
 
 			

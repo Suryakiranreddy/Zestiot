@@ -20,9 +20,9 @@ public class DBTesting {
 	public static String countOffBlockTime;
 	 
 	
-	public static void ATASensor_ATA_differences_1_minute() throws Exception{
+	public static void ATASensor_ATA_differences_1_minute(String environment) throws Exception{
 		
-		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_1);
+		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_1,environment);
 		while (result.next()){
 			
 			String str_LogID = result.getString("logid");
@@ -52,9 +52,9 @@ public class DBTesting {
 	}
 
 
-	public static void On_Block_time_stamps_should_be_between_ATA_and_Sensor_ATA_time_stamps() throws Exception{
+	public static void On_Block_time_stamps_should_be_between_ATA_and_Sensor_ATA_time_stamps(String environment) throws Exception{
 		
-		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_2);
+		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_2,environment);
 		while (result.next()){							        
             
 			String str_LogID = result.getString("logid");
@@ -85,9 +85,9 @@ public class DBTesting {
 	}
 	
 	
-	public static void Sensor_ATA_LessThan_On_Block_LessThan_Off_Block_LessThan_Sensor_ATD() throws Exception{
+	public static void Sensor_ATA_LessThan_On_Block_LessThan_Off_Block_LessThan_Sensor_ATD(String environment) throws Exception{
 		
-		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_3);
+		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_3,environment);
 		while (result.next()){	
 			            
 			String str_LogID = result.getString("logid");
@@ -171,7 +171,7 @@ public class DBTesting {
 
 
 	}
-public static void validateSensorDataForHyderabad() throws Exception{
+public static void validateSensorDataForHyderabad(String environment) throws Exception{
 	String totalFlights= null;
 //	String countSensorATA= null;
 //	String countSensorATD= null;
@@ -179,7 +179,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 	
 		
 		//ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_4);
-		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_1);
+		ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_1,environment);
 		while (result.next())
 		{	
 			 totalFlights = result.getString("count(*)");
@@ -187,7 +187,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 			System.out.println(totalFlights);
 			HtmlReportUtil.stepInfo("<b style=\"color:green;\">=========Total Flights in DB or UI for GMR-Hyderabad = "+ totalFlights +" =============</b>");
 		}
-		ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_5);
+		ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_5,environment);
 		while (result2.next())
 		{	
 			String hasSensorATA = result2.getString("has_data");
@@ -198,7 +198,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 				HtmlReportUtil.stepInfo("<b style=\"color:blue;\">=========Total flights having Sensor_ATA for GMR-Hyderabad = "+ countSensorATA +" =============</b>");
 			}
 		}	
-		ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_6);
+		ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_6,environment);
 		while (result3.next())
 		{	
 			String hasSensorATD = result3.getString("has_data");
@@ -234,19 +234,19 @@ public static void validateSensorDataForHyderabad() throws Exception{
 		                +"</tr> <br><br> </html>";
 	}
 //////////////////////////////////////////////////////////////////////////////////////////////
-		public static void validateSensorDataForDelhi() throws Exception{
+		public static void validateSensorDataForDelhi(String environment) throws Exception{
 			String totalFlights=null;
 			String countSensorATA=null;
 			String countSensorATD =null;
 			
-			ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_7);
+			ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_7,environment);
 			while (result.next())
 			{	
 					 totalFlights = result.getString("count(*)");
 					System.out.println(totalFlights);
 					HtmlReportUtil.stepInfo("<b style=\"color:green;\">=========Total Flights in DB or UI for GMR-Delhi = "+ totalFlights +" =============</b>");
 			}
-			ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_8);
+			ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_8,environment);
 			while (result2.next())
 			{	
 				String hasSensorATA = result2.getString("has_data");
@@ -257,7 +257,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 					HtmlReportUtil.stepInfo("<b style=\"color:blue;\">=========Total flights having Sensor_ATA for GMR-Delhi = "+ countSensorATA +" =============</b>");
 				}
 			}	
-			ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_9);
+			ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_9,environment);
 			while (result3.next())
 				{	
 				String hasSensorATD = result3.getString("has_data");
@@ -283,14 +283,14 @@ public static void validateSensorDataForHyderabad() throws Exception{
 			                + " <br><br> Thnak You, <br> Automation Team </html>";
 			}
 
-		public static void validateOnBlockTimeAndOffBlockTimeForHyderabad() throws Exception{
+		public static void validateOnBlockTimeAndOffBlockTimeForHyderabad(String environment) throws Exception{
 			String totalFlights= null;
 //			String countSensorATA= null;
 //			String countSensorATD= null;
 			 
 			
 				
-				ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_10);
+				ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_10,environment);
 				while (result.next())
 				{	
 					 totalFlights = result.getString("count(*)");
@@ -298,7 +298,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 					System.out.println(totalFlights);
 					//HtmlReportUtil.stepInfo("<b style=\"color:green;\">=========Total Flights in DB or UI for GMR-Hyderabad = "+ totalFlights +" =============</b>");
 				}
-				ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_11);
+				ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_11,environment);
 				while (result2.next())
 				{	
 					String hasSensorATA = result2.getString("has_data");
@@ -309,7 +309,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 						//HtmlReportUtil.stepInfo("<b style=\"color:blue;\">=========Total flights having On_block_time for GMR-Hyderabad = "+ countOnBlockTime +" =============</b>");
 					}
 				}	
-				ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_12);
+				ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_12,environment);
 				while (result3.next())
 				{	
 					String hasSensorATD = result3.getString("has_data");
@@ -327,7 +327,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 }
 //////////////////////////////////////////////////////////////////////////////////////////////
 		
-		public static void scheduledAndSensorATAForHyderabad() throws Exception{
+		public static void scheduledAndSensorATAForHyderabad(String environment) throws Exception{
 		
 			int totalScheduledArrival = 0;
 			int nullSensorATA = 0;
@@ -342,7 +342,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 			ArrayList<String> sensorATA_NullList = new ArrayList<String>();
 			
 			
-			ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_017);
+			ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_017,environment);
 			while (result.next())
 			{				
 				totalScheduledArrival = result.getInt("count(*)");
@@ -350,14 +350,14 @@ public static void validateSensorDataForHyderabad() throws Exception{
 				HtmlReportUtil.stepInfo("<b style=\"color:purple;\"> Airport : GMR_HYD :</b> <b style=\"color:green;\">Total No. of flights Scheduled Arrival (based on STA or Mediator-STA) = "+ totalScheduledArrival +"</b>");
 				//HtmlReportUtil.stepInfo("<b style=\"color:green;\">Total Flights Scheduled (Arrival) = "+ totalScheduledArrival +"</b>");
 			}
-			ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_018);
+			ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_018,environment);
 			while (result2.next())
 			{				
 				notNullSensorATA = result2.getInt("count(*)");
 				System.out.println(notNullSensorATA);
 				HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights detected by Sensor = "+ notNullSensorATA +"</b>");
 			}
-			ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_019);
+			ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_019,environment);
 			while (result3.next())
 			{				
 				nullSensorATA = result3.getInt("count(*)");
@@ -365,7 +365,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 				HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights NOT detected by Sensor = "+ nullSensorATA +"</b>");
 			}
 					
-			ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_020);
+			ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_020,environment);
 			while (result3.next())
 			{	
 				str_LogID = result4.getString("logid");
@@ -393,7 +393,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 				
 //////////////////////////////////////////////////////////////////////////////////////////////
 				
-			public static void scheduledAndSensorATDForHyderabad() throws Exception{
+			public static void scheduledAndSensorATDForHyderabad(String environment) throws Exception{
 				
 				int totalScheduledDeparture = 0;
 				int nullSensorATD =0;
@@ -406,7 +406,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 				
 				ArrayList<String> sensorATD_NullList = new ArrayList<String>();
 			
-				ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_021);
+				ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_021,environment);
 				while (result.next())
 				{				
 					totalScheduledDeparture = result.getInt("count(*)");
@@ -414,7 +414,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 					HtmlReportUtil.stepInfo("<b style=\"color:purple;\"> Airport : GMR_HYD :</b> <b style=\"color:green;\">Total No. of flights Scheduled Departure(based on STD or Mediator-STD) = "+ totalScheduledDeparture +"</b>");
 				}
 				
-				ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_022);
+				ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_022,environment);
 				while (result2.next())
 				{				
 					notNullSensorATD = result2.getInt("count(*)");
@@ -422,7 +422,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 					HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights detected by Sensor = "+ notNullSensorATD +" </b>");
 				}
 				
-				ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_023);
+				ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_023,environment);
 				while (result3.next())
 				{				
 					nullSensorATD = result3.getInt("count(*)");
@@ -430,7 +430,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 					HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights NOT detected by Sensor = "+ nullSensorATD +" </b>");
 				}
 				
-				ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_024);
+				ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_024,environment);
 				while (result4.next())
 				{	
 					str_LogID = result4.getString("logid");
@@ -463,7 +463,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 			
 //////////////////////////////////////////////////////////////////////////////////////////////
 			
-			public static void scheduledAndSensorATAForDelhi() throws Exception{
+			public static void scheduledAndSensorATAForDelhi(String environment) throws Exception{
 				int totalScheduledArrival = 0;
 				int nullSensorATA = 0;
 				int notNullSensorATA =0;
@@ -477,7 +477,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 				ArrayList<String> sensorATA_NullList = new ArrayList<String>();
 				
 				
-				ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_025);
+				ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_025,environment);
 				while (result.next())
 				{				
 					totalScheduledArrival = result.getInt("count(*)");
@@ -485,14 +485,14 @@ public static void validateSensorDataForHyderabad() throws Exception{
 					HtmlReportUtil.stepInfo("<b style=\"color:purple;\"> Airport : Delhi :</b> <b style=\"color:green;\">Total No. of flights Scheduled Arrival (based on STA or Mediator-STA) = "+ totalScheduledArrival +"</b>");
 					//HtmlReportUtil.stepInfo("<b style=\"color:green;\">Total Flights Scheduled (Arrival) = "+ totalScheduledArrival +"</b>");
 				}
-				ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_026);
+				ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_026,environment);
 				while (result2.next())
 				{				
 					notNullSensorATA = result2.getInt("count(*)");
 					System.out.println(notNullSensorATA);
 					HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights detected by Sensor = "+ notNullSensorATA +"</b>");
 				}
-				ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_027);
+				ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_027,environment);
 				while (result3.next())
 				{				
 					nullSensorATA = result3.getInt("count(*)");
@@ -500,7 +500,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 					HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights NOT detected by Sensor = "+ nullSensorATA +"</b>");
 				}
 						
-				ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_028);
+				ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_028,environment);
 				while (result3.next())
 				{	
 					str_LogID = result4.getString("logid");
@@ -527,7 +527,7 @@ public static void validateSensorDataForHyderabad() throws Exception{
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 			
-public static void scheduledAndSensorATDForDelhi() throws Exception{
+public static void scheduledAndSensorATDForDelhi(String environment) throws Exception{
 
 	int totalScheduledDeparture = 0;
 	int nullSensorATD =0;
@@ -540,7 +540,7 @@ public static void scheduledAndSensorATDForDelhi() throws Exception{
 	
 	ArrayList<String> sensorATD_NullList = new ArrayList<String>();
 
-	ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_029);
+	ResultSet result = DBWrapper.Connect(SQL_Queries.strQuery_029,environment);
 	while (result.next())
 	{				
 		totalScheduledDeparture = result.getInt("count(*)");
@@ -548,7 +548,7 @@ public static void scheduledAndSensorATDForDelhi() throws Exception{
 		HtmlReportUtil.stepInfo("<b style=\"color:purple;\"> Airport : GMR_HYD :</b> <b style=\"color:green;\">Total No. of flights Scheduled Departure(based on STD or Mediator-STD) = "+ totalScheduledDeparture +"</b>");
 	}
 	
-	ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_030);
+	ResultSet result2 = DBWrapper.Connect(SQL_Queries.strQuery_030,environment);
 	while (result2.next())
 	{				
 		notNullSensorATD = result2.getInt("count(*)");
@@ -556,7 +556,7 @@ public static void scheduledAndSensorATDForDelhi() throws Exception{
 		HtmlReportUtil.stepInfo("<b style=\"color:green;\">No. of flights detected by Sensor = "+ notNullSensorATD +" </b>");
 	}
 	
-	ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_031);
+	ResultSet result3 = DBWrapper.Connect(SQL_Queries.strQuery_031,environment);
 	while (result3.next())
 	{				
 		nullSensorATD = result3.getInt("count(*)");
@@ -564,7 +564,7 @@ public static void scheduledAndSensorATDForDelhi() throws Exception{
 		HtmlReportUtil.stepInfo("<b style=\"color:red;\">No. of flights NOT detected by Sensor = "+ nullSensorATD +" </b>");
 	}
 	
-	ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_032);
+	ResultSet result4 = DBWrapper.Connect(SQL_Queries.strQuery_032,environment);
 	while (result4.next())
 	{	
 		str_LogID = result4.getString("logid");

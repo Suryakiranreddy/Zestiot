@@ -32,7 +32,7 @@ public class ZestIOT_AV_2293_CELEBI_Delhi_Identify_coverage_of_Flight_Sensor_and
 
 			
 			
-			AV_2293_Scheduled_And_Sensor_ATA_Delhi_CELEBI_User.scheduled_And_Sensor_ATA_For_Delhi_Celebi_Report(22);
+			AV_2293_Scheduled_And_Sensor_ATA_Delhi_CELEBI_User.scheduled_And_Sensor_ATA_For_Delhi_Celebi_Report(22,"prod");
 			
 			
 			// .........Script Start...........................

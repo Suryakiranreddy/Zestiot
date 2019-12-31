@@ -33,7 +33,7 @@ public class ZestIOT_AV_2304_Identify_the_coverage_of_Boarding_activities_and_va
 
 			
 			
-			AV_2293_Scheduled_And_Sensor_ATA_Hyd.scheduled_And_Sensor_ATA_For_Hyderabad_Report(4);
+			AV_2293_Scheduled_And_Sensor_ATA_Hyd.scheduled_And_Sensor_ATA_For_Hyderabad_Report(4,"prod");
 			
 			
 			// .........Script Start...........................

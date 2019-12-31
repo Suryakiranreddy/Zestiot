@@ -90,7 +90,7 @@ public class CustomListeners_RestTest extends Utility implements ISuiteListener,
 
 
 			// Local flat file sqlite database
-			ReportFactoryDB.initSqlite(Paths.get("").toAbsolutePath().toString() + "\\ExecutionReports\\DB");
+			ReportFactoryDB.initSqlite(Paths.get("").toAbsolutePath().toString() + "/ExecutionReports/DB");
 
 			// Get Last Run Id from DB for reporting purpose.
 			// Get run id only one time during all the run
@@ -130,7 +130,7 @@ public class CustomListeners_RestTest extends Utility implements ISuiteListener,
 			if (dbxCof.equalsIgnoreCase("Y")) {
 				DropBoxUtil.switchOn();
 				DropBoxUtil.init(Utility.getValue("dropBox_AccessToken"));
-				DropBoxUtil.uploadFile("C:\\Users\\EIN0047\\Desktop\\SmartShowExecutionReports1.zip");
+				//DropBoxUtil.uploadFile("C:\\Users\\EIN0047\\Desktop\\SmartShowExecutionReports1.zip");
 			}
 
 			if (GlobalUtil.getCommonSettings().getEmailOutput().equalsIgnoreCase("Y"))
@@ -142,15 +142,16 @@ public class CustomListeners_RestTest extends Utility implements ISuiteListener,
 		}
 
 		finally {
-			String htmlReportFile = System.getProperty("user.dir") + "\\" + Utility.getValue("HtmlReportFullPath");
+			String htmlReportFile = System.getProperty("user.dir") + "/" + Utility.getValue("HtmlReportFullPath");
 			File f = new File(htmlReportFile);
 			if (f.exists()) {
 
 				try {
-					Process p = Runtime.getRuntime()
+					
+					/*Process p = Runtime.getRuntime()
 							.exec("C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe \"" + htmlReportFile
-									+ "\"");
-				} catch (IOException e) {
+									+ "\"");*/
+				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}

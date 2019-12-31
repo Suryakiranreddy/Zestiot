@@ -59,7 +59,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 			try {
 				SendMailReport.sendEmailToClient();
 				TestCasesSendMail.sendDSREmailToClient();
-				//SendMail.sendImage();
+				SendMail.sendImage();
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
@@ -68,7 +68,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 	
 	//3. Report open for view
 
-		String htmlReportFile = System.getProperty("user.dir") + "\\" + Utility.getValue("HtmlReportFullPath");
+		String htmlReportFile = System.getProperty("user.dir") + "/" + Utility.getValue("HtmlReportFullPath");
 		File f = new File(htmlReportFile);
 		if (f.exists()) {
 
@@ -83,7 +83,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 		//4. Generate Comparison sheet 
 				ReportFactoryDB.switchOn();
 				// Local flat file SQLite database
-				ReportFactoryDB.initSqlite(Paths.get("").toAbsolutePath().toString() + "\\ExecutionReports\\DB");
+				ReportFactoryDB.initSqlite(Paths.get("").toAbsolutePath().toString() + "/ExecutionReports/DB");
 				ReportFactoryDB.getComparisonReport(GlobalUtil.getCommonSettings().getProjectName());
 						
 		//5. Rename test file

@@ -72,7 +72,7 @@ public class GlobalUtil {
 
 			File oldFile = new File(System.getProperty("user.dir") + ConfigReader.getValue("testResultExcelPath"));
 		
-			String newFilePath = oldFile.getAbsolutePath().replace(oldFile.getName(), "") + "\\ReportHistory\\"
+			String newFilePath = oldFile.getAbsolutePath().replace(oldFile.getName(), "") + "/ReportHistory/"
 					+ timeStamp + "-TestResult.xls";
 
 			File newFile = new File(newFilePath);

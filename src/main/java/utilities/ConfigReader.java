@@ -11,9 +11,9 @@ import java.util.Properties;
 
 public class ConfigReader {
 	
-	static FileInputStream fileInput = null;
-	static Properties prop = new Properties();
-	 static File file;
+	public static FileInputStream fileInput = null;
+	public static Properties prop = new Properties();
+	public static File file;
 	/**
 	 * will read the properties file with this function
 	 * @param filePath
@@ -22,7 +22,7 @@ public class ConfigReader {
 	
 	public static String getValue(String key) {
 		// Read from properties file
-		 file = new File("src\\main\\resources\\ConfigFiles\\config.properties");	
+		 file = new File("./src/main/resources/ConfigFiles/config.properties");	
 		try {
 			fileInput = new FileInputStream(file);
 			prop.load(fileInput);

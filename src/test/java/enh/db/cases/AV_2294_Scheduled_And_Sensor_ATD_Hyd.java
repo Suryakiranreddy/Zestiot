@@ -135,16 +135,16 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 		}*/
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
-	public static void scheduled_And_Sensor_ATD_For_Hyderabad_Report(int operationunit) throws Exception {
+	public static void scheduled_And_Sensor_ATD_For_Hyderabad_Report(int operationunit,String envoronment) throws Exception {
 		ResultSet result = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleDeparture_GMR` where \r\n" +
-		"date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+"");
+		"date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+"",envoronment);
 		while (result.next())
 		{				
 			totalScheduledDeparture = result.getInt("count(*)");
 			System.out.println(totalScheduledDeparture);
 		}
 		ResultSet result1 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where\r\n" + 
-				"date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+")");
+				"date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+")",envoronment);
 		while (result1.next())
 		{				
 			totalActualDeparture = result1.getInt("count(*)");
@@ -152,14 +152,14 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 		}
 		ResultSet result2 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n " +
 				"gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+") \r\n" + 
-				"and sensor_atd is not null");
+				"and sensor_atd is not null",envoronment);
 		while (result2.next())
 		{				
 			notNullSensorATD = result2.getInt("count(*)");
 			System.out.println(notNullSensorATD);
 		}
 		ResultSet result3 = DBWrapper.Connect("SELECT logid, flightnumber_departure, std, etd, atd FROM `DailyFlightSchedule_Merged` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' \r\n"
-				+ "and operationunit= "+operationunit+" and sensor_atd is null");
+				+ "and operationunit= "+operationunit+" and sensor_atd is null",envoronment);
 		while (result3.next())
 		{
 			String str_LogID = result3.getString("logid");
@@ -173,7 +173,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 				
 		ResultSet result4 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n "+
 		"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"'and operationunit = "+operationunit+" and off_block_time is not null ) "
-		+ "and operationname = 'ofb' and type = 'aircraft'order by flightno");
+		+ "and operationname = 'ofb' and type = 'aircraft'order by flightno",envoronment);
 		while (result4.next())
 		{				
 			offBlockFromSensor = result4.getInt("count(*)");
@@ -181,7 +181,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 		}
 		
 		ResultSet result5 = DBWrapper.Connect("SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n" + 
-		"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = 4 and off_block_time is not null ) and operationname = 'ofb' and type = 'cv'order by flightno");
+		"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = 4 and off_block_time is not null ) and operationname = 'ofb' and type = 'cv'order by flightno",envoronment);
 		while (result5.next())
 		{				
 			String str_Flight_PK = result5.getString("flight_pk");
@@ -191,7 +191,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 				
 		ResultSet result6 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ATD, Off_block_time, (case when (Off_Block_Time < Sensor_ATD) then 1 else 0 end) as Status, \r\n"
 				+ "CONCAT('',TIMEDIFF(Off_Block_Time, Sensor_ATD)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' \r\n"
-				+ "and operationunit = "+operationunit+" and (sensor_atd is not null and Off_block_time is not null) order by flightnumber_departure");
+				+ "and operationunit = "+operationunit+" and (sensor_atd is not null and Off_block_time is not null) order by flightnumber_departure",envoronment);
 		while (result6.next())
 		{				
 			String str_LogID = result6.getString("logid");
@@ -230,7 +230,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 		if (sensorATD_NullList.size()>0) {
 		ResultSet result31 = DBWrapper.Connect("SELECT logid, flightnumber_departure, std, etd, atd FROM `DailyFlightSchedule_Merged` "
 				+ "where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and "
-						+ "operationunit= "+operationunit+" and sensor_atd is null");
+						+ "operationunit= "+operationunit+" and sensor_atd is null",envoronment);
 		while (result31.next())
 		{
 			String str_LogID = result31.getString("logid");
@@ -258,7 +258,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 		if (offBlockFromCV_List.size()>0) {
 		ResultSet result51 = DBWrapper.Connect("SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n" + 
 				"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and off_block_time is not null ) "
-						+ "and operationname = 'ofb' and type = 'cv'order by flightno");
+						+ "and operationname = 'ofb' and type = 'cv'order by flightno",envoronment);
 		while (result51.next())
 		{				
 			String str_Flight_PK = result51.getString("flight_pk");
@@ -286,7 +286,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Hyd {
 		
 		if (status0List.size()>0) {
 		ResultSet result61 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ATD, Off_block_time, (case when (Off_Block_Time < Sensor_ATD) then 1 else 0 end) as Status, \r\n"
-			    + "CONCAT('',TIMEDIFF(Off_Block_Time, Sensor_ATD)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and (sensor_atd is not null and Off_block_time is not null)");
+			    + "CONCAT('',TIMEDIFF(Off_Block_Time, Sensor_ATD)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and (sensor_atd is not null and Off_block_time is not null)",envoronment);
 		while (result61.next())
 		{	
 			String str_LogID = result61.getString("logid");

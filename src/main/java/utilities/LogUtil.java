@@ -17,22 +17,22 @@ import org.apache.log4j.RollingFileAppender;
  *
  */
 public class LogUtil {
-	static Logger errorLogger;
-	static Logger normalLogger;
-	static Logger htmlLogger;
-	static FileAppender normalFileApp;
-	static FileAppender errorFileApp;
-	static FileAppender htmlFileApp;
+	public static Logger errorLogger;
+	public static Logger normalLogger;
+	public static Logger htmlLogger;
+	public static FileAppender normalFileApp;
+	public static FileAppender errorFileApp;
+	public static FileAppender htmlFileApp;
 	
-	static ConsoleAppender conApp;
-	static RollingFileAppender normalRap;
-	static RollingFileAppender errorRap;
+	public static ConsoleAppender conApp;
+	public static RollingFileAppender normalRap;
+	public static RollingFileAppender errorRap;
 	private static boolean isInit = false;
 	private LogUtil(){}
 
-	static PatternLayout patternLayout = new PatternLayout("%d{yyyy-MM-dd HH:mm:ss} %-5p - %m%n");
-	static PatternLayout consolePatternLayout = new PatternLayout("\tLOG-: [%m -  %d{yyyy-MM-dd HH:mm:ss a}] %n");
-	static HTMLLayout htmlLayout = new HTMLLayout();
+	public static PatternLayout patternLayout = new PatternLayout("%d{yyyy-MM-dd HH:mm:ss} %-5p - %m%n");
+	public static PatternLayout consolePatternLayout = new PatternLayout("\tLOG-: [%m -  %d{yyyy-MM-dd HH:mm:ss a}] %n");
+	public static HTMLLayout htmlLayout = new HTMLLayout();
 	/**
 	 * @param clazz
 	 */
@@ -113,56 +113,7 @@ public class LogUtil {
 	/**
 	 * @param className
 	 */
-	public static void init(String className) {
-		if (!isInit) {
-			try {
-				htmlLogger = Logger.getLogger(className+",HtmlLogger");
-				htmlLogger .setLevel(Level.INFO);
-				
-				htmlLayout.setTitle("Automation Logs");
-				
-				htmlFileApp = new FileAppender(htmlLayout, ConfigReader.getValue("logHtmlFilePath"));
-				htmlFileApp.setImmediateFlush(true);
-				htmlFileApp .setAppend(true);
-				htmlFileApp.activateOptions();
-				htmlLogger.addAppender(htmlFileApp);
-				
-				
-			} catch (IOException e1) {
-				e1.printStackTrace();
-			}
-
-			normalLogger = Logger.getLogger(className + ",NormalLogger");
-			normalLogger.setLevel(Level.INFO);
-
-			normalFileApp = new FileAppender();
-			normalFileApp.setLayout(patternLayout);
-			normalFileApp.setFile("Logs\\AppLog.txt");
-			normalFileApp.setImmediateFlush(true);
-			normalFileApp .setAppend(true);
-			normalLogger.addAppender(normalFileApp);
-			normalFileApp.activateOptions();
-
-			errorLogger = Logger.getLogger(className + ",ErrorLogger");
-			errorLogger.setLevel(Level.ERROR);
-			errorFileApp = new FileAppender();
-			errorFileApp.setLayout(patternLayout);
-			errorFileApp.setFile("Logs\\ErrorLog.txt");
-			errorFileApp.setImmediateFlush(true);
-			errorFileApp .setAppend(true);
-			errorLogger.addAppender(errorFileApp);
-			errorFileApp.activateOptions();
-
-			conApp = new ConsoleAppender();
-			conApp.setLayout(consolePatternLayout);
-			conApp.setTarget("System.out");
-			conApp.activateOptions();
-
-			normalLogger.addAppender(conApp);
-
-			isInit = true;
-		}
-	}
+	
 
 	/**
 	 * @param clazz
@@ -179,7 +130,7 @@ public class LogUtil {
 	 * @param message
 	 */
 	public static void infoLog(String className, String message) {
-		init(className);
+		
 		normalLogger.info(message);
 		htmlLogger.info(message);
 	}
@@ -214,7 +165,7 @@ public class LogUtil {
 	 * @param message
 	 */
 	public static void errorLog(String name, String message) {
-		init(name);
+		
 		htmlLogger.error(message);
 		errorLogger.error(message);
 		errorLogger.error("-----------------------------------------------------------------------");

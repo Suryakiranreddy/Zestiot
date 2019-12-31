@@ -32,7 +32,7 @@ public class Bsspl_Bay {
 	public static int bayEqual =0;
 	public static int bayIsNull=0;
 	
-	public static void bsspl(String Execlfilepath, String sheetName) throws SQLException, IOException {
+	public static void bsspl(String Execlfilepath, String sheetName,String environment) throws SQLException, IOException {
 			HtmlReportUtil.stepInfo(sheetName);
 			 file = new FileInputStream(new File(Execlfilepath));
 			 workbook = new XSSFWorkbook(file);
@@ -52,7 +52,7 @@ public class Bsspl_Bay {
 						
 						ResultSet result = DBWrapper.Connect("SELECT * FROM `DailyFlightSchedule_Merged`\r\n" + 
 						"where date(IFNULL(atd, sensor_atd))= '2019-12-22' and operationunit = 22 and \r\n"
-						+ "flightnumber_departure like '%"+FlightNum+"%' and bay is not null");
+						+ "flightnumber_departure like '%"+FlightNum+"%' and bay is not null",environment);
 						
 						while(result.next()) {
 						String logId=  result.getString("LogId");
@@ -73,7 +73,7 @@ public class Bsspl_Bay {
 						
 						ResultSet result2 = DBWrapper.Connect("SELECT * FROM `DailyFlightSchedule_Merged`\r\n" + 
 								"where date(IFNULL(atd, sensor_atd))= '2019-12-09' and operationunit = 22 and \r\n"
-								+ "flightnumber_departure like '%"+FlightNum+"%' and bay is null");
+								+ "flightnumber_departure like '%"+FlightNum+"%' and bay is null",environment);
 						while(result2.next()) {
 							String logId=  result2.getString("LogId");
 							String flightnumber_departure = result2.getString("flightnumber_departure");

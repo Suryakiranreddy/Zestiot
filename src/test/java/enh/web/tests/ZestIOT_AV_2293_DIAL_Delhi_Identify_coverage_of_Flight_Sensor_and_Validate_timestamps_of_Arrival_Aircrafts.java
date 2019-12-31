@@ -33,7 +33,7 @@ public class ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_V
 			//DBTesting.scheduledAndSensorATAForDelhi();
 			//DBTesting.scheduledAndSensorATDForDelhi();
 			
-			AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi.scheduledAndSensorATAForDelhi_Report(22);
+			AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi.scheduledAndSensorATAForDelhi_Report(22,"prod");
 			
 
 			

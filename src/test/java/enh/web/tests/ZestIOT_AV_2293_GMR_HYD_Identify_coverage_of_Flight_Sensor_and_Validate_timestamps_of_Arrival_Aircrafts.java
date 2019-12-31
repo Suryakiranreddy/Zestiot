@@ -33,7 +33,7 @@ public class ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Vali
 
 			
 			
-			AV_2293_Scheduled_And_Sensor_ATA_Hyd.scheduled_And_Sensor_ATA_For_Hyderabad_Report(4);
+			AV_2293_Scheduled_And_Sensor_ATA_Hyd.scheduled_And_Sensor_ATA_For_Hyderabad_Report(4,"prod");
 			
 			
 			// .........Script Start...........................

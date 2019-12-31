@@ -31,9 +31,9 @@ public class ZestIOT_004_SensorATA_lessthan_OnBlock_lessthan_OffBlock_lessthan_S
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			DBTesting.validateSensorDataForHyderabad();
-			DBTesting.validateOnBlockTimeAndOffBlockTimeForHyderabad();
-			DBTesting.Sensor_ATA_LessThan_On_Block_LessThan_Off_Block_LessThan_Sensor_ATD();
+			DBTesting.validateSensorDataForHyderabad("prod");
+			DBTesting.validateOnBlockTimeAndOffBlockTimeForHyderabad("prod");
+			DBTesting.Sensor_ATA_LessThan_On_Block_LessThan_Off_Block_LessThan_Sensor_ATD("prod");
 
 			
 			// .........Script Start...........................

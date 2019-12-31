@@ -42,7 +42,7 @@ public class ZestIOT_003_ATASensor_ATA_differences_1_minute extends KeywordUtil 
 			// ============================================================
 			// .........Script Start...........................
 
-			DBTesting.ATASensor_ATA_differences_1_minute();
+			DBTesting.ATASensor_ATA_differences_1_minute("prod");
 
 			
 			// .........Script Start...........................

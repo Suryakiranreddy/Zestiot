@@ -93,7 +93,7 @@ public class CustomListeners extends Utility implements ISuiteListener, IInvoked
 			// ReportFactoryDB.initMySql("sql6.freemysqlhosting.net/sql6135035","sql6135035","ubg1YMgphQ");
 
 			// Local flat file sqlite database
-			ReportFactoryDB.initSqlite(Paths.get("").toAbsolutePath().toString() + "\\ExecutionReports\\DB");
+			//ReportFactoryDB.initSqlite(Paths.get("").toAbsolutePath().toString() + "/ExecutionReports/DB");
 
 			// Get Last Run Id from DB for reporting purpose.
 			// Get run id only one time during all the run
@@ -124,7 +124,7 @@ public class CustomListeners extends Utility implements ISuiteListener, IInvoked
 			}	
 			ReportFactoryDB.getComparisonReport(GlobalUtil.getCommonSettings().getProjectName());
 			ReportFactoryDB.closeDBConnection();
-			//DriverUtil.closeAllDriver();
+			DriverUtil.closeAllDriver();
 			
 			
 			
@@ -134,7 +134,7 @@ public class CustomListeners extends Utility implements ISuiteListener, IInvoked
 			if (dbxCof.equalsIgnoreCase("Y")) {
 				DropBoxUtil.switchOn();
 				DropBoxUtil.init(Utility.getValue("dropBox_AccessToken"));
-				DropBoxUtil.uploadFile("\\PathOfFile.zip");
+				//DropBoxUtil.uploadFile("\\PathOfFile.zip");
 			}
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -327,7 +327,7 @@ public class CustomListeners extends Utility implements ISuiteListener, IInvoked
 					e2.printStackTrace();
 				}*/
 		try {
-			MyScreenRecorder.stopRecording();
+			//MyScreenRecorder.stopRecording();
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

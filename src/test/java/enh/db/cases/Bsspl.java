@@ -33,7 +33,7 @@ public class Bsspl {
 	static XSSFCell cell;
 	public static String flightnumber_departure=null;
 	
-	public static void bsspl(String Execlfilepath, String sheetName) throws SQLException, IOException {
+	public static void bsspl(String Execlfilepath, String sheetName,String environment) throws SQLException, IOException {
 		 HtmlReportUtil.stepInfo(sheetName);
 			System.out.println(sheetName);
 		 file = new FileInputStream(new File(Execlfilepath));
@@ -52,7 +52,7 @@ public class Bsspl {
 							+ "where date(IFNULL(atd, sensor_atd))= '2019-12-25' and operationunit = 22 "
 							+ "and flightnumber_departure like '%"+FlightNum+"%' ";
 					
-					ResultSet result = DBWrapper.Connect(SQL_Querry1);
+					ResultSet result = DBWrapper.Connect(SQL_Querry1,environment);
 					while(result.next()) {
 						 logId=  result.getString("LogId");
 						 flightnumber_departure=  result.getString("flightnumber_departure");
@@ -66,7 +66,7 @@ public class Bsspl {
 					
 					
 					String SQL_Querry2= "SELECT * FROM `EquipActivityLogs` where flight_pk='"+logId+"' ";
-					ResultSet result2 = DBWrapper.Connect(SQL_Querry2);
+					ResultSet result2 = DBWrapper.Connect(SQL_Querry2,environment);
 					while(result2.next()) {				
 						String flight_pk=  result2.getString("flight_pk");	
 						String operationName=result2.getString("operationname");
@@ -162,9 +162,5 @@ public class Bsspl {
 				
 	}
 	
-	public static void main(String[] args) throws Exception {
-		Bsspl.bsspl(ConfigReader.getValue("ExcelPath"),"Fri_Flight_Num");
-	}
-
-
+	
 }

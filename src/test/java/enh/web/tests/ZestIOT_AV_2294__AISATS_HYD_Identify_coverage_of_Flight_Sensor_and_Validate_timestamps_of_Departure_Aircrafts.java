@@ -31,7 +31,7 @@ public class ZestIOT_AV_2294__AISATS_HYD_Identify_coverage_of_Flight_Sensor_and_
 			// ============================================================
 			// .........Script Start...........................
 
-			AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd.scheduled_And_Sensor_ATD_For_AISATS_Hyderabad_Report(4);
+			AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd.scheduled_And_Sensor_ATD_For_AISATS_Hyderabad_Report(4,"prod");
 			
 			// .........Script Start...........................
 		} catch (Exception e) {

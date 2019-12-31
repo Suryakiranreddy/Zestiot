@@ -31,7 +31,7 @@ public class ZestIOT_AV_2294__CELEBI_Delhi_Identify_coverage_of_Flight_Sensor_an
 			// ============================================================
 			// .........Script Start...........................
 
-			AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User.scheduledAndSensorATDForCELEBI_Delhi_Report(22);
+			AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User.scheduledAndSensorATDForCELEBI_Delhi_Report(22,"prod");
 			
 			// .........Script Start...........................
 		} catch (Exception e) {

@@ -28,16 +28,16 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd4 = new StringBuilder();
 	
 		
-	public static void scheduled_And_Sensor_ATD_For_SG_Hyderabad_Report(int operationunit, String airline) throws Exception {
+	public static void scheduled_And_Sensor_ATD_For_SG_Hyderabad_Report(int operationunit, String airline,String environment) throws Exception {
 		ResultSet result = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightScheduleDeparture_GMR` where \r\n" +
-		"date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+" and flightnumber like '%"+airline+"%'");
+		"date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit= "+operationunit+" and flightnumber like '%"+airline+"%'",environment);
 		while (result.next())
 		{				
 			totalScheduledDeparture = result.getInt("count(*)");
 			System.out.println(totalScheduledDeparture);
 		}
 		ResultSet result1 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where\r\n" + 
-				"date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and flightnumber like '%"+airline+"%' and operationunit= "+operationunit+")");
+				"date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and flightnumber like '%"+airline+"%' and operationunit= "+operationunit+")",environment);
 		while (result1.next())
 		{				
 			totalActualDeparture = result1.getInt("count(*)");
@@ -45,14 +45,14 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 		}
 		ResultSet result2 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where \r\n " +
 				"gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and flightnumber like '%"+airline+"%' and operationunit= "+operationunit+") \r\n" + 
-				"and sensor_atd is not null");
+				"and sensor_atd is not null",environment);
 		while (result2.next())
 		{				
 			notNullSensorATD = result2.getInt("count(*)");
 			System.out.println(notNullSensorATD);
 		}
 		ResultSet result3 = DBWrapper.Connect("SELECT logid, flightnumber_departure, std, etd, atd FROM `DailyFlightSchedule_Merged` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' \r\n"
-				+ "and operationunit= "+operationunit+" and flightnumber_departure like '%"+airline+"%' and sensor_atd is null");
+				+ "and operationunit= "+operationunit+" and flightnumber_departure like '%"+airline+"%' and sensor_atd is null",environment);
 		while (result3.next())
 		{
 			String str_LogID = result3.getString("logid");
@@ -66,7 +66,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 				
 		ResultSet result4 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n "+
 		"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"'and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and off_block_time is not null ) "
-		+ "and operationname = 'ofb' and type = 'aircraft'order by flightno");
+		+ "and operationname = 'ofb' and type = 'aircraft'order by flightno",environment);
 		while (result4.next())
 		{				
 			offBlockFromSensor = result4.getInt("count(*)");
@@ -74,7 +74,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 		}
 		
 		ResultSet result5 = DBWrapper.Connect("SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n" + 
-		"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and off_block_time is not null ) and operationname = 'ofb' and type = 'cv'order by flightno");
+		"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and off_block_time is not null ) and operationname = 'ofb' and type = 'cv'order by flightno",environment);
 		while (result5.next())
 		{				
 			String str_Flight_PK = result5.getString("flight_pk");
@@ -84,7 +84,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 				
 		ResultSet result6 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ATD, Off_block_time, (case when (Off_Block_Time < Sensor_ATD) then 1 else 0 end) as Status, \r\n"
 				+ "CONCAT('',TIMEDIFF(Off_Block_Time, Sensor_ATD)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' \r\n"
-				+ "and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and (sensor_atd is not null and Off_block_time is not null) order by flightnumber_departure");
+				+ "and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and (sensor_atd is not null and Off_block_time is not null) order by flightnumber_departure",environment);
 		while (result6.next())
 		{				
 			String str_LogID = result6.getString("logid");
@@ -123,7 +123,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 		 		+ " </tr>");
 		if (sensorATD_NullList.size()>0) {
 		ResultSet result31 = DBWrapper.Connect("SELECT logid, flightnumber_departure, std, etd, atd FROM `DailyFlightSchedule_Merged` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' \r\n" + 
-				"and operationunit= "+operationunit+" and flightnumber_departure like '%"+airline+"%' and sensor_atd is null");
+				"and operationunit= "+operationunit+" and flightnumber_departure like '%"+airline+"%' and sensor_atd is null",environment);
 		while (result31.next())
 		{
 			String str_LogID = result31.getString("logid");
@@ -150,7 +150,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 		
 		if (offBlockFromCV_List.size()>0) {
 		ResultSet result51 = DBWrapper.Connect("SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n" + 
-				"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and off_block_time is not null ) and operationname = 'ofb' and type = 'cv'order by flightno");
+				"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and off_block_time is not null ) and operationname = 'ofb' and type = 'cv'order by flightno",environment);
 		while (result51.next())
 		{				
 			String str_Flight_PK = result51.getString("flight_pk");
@@ -179,7 +179,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 		if (status0List.size()>0) {
 		ResultSet result61 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ATD, Off_block_time, (case when (Off_Block_Time < Sensor_ATD) then 1 else 0 end) as Status, \r\n" + 
 				"CONCAT('',TIMEDIFF(Off_Block_Time, Sensor_ATD)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' \r\n" + 
-				"and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and (sensor_atd is not null and Off_block_time is not null) order by flightnumber_departure");
+				"and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and (sensor_atd is not null and Off_block_time is not null) order by flightnumber_departure",environment);
 		while (result61.next())
 		{	
 			String str_LogID = result61.getString("logid");

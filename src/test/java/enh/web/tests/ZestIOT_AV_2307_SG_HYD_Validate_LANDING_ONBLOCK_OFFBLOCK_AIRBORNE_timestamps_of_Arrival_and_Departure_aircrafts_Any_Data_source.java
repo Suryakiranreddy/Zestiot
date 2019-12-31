@@ -30,7 +30,7 @@ public class ZestIOT_AV_2307_SG_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_t
 			// ============================================================
 			// .........Script Start...........................
 
-			AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_SG_HYD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_SG_HYD_Report(4, "SG");
+			AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_SG_HYD_Validation.SensorATA_LessThanOnBlock_LessThanOffBlock_LessThanSensorATD_SG_HYD_Report(4, "SG","prod");
 			
 
 			
