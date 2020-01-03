@@ -59,6 +59,7 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 			try {
 				SendMailReport.sendEmailToClient();
 				TestCasesSendMail.sendDSREmailToClient();			
+			
 			} catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
