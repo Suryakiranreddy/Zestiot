@@ -26,8 +26,7 @@ public class ZestIOT_AV_2405_bsspl extends KeywordUtil {
 
 	@Test(testName = "ZestIOT_000_bsspl", groups = {
 			"Regression" }, description = "ZestIOT_000_bsspl")
-	public void test()
-			throws Throwable {
+	public void test() throws Throwable {
 		try {
 			setTestCaseID(getClass().getSimpleName());
 			// ======================BASIC SETTING FOR
@@ -37,9 +36,7 @@ public class ZestIOT_AV_2405_bsspl extends KeywordUtil {
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			
-			//AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.ScheduledVsFlightDetectedForBSSPL_Report(ConfigReader.getValue("ExcelPath"),"Wed_BSSPL");
-
+				
 			if(SQL_Queries.todayDayDateTime().contains("Mon")) {
 				AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.ScheduledVsFlightDetectedForBSSPL_Report(ConfigReader.getValue("ExcelPath"),"Sun_BSSPL","prod");	
 			}

@@ -1223,3 +1223,48 @@ java.io.FileNotFoundException: C:\Users\Administrator\git\ZestIOTAutomation\Exec
 	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:242)
 	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:121)
 2019-12-31 11:40:26 ERROR - ----------------------------------------------------------------------
+2020-01-02 16:15:39 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User =====================================
+2020-01-02 16:15:39 ERROR - -----------------------------------------------------------------------
+2020-01-02 16:15:39 ERROR - Column 'FlightNumber_Departure' not found.
+2020-01-02 16:15:39 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:12:57 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User =====================================
+2020-01-02 18:12:57 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:12:57 ERROR - Before start of result set
+2020-01-02 18:12:57 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:18:59 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User =====================================
+2020-01-02 18:18:59 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:18:59 ERROR - Before start of result set
+2020-01-02 18:18:59 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:24:02 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User =====================================
+2020-01-02 18:24:02 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:24:02 ERROR - Operation not allowed after ResultSet closed
+2020-01-02 18:24:02 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:26:46 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User =====================================
+2020-01-02 18:26:46 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:26:46 ERROR - Operation not allowed after ResultSet closed
+2020-01-02 18:26:46 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:29:49 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User =====================================
+2020-01-02 18:29:49 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:29:49 ERROR - Operation not allowed after ResultSet closed
+2020-01-02 18:29:49 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:36:50 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User =====================================
+2020-01-02 18:36:50 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:36:50 ERROR - Operation not allowed after ResultSet closed
+2020-01-02 18:36:50 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:40:51 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User =====================================
+2020-01-02 18:40:51 ERROR - -----------------------------------------------------------------------
+2020-01-02 18:40:51 ERROR - Operation not allowed after ResultSet closed
+2020-01-02 18:40:51 ERROR - -----------------------------------------------------------------------
+2020-01-03 12:47:35 ERROR - 
+========ERROR IN TEST : ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User =====================================
+2020-01-03 12:47:35 ERROR - -----------------------------------------------------------------------
+2020-01-03 12:47:35 ERROR - Column 'FlightNumber_Departure' not found.
+2020-01-03 12:47:35 ERROR - -----------------------------------------------------------------------

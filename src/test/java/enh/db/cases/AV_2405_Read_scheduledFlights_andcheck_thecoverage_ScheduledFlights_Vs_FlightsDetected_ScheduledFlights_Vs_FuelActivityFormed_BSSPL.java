@@ -309,12 +309,12 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 	HtmlReportUtil.testHist.log(LogStatus.INFO, email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.toString());
 	
 	 ExtentTest child0 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights Scheduled for Departure ("+SQL_Queries.yesterDate()+"): "+list_flightNumberFromExcel.size()+"</b>");
-	 child0.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights Scheduled for Arrival ("+SQL_Queries.yesterDate()+"): "+list_flightNumberFromExcel.size()+"</b>");			
+	 child0.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights Scheduled for Arrival ("+SQL_Queries.yesterDate()+"): "+list_flightNumberFromExcel+"</b>");			
 	 ExtentTest child00 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights Scheduled for Departure ("+SQL_Queries.yesterDate()+"): "+list_flightNumberFromExcel.size()+"</b>");
-	 child00.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights Scheduled for Arrival ("+SQL_Queries.yesterDate()+"): "+list_flightNumberFromExcel.size()+"</b>");
+	 child00.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights Scheduled for Arrival ("+SQL_Queries.yesterDate()+"): "+list_flightNumberFromExcel+"</b>");
 	
 	 ExtentTest child01 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights Departed ("+SQL_Queries.yesterDate()+"): "+list_logID.size()+"</b>");
-	 child01.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights Departed ("+SQL_Queries.yesterDate()+"): "+list_logID.size()+"</b>");			
+	 child01.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights Departed ("+SQL_Queries.yesterDate()+"): "+list_logID+"</b>");			
 	 ExtentTest child001 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights Departed ("+SQL_Queries.yesterDate()+"): "+list_logID.size()+"</b>");
 	 child001.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights Departed ("+SQL_Queries.yesterDate()+"): "+list_logID.size()+"</b>");
 	 
