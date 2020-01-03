@@ -35,11 +35,8 @@ public class ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User e
 			// ============================================================
 			// .........Script Start...........................
 			//COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User();
-			AV_2268_COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User2();
-			/*COBT_For_GMR_HYD_AISATS_User.totalFlights();
-			COBT_For_GMR_HYD_AISATS_User.cobtIsNotNull();
-			COBT_For_GMR_HYD_AISATS_User.ofBlockTimeIsNotNull();
-			COBT_For_GMR_HYD_AISATS_User.cobtGreaterThan5Min();*/
+			AV_2268_COBT_For_GMR_HYD_AISATS_User.cOBT_For_GMR_HYD_AISATS_User2("prod");
+			
 			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {

@@ -37,12 +37,9 @@ public class ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User exten
 			// ================== END BASIC SETTING
 			// ============================================================
 			// .........Script Start...........................
-			AV_2268_COBT_For_GMR_HYD_SG_User.cOBT_For_GMR_HYD_SG_User2();
-			/*COBT_For_GMR_HYD_SG_User.totalFlights();
-			COBT_For_GMR_HYD_SG_User.cobtIsNotNull();
-			COBT_For_GMR_HYD_SG_User.ofBlockTimeIsNotNull();
-			COBT_For_GMR_HYD_SG_User.cobtGreaterThan5Min();
-*/			// .........Script Start...........................
+			AV_2268_COBT_For_GMR_HYD_SG_User.cOBT_For_GMR_HYD_SG_User2("prod");
+			
+			// .........Script Start...........................
 		} catch (Exception e) {
 			if (retryCount > 0) {
 				String imagePath = takeScreenshot(getDriver(), getTestCaseID() + "_" + retryingNumber);
