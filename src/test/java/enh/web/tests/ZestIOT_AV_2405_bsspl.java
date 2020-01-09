@@ -44,10 +44,10 @@ public class ZestIOT_AV_2405_bsspl extends KeywordUtil {
 				AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.ScheduledVsFlightDetectedForBSSPL_Report(ConfigReader.getValue("ExcelPath"),"Mon_BSSPL","prod");
 			}
 			else if(SQL_Queries.todayDayDateTime().contains("Wed")) {
-				AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.ScheduledVsFlightDetectedForBSSPL_Report(ConfigReader.getValue("ExcelPath"),"Tue_BSSPL","prod");
+				AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.ScheduledVsFlightDetectedForBSSPL_Report(ConfigReader.getValue("ExcelPath"),"Tue_BSSPL","test");
 			}
 			else if(SQL_Queries.todayDayDateTime().contains("Thu")) {
-				AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.ScheduledVsFlightDetectedForBSSPL_Report(ConfigReader.getValue("ExcelPath"),"Wed_BSSPL","prod");
+				AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.ScheduledVsFlightDetectedForBSSPL_Report(ConfigReader.getValue("ExcelPath"),"Wed_BSSPL","test");
 			}
 			else if(SQL_Queries.todayDayDateTime().contains("Fri")) {
 				AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.ScheduledVsFlightDetectedForBSSPL_Report(ConfigReader.getValue("ExcelPath"),"Thurs_BSSPL","prod");

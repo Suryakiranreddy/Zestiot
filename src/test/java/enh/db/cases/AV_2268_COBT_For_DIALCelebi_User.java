@@ -1,17 +1,18 @@
 package enh.db.cases;
-
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.ResultSet;
-import java.sql.Statement;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 
+import org.joda.time.DateTime;
+import org.joda.time.Days;
+import org.joda.time.Hours;
+import org.joda.time.Minutes;
+import org.joda.time.Seconds;
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
-
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
-
 import utilities.HtmlReportUtil;
 
 
@@ -27,6 +28,7 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 	 public static StringBuilder email_COBT_For_DIALCelebi_User8= new StringBuilder();
 	 public static StringBuilder email_COBT_For_DIALCelebi_User9= new StringBuilder();
 	 public static StringBuilder email_COBT_For_DIALCelebi_User10= new StringBuilder();
+	 public static StringBuilder email_COBT_For_DIALCelebi_User11= new StringBuilder();
 	 public static JSONObject AV_2268_COBT_For_DIALCelebi_UserJson = new JSONObject();
 	 public static JSONArray AV_2268_COBT_For_DIALCelebi_UserArray = new JSONArray();
 	 public static JSONObject COBT_For_DIALCelebi_DataJson = new JSONObject();
@@ -34,14 +36,14 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 	 public static JSONArray Json_COBTisNOTdetected = new JSONArray();
 	 public static JSONArray Json_OFFBLOCKisNOTdetected = new JSONArray();	 
 	 public static JSONArray Json_differenceOfActualOffBlockAndFinalCOBTdiffIsGreaterThan5Minutes = new JSONArray();
-	 
-	
-		
+	 	
 	 @SuppressWarnings("unchecked")
 	public static void cOBT_For_DIALCelebi_User2(String environment) throws Exception{
 		 String str_cobtDiff=null;
 		 int countCobtChange=0;
-		
+		 int countCobtChange1=0;
+		 int countCobtChange2=0;
+		 
 		 AV_2268_COBT_For_DIALCelebi_UserJson.put("title", "AV_2268_COBT_For_DIALCelebi_User");
 		 AV_2268_COBT_For_DIALCelebi_UserJson.put("feature", "COBT");
 		 AV_2268_COBT_For_DIALCelebi_UserJson.put("subFeature", "Start");
@@ -266,6 +268,71 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 		
 						}
 			email_COBT_For_DIALCelebi_User8.append("</table>");
+			
+			 email_COBT_For_DIALCelebi_User10.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+
+			 email_COBT_For_DIALCelebi_User10.append("<table style=\"width:100%\" id=\"t01\"><h4><caption> Activity COBT that has difference > 5 minutes to OffBlock (Actual)</caption></h4>"
+				 		+ "<tr><th style=\"width:10%\">LogID</th> <th style=\"width:15%\">ActivityCode</th>"
+					 	+ "<th style=\"width:30%\">COBT value w.r.t ActivityCode</th><th style=\"width:25%\">Off_Block_Time</th><th style=\"width:30%\">COBT Diff</th></tr>");
+			 email_COBT_For_DIALCelebi_User11.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+
+			 email_COBT_For_DIALCelebi_User11.append("<table style=\"width:100%\" id=\"t01\"><h4><caption> Activity COBT that has difference < 5 minutes to OffBlock (Actual)</caption></h4>"
+				 		+ "<tr><th style=\"width:10%\">LogID</th> <th style=\"width:15%\">ActivityCode</th>"
+					 	+ "<th style=\"width:30%\">COBT value w.r.t ActivityCode</th><th style=\"width:25%\">Off_Block_Time</th><th style=\"width:30%\">COBT Diff</th></tr>");
+
+			
+			String strQuery ="SELECT Logid, FlightNumber_Arrival,FlightNumber_Departure, cobt, Off_Block_Time FROM `DailyFlightSchedule_Merged` \r\n" + 
+					"where (date(atd)='"+SQL_Queries.yesterDate()+"' or date(sensor_atd)='"+SQL_Queries.yesterDate()+"') and operationunit = 22 and \r\n" + 
+					"FlightNumber_Arrival regexp 'TK|EY|CX|QR|ET|AK|KC|JL|KE|PS|AC|AF|AZ|BA|SU|IA|SV|UL|T5|FZ|KQ|I5'\r\n" + 
+					"and cobt is not  null and Off_Block_Time is not null ";
+			
+			 ResultSet resultt = DBWrapper.Connect(strQuery, environment);
+				while (resultt.next()){	
+				
+					String str_LogID = resultt.getString("Logid");	
+					String str_FlightNumber_Arrival = resultt.getString("FlightNumber_Arrival");
+					String str_FlightNumber_Departure = resultt.getString("FlightNumber_Departure");
+					String str_cobt = resultt.getString("cobt");
+					String str_Off_Block_Time = resultt.getString("Off_Block_Time");				
+					ResultSet result000 = DBWrapper.Connect("select * from  COBTTimeline where Id in (SELECT max(Id) FROM COBTTimeline where flightpk = "+str_LogID+" and pts is not null GROUP BY FlightPK, PTS)",environment);
+					while(result000.next()) {
+					String str_cobtt=result000.getString("cobt");
+					String str_pts=result000.getString("pts");
+					SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");				
+					Date	d1 = format.parse(str_cobtt);
+					Date	d2 = format.parse(str_Off_Block_Time);
+					DateTime dt1 = new DateTime(d1);
+					DateTime dt2 = new DateTime(d2);
+					System.out.print(Days.daysBetween(dt1, dt2).getDays() + " days, ");
+					System.out.print(Hours.hoursBetween(dt1, dt2).getHours() /24 + " hours, ");
+					System.out.print(Minutes.minutesBetween(dt1, dt2).getMinutes() /60 + " minutes, ");
+					System.out.print(Seconds.secondsBetween(dt1, dt2).getSeconds()/60  + " seconds.");		
+						 long difference =  (d1.getTime()-d2.getTime())/60000;
+						 System.out.print(difference + " milli seconds.");
+						 long difference2 =  (d2.getTime()-d1.getTime())/60000;
+						 System.out.print(difference + " milli seconds.");
+						 if(difference>5 || difference2>5 ) {
+							 countCobtChange1=countCobtChange1+1; 
+					email_COBT_For_DIALCelebi_User10.append("<tr><td ><b style=\"color:green;\">"+str_LogID+"</b></td>"						
+							+ "<td><b style=\"color:green;\">"+str_pts+"</b></td>"
+							+ "<td><b style=\"color:green;\">"+str_cobtt+"</b></td>"
+							+ "<td><b style=\"color:green;\">"+str_Off_Block_Time+"</b></td>"
+							+ "<td><b style=\"color:green;\">"+difference+ " min </b></td></tr>");	
+						 }else {
+							 countCobtChange2=countCobtChange2+1;
+							 email_COBT_For_DIALCelebi_User11.append("<tr><td ><b style=\"color:red;\">"+str_LogID+"</b></td>"						
+										+ "<td><b style=\"color:red;\">"+str_pts+"</b></td>"
+										+ "<td><b style=\"color:red;\">"+str_cobtt+"</b></td>"
+										+ "<td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td>"
+										+ "<td><b style=\"color:red;\">"+ difference+" min</b></td></tr>");	 
+						 }
+						 
+				}	
+					
+				
+					}
+				email_COBT_For_DIALCelebi_User10.append("</table>");
+				email_COBT_For_DIALCelebi_User11.append("</table>");
 			// email_COBT_For_DIALCelebi_User8.append("</body></html>");
 			//HtmlReportUtil.stepInfo(email_COBT_For_DIALCelebi_User5.toString());
 			 HtmlReportUtil.test.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User5.toString());
@@ -296,10 +363,20 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 			 child10.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User9.toString());
 			 ExtentTest child110 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights For which COBT is detected: "+cobtIsNotNull2.size()+"</b>");
 			 child110.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User9.toString());
+			 
+			 ExtentTest child30 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
+			 child30.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User11.toString());			 
+			 ExtentTest child130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
+			 child130.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User11.toString());
+			 
+			 ExtentTest child030 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
+			 child030.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User10.toString());			 
+			 ExtentTest child0130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
+			 child0130.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User10.toString());
 
 			 
-			 HtmlReportUtil.test.appendChild(child0).appendChild(child10).appendChild(child1).appendChild(child2).appendChild(child3);
-			 HtmlReportUtil.testHist.appendChild(child0).appendChild(child110).appendChild(child11).appendChild(child12).appendChild(child13);
+			 HtmlReportUtil.test.appendChild(child0).appendChild(child10).appendChild(child1).appendChild(child2).appendChild(child3).appendChild(child30).appendChild(child030);
+			 HtmlReportUtil.testHist.appendChild(child0).appendChild(child110).appendChild(child11).appendChild(child12).appendChild(child13).appendChild(child130).appendChild(child0130);
 			 
 			 COBT_For_DIALCelebi_DataJson.put("Total Flights of Entity", Json_TotalFlightsofEntity);
 			 COBT_For_DIALCelebi_DataJson.put("Cobt not detected",Json_COBTisNOTdetected);
@@ -311,9 +388,4 @@ public class AV_2268_COBT_For_DIALCelebi_User {
 			 DBWrapper.dbConnectionClose();	
 			
 	 }
-		
- 
-
-  
- 
 }

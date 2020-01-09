@@ -20,8 +20,6 @@ public class ExecutionStartEndListner extends Utility implements IExecutionListe
 	@Override
 	public void onExecutionStart() {
 		
-		
-		
 		//delete video before running test
 		Delete.DeleteAFile();
 		

@@ -22,9 +22,11 @@ import utilities.WriteToFile;
  * @author Enh
  */
 public class CustomSuiteRunner {
+	
 	/**
 	 * Creating suite XMLs at runtime for execution
 	 */
+	
 	@Test 
 	public static void suiteRunner() {
 		/*

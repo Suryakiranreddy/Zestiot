@@ -188,6 +188,7 @@ public class KeywordUtil extends Utility {
 		KeywordUtil.lastAction = "Click: " + string.toString();
 		LogUtil.infoLog(KeywordUtil.class, KeywordUtil.lastAction);
 		WebElement elm = waitForClickable(string);
+		//WebElement elm =getDriver().findElement(By.cssSelector(""));
 		if (elm == null) {
 			return false;
 		} else {
