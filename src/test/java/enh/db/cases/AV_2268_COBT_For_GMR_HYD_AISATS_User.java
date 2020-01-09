@@ -272,18 +272,18 @@ public class AV_2268_COBT_For_GMR_HYD_AISATS_User {
 						 System.out.print(difference + " milli seconds.");
 						 if(difference>5 || difference2>5 ) {
 							 countCobtChange1=countCobtChange1+1; 
-					email_COBT_For_DIALCelebi_User10.append("<tr><td ><b style=\"color:green;\">"+str_LogID+"</b></td>"						
-							+ "<td><b style=\"color:green;\">"+str_pts+"</b></td>"
-							+ "<td><b style=\"color:green;\">"+str_cobtt+"</b></td>"
-							+ "<td><b style=\"color:green;\">"+str_Off_Block_Time+"</b></td>"
-							+ "<td><b style=\"color:green;\">"+difference+ " min </b></td></tr>");	
+					email_COBT_For_DIALCelebi_User10.append("<tr><td ><b style=\"color:red;\">"+str_LogID+"</b></td>"						
+							+ "<td><b style=\"color:red;\">"+str_pts+"</b></td>"
+							+ "<td><b style=\"color:red;\">"+str_cobtt+"</b></td>"
+							+ "<td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td>"
+							+ "<td><b style=\"color:red;\">"+difference+ " min </b></td></tr>");	
 						 }else {
 							 countCobtChange2=countCobtChange2+1;
-							 email_COBT_For_DIALCelebi_User11.append("<tr><td ><b style=\"color:red;\">"+str_LogID+"</b></td>"						
-										+ "<td><b style=\"color:red;\">"+str_pts+"</b></td>"
-										+ "<td><b style=\"color:red;\">"+str_cobtt+"</b></td>"
-										+ "<td><b style=\"color:red;\">"+str_Off_Block_Time+"</b></td>"
-										+ "<td><b style=\"color:red;\">"+ difference+" min</b></td></tr>");	 
+							 email_COBT_For_DIALCelebi_User11.append("<tr><td ><b style=\"color:green;\">"+str_LogID+"</b></td>"						
+										+ "<td><b style=\"color:green;\">"+str_pts+"</b></td>"
+										+ "<td><b style=\"color:green;\">"+str_cobtt+"</b></td>"
+										+ "<td><b style=\"color:green;\">"+str_Off_Block_Time+"</b></td>"
+										+ "<td><b style=\"color:green;\">"+ difference+" min</b></td></tr>");	 
 						 }
 						 
 				}	
@@ -324,14 +324,14 @@ public class AV_2268_COBT_For_GMR_HYD_AISATS_User {
 			 child110.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User9.toString());
 
 		
-			 ExtentTest child30 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
+			 ExtentTest child30 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
 			 child30.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User11.toString());			 
-			 ExtentTest child130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
+			 ExtentTest child130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
 			 child130.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User11.toString());
 			 
-			 ExtentTest child030 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
+			 ExtentTest child030 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
 			 child030.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User10.toString());			 
-			 ExtentTest child0130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
+			 ExtentTest child0130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
 			 child0130.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User10.toString());
 
 			 
