@@ -180,6 +180,8 @@ public class AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation{
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Airport Name : GMR-Hyderabad</h4>");
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :sensor-ATA, OnBlock, OffBlock, Sensor-ATD</h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
+		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<h5 align=\"center\" style=\"color:#008ae6;\" >Environment: "+environment+" </h5>");
+
 		email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:10%\"><b>Date</b></th><th style=\"width:15%\"><b>Total No. of Flights Scheduled Arrival</b></th> <th style=\"width:15%\"><b> Total No. of flights Scheduled Departure</b></th>"
 		 		+ "<th style=\"width:15%\"><b>Total Flights with Landing time</b></th><th style=\"width:20%\"><b>Total Flights with Airborne time</b></th>"
 		 		+ " </tr>");

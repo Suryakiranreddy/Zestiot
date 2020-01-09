@@ -26,13 +26,13 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi3 = new StringBuilder();
 		
 		
-	public static void scheduled_And_Sensor_ATA_For_Delhi_BSSPL_Report(int operationunit,String envoronment) throws Exception {
+	public static void scheduled_And_Sensor_ATA_For_Delhi_BSSPL_Report(int operationunit,String environment) throws Exception {
 		
 	String querry_result=	"SELECT count(*) FROM `DailyFlightScheduleArrival_GMR`where \r\n" 
 		+ "date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"' and flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|SV|J2|MU|XY|OZ|KU|SG') \r\n "
 				+ "and operationunit= "+operationunit+"";
 	System.out.println(querry_result);	
-	ResultSet result = DBWrapper.Connect(querry_result,envoronment);
+	ResultSet result = DBWrapper.Connect(querry_result,environment);
 		while (result.next())
 		{				
 			totalScheduledArrival = result.getString("count(*)");
@@ -42,7 +42,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 		String querry_result2="SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_arrival in (SELECT gmrpk FROM \r\n"
 				+ " `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"' and flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|SV|J2|MU|XY|OZ|KU|SG') \r\n"
 				+ " and operationunit= "+operationunit+") and sensor_ata is not null";
-		ResultSet result2 = DBWrapper.Connect(querry_result2,envoronment);
+		ResultSet result2 = DBWrapper.Connect(querry_result2,environment);
 		while (result2.next())
 		{				
 			notNullSensorATA = result2.getString("count(*)");
@@ -51,7 +51,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 		String querry_result3="SELECT logid, flightnumber_arrival, sta, eta, ata FROM `DailyFlightSchedule_Merged` where gmrpk_arrival in\r\n" + 
 		"(SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"' and \r\n"
 			+ "flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|SV|J2|MU|XY|OZ|KU|SG') and operationunit= "+operationunit+") and sensor_ata is null";
-		ResultSet result3 = DBWrapper.Connect(querry_result3,envoronment);
+		ResultSet result3 = DBWrapper.Connect(querry_result3,environment);
 		while (result3.next())
 		{
 			String str_LogID = result3.getString("logid");
@@ -65,7 +65,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 		String querry_result4="SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged` \r\n"
 				+ "where date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"' and flightnumber_arrival regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|SV|J2|MU|XY|OZ|KU|SG') \r\n"
 				+ "and operationunit= "+operationunit+" and on_block_time is not null) and operationname = 'onb'";
-		ResultSet result4 = DBWrapper.Connect(querry_result4,envoronment);
+		ResultSet result4 = DBWrapper.Connect(querry_result4,environment);
 		while (result4.next())
 		{				
 			onBlockFromSensor = result4.getString("count(*)");
@@ -76,7 +76,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 				"CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"' and \r\n "
 				+ "flightnumber_arrival regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|SV|J2|MU|XY|OZ|KU|SG') \r\n" + 
 				"and operationunit = "+operationunit+" and (sensor_ata is not null and On_block_time is not null)";
-		ResultSet result5 = DBWrapper.Connect(querry_result5,envoronment);
+		ResultSet result5 = DBWrapper.Connect(querry_result5,environment);
 		while (result5.next())
 		{				
 			String str_LogID = result5.getString("logid");
@@ -100,6 +100,8 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 		email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1.append("<h4 align=\"center\" style=\"color:#008ae6;\">User Name : BSSPL-Delhi</h4>");
 		email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :Scheduled and Sensor-ATA</h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
+		email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1.append("<h5 align=\"center\" style=\"color:#008ae6;\" >Environment: "+environment+" </h5>");
+
 		email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:10%\"><b>Date</b></th><th style=\"width:15%\"><b>Total No. of Flights Scheduled Arrival</b></th>"
 				+ " <th style=\"width:15%\"><b>No. of flights detected by Sensor</b></th>"
 		 		+ "<th style=\"width:15%\"><b>No. of flights NOT detected by Sensor</b></th>"
@@ -122,7 +124,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 		String querry_result31="SELECT logid, flightnumber_arrival, sta, eta, ata FROM `DailyFlightSchedule_Merged` where gmrpk_arrival in  \r\n" + 
 				"(SELECT gmrpk FROM `DailyFlightScheduleArrival_GMR`where date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"' and \r\n" + 
 				"flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|SV|J2|MU|XY|OZ|KU|SG') and operationunit= "+operationunit+") and sensor_ata is null";
-		ResultSet result31 = DBWrapper.Connect(querry_result31,envoronment);
+		ResultSet result31 = DBWrapper.Connect(querry_result31,environment);
 		while (result31.next())
 		{
 			String str_LogID = result31.getString("logid");
@@ -157,7 +159,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 				+ "CONCAT('',TIMEDIFF(sensor_ata, on_block_time)) as difference FROM `DailyFlightSchedule_Merged` where date(IFNULL(sta,eta))= '"+SQL_Queries.yesterDate()+"' \r\n "
 				+ "and flightnumber_arrival regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|SV|J2|MU|XY|OZ|KU|SG') \r\n"
 				+ "and operationunit = "+operationunit+" and (sensor_ata is not null and On_block_time is not null) order by flightnumber_arrival";
-						ResultSet result51 = DBWrapper.Connect(querry_result51,envoronment);
+						ResultSet result51 = DBWrapper.Connect(querry_result51,environment);
 		while (result51.next())
 		{	
 			String str_LogID = result51.getString("logid");

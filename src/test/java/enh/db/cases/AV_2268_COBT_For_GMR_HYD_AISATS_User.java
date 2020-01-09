@@ -151,7 +151,9 @@ public class AV_2268_COBT_For_GMR_HYD_AISATS_User {
 			 email_COBT_For_DIALCelebi_User5.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 
 			email_COBT_For_DIALCelebi_User5.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :COBT For GMR HYD AISATS</h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
-			 email_COBT_For_DIALCelebi_User5.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:15%\"><b>Date</b></th><th style=\"width:15%\"><b>Total No. of Flights</b></th><th style=\"width:15%\"><b>COBT detected</b></th> <th style=\"width:15%\"><b>COBT  Not detected</b></th>"
+			email_COBT_For_DIALCelebi_User5.append("<h5 align=\"center\" style=\"color:#008ae6;\" >Environment: "+environment+" </h5>");
+
+			email_COBT_For_DIALCelebi_User5.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:15%\"><b>Date</b></th><th style=\"width:15%\"><b>Total No. of Flights</b></th><th style=\"width:15%\"><b>COBT detected</b></th> <th style=\"width:15%\"><b>COBT  Not detected</b></th>"
 				 		+ "<th style=\"width:15%\"><b>OFFBLOCK not detected</b></th><th style=\"width:15%\"><b>Actual OFFBLOCK & COBT diff  > 5mins</b></th>"
 				 		+ " </tr>");
 				 email_COBT_For_DIALCelebi_User5.append(" <tr> <td><b>"+SQL_Queries.yesterDate()+"</b></td> <td><b>"+cobtTimeDiff.size()+"</b></td>"
@@ -263,12 +265,7 @@ public class AV_2268_COBT_For_GMR_HYD_AISATS_User {
 					SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd HH:mm:ss");				
 					Date	d1 = format.parse(str_cobtt);
 					Date	d2 = format.parse(str_Off_Block_Time);
-					DateTime dt1 = new DateTime(d1);
-					DateTime dt2 = new DateTime(d2);
-					System.out.print(Days.daysBetween(dt1, dt2).getDays() + " days, ");
-					System.out.print(Hours.hoursBetween(dt1, dt2).getHours() /24 + " hours, ");
-					System.out.print(Minutes.minutesBetween(dt1, dt2).getMinutes() /60 + " minutes, ");
-					System.out.print(Seconds.secondsBetween(dt1, dt2).getSeconds()/60  + " seconds.");		
+						
 						 long difference =  (d1.getTime()-d2.getTime())/60000;
 						 System.out.print(difference + " milli seconds.");
 						 long difference2 =  (d2.getTime()-d1.getTime())/60000;
@@ -327,14 +324,14 @@ public class AV_2268_COBT_For_GMR_HYD_AISATS_User {
 			 child110.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User9.toString());
 
 		
-			 ExtentTest child30 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
+			 ExtentTest child30 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
 			 child30.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User11.toString());			 
-			 ExtentTest child130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
+			 ExtentTest child130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:red;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
 			 child130.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User11.toString());
 			 
-			 ExtentTest child030 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
+			 ExtentTest child030 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
 			 child030.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User10.toString());			 
-			 ExtentTest child0130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference less than 5 minutes to OffBlock (Actual) </b>");
+			 ExtentTest child0130 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Activity COBT that has difference greater than 5 minutes to OffBlock (Actual) </b>");
 			 child0130.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User10.toString());
 
 			 

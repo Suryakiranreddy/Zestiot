@@ -34,12 +34,12 @@ Check console output at <b style=\"color:#008ae6;\"><i><a href="${env.BUILD_URL}
 Thanks & Regards,<br>
 Automation Team</p>
 """, 
-cc: ' ',  
+cc: 'amit@zestiot.io, sushanto@zestiot.io, Krishna@zestiot.io, anantwar@zestiot.io, shrikant@zestiot.io, rohan@zestiot.io, chiranjeevi@zestiot.io, stiyyagura@enhops.com, pdwadasi@enhops.com, rbuddha@enhops.com, rchiluka@enhops.com, smunnangi@enhops.com, nishanth@zestiot.io, hmanthena@enhops.com, mpyla@enhops.com, venkatesh@zestiot.io, ravi@zestiot.io, Nikhileshwar@zestiot.io, samson@zestiot.io , anwesh@zestiot.io, anil@zestiot.io, jkuchipudi@enhops.com, pbarma@enhops.com ',  
 from: 'automationteam.enhops@gmail.com', 
 mimeType: 'text/html', 
 replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' SUCCESSFUL : Jenkins Pipeline " ,
- to: 'stiyyagura@enhops.com'
+ to: 'nilesh@zestiot.io'
  }catch (err) {
  echo err.getMessage()
  mail bcc: '',
@@ -55,12 +55,12 @@ Check console output at <b style=\"color:#008ae6;\"><i><a href="${env.BUILD_URL}
 Thanks & Regards,<br>
 Automation Team</p>
 """, 
-cc: ' ',
+cc: ' amit@zestiot.io, sushanto@zestiot.io, Krishna@zestiot.io, anantwar@zestiot.io, shrikant@zestiot.io, rohan@zestiot.io, chiranjeevi@zestiot.io, stiyyagura@enhops.com, pdwadasi@enhops.com, rbuddha@enhops.com, rchiluka@enhops.com, smunnangi@enhops.com, nishanth@zestiot.io, hmanthena@enhops.com, mpyla@enhops.com, venkatesh@zestiot.io, ravi@zestiot.io, Nikhileshwar@zestiot.io, samson@zestiot.io , anwesh@zestiot.io, anil@zestiot.io, jkuchipudi@enhops.com, pbarma@enhops.com ',
 from: 'automationteam.enhops@gmail.com', 
 mimeType: 'text/html', 
 replyTo: '',
  subject: "BUILD_NUMBER '${env.BUILD_NUMBER}' FAILED : Jenkins Pipeline " ,
- to: 'stiyyagura@enhops.com'
+ to: 'nilesh@zestiot.io'
 }
 }
 }

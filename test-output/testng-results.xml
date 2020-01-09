@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="smoke" duration-ms="1241485" started-at="2020-01-09T08:59:07Z" finished-at="2020-01-09T09:19:49Z">
+  <suite name="smoke" duration-ms="102858" started-at="2020-01-09T11:42:20Z" finished-at="2020-01-09T11:44:03Z">
     <groups>
       <group name="Regression">
-        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@36bc55de]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User"/>
+        <method signature="ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User.test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@74fe5c40]" name="test" class="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User"/>
       </group> <!-- Regression -->
     </groups>
-    <test name="smoke-Tests" duration-ms="1241485" started-at="2020-01-09T08:59:07Z" finished-at="2020-01-09T09:19:49Z">
-      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User">
-        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User@36bc55de]" name="test" duration-ms="1226990" started-at="2020-01-09T14:29:20Z" description="AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User" finished-at="2020-01-09T14:49:47Z">
+    <test name="smoke-Tests" duration-ms="102858" started-at="2020-01-09T11:42:20Z" finished-at="2020-01-09T11:44:03Z">
+      <class name="enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User">
+        <test-method status="PASS" signature="test()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@74fe5c40]" name="test" duration-ms="87862" started-at="2020-01-09T17:12:33Z" description="AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User" finished-at="2020-01-09T17:14:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User@74fe5c40]" name="afterTest" is-config="true" duration-ms="372" started-at="2020-01-09T17:14:03Z" finished-at="2020-01-09T17:14:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- enh.web.tests.ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User -->
     </test> <!-- smoke-Tests -->
   </suite> <!-- smoke -->
 </testng-results>
