@@ -15,9 +15,10 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 	public static int notNullSensorATD =0;
 	
 	public static int offBlockFromSensor=0;
+	public static int offBlockFromCV =0;
 			
 	public static ArrayList<String> sensorATD_NullList = new ArrayList<String>();
-	public static ArrayList<String> offBlockFromCV_List = new ArrayList<String>();
+	public static ArrayList<String> list_offBlockFromOtherDataSource = new ArrayList<String>();
 	
 	public static ArrayList<String> status0List = new ArrayList<String>();
 	public static ArrayList<String> status1List = new ArrayList<String>();
@@ -66,7 +67,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 				
 		ResultSet result4 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n "+
 		"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"'and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and off_block_time is not null ) "
-		+ "and operationname = 'ofb' and type = 'aircraft'order by flightno",environment);
+		+ "and operationname = 'ofb' and type = 'aircraft' order by flightno", environment);
 		while (result4.next())
 		{				
 			offBlockFromSensor = result4.getInt("count(*)");
@@ -79,7 +80,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 		{				
 			String str_Flight_PK = result5.getString("flight_pk");
 			String str_flight_NumberDeparture= result5.getString("flightno");
-			offBlockFromCV_List.add(str_Flight_PK);		
+			list_offBlockFromOtherDataSource.add(str_Flight_PK);		
 		}
 				
 		ResultSet result6 = DBWrapper.Connect("SELECT logid, flightnumber_departure, sensor_ATD, Off_block_time, (case when (Off_Block_Time < Sensor_ATD) then 1 else 0 end) as Status, \r\n"
@@ -104,6 +105,12 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 			}
 			
 		}	
+		ResultSet result7 = DBWrapper.Connect("SELECT count(*) FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n" + 
+				"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and off_block_time is not null ) and operationname = 'ofb' and type = 'cv'order by flightno",environment);
+				while (result7.next())
+				{				
+					offBlockFromCV = result7.getInt("count(*)");		
+				}
 		email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd1.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd1.append("<h4 align=\"center\" style=\"color:#008ae6;\"> User Name : SG-Hyderabad</h4>");
 		email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd1.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :Scheduled and Sensor-ATD</h4><h5 align=\"center\" style=\"color:#008ae6;\" >Execution Time: "+SQL_Queries.todayDayDateTime()+" </h5>");
@@ -111,7 +118,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 		 		+ "<th style=\"width:15%\"><b>No. of flights NOT detected by Sensor</b></th><th style=\"width:20%\"><b>No. of flights Off-Block time is detected by Sensor</b></th><th style=\"width:15%\"><b>No. of flights Off-Block time is detected by CV</b></th>"
 		 		+ " </tr>");
 		email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd1.append(" <tr> <td><b>"+SQL_Queries.yesterDate()+"</b></td> <td><b>"+totalScheduledDeparture+"</b></td>"
-		 		+ " <td> <b style=\"color:green;\">"+notNullSensorATD+"</b></td> <td><b style=\"color:red;\">"+sensorATD_NullList.size()+"</b></td> <td><b style=\"color:green;\">"+offBlockFromSensor+"</b></td> <td><b style=\"color:red;\">"+offBlockFromCV_List.size()+"</b></td></tr></table>");			 	
+		 		+ " <td> <b style=\"color:green;\">"+notNullSensorATD+"</b></td> <td><b style=\"color:red;\">"+sensorATD_NullList.size()+"</b></td> <td><b style=\"color:green;\">"+offBlockFromSensor+"</b></td> <td><b style=\"color:red;\">"+offBlockFromCV+"</b></td></tr></table>");			 	
 		
 		email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd2.append("<br><br>");
 		email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd2.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
@@ -148,7 +155,7 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 				+ "<th style=\"width:15%\"><b>Departure Flight No.</b></th> "
 				+ " </tr>");
 		
-		if (offBlockFromCV_List.size()>0) {
+		if (list_offBlockFromOtherDataSource.size()>0) {
 		ResultSet result51 = DBWrapper.Connect("SELECT flight_pk, flightno FROM `EquipActivityLogs` where flight_pk in (SELECT logid FROM `DailyFlightSchedule_Merged`\r\n" + 
 				"where date(IFNULL(std,mediator_std))= '"+SQL_Queries.yesterDate()+"' and operationunit = "+operationunit+" and flightnumber_departure like '%"+airline+"%' and off_block_time is not null ) and operationname = 'ofb' and type = 'cv'order by flightno",environment);
 		while (result51.next())
@@ -232,9 +239,9 @@ public class AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd {
 		 ExtentTest child33 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\"> Total Flights - OFFBLOCK (Detected by Flight Sensor): "+offBlockFromSensor+"</b>");
 		 child33.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\"> Total Flights - OFFBLOCK (Detected by Flight Sensor):: "+offBlockFromSensor+"</b>");
 		 
-		 ExtentTest child4 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\"> Total Flights - OFFBLOCK (Not Detected by Flight Sensor but detected from other data source): "+offBlockFromCV_List.size()+"</b>");
+		 ExtentTest child4 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\"> Total Flights - OFFBLOCK (Not Detected by Flight Sensor but detected from other data source): "+list_offBlockFromOtherDataSource.size()+"</b>");
 		 child4.log(LogStatus.INFO, email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd3.toString());
-		 ExtentTest child44 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:red;\" align=\"center\"> Total Flights - OFFBLOCK (Not Detected by Flight Sensor but detected from other data source):: "+offBlockFromCV_List.size()+"</b>");
+		 ExtentTest child44 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:red;\" align=\"center\"> Total Flights - OFFBLOCK (Not Detected by Flight Sensor but detected from other data source):: "+list_offBlockFromOtherDataSource.size()+"</b>");
 		 child44.log(LogStatus.INFO, email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd3.toString());
 		 
 		ExtentTest child5 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights OFFBLOCK time detected by Flight Sensor less than AIRBORNE: "+status1List.size()+"</b>");
