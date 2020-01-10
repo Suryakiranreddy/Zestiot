@@ -51,7 +51,7 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 	public static int OnBlockIsNull=0;
 	public static int OffBlockIsNull=0;
 	public static int ATDIsNull=0;
-	
+	public static int devIdUtilizedForFueling=0;
 	
 	public static StringBuilder email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1 = new StringBuilder();
 	public static StringBuilder email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL2 = new StringBuilder();
@@ -277,7 +277,13 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 			}
 		}
 		email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL6.append("</table>");
-	 
+		ResultSet result0 = DBWrapper.Connect("SELECT count(distinct(devid)) FROM `EquipActivityLogs` where date(flogdate) = '"+SQL_Queries.yesterDate()+"' \r\n"
+                + "and devid like '%BSSPL_DIAL_AFUEL%' and assigned=1 and operationname= 'FLE'",environment);
+        while (result0.next())
+        {
+            devIdUtilizedForFueling = result0.getInt("count(distinct(devid))");
+        }   
+       
 	 
 	 email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 	 email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.append("<h4 align=\"center\" style=\"color:#008ae6;\"> Airport Name : Delhi</h4>");
@@ -287,8 +293,9 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 	 email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.append("<table style=\"width:100%\" id=\"t01\"><tr>"
 						+ "<th style=\"width:15%\"><b>Total Flights Scheduled for Departure</b></th>"
 						+ "<th style=\"width:10%\"><b>Flights Departed</b></th>"
-						+ "<th style=\"width:15%\"><b>Flights with Fuel Activity</b></th>"
-						+ "<th style=\"width:15%\"><b>Flights without Fuel Activity</b></th>"
+						+ "<th style=\"width:10%\"><b>Total Fuel bowsers utilized</b></th>"
+						+ "<th style=\"width:10%\"><b>Flights with Fuel Activity</b></th>"
+						+ "<th style=\"width:10%\"><b>Flights without Fuel Activity</b></th>"
 						+ "<th style=\"width:15%\"><b>Flights without Landing time</b></th> "
 						+ "<th style=\"width:10%\"><b>Flights without ON-Block time</b></th>"
 						+ "<th style=\"width:10%\"><b>Flights without Off-Block time</b></th>"
@@ -297,6 +304,7 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 	 email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.append(" <tr> "
 						+ "<td><b>"+list_flightNumberFromExcel.size()+"</b></td> "
 						+ "<td><b style=\"color:red;\">"+list_logID.size()+"</b></td>"
+						+ "<td><b style=\"color:green;\">"+devIdUtilizedForFueling+"</b></td>"
 						+ "<td><b style=\"color:red;\">"+list_Flight_pk_Found.size()+"</b></td>"
 					    + "<td><b style=\"color:red;\">"+list_NoflelogID.size()+"</b></td>"   
 						+ "<td> <b style=\"color:red;\">"+ATAIsNull+"</b></td>"
