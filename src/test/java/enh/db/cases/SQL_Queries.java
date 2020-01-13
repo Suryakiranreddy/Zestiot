@@ -74,7 +74,7 @@ import java.util.Date;
 	public static String strQuery_10="SELECT  count(*) FROM `DailyFlightSchedule_Merged` where (date(sensor_atd) ='"+SQL_Queries.yesterDate()+"' or date(atd)= '"+SQL_Queries.yesterDate()+"') and operationunit=4 and gmrpk_arrival is not null";
 	public static String strQuery_11="SELECT  count(*), if(on_block_time, 'yes', 'no') as has_data FROM `DailyFlightSchedule_Merged` where (date(sensor_atd) ='"+SQL_Queries.yesterDate()+"' or date(atd)= '"+SQL_Queries.yesterDate()+"') and operationunit=4 and gmrpk_arrival is not null  group by has_data";
 	public static String strQuery_12="SELECT  count(*), if(off_block_time, 'yes', 'no') as has_data FROM `DailyFlightSchedule_Merged` where (date(sensor_atd) ='"+SQL_Queries.yesterDate()+"' or date(atd)= '"+SQL_Queries.yesterDate()+"') and operationunit=4 and gmrpk_arrival is not null  group by has_data";*/
-
+    
 	public static String strQuery_5 ="SELECT  count(Logid)\r\n" + 
 			" FROM `DailyFlightSchedule_Merged` where (date(atd)='"+SQL_Queries.yesterDate()+"' or date(sensor_atd)='"+SQL_Queries.yesterDate()+"')\r\n" + 
 			" and operationunit = 22 and FlightNumber_Arrival regexp\r\n" + 

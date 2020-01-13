@@ -27,6 +27,7 @@ public class AV_2268_COBT_For_GMR_HYD_SG_User {
 	 public static ArrayList<String> cobtTimeDiff= new ArrayList<String>();
 	 public static HashSet<String> countCobtChange1= new HashSet<String>();	
 	 public static HashSet<String> countCobtChange2= new HashSet<String>();	
+	 public static StringBuilder emailbody= new StringBuilder();
 	 public static StringBuilder email_COBT_For_DIALCelebi_User5= new StringBuilder();
 	 public static StringBuilder email_COBT_For_DIALCelebi_User6= new StringBuilder();	 
 	 public static StringBuilder email_COBT_For_DIALCelebi_User7= new StringBuilder();
@@ -163,7 +164,19 @@ public class AV_2268_COBT_For_GMR_HYD_SG_User {
 				 		+ " <td> <b style=\"color:green;\">"+cobtIsNotNull2.size()+"</b></td>"
 				 		+ " <td> <b style=\"color:red;\">"+cobtIsNotNull.size()+"</b></td>"
 				 		+ " <td><b style=\"color:red;\">"+ofBlockIsNotNull.size()+"</b></td> <td><b style=\"color:red;\">"+str_cobtDiff+"</b></td>  </tr></table>");			 
-				// email_COBT_For_DIALCelebi_User5.append("</body></html>");
+				 emailbody.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+
+				 emailbody.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :COBT For GMR HYD SG</h4>");
+
+				 emailbody.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:15%\"><b>Date</b></th><th style=\"width:15%\"><b>Total No. of Flights</b></th><th style=\"width:15%\"><b>COBT detected</b></th> <th style=\"width:15%\"><b>COBT  Not detected</b></th>"
+						 		+ "<th style=\"width:15%\"><b>OFFBLOCK not detected</b></th><th style=\"width:15%\"><b>Actual OFFBLOCK & COBT diff  > 5mins</b></th>"
+						 		+ " </tr>");
+				 emailbody.append(" <tr> <td><b>"+SQL_Queries.yesterDate()+"</b></td> <td><b>"+cobtTimeDiff.size()+"</b></td>"
+						 		+ " <td> <b style=\"color:green;\">"+cobtIsNotNull2.size()+"</b></td>"
+						 		+ " <td> <b style=\"color:red;\">"+cobtIsNotNull.size()+"</b></td>"
+						 		+ " <td><b style=\"color:red;\">"+ofBlockIsNotNull.size()+"</b></td> <td><b style=\"color:red;\">"+str_cobtDiff+"</b></td>  </tr></table>");			 
+
+				 // email_COBT_For_DIALCelebi_User5.append("</body></html>");
 			// HtmlReportUtil.test.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User5.toString());
 			//	HtmlReportUtil.testHist.log(LogStatus.INFO, email_COBT_For_DIALCelebi_User5.toString());
 				

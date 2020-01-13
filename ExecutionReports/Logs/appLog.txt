@@ -1924,3 +1924,704 @@
 2020-01-09 17:14:16 INFO  - Comparison sheet written successfully
 2020-01-09 17:14:16 INFO  - Data to excel written successfully
 2020-01-09 17:14:16 INFO  - History File created successfully
+2020-01-10 11:37:12 INFO  - 
+============================================================================================================================
+2020-01-10 11:37:12 INFO  - smoke suite started at Fri Jan 10 11:37:12 IST 2020
+2020-01-10 11:37:12 INFO  - Suite Browser: Chrome
+2020-01-10 11:37:12 INFO  - Test is started with browser: Chrome
+2020-01-10 11:37:27 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 11:37:27 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 11:37:27 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 11:37:27 INFO  - Test description: 
+2020-01-10 11:53:52 INFO  -  - 
+2020-01-10 11:53:52 INFO  - Communications link failure
+
+The last packet successfully received from the server was 8,319 milliseconds ago.  The last packet sent successfully to the server was 8,319 milliseconds ago.
+2020-01-10 11:53:52 INFO  - Total Time taken in(seconds):986
+2020-01-10 11:53:52 INFO  - **********TEST FINISHED->  - FAILED**********
+2020-01-10 11:53:53 INFO  - TestResults
+2020-01-10 11:53:56 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 11:53:56 INFO  - Closing Browsers
+2020-01-10 11:53:56 INFO  - smoke suite finished at Fri Jan 10 11:53:56 IST 2020
+2020-01-10 11:53:57 INFO  - Closing Browsers
+2020-01-10 11:53:58 INFO  - Test process has ended
+2020-01-10 11:54:09 INFO  - +=============Database started=============+
+2020-01-10 11:54:09 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 11:54:09 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 11:54:09 INFO  - +==========================================+
+
+2020-01-10 11:54:09 INFO  - Comparison sheet written successfully
+2020-01-10 11:54:09 INFO  - Data to excel written successfully
+2020-01-10 11:54:10 INFO  - History File created successfully
+2020-01-10 11:57:11 INFO  - 
+============================================================================================================================
+2020-01-10 11:57:11 INFO  - smoke suite started at Fri Jan 10 11:57:11 IST 2020
+2020-01-10 11:57:11 INFO  - Suite Browser: Chrome
+2020-01-10 11:57:11 INFO  - Test is started with browser: Chrome
+2020-01-10 11:57:23 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 11:57:23 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 11:57:23 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 11:57:23 INFO  - Test description: 
+2020-01-10 12:04:06 INFO  - Total Time taken in(seconds):403
+2020-01-10 12:04:07 INFO  - TestResults
+2020-01-10 12:04:10 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 12:04:10 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 12:04:10 INFO  - Closing Browsers
+2020-01-10 12:04:11 INFO  - smoke suite finished at Fri Jan 10 12:04:11 IST 2020
+2020-01-10 12:04:12 INFO  - Closing Browsers
+2020-01-10 12:04:14 INFO  - Test process has ended
+2020-01-10 12:04:27 INFO  - +=============Database started=============+
+2020-01-10 12:04:27 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 12:04:27 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 12:04:27 INFO  - +==========================================+
+
+2020-01-10 12:04:27 INFO  - Comparison sheet written successfully
+2020-01-10 12:04:27 INFO  - Data to excel written successfully
+2020-01-10 12:04:27 INFO  - History File created successfully
+2020-01-10 12:10:04 INFO  - 
+============================================================================================================================
+2020-01-10 12:10:04 INFO  - smoke suite started at Fri Jan 10 12:10:04 IST 2020
+2020-01-10 12:10:04 INFO  - Suite Browser: Chrome
+2020-01-10 12:10:05 INFO  - Test is started with browser: Chrome
+2020-01-10 12:10:18 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 12:10:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 12:10:18 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 12:10:18 INFO  - Test description: 
+2020-01-10 12:17:43 INFO  - Total Time taken in(seconds):445
+2020-01-10 12:17:43 INFO  - TestResults
+2020-01-10 12:17:45 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 12:17:45 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 12:17:45 INFO  - Closing Browsers
+2020-01-10 12:17:45 INFO  - smoke suite finished at Fri Jan 10 12:17:45 IST 2020
+2020-01-10 12:17:46 INFO  - Closing Browsers
+2020-01-10 12:17:46 INFO  - Test process has ended
+2020-01-10 12:17:56 INFO  - +=============Database started=============+
+2020-01-10 12:17:56 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 12:17:56 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 12:17:56 INFO  - +==========================================+
+
+2020-01-10 12:17:56 INFO  - Comparison sheet written successfully
+2020-01-10 12:17:56 INFO  - Data to excel written successfully
+2020-01-10 12:17:56 INFO  - History File created successfully
+2020-01-10 15:23:33 INFO  - 
+============================================================================================================================
+2020-01-10 15:23:33 INFO  - smoke suite started at Fri Jan 10 15:23:33 IST 2020
+2020-01-10 15:23:33 INFO  - Suite Browser: Chrome
+2020-01-10 15:23:33 INFO  - Test is started with browser: Chrome
+2020-01-10 15:23:47 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 15:23:47 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 15:23:47 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 15:23:47 INFO  - Test description: 
+2020-01-10 15:31:34 INFO  -  - 
+2020-01-10 15:31:34 INFO  - Column ' TIME_TO_SEC(TIMEDIFF(a.Off_Block_Time, b.cobt))' not found.
+2020-01-10 15:31:34 INFO  - Total Time taken in(seconds):466
+2020-01-10 15:31:34 INFO  - **********TEST FINISHED->  - FAILED**********
+2020-01-10 15:31:35 INFO  - TestResults
+2020-01-10 15:31:36 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 15:31:36 INFO  - Closing Browsers
+2020-01-10 15:31:37 INFO  - smoke suite finished at Fri Jan 10 15:31:37 IST 2020
+2020-01-10 15:31:37 INFO  - Closing Browsers
+2020-01-10 15:31:38 INFO  - Test process has ended
+2020-01-10 15:31:48 INFO  - +=============Database started=============+
+2020-01-10 15:31:48 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 15:31:48 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 15:31:48 INFO  - +==========================================+
+
+2020-01-10 15:31:48 INFO  - Comparison sheet written successfully
+2020-01-10 15:31:48 INFO  - Data to excel written successfully
+2020-01-10 15:31:48 INFO  - History File created successfully
+2020-01-10 15:33:34 INFO  - 
+============================================================================================================================
+2020-01-10 15:33:34 INFO  - smoke suite started at Fri Jan 10 15:33:34 IST 2020
+2020-01-10 15:33:34 INFO  - Suite Browser: Chrome
+2020-01-10 15:33:34 INFO  - Test is started with browser: Chrome
+2020-01-10 15:33:48 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 15:33:48 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 15:33:48 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 15:33:48 INFO  - Test description: 
+2020-01-10 15:41:06 INFO  - Total Time taken in(seconds):439
+2020-01-10 15:41:06 INFO  - TestResults
+2020-01-10 15:41:07 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 15:41:07 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 15:41:07 INFO  - Closing Browsers
+2020-01-10 15:41:08 INFO  - smoke suite finished at Fri Jan 10 15:41:08 IST 2020
+2020-01-10 15:41:08 INFO  - Closing Browsers
+2020-01-10 15:41:08 INFO  - Test process has ended
+2020-01-10 15:41:20 INFO  - +=============Database started=============+
+2020-01-10 15:41:20 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 15:41:20 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 15:41:20 INFO  - +==========================================+
+
+2020-01-10 15:41:20 INFO  - Comparison sheet written successfully
+2020-01-10 15:41:20 INFO  - Data to excel written successfully
+2020-01-10 15:41:20 INFO  - History File created successfully
+2020-01-10 15:46:05 INFO  - 
+============================================================================================================================
+2020-01-10 15:46:05 INFO  - smoke suite started at Fri Jan 10 15:46:05 IST 2020
+2020-01-10 15:46:05 INFO  - Suite Browser: Chrome
+2020-01-10 15:46:05 INFO  - Test is started with browser: Chrome
+2020-01-10 15:46:17 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 15:46:17 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 15:46:17 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 15:46:17 INFO  - Test description: 
+2020-01-10 15:53:21 INFO  - Total Time taken in(seconds):424
+2020-01-10 15:53:22 INFO  - TestResults
+2020-01-10 15:53:23 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 15:53:23 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 15:53:23 INFO  - Closing Browsers
+2020-01-10 15:53:23 INFO  - smoke suite finished at Fri Jan 10 15:53:23 IST 2020
+2020-01-10 15:53:24 INFO  - Closing Browsers
+2020-01-10 15:53:24 INFO  - Test process has ended
+2020-01-10 15:53:35 INFO  - +=============Database started=============+
+2020-01-10 15:53:35 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 15:53:35 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 15:53:35 INFO  - +==========================================+
+
+2020-01-10 15:53:35 INFO  - Comparison sheet written successfully
+2020-01-10 15:53:35 INFO  - Data to excel written successfully
+2020-01-10 15:53:35 INFO  - History File created successfully
+2020-01-10 16:18:42 INFO  - 
+============================================================================================================================
+2020-01-10 16:18:42 INFO  - smoke suite started at Fri Jan 10 16:18:42 IST 2020
+2020-01-10 16:18:42 INFO  - Suite Browser: Chrome
+2020-01-10 16:18:42 INFO  - Test is started with browser: Chrome
+2020-01-10 16:18:56 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:18:56 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 16:18:56 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:18:56 INFO  - Test description: 
+2020-01-10 16:26:46 INFO  - Total Time taken in(seconds):470
+2020-01-10 16:26:47 INFO  - TestResults
+2020-01-10 16:26:48 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 16:26:48 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 16:26:48 INFO  - Closing Browsers
+2020-01-10 16:26:49 INFO  - smoke suite finished at Fri Jan 10 16:26:49 IST 2020
+2020-01-10 16:26:49 INFO  - Closing Browsers
+2020-01-10 16:26:50 INFO  - Test process has ended
+2020-01-10 16:27:03 INFO  - +=============Database started=============+
+2020-01-10 16:27:03 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 16:27:03 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 16:27:03 INFO  - +==========================================+
+
+2020-01-10 16:27:03 INFO  - Comparison sheet written successfully
+2020-01-10 16:27:03 INFO  - Data to excel written successfully
+2020-01-10 16:27:03 INFO  - History File created successfully
+2020-01-10 16:29:16 INFO  - 
+============================================================================================================================
+2020-01-10 16:29:16 INFO  - smoke suite started at Fri Jan 10 16:29:16 IST 2020
+2020-01-10 16:29:16 INFO  - Suite Browser: Chrome
+2020-01-10 16:29:16 INFO  - Test is started with browser: Chrome
+2020-01-10 16:29:28 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:29:28 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 16:29:28 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:29:28 INFO  - Test description: 
+2020-01-10 16:37:40 INFO  - Total Time taken in(seconds):492
+2020-01-10 16:37:42 INFO  - TestResults
+2020-01-10 16:37:44 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 16:37:44 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 16:37:44 INFO  - Closing Browsers
+2020-01-10 16:37:45 INFO  - smoke suite finished at Fri Jan 10 16:37:45 IST 2020
+2020-01-10 16:37:45 INFO  - Closing Browsers
+2020-01-10 16:37:46 INFO  - Test process has ended
+2020-01-10 16:38:00 INFO  - +=============Database started=============+
+2020-01-10 16:38:00 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 16:38:00 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 16:38:00 INFO  - +==========================================+
+
+2020-01-10 16:38:00 INFO  - Comparison sheet written successfully
+2020-01-10 16:38:00 INFO  - Data to excel written successfully
+2020-01-10 16:38:00 INFO  - History File created successfully
+2020-01-10 16:38:38 INFO  - 
+============================================================================================================================
+2020-01-10 16:38:38 INFO  - smoke suite started at Fri Jan 10 16:38:38 IST 2020
+2020-01-10 16:38:38 INFO  - Suite Browser: Chrome
+2020-01-10 16:38:38 INFO  - Test is started with browser: Chrome
+2020-01-10 16:38:52 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:38:52 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 16:38:52 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:38:52 INFO  - Test description: 
+2020-01-10 16:46:52 INFO  - Total Time taken in(seconds):481
+2020-01-10 16:46:53 INFO  - TestResults
+2020-01-10 16:46:54 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 16:46:54 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 16:46:54 INFO  - Closing Browsers
+2020-01-10 16:46:54 INFO  - smoke suite finished at Fri Jan 10 16:46:54 IST 2020
+2020-01-10 16:46:55 INFO  - Closing Browsers
+2020-01-10 16:46:55 INFO  - Test process has ended
+2020-01-10 16:47:06 INFO  - +=============Database started=============+
+2020-01-10 16:47:06 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 16:47:06 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 16:47:06 INFO  - +==========================================+
+
+2020-01-10 16:47:06 INFO  - Comparison sheet written successfully
+2020-01-10 16:47:06 INFO  - Data to excel written successfully
+2020-01-10 16:47:06 INFO  - History File created successfully
+2020-01-10 16:56:21 INFO  - 
+============================================================================================================================
+2020-01-10 16:56:21 INFO  - smoke suite started at Fri Jan 10 16:56:21 IST 2020
+2020-01-10 16:56:21 INFO  - Suite Browser: Chrome
+2020-01-10 16:56:21 INFO  - Test is started with browser: Chrome
+2020-01-10 16:56:33 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:56:33 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 16:56:33 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:56:33 INFO  - Test description: 
+2020-01-10 16:56:39 INFO  -  - 
+2020-01-10 16:56:39 INFO  - 
+2020-01-10 16:56:39 INFO  - Total Time taken in(seconds):6
+2020-01-10 16:56:39 INFO  - **********TEST FINISHED->  - FAILED**********
+2020-01-10 16:56:40 INFO  - TestResults
+2020-01-10 16:56:43 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 16:56:43 INFO  - Closing Browsers
+2020-01-10 16:56:43 INFO  - smoke suite finished at Fri Jan 10 16:56:43 IST 2020
+2020-01-10 16:56:43 INFO  - Closing Browsers
+2020-01-10 16:56:44 INFO  - Test process has ended
+2020-01-10 16:56:54 INFO  - +=============Database started=============+
+2020-01-10 16:56:54 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 16:56:54 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 16:56:54 INFO  - +==========================================+
+
+2020-01-10 16:56:54 INFO  - Comparison sheet written successfully
+2020-01-10 16:56:54 INFO  - Data to excel written successfully
+2020-01-10 16:56:54 INFO  - History File created successfully
+2020-01-10 16:59:36 INFO  - 
+============================================================================================================================
+2020-01-10 16:59:36 INFO  - smoke suite started at Fri Jan 10 16:59:36 IST 2020
+2020-01-10 16:59:36 INFO  - Suite Browser: Chrome
+2020-01-10 16:59:36 INFO  - Test is started with browser: Chrome
+2020-01-10 16:59:48 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:59:48 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 16:59:48 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 16:59:48 INFO  - Test description: 
+2020-01-10 17:00:25 INFO  -  - 
+2020-01-10 17:00:25 INFO  - 
+2020-01-10 17:00:25 INFO  - Total Time taken in(seconds):37
+2020-01-10 17:00:25 INFO  - **********TEST FINISHED->  - FAILED**********
+2020-01-10 17:00:38 INFO  - TestResults
+2020-01-10 17:00:44 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 17:00:44 INFO  - Closing Browsers
+2020-01-10 17:00:45 INFO  - smoke suite finished at Fri Jan 10 17:00:45 IST 2020
+2020-01-10 17:00:45 INFO  - Closing Browsers
+2020-01-10 17:00:46 INFO  - Test process has ended
+2020-01-10 17:00:57 INFO  - +=============Database started=============+
+2020-01-10 17:00:57 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 17:00:57 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 17:00:57 INFO  - +==========================================+
+
+2020-01-10 17:00:57 INFO  - Comparison sheet written successfully
+2020-01-10 17:00:57 INFO  - Data to excel written successfully
+2020-01-10 17:00:57 INFO  - History File created successfully
+2020-01-10 17:05:11 INFO  - 
+============================================================================================================================
+2020-01-10 17:05:11 INFO  - smoke suite started at Fri Jan 10 17:05:11 IST 2020
+2020-01-10 17:05:11 INFO  - Suite Browser: Chrome
+2020-01-10 17:05:11 INFO  - Test is started with browser: Chrome
+2020-01-10 17:05:24 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 17:05:24 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 17:05:24 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 17:05:24 INFO  - Test description: 
+2020-01-10 17:06:02 INFO  -  - 
+2020-01-10 17:06:02 INFO  - 
+2020-01-10 17:06:02 INFO  - Total Time taken in(seconds):37
+2020-01-10 17:06:02 INFO  - **********TEST FINISHED->  - FAILED**********
+2020-01-10 17:06:03 INFO  - TestResults
+2020-01-10 17:06:04 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 17:06:04 INFO  - Closing Browsers
+2020-01-10 17:06:05 INFO  - smoke suite finished at Fri Jan 10 17:06:05 IST 2020
+2020-01-10 17:06:05 INFO  - Closing Browsers
+2020-01-10 17:06:06 INFO  - Test process has ended
+2020-01-10 17:06:17 INFO  - +=============Database started=============+
+2020-01-10 17:06:18 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 17:06:18 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 17:06:18 INFO  - +==========================================+
+
+2020-01-10 17:06:18 INFO  - Comparison sheet written successfully
+2020-01-10 17:06:18 INFO  - Data to excel written successfully
+2020-01-10 17:06:19 INFO  - History File created successfully
+2020-01-10 17:22:08 INFO  - 
+============================================================================================================================
+2020-01-10 17:22:08 INFO  - smoke suite started at Fri Jan 10 17:22:08 IST 2020
+2020-01-10 17:22:08 INFO  - Suite Browser: Chrome
+2020-01-10 17:22:08 INFO  - Test is started with browser: Chrome
+2020-01-10 17:22:21 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 17:22:21 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 17:22:21 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 17:22:21 INFO  - Test description: 
+2020-01-10 17:22:58 INFO  -  - 
+2020-01-10 17:22:58 INFO  - 
+2020-01-10 17:22:58 INFO  - Total Time taken in(seconds):38
+2020-01-10 17:22:58 INFO  - **********TEST FINISHED->  - FAILED**********
+2020-01-10 17:23:00 INFO  - TestResults
+2020-01-10 17:23:02 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 17:23:02 INFO  - Closing Browsers
+2020-01-10 17:23:02 INFO  - smoke suite finished at Fri Jan 10 17:23:02 IST 2020
+2020-01-10 17:23:02 INFO  - Closing Browsers
+2020-01-10 17:23:03 INFO  - Test process has ended
+2020-01-10 17:23:12 INFO  - +=============Database started=============+
+2020-01-10 17:23:12 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 17:23:12 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 17:23:12 INFO  - +==========================================+
+
+2020-01-10 17:23:12 INFO  - Comparison sheet written successfully
+2020-01-10 17:23:12 INFO  - Data to excel written successfully
+2020-01-10 17:23:12 INFO  - History File created successfully
+2020-01-10 17:24:56 INFO  - 
+============================================================================================================================
+2020-01-10 17:24:56 INFO  - smoke suite started at Fri Jan 10 17:24:56 IST 2020
+2020-01-10 17:24:56 INFO  - Suite Browser: Chrome
+2020-01-10 17:24:56 INFO  - Test is started with browser: Chrome
+2020-01-10 17:25:07 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 17:25:07 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 17:25:07 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 17:25:07 INFO  - Test description: 
+2020-01-10 17:25:45 INFO  -  - 
+2020-01-10 17:25:45 INFO  - 
+2020-01-10 17:25:46 INFO  - Total Time taken in(seconds):38
+2020-01-10 17:25:46 INFO  - **********TEST FINISHED->  - FAILED**********
+2020-01-10 17:25:46 INFO  - TestResults
+2020-01-10 17:25:48 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 17:25:48 INFO  - Closing Browsers
+2020-01-10 17:25:49 INFO  - smoke suite finished at Fri Jan 10 17:25:49 IST 2020
+2020-01-10 17:25:50 INFO  - Closing Browsers
+2020-01-10 17:25:51 INFO  - Test process has ended
+2020-01-10 17:26:01 INFO  - +=============Database started=============+
+2020-01-10 17:26:01 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 17:26:01 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 17:26:01 INFO  - +==========================================+
+
+2020-01-10 17:26:01 INFO  - Comparison sheet written successfully
+2020-01-10 17:26:01 INFO  - Data to excel written successfully
+2020-01-10 17:26:01 INFO  - History File created successfully
+2020-01-10 17:50:48 INFO  - 
+============================================================================================================================
+2020-01-10 17:50:48 INFO  - smoke suite started at Fri Jan 10 17:50:48 IST 2020
+2020-01-10 17:50:48 INFO  - Suite Browser: Chrome
+2020-01-10 17:50:48 INFO  - Test is started with browser: Chrome
+2020-01-10 17:51:00 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 17:51:00 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 17:51:00 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 17:51:00 INFO  - Test description: 
+2020-01-10 17:58:32 INFO  -  - 
+2020-01-10 17:58:32 INFO  - Connection timed out: connect
+2020-01-10 17:58:32 INFO  - Total Time taken in(seconds):452
+2020-01-10 17:58:32 INFO  - **********TEST FINISHED->  - FAILED**********
+2020-01-10 17:58:33 INFO  - TestResults
+2020-01-10 17:58:35 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 17:58:35 INFO  - Closing Browsers
+2020-01-10 17:58:35 INFO  - Test is started with browser: Chrome
+2020-01-10 17:58:36 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2020-01-10 17:58:36 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 17:58:36 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2020-01-10 17:58:36 INFO  - Test description: 
+2020-01-10 18:02:32 INFO  - Total Time taken in(seconds):236
+2020-01-10 18:02:32 INFO  - TestResults
+2020-01-10 18:02:33 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 18:02:33 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 18:02:33 INFO  - Closing Browsers
+2020-01-10 18:02:33 INFO  - Test is started with browser: Chrome
+2020-01-10 18:02:33 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2020-01-10 18:02:33 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 18:02:33 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2020-01-10 18:02:33 INFO  - Test description: 
+2020-01-10 18:03:22 INFO  - Total Time taken in(seconds):49
+2020-01-10 18:03:22 INFO  - TestResults
+2020-01-10 18:03:22 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 18:03:22 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 18:03:22 INFO  - Closing Browsers
+2020-01-10 18:03:22 INFO  - Test is started with browser: Chrome
+2020-01-10 18:03:23 INFO  - No data found with given key-> ZestIOT_AV_2405_bsspl
+2020-01-10 18:03:23 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 18:03:23 INFO  - Test Started: ZestIOT_AV_2405_bsspl
+2020-01-10 18:03:23 INFO  - Test description: 
+2020-01-10 18:13:00 INFO  - Total Time taken in(seconds):577
+2020-01-10 18:13:00 INFO  - TestResults
+2020-01-10 18:13:00 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 18:13:00 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 18:13:00 INFO  - Closing Browsers
+2020-01-10 18:13:01 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2020-01-10 18:13:01 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 18:13:01 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2020-01-10 18:13:01 INFO  - Test description: 
+2020-01-10 18:13:01 INFO  - smoke suite finished at Fri Jan 10 18:13:01 IST 2020
+2020-01-10 18:13:02 INFO  - Closing Browsers
+2020-01-10 18:13:04 INFO  - Test process has ended
+2020-01-10 18:13:20 INFO  - +=============Database started=============+
+2020-01-10 18:13:20 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 18:13:20 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 18:13:20 INFO  - +==========================================+
+
+2020-01-10 18:13:21 INFO  - Comparison sheet written successfully
+2020-01-10 18:13:21 INFO  - Data to excel written successfully
+2020-01-10 18:13:21 INFO  - History File created successfully
+2020-01-10 18:16:29 INFO  - 
+============================================================================================================================
+2020-01-10 18:16:29 INFO  - smoke suite started at Fri Jan 10 18:16:29 IST 2020
+2020-01-10 18:16:29 INFO  - Suite Browser: Chrome
+2020-01-10 18:16:30 INFO  - Test is started with browser: Chrome
+2020-01-10 18:16:43 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 18:16:43 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-10 18:16:43 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-10 18:16:43 INFO  - Test description: 
+2020-01-10 18:23:38 INFO  - Total Time taken in(seconds):415
+2020-01-10 18:23:38 INFO  - TestResults
+2020-01-10 18:23:39 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-10 18:23:39 INFO  - Test has ended - closing browser: Chrome
+2020-01-10 18:23:39 INFO  - Closing Browsers
+2020-01-10 18:23:40 INFO  - smoke suite finished at Fri Jan 10 18:23:40 IST 2020
+2020-01-10 18:23:40 INFO  - Closing Browsers
+2020-01-10 18:23:41 INFO  - Test process has ended
+2020-01-10 18:23:51 INFO  - +=============Database started=============+
+2020-01-10 18:23:51 INFO  - Database driver name: SQLiteJDBC
+2020-01-10 18:23:51 INFO  - Product name SQLite, Version 3.8.11
+2020-01-10 18:23:51 INFO  - +==========================================+
+
+2020-01-10 18:23:52 INFO  - Comparison sheet written successfully
+2020-01-10 18:23:52 INFO  - Data to excel written successfully
+2020-01-10 18:23:52 INFO  - History File created successfully
+2020-01-13 15:44:17 INFO  - 
+============================================================================================================================
+2020-01-13 15:44:17 INFO  - regression suite started at Mon Jan 13 15:44:17 IST 2020
+2020-01-13 15:44:17 INFO  - Suite Browser: Chrome
+2020-01-13 15:44:18 INFO  - Test is started with browser: Chrome
+2020-01-13 15:44:36 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-13 15:44:36 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:44:36 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_DIALCelebi_User
+2020-01-13 15:44:36 INFO  - Test description: 
+2020-01-13 15:51:16 INFO  - Total Time taken in(seconds):400
+2020-01-13 15:51:16 INFO  - TestResults
+2020-01-13 15:51:17 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:51:17 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:51:17 INFO  - Closing Browsers
+2020-01-13 15:51:17 INFO  - Test is started with browser: Chrome
+2020-01-13 15:51:18 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2020-01-13 15:51:18 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:51:18 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_AISATS_User
+2020-01-13 15:51:18 INFO  - Test description: 
+2020-01-13 15:54:56 INFO  - Total Time taken in(seconds):218
+2020-01-13 15:54:56 INFO  - TestResults
+2020-01-13 15:54:57 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:54:57 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:54:57 INFO  - Closing Browsers
+2020-01-13 15:54:57 INFO  - Test is started with browser: Chrome
+2020-01-13 15:54:57 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2020-01-13 15:54:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:54:57 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2020-01-13 15:54:57 INFO  - Test description: 
+2020-01-13 15:56:28 INFO  - Total Time taken in(seconds):91
+2020-01-13 15:56:28 INFO  - TestResults
+2020-01-13 15:56:28 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:56:28 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:56:28 INFO  - Closing Browsers
+2020-01-13 15:56:28 INFO  - Test is started with browser: Chrome
+2020-01-13 15:56:29 INFO  - No data found with given key-> ZestIOT_AV_2293_AISATS_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:56:29 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:56:29 INFO  - Test Started: ZestIOT_AV_2293_AISATS_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:56:29 INFO  - Test description: 
+2020-01-13 15:56:57 INFO  - Total Time taken in(seconds):28
+2020-01-13 15:56:57 INFO  - TestResults
+2020-01-13 15:56:58 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:56:58 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:56:58 INFO  - Closing Browsers
+2020-01-13 15:56:58 INFO  - Test is started with browser: Chrome
+2020-01-13 15:56:58 INFO  - No data found with given key-> ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:56:58 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:56:58 INFO  - Test Started: ZestIOT_AV_2293_BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:56:58 INFO  - Test description: 
+2020-01-13 15:57:15 INFO  - Total Time taken in(seconds):17
+2020-01-13 15:57:15 INFO  - TestResults
+2020-01-13 15:57:15 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:57:15 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:57:15 INFO  - Closing Browsers
+2020-01-13 15:57:15 INFO  - Test is started with browser: Chrome
+2020-01-13 15:57:16 INFO  - No data found with given key-> ZestIOT_AV_2293_CELEBI_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:57:16 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:57:16 INFO  - Test Started: ZestIOT_AV_2293_CELEBI_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:57:16 INFO  - Test description: 
+2020-01-13 15:57:33 INFO  - Total Time taken in(seconds):17
+2020-01-13 15:57:33 INFO  - TestResults
+2020-01-13 15:57:34 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:57:34 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:57:34 INFO  - Closing Browsers
+2020-01-13 15:57:34 INFO  - Test is started with browser: Chrome
+2020-01-13 15:57:35 INFO  - No data found with given key-> ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:57:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:57:35 INFO  - Test Started: ZestIOT_AV_2293_DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:57:35 INFO  - Test description: 
+2020-01-13 15:57:55 INFO  - Total Time taken in(seconds):20
+2020-01-13 15:57:55 INFO  - TestResults
+2020-01-13 15:57:56 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:57:56 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:57:56 INFO  - Closing Browsers
+2020-01-13 15:57:56 INFO  - Test is started with browser: Chrome
+2020-01-13 15:57:57 INFO  - No data found with given key-> ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:57:57 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:57:57 INFO  - Test Started: ZestIOT_AV_2293_GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:57:57 INFO  - Test description: 
+2020-01-13 15:58:24 INFO  - Total Time taken in(seconds):27
+2020-01-13 15:58:24 INFO  - TestResults
+2020-01-13 15:58:25 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:58:25 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:58:25 INFO  - Closing Browsers
+2020-01-13 15:58:25 INFO  - Test is started with browser: Chrome
+2020-01-13 15:58:25 INFO  - No data found with given key-> ZestIOT_AV_2293_SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:58:25 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:58:25 INFO  - Test Started: ZestIOT_AV_2293_SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Arrival_Aircrafts
+2020-01-13 15:58:25 INFO  - Test description: 
+2020-01-13 15:58:51 INFO  - Total Time taken in(seconds):26
+2020-01-13 15:58:51 INFO  - TestResults
+2020-01-13 15:58:52 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:58:52 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:58:52 INFO  - Closing Browsers
+2020-01-13 15:58:52 INFO  - Test is started with browser: Chrome
+2020-01-13 15:58:53 INFO  - No data found with given key-> ZestIOT_AV_2294__AISATS_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 15:58:53 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:58:53 INFO  - Test Started: ZestIOT_AV_2294__AISATS_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 15:58:53 INFO  - Test description: 
+2020-01-13 15:59:20 INFO  - Total Time taken in(seconds):27
+2020-01-13 15:59:20 INFO  - TestResults
+2020-01-13 15:59:21 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:59:21 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:59:21 INFO  - Closing Browsers
+2020-01-13 15:59:21 INFO  - Test is started with browser: Chrome
+2020-01-13 15:59:23 INFO  - No data found with given key-> ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 15:59:23 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:59:23 INFO  - Test Started: ZestIOT_AV_2294__BSSPL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 15:59:23 INFO  - Test description: 
+2020-01-13 15:59:44 INFO  - Total Time taken in(seconds):22
+2020-01-13 15:59:44 INFO  - TestResults
+2020-01-13 15:59:46 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 15:59:46 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 15:59:46 INFO  - Closing Browsers
+2020-01-13 15:59:46 INFO  - Test is started with browser: Chrome
+2020-01-13 15:59:47 INFO  - No data found with given key-> ZestIOT_AV_2294__CELEBI_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 15:59:47 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 15:59:47 INFO  - Test Started: ZestIOT_AV_2294__CELEBI_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 15:59:47 INFO  - Test description: 
+2020-01-13 16:00:12 INFO  - Total Time taken in(seconds):25
+2020-01-13 16:00:12 INFO  - TestResults
+2020-01-13 16:00:13 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 16:00:13 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 16:00:13 INFO  - Closing Browsers
+2020-01-13 16:00:13 INFO  - Test is started with browser: Chrome
+2020-01-13 16:00:15 INFO  - No data found with given key-> ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 16:00:15 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 16:00:15 INFO  - Test Started: ZestIOT_AV_2294__DIAL_Delhi_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 16:00:15 INFO  - Test description: 
+2020-01-13 16:00:46 INFO  - Total Time taken in(seconds):31
+2020-01-13 16:00:46 INFO  - TestResults
+2020-01-13 16:00:48 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 16:00:48 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 16:00:48 INFO  - Closing Browsers
+2020-01-13 16:00:48 INFO  - Test is started with browser: Chrome
+2020-01-13 16:00:51 INFO  - No data found with given key-> ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 16:00:51 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 16:00:51 INFO  - Test Started: ZestIOT_AV_2294__GMR_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 16:00:51 INFO  - Test description: 
+2020-01-13 16:01:29 INFO  - Total Time taken in(seconds):39
+2020-01-13 16:01:29 INFO  - TestResults
+2020-01-13 16:01:32 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 16:01:32 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 16:01:32 INFO  - Closing Browsers
+2020-01-13 16:01:32 INFO  - Test is started with browser: Chrome
+2020-01-13 16:01:35 INFO  - No data found with given key-> ZestIOT_AV_2294__SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 16:01:35 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 16:01:35 INFO  - Test Started: ZestIOT_AV_2294__SG_HYD_Identify_coverage_of_Flight_Sensor_and_Validate_timestamps_of_Departure_Aircrafts
+2020-01-13 16:01:35 INFO  - Test description: 
+2020-01-13 16:02:02 INFO  - Total Time taken in(seconds):27
+2020-01-13 16:02:02 INFO  - TestResults
+2020-01-13 16:02:05 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 16:02:05 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 16:02:05 INFO  - Closing Browsers
+2020-01-13 16:02:05 INFO  - Test is started with browser: Chrome
+2020-01-13 16:02:09 INFO  - No data found with given key-> ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2020-01-13 16:02:09 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 16:02:09 INFO  - Test Started: ZestIOT_AV_2307_DIAL_Delhi_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2020-01-13 16:02:09 INFO  - Test description: 
+2020-01-13 16:02:59 INFO  - Total Time taken in(seconds):50
+2020-01-13 16:02:59 INFO  - TestResults
+2020-01-13 16:03:02 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 16:03:02 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 16:03:02 INFO  - Closing Browsers
+2020-01-13 16:03:02 INFO  - Test is started with browser: Chrome
+2020-01-13 16:03:06 INFO  - No data found with given key-> ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2020-01-13 16:03:06 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 16:03:06 INFO  - Test Started: ZestIOT_AV_2307_GMR_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2020-01-13 16:03:06 INFO  - Test description: 
+2020-01-13 16:03:52 INFO  - Total Time taken in(seconds):46
+2020-01-13 16:03:52 INFO  - TestResults
+2020-01-13 16:03:55 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 16:03:55 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 16:03:55 INFO  - Closing Browsers
+2020-01-13 16:03:55 INFO  - Test is started with browser: Chrome
+2020-01-13 16:03:59 INFO  - No data found with given key-> ZestIOT_AV_2307_SG_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2020-01-13 16:03:59 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 16:03:59 INFO  - Test Started: ZestIOT_AV_2307_SG_HYD_Validate_LANDING_ONBLOCK_OFFBLOCK_AIRBORNE_timestamps_of_Arrival_and_Departure_aircrafts_Any_Data_source
+2020-01-13 16:03:59 INFO  - Test description: 
+2020-01-13 16:04:43 INFO  - Total Time taken in(seconds):45
+2020-01-13 16:04:43 INFO  - TestResults
+2020-01-13 16:04:47 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 16:04:47 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 16:04:47 INFO  - Closing Browsers
+2020-01-13 16:04:47 INFO  - Test is started with browser: Chrome
+2020-01-13 16:04:51 INFO  - No data found with given key-> ZestIOT_AV_2405_bsspl
+2020-01-13 16:04:51 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 16:04:51 INFO  - Test Started: ZestIOT_AV_2405_bsspl
+2020-01-13 16:04:51 INFO  - Test description: 
+2020-01-13 16:14:52 INFO  - Total Time taken in(seconds):601
+2020-01-13 16:14:52 INFO  - TestResults
+2020-01-13 16:14:55 INFO  - **********TEST FINISHED-> -PASS**********
+2020-01-13 16:14:55 INFO  - Test has ended - closing browser: Chrome
+2020-01-13 16:14:55 INFO  - Closing Browsers
+2020-01-13 16:14:56 INFO  - No data found with given key-> ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2020-01-13 16:14:56 INFO  - 
+----------------------------------------------------------------------------------------------------------------------------
+2020-01-13 16:14:56 INFO  - Test Started: ZestIOT_AV_2268_Validate_Accuracy_of_COBT_For_GMR_HYD_SG_User
+2020-01-13 16:14:56 INFO  - Test description: 
+2020-01-13 16:15:01 INFO  - regression suite finished at Mon Jan 13 16:15:01 IST 2020
+2020-01-13 16:15:04 INFO  - Closing Browsers
+2020-01-13 16:15:24 INFO  - Test process has ended
+2020-01-13 16:16:01 INFO  - +=============Database started=============+
+2020-01-13 16:16:01 INFO  - Database driver name: SQLiteJDBC
+2020-01-13 16:16:01 INFO  - Product name SQLite, Version 3.8.11
+2020-01-13 16:16:01 INFO  - +==========================================+
+
+2020-01-13 16:16:06 INFO  - Comparison sheet written successfully
+2020-01-13 16:16:06 INFO  - Data to excel written successfully
+2020-01-13 16:16:07 INFO  - History File created successfully

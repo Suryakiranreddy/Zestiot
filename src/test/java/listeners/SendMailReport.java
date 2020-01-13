@@ -166,28 +166,26 @@ public class SendMailReport extends Utility {
 		testCase_consolidated_Summary_Report.append("<html>"
 				+ "<p style=\"color:#008ae6;\">Hi All, <br>Please find attached <b><i>'" + strDate
 				+ " Automation Test Results'</i> </b> report and also find below consolidated report for each Automation Test Case triggred by Jenkins.");
-		testCase_consolidated_Summary_Report.append(AV_2268_COBT_For_DIALCelebi_User.email_COBT_For_DIALCelebi_User5.toString());
-		testCase_consolidated_Summary_Report.append(AV_2268_COBT_For_GMR_HYD_AISATS_User.email_COBT_For_DIALCelebi_User5.toString());
-		testCase_consolidated_Summary_Report.append(AV_2268_COBT_For_GMR_HYD_SG_User.email_COBT_For_DIALCelebi_User5.toString());
-		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_Hyd.email_report_Scheduled_And_Sensor_ATA_For_Hyd1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Hyd.email_report_Scheduled_And_Sensor_ATD_For_Hyd1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi.email_report_Scheduled_And_Sensor_ATA_For_Delhi1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi.email_report_Scheduled_And_Sensor_ATD_For_Delhi1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_DIAL_Delhi1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User.email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Delhi_BSSPL_User.email_report_Scheduled_And_Sensor_ATD_For_BSSPL_Delhi1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd.email_report_Scheduled_And_Sensor_ATA_For_AISATS_Hyd1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_SG_Hyd.email_report_Scheduled_And_Sensor_ATA_For_SG_Hyd1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_Delhi_CELEBI_User.email_report_Scheduled_And_Sensor_ATA_For_CELEBI_Delhi1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd.email_report_Scheduled_And_Sensor_ATD_For_AISATS_Hyd1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User.email_report_Scheduled_And_Sensor_ATD_For_CELEBI_Delhi1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd.email_report_Scheduled_And_Sensor_ATD_For_SG_Hyd1.toString());	
-		testCase_consolidated_Summary_Report.append(AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_SG_HYD_Validation.email_report_SensorATA_OnBlock_OffBlock_SensorATD_For_Hyd1.toString());			
-		testCase_consolidated_Summary_Report.append(AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.toString());
-		testCase_consolidated_Summary_Report.append(AV_2405_UI_BSSPL_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed.email_report_Fueling_Activity_BSSPL_UI1.toString());			
-		testCase_consolidated_Summary_Report.append(AV_2307_UI_CELEBI_SensorATA_OnBlock_OffBlock_SensorATD_Validation.email_report_ATA_OnBlock_OffBlock_ATD_For_Celebi_UI1.toString());
-		/*file = new FileInputStream(new File(ConfigReader.getValue("AutomationControlExcelPath")));	
+		testCase_consolidated_Summary_Report.append(AV_2268_COBT_For_DIALCelebi_User.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2268_COBT_For_GMR_HYD_AISATS_User.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2268_COBT_For_GMR_HYD_SG_User.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_Hyd.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Hyd.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_HYD_Validation.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_DIAL_Delhi.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_DIAL_Delhi.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_DIAL_Delhi_Validation.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Delhi_BSSPL_User.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_AISATS_Hyd.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_SG_Hyd.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2293_Scheduled_And_Sensor_ATA_Delhi_CELEBI_User.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_AISATS_Hyd.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_Delhi_CELEBI_User.emailbody.toString());
+		testCase_consolidated_Summary_Report.append(AV_2294_Scheduled_And_Sensor_ATD_SG_Hyd.emailbody.toString());	
+		testCase_consolidated_Summary_Report.append(AV_2307_SensorATA_OnBlock_OffBlock_SensorATD_SG_HYD_Validation.emailbody.toString());			
+		testCase_consolidated_Summary_Report.append(AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL.emailbody.toString());
+			/*file = new FileInputStream(new File(ConfigReader.getValue("AutomationControlExcelPath")));	
 	workbook = new XSSFWorkbook(file);		
    sheet =workbook.getSheet("smoke");		
 	for(int i=1;i<sheet.getLastRowNum();i++){			

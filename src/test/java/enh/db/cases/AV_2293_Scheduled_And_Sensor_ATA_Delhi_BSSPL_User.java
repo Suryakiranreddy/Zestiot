@@ -20,7 +20,7 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 	
 	public static ArrayList<String> status0List = new ArrayList<String>();
 	public static ArrayList<String> status1List = new ArrayList<String>();
-	
+	public static StringBuilder emailbody = new StringBuilder();
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1 = new StringBuilder();
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi2 = new StringBuilder();
 	public static StringBuilder email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi3 = new StringBuilder();
@@ -110,6 +110,17 @@ public class AV_2293_Scheduled_And_Sensor_ATA_Delhi_BSSPL_User {
 		email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi1.append(" <tr> <td><b>"+SQL_Queries.yesterDate()+"</b></td> <td><b>"+totalScheduledArrival+"</b></td>"
 		 		+ " <td> <b style=\"color:green;\">"+notNullSensorATA+"</b></td> <td><b style=\"color:red;\">"+sensorATA_NullList.size()+"</b></td> <td><b style=\"color:green;\">"+onBlockFromSensor+"</b></td></tr></table>");			 	
 		
+		emailbody.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff; } table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
+	
+		emailbody.append("<h4 align=\"center\" style=\"color:#008ae6;\">Executed For :Scheduled and Sensor-ATA for BSSPL-Delhi</h4>");
+			emailbody.append("<table style=\"width:100%\" id=\"t01\"><tr><th style=\"width:10%\"><b>Date</b></th><th style=\"width:15%\"><b>Total No. of Flights Scheduled Arrival</b></th>"
+				+ " <th style=\"width:15%\"><b>No. of flights detected by Sensor</b></th>"
+		 		+ "<th style=\"width:15%\"><b>No. of flights NOT detected by Sensor</b></th>"
+		 		+ "<th style=\"width:20%\"><b>No. of flights On-Block time is detected by Sensor</b></th>"
+		 		+ " </tr>");
+		emailbody.append(" <tr> <td><b>"+SQL_Queries.yesterDate()+"</b></td> <td><b>"+totalScheduledArrival+"</b></td>"
+		 		+ " <td> <b style=\"color:green;\">"+notNullSensorATA+"</b></td> <td><b style=\"color:red;\">"+sensorATA_NullList.size()+"</b></td> <td><b style=\"color:green;\">"+onBlockFromSensor+"</b></td></tr></table>");			 	
+
 		email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi2.append("<br><br>");
 		email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi2.append("<style>table#t01, th, td {border: 1px solid black;border-collapse: collapse;}table#t01 th{background-color:#80e5ff;} table#t01 tr:nth-child(even) {background-color: #f2f2f2;} table#t01 tr:nth-child(odd) { background-color: #DFEDEC;}table#t01 th, td {padding: 5px;}table#t01 th,td {text-align: center;} table#t01 caption {color: #008ae6;font-weight: bold;}</style>");
 		email_report_Scheduled_And_Sensor_ATA_For_BSSPL_Delhi2.append("<table style=\"width:100%\" id=\"t01\"><caption> Total Flights LANDING (Not Detected by Flight Sensor but detected from other data source) </caption><tr><th style=\"width:10%\">"
