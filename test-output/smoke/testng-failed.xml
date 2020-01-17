@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [smoke]">
+  <parameter name="Browser" value="Chrome"/>
+  <test name="smoke-Tests(failed)">
+    <classes>
+      <class name="enh.web.tests.ZestIOT_AV_2272_Verify_Pushback_Activities">
+        <methods>
+          <include name="test"/>
+          <include name="afterTest"/>
+        </methods>
+      </class> <!-- enh.web.tests.ZestIOT_AV_2272_Verify_Pushback_Activities -->
+    </classes>
+  </test> <!-- smoke-Tests(failed) -->
+</suite> <!-- Failed suite [smoke] -->

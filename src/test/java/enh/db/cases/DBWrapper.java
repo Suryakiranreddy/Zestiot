@@ -13,7 +13,7 @@ public class DBWrapper {
 	public static ResultSet Connect(String dB_Queru, String environment) throws SQLException {
 
 		if (environment.equalsIgnoreCase("prod")) {
-			System.out.println("prod url");
+			//System.out.println("prod url");
 			// Prod url DB
 			con = DriverManager.getConnection(
 					"jdbc:mysql://avileapuat.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
@@ -21,7 +21,7 @@ public class DBWrapper {
 		}
 		// Test url DB
 		if (environment.equalsIgnoreCase("test")) {
-			System.out.println("test url");
+			//System.out.println("test url");
 			con = DriverManager.getConnection(
 					"jdbc:mysql://avileap-test.ckfsniqh1gly.us-west-2.rds.amazonaws.com:3306/AviLeap", "AviLeap_Read",
 					"AviLeap_Read");

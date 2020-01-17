@@ -38,6 +38,7 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 	public static HashSet<String> list_NoflelogID = new HashSet<String>();
 	public static HashSet<String> list_Flight_pk_Found = new HashSet<String>();
 	public static HashSet<String> list_Flight_pk_Not_Found = new HashSet<String>();
+	public static HashSet<String> list_iosl = new HashSet<String>();
 	
 	public static ArrayList<String> list_flightnumber_Arrival= new ArrayList<String>();
 	public static ArrayList<String> list_flightnumber_Departure= new ArrayList<String>();
@@ -131,7 +132,7 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 				dataFromSheet[i][0] = formatter.formatCellValue(sheet.getRow(i+1).getCell(0));
 				String FlightNumber=dataFromSheet[i][0].replace("-", " ");
 				list_flightNumberFromExcel.add(FlightNumber);
-				System.out.println("FlightNumber: " +FlightNumber);
+				//System.out.println("FlightNumber: " +FlightNumber);
 	 			/*}
 	  for(int i=0; i<list_flightNumberFromExcel.size(); i++) {*/
 				ResultSet result = DBWrapper.Connect("SELECT * FROM `DailyFlightSchedule_Merged`\r\n" + 
@@ -146,7 +147,7 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 					String flight_OnBlockTime = result.getString("On_block_time");
 					String flight_OffBlockTime = result.getString("Off_block_time");
 					String flight_ATD=  result.getString("atd");
-					System.out.println(logId+"-"+flightnumber_Arrival+"-"+flightnumber_departure+"-"+flight_ATA+"-"+flight_OnBlockTime+"-"+flight_OffBlockTime+"-"+flight_ATD);				
+					//System.out.println(logId+"-"+flightnumber_Arrival+"-"+flightnumber_departure+"-"+flight_ATA+"-"+flight_OnBlockTime+"-"+flight_OffBlockTime+"-"+flight_ATD);				
 					list_logID.add(logId);
 					list_NoflelogID.add(logId);
 					if(flight_ATA==null || flight_ATA.isEmpty()) {
@@ -157,8 +158,7 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 						 		+ " <td> <b style=\"color:red;\">"+flightnumber_departure+"</b></td>"
 						 		+ " <td><b style=\"color:red;\">"+flight_OnBlockTime+"</b></td>"
 						 		+ " <td><b style=\"color:red;\">"+flight_OffBlockTime+"</b></td> "
-						 		+ "<td><b style=\"color:red;\">"+flight_ATD+"</b></td></tr>");
-						
+						 		+ "<td><b style=\"color:red;\">"+flight_ATD+"</b></td></tr>");						
 					}
 					if(flight_OnBlockTime==null || flight_OnBlockTime.isEmpty()) {
 						System.out.println("flight_OnBlockTime==null || flight_OnBlockTime.isEmpty()");
@@ -222,14 +222,23 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 	  				String flogdate=  result2.getString("flogdate");
 	  				String tlogdate=  result2.getString("tlogdate");
 	  				
-	  				if(operationName.equalsIgnoreCase("FLE")) {
-	  					list_Flight_pk_Found.add(flight_pk);
+	  				if((operationName.equalsIgnoreCase("FLE"))) {
+	  					if(devid.contains("BSSPL")) {
+	  				System.out.println(flight_pk+"-"+operationName+"-"+flightno+"-"+devid+"-"+flogdate+"-"+tlogdate);	
+	  					list_Flight_pk_Found.add(flight_pk);  
+	  					}
+	  					if(devid.contains("IOSL")) {
+	  						System.out.println(flight_pk+"-"+operationName+"-"+flightno+"-"+devid+"-"+flogdate+"-"+tlogdate);	
+			  				list_iosl.add(flight_pk); 	
+	  					}
 	  			}
 	  				else {
 	  					list_Flight_pk_Not_Found.add(flight_pk);
 	  			}
+	  				
 	  			}
 	  			}
+	  			System.out.println(list_Flight_pk_Found);
 	  				list_NoflelogID.removeAll(list_Flight_pk_Found);
 	  			
 	  	System.out.println(list_logID.size());
@@ -292,12 +301,13 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 	 email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.append("<h5 align=\"center\" style=\"color:#008ae6;\" >Environment: "+environment+" </h5>");
 
 	 email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.append("<table style=\"width:100%\" id=\"t01\"><tr>"
-						+ "<th style=\"width:15%\"><b>Total Flights Scheduled for Departure</b></th>"
+						+ "<th style=\"width:10%\"><b>Total Flights Scheduled for Departure</b></th>"
 						+ "<th style=\"width:10%\"><b>Flights Departed</b></th>"
 						+ "<th style=\"width:10%\"><b>Total Fuel bowsers utilized</b></th>"
-						+ "<th style=\"width:10%\"><b>Flights with Fuel Activity</b></th>"
+						+ "<th style=\"width:10%\"><b>Flights with BSSPL Fuel Activity</b></th>"
+						+ "<th style=\"width:10%\"><b>Flights with other Fuel Activity</b></th>"
 						+ "<th style=\"width:10%\"><b>Flights without Fuel Activity</b></th>"
-						+ "<th style=\"width:15%\"><b>Flights without Landing time</b></th> "
+						+ "<th style=\"width:10%\"><b>Flights without Landing time</b></th> "
 						+ "<th style=\"width:10%\"><b>Flights without ON-Block time</b></th>"
 						+ "<th style=\"width:10%\"><b>Flights without Off-Block time</b></th>"
 						+ "<th style=\"width:10%\"><b>Flights without Airborne time</b></th>"					
@@ -307,12 +317,12 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 						+ "<td><b style=\"color:red;\">"+list_logID.size()+"</b></td>"
 						+ "<td><b style=\"color:green;\">"+devIdUtilizedForFueling+"</b></td>"
 						+ "<td><b style=\"color:red;\">"+list_Flight_pk_Found.size()+"</b></td>"
+						+ "<td><b style=\"color:red;\">"+list_iosl.size()+"</b></td>"
 					    + "<td><b style=\"color:red;\">"+list_NoflelogID.size()+"</b></td>"   
 						+ "<td> <b style=\"color:red;\">"+ATAIsNull+"</b></td>"
 						+ " <td> <b style=\"color:red;\">"+OnBlockIsNull+"</b></td> "
 						+ "<td><b style=\"color:red;\">"+OffBlockIsNull+"</b></td> "
-						+ "<td><b style=\"color:red;\">"+ATDIsNull+"</b></td>"	
-	 					
+						+ "<td><b style=\"color:red;\">"+ATDIsNull+"</b></td>"		 					
 	 					+ " </tr>");
 	 email_report_ATA_OnBlock_OffBlock_ATD_For_DIAL_BSSPL1.append("</table>");
 	 
@@ -360,9 +370,9 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 	 ExtentTest child001 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights Departed ("+SQL_Queries.yesterDate()+"): "+list_logID.size()+"</b>");
 	 child001.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights Departed ("+SQL_Queries.yesterDate()+"): "+list_logID.size()+"</b>");
 	 
-	 ExtentTest child111 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights with Fueling activity : "+list_Flight_pk_Found.size()+"</b>");
-	 child111.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights with Fueling activity : "+list_Flight_pk_Found.size()+"</b>");			
-	 ExtentTest child1111 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights with Fueling activity : "+list_Flight_pk_Found.size()+"</b>");
+	 ExtentTest child111 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights with BSSPL & other Fueling activity : </b>");
+	 child111.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights with Fueling activity BSSPL: "+list_Flight_pk_Found +" IOSL "+list_iosl+"</b>");			
+	 ExtentTest child1111 = HtmlReportUtil.extentPreserverHistory.startTest("<b style=\"color:green;\" align=\"center\">Total Flights with Fueling activity :</b>");
 	 child1111.log(LogStatus.INFO, "<b style=\"color:green;\" align=\"center\">Total Flights with Fueling activity : "+list_Flight_pk_Found.size()+"</b>");
 	 
 	 ExtentTest child1 = HtmlReportUtil.extentNoHistory.startTest("<b style=\"color:red;\" align=\"center\"> Total Flights without Landing time : "+ATAIsNull+"</b>");
