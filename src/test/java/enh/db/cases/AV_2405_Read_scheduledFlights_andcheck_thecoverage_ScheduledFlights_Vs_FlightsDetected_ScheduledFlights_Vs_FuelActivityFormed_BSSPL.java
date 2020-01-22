@@ -21,10 +21,10 @@ import utilities.HtmlReportUtil;
 
 public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights_Vs_FlightsDetected_ScheduledFlights_Vs_FuelActivityFormed_BSSPL{
 	
-	static XSSFWorkbook workbook;
-	static FileInputStream file;
-	static XSSFSheet sheet;
-	static XSSFRow row;
+	public static XSSFWorkbook workbook;
+	public static FileInputStream file;
+	public static XSSFSheet sheet;
+	public static XSSFRow row;
 	
 	public static ArrayList<String> list_flightNumberFromExcel = new ArrayList<String>();
 	public static ArrayList list_ATAIsNull = new ArrayList();
@@ -332,28 +332,29 @@ public class AV_2405_Read_scheduledFlights_andcheck_thecoverage_ScheduledFlights
 
 
 	 emailbody.append("<table style=\"width:100%\" id=\"t01\"><tr>"
-						+ "<th style=\"width:15%\"><b>Total Flights Scheduled for Departure</b></th>"
-						+ "<th style=\"width:10%\"><b>Flights Departed</b></th>"
-						+ "<th style=\"width:10%\"><b>Total Fuel bowsers utilized</b></th>"
-						+ "<th style=\"width:10%\"><b>Flights with Fuel Activity</b></th>"
-						+ "<th style=\"width:10%\"><b>Flights without Fuel Activity</b></th>"
-						+ "<th style=\"width:15%\"><b>Flights without Landing time</b></th> "
-						+ "<th style=\"width:10%\"><b>Flights without ON-Block time</b></th>"
-						+ "<th style=\"width:10%\"><b>Flights without Off-Block time</b></th>"
-						+ "<th style=\"width:10%\"><b>Flights without Airborne time</b></th>"					
-						+ " </tr>");
+				+ "<th style=\"width:10%\"><b>Total Flights Scheduled for Departure</b></th>"
+				+ "<th style=\"width:10%\"><b>Flights Departed</b></th>"
+				+ "<th style=\"width:10%\"><b>Total Fuel bowsers utilized</b></th>"
+				+ "<th style=\"width:10%\"><b>Flights with BSSPL Fuel Activity</b></th>"
+				+ "<th style=\"width:10%\"><b>Flights with other Fuel Activity</b></th>"
+				+ "<th style=\"width:10%\"><b>Flights without Fuel Activity</b></th>"
+				+ "<th style=\"width:10%\"><b>Flights without Landing time</b></th> "
+				+ "<th style=\"width:10%\"><b>Flights without ON-Block time</b></th>"
+				+ "<th style=\"width:10%\"><b>Flights without Off-Block time</b></th>"
+				+ "<th style=\"width:10%\"><b>Flights without Airborne time</b></th>"					
+				+ " </tr>");
 	 emailbody.append(" <tr> "
-						+ "<td><b>"+list_flightNumberFromExcel.size()+"</b></td> "
-						+ "<td><b style=\"color:red;\">"+list_logID.size()+"</b></td>"
-						+ "<td><b style=\"color:green;\">"+devIdUtilizedForFueling+"</b></td>"
-						+ "<td><b style=\"color:red;\">"+list_Flight_pk_Found.size()+"</b></td>"
-					    + "<td><b style=\"color:red;\">"+list_NoflelogID.size()+"</b></td>"   
-						+ "<td> <b style=\"color:red;\">"+ATAIsNull+"</b></td>"
-						+ " <td> <b style=\"color:red;\">"+OnBlockIsNull+"</b></td> "
-						+ "<td><b style=\"color:red;\">"+OffBlockIsNull+"</b></td> "
-						+ "<td><b style=\"color:red;\">"+ATDIsNull+"</b></td>"	
-	 					
-	 					+ " </tr>");
+				+ "<td><b>"+list_flightNumberFromExcel.size()+"</b></td> "
+				+ "<td><b style=\"color:red;\">"+list_logID.size()+"</b></td>"
+				+ "<td><b style=\"color:green;\">"+devIdUtilizedForFueling+"</b></td>"
+				+ "<td><b style=\"color:red;\">"+list_Flight_pk_Found.size()+"</b></td>"
+				+ "<td><b style=\"color:red;\">"+list_iosl.size()+"</b></td>"
+			    + "<td><b style=\"color:red;\">"+list_NoflelogID.size()+"</b></td>"   
+				+ "<td> <b style=\"color:red;\">"+ATAIsNull+"</b></td>"
+				+ " <td> <b style=\"color:red;\">"+OnBlockIsNull+"</b></td> "
+				+ "<td><b style=\"color:red;\">"+OffBlockIsNull+"</b></td> "
+				+ "<td><b style=\"color:red;\">"+ATDIsNull+"</b></td>"		 					
+				+ " </tr>");
 	 emailbody.append("</table>");
 
 				

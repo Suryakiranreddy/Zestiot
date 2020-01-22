@@ -39,7 +39,8 @@ public class AV_2294_Scheduled_And_Sensor_ATD_Delhi_BSSPL_User {
 				}
 				
 		ResultSet result1 = DBWrapper.Connect("SELECT count(*) FROM `DailyFlightSchedule_Merged` where gmrpk_departure in (SELECT gmrpk FROM `DailyFlightScheduleDeparture_GMR` where\r\n" + 
-						"date(IFNULL(std, etd))= '"+SQL_Queries.yesterDate()+"' and flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|SV|J2|MU|XY|OZ|KU|SG')and operationunit= "+operationunit+")",environment);
+						"date(IFNULL(std, etd))= '"+SQL_Queries.yesterDate()+"' and flightnumber regexp ('9W|JL|G9|WY|PS|RQ|LH|TG|LX|AC|EK|AI|GF|VS|EY|IA|AZ|XW|QR|SV|J2|MU|XY|OZ|KU|SG')and operationunit= "+operationunit+")"
+				+ " and (atd is not null or sensor_atd is not null)",environment);
 				while (result1.next())
 				{				
 					totalActualDeparture = result1.getInt("count(*)");
